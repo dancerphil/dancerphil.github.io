@@ -25,9 +25,9 @@ export const getOptions = (nodes: Node[], links: Link[]) => {
             categories: categories.map(name => ({name})),
             force: {
                 initLayout: 'circular',
-                edgeLength: [20, 50],
-                repulsion: 20,
-                gravity: 0.1,
+                edgeLength: [10, 80],
+                repulsion: 40,
+                gravity: 0.08,
             },
             edges: links,
         }],
