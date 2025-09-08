@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import {createRegion} from 'region-core';
+import {createRegion} from 'region-react';
 import {css, injectGlobal} from '@emotion/css';
 import {DatePicker} from '@/components/DatePicker';
 import {width} from '@panda-design/components';

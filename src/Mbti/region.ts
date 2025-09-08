@@ -1,4 +1,4 @@
-import {createRegion} from 'region-core';
+import {createRegion} from 'region-react';
 
 const personalityRegion = createRegion<string>(
     '',

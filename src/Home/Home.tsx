@@ -78,7 +78,7 @@ export const Home = () => {
                 <Divider />
 
                 <Title>目前正在维护的库</Title>
-                <A href="https://github.com/regionjs/region-core">region-core</A>
+                <A href="https://github.com/regionjs/region">region-react</A>
                 <Description>react 状态管理</Description>
 
                 <Divider />

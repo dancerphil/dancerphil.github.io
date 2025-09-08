@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import {useCallback, useEffect, useState, ReactNode, KeyboardEvent} from 'react';
-import {createRegion} from 'region-core';
+import {createRegion} from 'region-react';
 import {start} from './region/task';
 import {
     useOption,

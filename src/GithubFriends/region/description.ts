@@ -1,4 +1,4 @@
-import {createRegion} from 'region-core';
+import {createRegion} from 'region-react';
 
 const descriptionRegion = createRegion<string>('');
 

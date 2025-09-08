@@ -36,7 +36,7 @@
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0",
     "react-resizable-panels": "^3.0.3",
-    "region-core": "^11.11.2",
+    "region-react": "^12.0.0",
     "remark-gfm": "^4.0.1",
     "shader-doodle": "^0.0.5",
     "three": "^0.173.0",
