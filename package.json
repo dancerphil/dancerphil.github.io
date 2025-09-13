@@ -23,7 +23,7 @@
     "@react-three/fiber": "^8.17.10",
     "ai": "^5.0.22",
     "antd": "^5.24.1",
-    "axios": "^1.11.0",
+    "axios": "^1.12.0",
     "axios-interface": "^2.1.1",
     "date-fns": "^4.1.0",
     "echarts": "^6.0.0",
