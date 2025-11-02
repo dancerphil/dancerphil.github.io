@@ -1,4 +1,4 @@
-import {intersection} from 'lodash';
+import {intersection} from 'lodash-es';
 import {Category, Link, Node, Option} from '../types';
 import {getVertex} from './Entities';
 
