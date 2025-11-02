@@ -1,0 +1,27 @@
+.content {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    font-size: 3.5vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+.panel {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    color: #fff;
+}
