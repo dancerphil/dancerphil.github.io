@@ -1,6 +1,7 @@
 import {defineConfig} from 'vite';
 import {resolve, extname} from 'path';
 import {readdirSync} from 'fs';
+// @ts-expect-error
 import react from '@vitejs/plugin-react';
 
 const getInput = () => {
@@ -22,7 +23,6 @@ export default defineConfig(() => {
             rollupOptions: {
                 input: getInput(),
             },
-
         },
         optimizeDeps: {
             include: [

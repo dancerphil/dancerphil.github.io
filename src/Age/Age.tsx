@@ -43,6 +43,7 @@ export const useLoopRerender = () => {
 const View = () => {
     useLoopRerender();
     const birth = birthRegion.useValue();
+    // eslint-disable-next-line react-hooks/purity
     const diff = ((Date.now() - birth) / 1000 / 31556926).toFixed(7);
     return (
         <div className={containerCss}>
