@@ -1,1 +1,0 @@
-import{t as e}from"./postcss-vfiMrC0-.js";export{e as default};
