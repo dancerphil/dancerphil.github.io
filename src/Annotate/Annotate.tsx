@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Sandpack } from '@codesandbox/sandpack-react';
-import { Streamdown } from 'streamdown';
+import { Markdown } from '@/components/Markdown';
 import { Modal } from 'antd';
 import { useShortKey } from 'use-short-key';
 import App from './App?raw';
@@ -44,7 +44,7 @@ export const Annotate = () => {
                 open={open}
                 onCancel={() => setOpen(false)}
             >
-                <Streamdown>{md}</Streamdown>
+                <Markdown>{md}</Markdown>
             </Modal>
         </>
     );

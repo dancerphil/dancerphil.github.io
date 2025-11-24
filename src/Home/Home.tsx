@@ -91,6 +91,11 @@ export const Home = () => {
                     description="数据标记产品原型"
                 />
                 <ListItem
+                    href="./async-await-cookbook"
+                    title="async-await-cookbook"
+                    description="async await 代码风格指南"
+                />
+                <ListItem
                     href="./coder"
                     title="coder"
                     description="基于 localStorage 的在线的编辑器（代码很老）"

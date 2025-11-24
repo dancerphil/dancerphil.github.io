@@ -1,5 +1,5 @@
 import { CloseOutlined } from '@ant-design/icons';
-import { Streamdown } from 'streamdown';
+import { Markdown } from '@/components/Markdown';
 import { useEffect, useState } from 'react';
 import { Button, Skeleton } from 'antd';
 import { StreamParams, streamSentence } from '@/Tlp/utils';
@@ -63,7 +63,7 @@ export const Stream = () => {
         <Sticky>
             <Button color="default" variant="filled" icon={<CloseOutlined />} onClick={handleClose} />
             {content ? (
-                <Streamdown>{content}</Streamdown>
+                <Markdown>{content}</Markdown>
             ) : <Skeleton active />}
         </Sticky>
     );
