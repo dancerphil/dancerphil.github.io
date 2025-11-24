@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import { Divider } from 'antd';
 import { css } from '@emotion/css';
 import { ReactNode } from 'react';
@@ -78,16 +79,45 @@ export const Home = () => {
 
                 <Divider />
 
-                <Title>玩具箱页面导航</Title>
+                <Title>随手写的玩具</Title>
+                <ListItem
+                    href="./age"
+                    title="age"
+                    description="可以计算自己的年龄的工具，精确到 0.0000001"
+                />
+                <ListItem
+                    href="./annotate"
+                    title="annotate"
+                    description="数据标记产品原型"
+                />
                 <ListItem
                     href="./coder"
                     title="coder"
-                    description="一个基于 localStorage 的在线的编辑器"
+                    description="基于 localStorage 的在线的编辑器（代码很老）"
+                />
+                <ListItem
+                    href="./github-friends"
+                    title="github 关系网"
+                    description="用 echarts 关系图分析 github 关系，可以找朋友"
                 />
                 <ListItem
                     href="./mbti"
-                    title="mbti八维分析工具"
+                    title="mbti"
+                    description="一个mbti八维分析工具"
                 />
+                <ListItem
+                    href="./mine"
+                    title="扫雷"
+                    description="适配手机端的扫雷游戏"
+                />
+                <ListItem
+                    href="./skyline"
+                    title="3d commit 记录"
+                    description="用 three.js 画的提交历史天际线玩具，但现在运行不了"
+                />
+                <Divider />
+
+                <Title>随手写的动画</Title>
                 <ListItem
                     href="./10/once.html"
                     title="10 随机迷宫"
@@ -100,10 +130,10 @@ export const Home = () => {
                     href="https://codepen.io/dancerphil/pen/POdeWy"
                     title="纯 css 动画：bees"
                 />
-                <ListItem
-                    href="https://codepen.io/dissimulate/pen/eZxEBO"
-                    title="窗帘动画 from codepen"
-                />
+                {/* <ListItem */}
+                {/*    href="https://codepen.io/dissimulate/pen/eZxEBO" */}
+                {/*    title="窗帘动画 from codepen" */}
+                {/* /> */}
                 <ListItem
                     href="./d"
                     title="任务管理"
@@ -116,22 +146,14 @@ export const Home = () => {
                     href="./m"
                     title="material-design v0 颜色分析"
                 />
-                <ListItem
-                    href="https://vincentgarreau.com/particles.js/"
-                    title="particles 动画"
-                />
-                <ListItem
-                    href="./react-children-type"
-                    title="React Children Type"
-                />
-                <ListItem
-                    href="https://seenjs.io/demo-2048.html"
-                    title="3d 2048 游戏"
-                />
-                <ListItem
-                    href="./spiral-path"
-                    title="单词向量游戏"
-                />
+                {/* <ListItem */}
+                {/*    href="https://vincentgarreau.com/particles.js/" */}
+                {/*    title="particles 动画" */}
+                {/* /> */}
+                {/* <ListItem */}
+                {/*    href="https://seenjs.io/demo-2048.html" */}
+                {/*    title="3d 2048 游戏" */}
+                {/* /> */}
                 <ListItem
                     href="./w"
                     title="纯 css 动画"

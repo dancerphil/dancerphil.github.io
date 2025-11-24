@@ -33,7 +33,7 @@ export const useLoopRerender = () => {
         () => {
             const timer = setInterval(() => {
                 setTick(tick => tick + 1);
-            }, 300);
+            }, 100);
             return () => clearInterval(timer);
         },
         [],
@@ -44,7 +44,7 @@ const View = () => {
     useLoopRerender();
     const birth = birthRegion.useValue();
     // eslint-disable-next-line react-hooks/purity
-    const diff = ((Date.now() - birth) / 1000 / 31556926).toFixed(7);
+    const diff = ((Date.now() - birth) / 1000 / 31556926).toFixed(8);
     return (
         <div className={containerCss}>
             {diff}
