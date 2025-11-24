@@ -66,6 +66,5 @@ export const TrapezoidalPrism = () => {
         color: new THREE.Color(color),
         flatShading: true,
     });
-    // @ts-expect-error
     return <mesh geometry={geometry} material={material} />;
 };

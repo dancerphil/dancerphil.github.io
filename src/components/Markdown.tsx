@@ -8,7 +8,7 @@ interface Props {
     children: string;
 }
 
-export const Markdown = ({children}: Props) => {
+export const Markdown = ({ children }: Props) => {
     return (
         <div className="markdown-body">
             <ReactMarkdown remarkPlugins={remarkPlugins}>

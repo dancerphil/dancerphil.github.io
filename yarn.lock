@@ -957,9 +957,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hero-u/eslint-config@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@hero-u/eslint-config@npm:0.3.1"
+"@hero-u/eslint-config@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "@hero-u/eslint-config@npm:0.3.2"
   dependencies:
     "@eslint/compat": "npm:^2.0.0"
     "@eslint/js": "npm:^9.39.1"
@@ -969,7 +969,7 @@ __metadata:
     typescript-eslint: "npm:^8.47.0"
   peerDependencies:
     eslint: ^9.39.1
-  checksum: 10c0/5d9d982c7ba1ef9dd209037819560175e980816532abed41dca25fb57b7a07878cd82593a264d40f9dd6a81fd300d32ede750029610b90bc9eb601a7c01bbfca
+  checksum: 10c0/d606174ba9734ac7b8ddde4a283bdb464cd64896c7ac5f31fb99e1cfc450d6591f1a2d4ec8b54e5eaaef6df37c0115d747b3d47501f1f32b02109cffe63292e5
   languageName: node
   linkType: hard
 
@@ -3634,7 +3634,7 @@ __metadata:
     "@emotion/css": "npm:^11.13.5"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.1"
-    "@hero-u/eslint-config": "npm:^0.3.1"
+    "@hero-u/eslint-config": "npm:^0.3.2"
     "@octokit/rest": "npm:^22.0.1"
     "@panda-design/components": "npm:^0.5.7"
     "@react-three/drei": "npm:^10.7.7"
