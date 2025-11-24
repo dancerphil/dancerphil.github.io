@@ -1,8 +1,8 @@
 // @ts-nocheck
-import {Canvas, useThree} from '@react-three/fiber';
-import {OrbitControls, Text3D} from '@react-three/drei';
-import {getBoxData} from './getBoxData';
-import {TrapezoidalPrism} from './Trapezoid';
+import { Canvas, useThree } from '@react-three/fiber';
+import { OrbitControls, Text3D } from '@react-three/drei';
+import { getBoxData } from './getBoxData';
+import { TrapezoidalPrism } from './Trapezoid';
 
 const boxSize = 1; // 假设每个Box的基础大小为1单位
 
@@ -11,7 +11,7 @@ const boxData = getBoxData();
 const Boxes = () => {
     return (
         <>
-            {boxData.map(({height, xPos, zPos, color}, index) => {
+            {boxData.map(({ height, xPos, zPos, color }, index) => {
                 return (
                     <mesh
                         key={index}
@@ -46,7 +46,7 @@ const Text = (props: TextContentProps) => {
 
 const Controls = () => {
     // const orbitRef = useRef();
-    const {camera, gl} = useThree();
+    const { camera, gl } = useThree();
 
     return (
         <OrbitControls

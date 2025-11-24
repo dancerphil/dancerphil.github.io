@@ -1,5 +1,5 @@
-import {ThreeCanvas} from '@/Skyline/ThreeCanvas';
-import {css} from '@emotion/css';
+import { ThreeCanvas } from '@/Skyline/ThreeCanvas';
+import { css } from '@emotion/css';
 
 const containerCss = css`
     width: 100vw;

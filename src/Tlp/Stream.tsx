@@ -1,11 +1,11 @@
-import {CloseOutlined} from '@ant-design/icons';
-import {Streamdown} from 'streamdown';
-import {useEffect, useState} from 'react';
-import {Button, Skeleton} from 'antd';
-import {StreamParams, streamSentence} from '@/Tlp/utils';
+import { CloseOutlined } from '@ant-design/icons';
+import { Streamdown } from 'streamdown';
+import { useEffect, useState } from 'react';
+import { Button, Skeleton } from 'antd';
+import { StreamParams, streamSentence } from '@/Tlp/utils';
 import styled from '@emotion/styled';
-import {useActiveNodeKey, getNodes, resetActiveNodeKey} from '@/Tlp/region';
-import {responsive} from '@/Tlp/styles';
+import { useActiveNodeKey, getNodes, resetActiveNodeKey } from '@/Tlp/region';
+import { responsive } from '@/Tlp/styles';
 
 const handleClose = () => {
     resetActiveNodeKey();
@@ -47,7 +47,7 @@ export const Stream = () => {
                     }
                 });
 
-                const {textStream} = streamSentence(params);
+                const { textStream } = streamSentence(params);
 
                 for await (const textPart of textStream) {
                     setContent(v => v + textPart);

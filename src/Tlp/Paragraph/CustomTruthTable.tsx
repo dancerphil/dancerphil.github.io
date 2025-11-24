@@ -1,6 +1,6 @@
-import {TruthTable} from './TruthTable';
+import { TruthTable } from './TruthTable';
 import styled from '@emotion/styled';
-import {responsive} from '@/Tlp/styles';
+import { responsive } from '@/Tlp/styles';
 
 export const FlexContainer = styled.div`
     display: flex;

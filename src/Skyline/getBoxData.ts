@@ -1,9 +1,9 @@
-import {getDay, getWeek} from 'date-fns';
+import { getDay, getWeek } from 'date-fns';
 
 const mock: any[] = [];
 
 const getHeight = (data: any) => {
-    const {code: {commits = 0}, review: {votes = 0, comments = 0, patchSets = 0}} = data;
+    const { code: { commits = 0 }, review: { votes = 0, comments = 0, patchSets = 0 } } = data;
     return commits + votes + comments + patchSets;
 };
 
@@ -16,7 +16,7 @@ function getWeekAndDayOfWeek(dateString: string) {
     // 获取星期几，0 表示星期日，6 表示星期六
     const dayOfWeek = getDay(date);
 
-    return {weekNumber, dayOfWeek};
+    return { weekNumber, dayOfWeek };
 }
 
 const getColor = (sum: number) => {
@@ -41,7 +41,7 @@ const spacing = 0.2; // Box之间的间距
 export const getBoxData = () => {
     return mock.map((data) => {
         const height = getHeight(data);
-        const {weekNumber, dayOfWeek} = getWeekAndDayOfWeek(data.date);
+        const { weekNumber, dayOfWeek } = getWeekAndDayOfWeek(data.date);
 
         // 根据周索引和天索引计算Box的位置
         const xPos = (weekNumber - 26.5) * (boxSize + spacing);

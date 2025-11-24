@@ -1,11 +1,11 @@
-import {useEffect, useRef} from 'react';
-import {Tooltip} from 'antd';
-import {render} from 'katex';
+import { useEffect, useRef } from 'react';
+import { Tooltip } from 'antd';
+import { render } from 'katex';
 import 'katex/dist/katex.css';
-import {QuestionCircleOutlined} from '@ant-design/icons';
-import {css} from '@emotion/css';
+import { QuestionCircleOutlined } from '@ant-design/icons';
+import { css } from '@emotion/css';
 import styled from '@emotion/styled';
-import {responsive} from '@/Tlp/styles';
+import { responsive } from '@/Tlp/styles';
 
 const dot = css`
     position: relative;
@@ -27,7 +27,7 @@ interface ChildrenProps {
     children: string;
 }
 
-export const Emphasis = ({children}: ChildrenProps) => {
+export const Emphasis = ({ children }: ChildrenProps) => {
     return children.split('').map((char, index) => (
         <span key={index} className={dot}>
             {char}
@@ -42,7 +42,7 @@ const iconCss = css`
     margin: 0 3px 0 1px;
 `;
 
-export const Footnote = ({children}: ChildrenProps) => {
+export const Footnote = ({ children }: ChildrenProps) => {
     return (
         <Tooltip title={children}>
             <sup><QuestionCircleOutlined className={iconCss} /></sup>
@@ -50,14 +50,14 @@ export const Footnote = ({children}: ChildrenProps) => {
     );
 };
 
-export const Katex = ({children}: ChildrenProps) => {
+export const Katex = ({ children }: ChildrenProps) => {
     const ref = useRef(null);
 
     useEffect(
         () => {
             if (ref.current) {
                 try {
-                    render(children, ref.current, {throwOnError: false});
+                    render(children, ref.current, { throwOnError: false });
                 }
                 catch (error) {
                     console.error('Katex rendering error:', error);

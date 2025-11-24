@@ -1,5 +1,5 @@
-import {Octokit} from '@octokit/rest';
-import {Info} from '../types';
+import { Octokit } from '@octokit/rest';
+import { Info } from '../types';
 
 let octokit: Octokit;
 
@@ -27,18 +27,18 @@ const withDelayAndRetry = <T>(asyncFunction: T): T => {
 };
 
 export const getMeInfo = async (token: string) => {
-    octokit = new Octokit({auth: token});
-    const {data: me} = await octokit.rest.users.getAuthenticated();
+    octokit = new Octokit({ auth: token });
+    const { data: me } = await octokit.rest.users.getAuthenticated();
     return me;
 };
 
 export const getUserApi = (id: string) => {
     const apiGetInfo = async (): Promise<Info> => {
-        const {data: info} = await octokit.rest.users.getByUsername({username: id});
+        const { data: info } = await octokit.rest.users.getByUsername({ username: id });
         return info;
     };
     const apiGetFollowers = async (page = 1): Promise<string[]> => {
-        const {data: list} = await octokit.rest.users.listFollowersForUser({
+        const { data: list } = await octokit.rest.users.listFollowersForUser({
             username: id,
             page,
             per_page: 100,
@@ -46,7 +46,7 @@ export const getUserApi = (id: string) => {
         return list.map((item: any) => item.login);
     };
     const apiGetFollowings = async (page = 1): Promise<string[]> => {
-        const {data: list} = await octokit.rest.users.listFollowingForUser({
+        const { data: list } = await octokit.rest.users.listFollowingForUser({
             username: id,
             page,
             per_page: 100,

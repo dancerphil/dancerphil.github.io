@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import {marginTop, marginLeft} from '@panda-design/components';
-import {css, cx} from '@emotion/css';
+import { marginTop, marginLeft } from '@panda-design/components';
+import { css, cx } from '@emotion/css';
 
 const Grid = styled.div`
     display: grid;
@@ -37,7 +37,7 @@ interface Props {
     values: string[];
 }
 
-export const TruthTable = ({rowSeparate = 1, col, colSeparate = -1, values}: Props) => {
+export const TruthTable = ({ rowSeparate = 1, col, colSeparate = -1, values }: Props) => {
     const gridCss = css`grid-template-columns: repeat(${col}, 1fr);`;
 
     return (

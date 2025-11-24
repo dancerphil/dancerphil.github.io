@@ -1,5 +1,5 @@
-import {useShortKey} from 'use-short-key';
-import {activeTarget} from './region';
+import { useShortKey } from 'use-short-key';
+import { activeTarget } from './region';
 
 const handleKeydown = (e: KeyboardEvent) => {
     e.preventDefault();
@@ -11,7 +11,7 @@ const handleKeydown = (e: KeyboardEvent) => {
     const sibling = target[type] as HTMLElement;
     if (sibling && sibling.dataset.key) {
         activeTarget(sibling);
-        sibling.scrollIntoView({behavior: 'smooth', block: 'center'});
+        sibling.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 };
 

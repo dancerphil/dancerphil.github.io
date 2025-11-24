@@ -1,9 +1,9 @@
-import {getMeInfo, getUserApi} from '../github-api';
-import {setCurrentId} from './currentId';
-import {emitNodesAndLinks} from './nodesAndLinks';
-import {getFriends, addEdge, initVertex, getVertex, updateVertexInfo} from '../dataStructures/Entities';
-import {setDescription} from './description';
-import {pushException} from './exception';
+import { getMeInfo, getUserApi } from '../github-api';
+import { setCurrentId } from './currentId';
+import { emitNodesAndLinks } from './nodesAndLinks';
+import { getFriends, addEdge, initVertex, getVertex, updateVertexInfo } from '../dataStructures/Entities';
+import { setDescription } from './description';
+import { pushException } from './exception';
 
 // 防止并发过多，增加一个队列
 let currentPromise = Promise.resolve();

@@ -1,7 +1,7 @@
-import {useRef, useLayoutEffect, useEffect, FC} from 'react';
-import {init, EChartsType} from 'echarts';
-import {Node, Link} from '../types';
-import {getOptions} from './getOptions';
+import { useRef, useLayoutEffect, useEffect, FC } from 'react';
+import { init, EChartsType } from 'echarts';
+import { Node, Link } from '../types';
+import { getOptions } from './getOptions';
 import c from './Graph.module.css';
 
 let chart: EChartsType | null = null;
@@ -11,7 +11,7 @@ interface Props {
     links: Link[];
 }
 
-const Graph: FC<Props> = ({nodes, links}) => {
+const Graph: FC<Props> = ({ nodes, links }) => {
     const ref = useRef<HTMLDivElement>(null);
     useLayoutEffect(
         () => {

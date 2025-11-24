@@ -1,13 +1,13 @@
-import {Block, Coordinate, Diff} from './types';
-import {getSurroundingBlocks} from './region';
-import {compact, sumBy} from 'lodash-es';
-import {intelligenceLevel, xNumber, yNumber} from './constant';
+import { Block, Coordinate, Diff } from './types';
+import { getSurroundingBlocks } from './region';
+import { compact, sumBy } from 'lodash-es';
+import { intelligenceLevel, xNumber, yNumber } from './constant';
 
 export const xyList: Coordinate[] = [];
 
 for (let y = 0; y < yNumber; y++) {
     for (let x = 0; x < xNumber; x++) {
-        xyList.push({x, y});
+        xyList.push({ x, y });
     }
 }
 
@@ -27,7 +27,7 @@ export const handleReveal = (block: Block) => {
         // });
         throw new Error('失败');
     }
-    const {label} = block;
+    const { label } = block;
     if (label === 0) {
         // 这是一个深搜
         getSurroundingBlocks(block).forEach(handleReveal);
@@ -35,7 +35,7 @@ export const handleReveal = (block: Block) => {
 };
 
 export const applyDiff = (diff: Diff) => {
-    const {mark, reveal} = diff;
+    const { mark, reveal } = diff;
     if (mark) {
         mark.forEach(handleMark);
     }
@@ -47,7 +47,7 @@ export const applyDiff = (diff: Diff) => {
 export const combineDiff = (diffList: Diff[]) => {
     const mark = compact(diffList.map(diff => diff.mark)).flat();
     const reveal = compact(diffList.map(diff => diff.reveal)).flat();
-    return {mark, reveal};
+    return { mark, reveal };
 };
 
 const iterateeMaybeMine = (block: Block) => {

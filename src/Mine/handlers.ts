@@ -1,9 +1,9 @@
-import {sumBy} from 'lodash-es';
-import {rerender} from './renderer';
-import {getBlock, getBlockList, getSurroundingBlocks} from './region';
-import {Block, Coordinate} from './types';
-import {intelligenceLevel, mineNumber, xNumber, yNumber} from './constant';
-import {applyDiff, combineDiff, computeSmartDiff, handleReveal} from './utils';
+import { sumBy } from 'lodash-es';
+import { rerender } from './renderer';
+import { getBlock, getBlockList, getSurroundingBlocks } from './region';
+import { Block, Coordinate } from './types';
+import { intelligenceLevel, mineNumber, xNumber, yNumber } from './constant';
+import { applyDiff, combineDiff, computeSmartDiff, handleReveal } from './utils';
 
 let start = false;
 
@@ -27,7 +27,7 @@ const fillMap = () => {
     while (mineCount < mineNumber) {
         const x = Math.floor(Math.random() * xNumber);
         const y = Math.floor(Math.random() * yNumber);
-        const block = getBlock({x, y}) as Block;
+        const block = getBlock({ x, y }) as Block;
         if (!block.mine) {
             block.mine = true;
             mineCount++;
@@ -66,7 +66,7 @@ export const handleBlockClick = (coordinate: Coordinate) => {
         fillMapUntilValid(block);
         start = true;
     }
-    const {reveal} = block;
+    const { reveal } = block;
     if (reveal) {
         handleSmartRoot(block);
     }

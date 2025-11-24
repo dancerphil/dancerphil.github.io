@@ -1,6 +1,6 @@
-import {intersection} from 'lodash-es';
-import {Category, Link, Node, Option} from '../types';
-import {getVertex} from './Entities';
+import { intersection } from 'lodash-es';
+import { Category, Link, Node, Option } from '../types';
+import { getVertex } from './Entities';
 
 // 搜索 Graph 生成 charts 数据
 export const BFS = (rootId: string, option: Option): [Node[], Link[]] => {
@@ -81,14 +81,14 @@ export const BFS = (rootId: string, option: Option): [Node[], Link[]] => {
         for (let i = 0; i < friends.length; i++) {
             const friend = friends[i];
             const friendId = friend.getKey();
-            edges.push({source: id, target: friendId});
+            edges.push({ source: id, target: friendId });
             if (!visited[friendId]) {
                 if (!option['friend-friend-friend+follower'] && depth === 2) {
                     // do nothing
                 }
                 else {
                     pushNode(friendId, depth + 1);
-                    queue.push({id: friendId, depth: depth + 1});
+                    queue.push({ id: friendId, depth: depth + 1 });
                 }
             }
         }

@@ -1,8 +1,8 @@
-import {useEffect, RefObject} from 'react';
-import {createRegion} from 'region-react';
-import {handleBlockClickWithCatch} from '../handlers';
-import {size} from '../constant';
-import {Coordinate} from '../types';
+import { useEffect, RefObject } from 'react';
+import { createRegion } from 'region-react';
+import { handleBlockClickWithCatch } from '../handlers';
+import { size } from '../constant';
+import { Coordinate } from '../types';
 
 const currentCoordinateRegion = createRegion<Coordinate>();
 
@@ -25,7 +25,7 @@ const getCoordinate = (element: HTMLDivElement, clientX: number, clientY: number
     const mouseY = clientY - rect.top + element.scrollTop;
     const x = Math.floor(mouseX / size);
     const y = Math.floor(mouseY / size);
-    return {x, y};
+    return { x, y };
 };
 
 interface Params {
@@ -37,7 +37,7 @@ const withTouch = (handler: (e: Params) => void) => (e: TouchEvent) => {
     e.preventDefault();
     const clientX = e.changedTouches[0].clientX;
     const clientY = e.changedTouches[0].clientY;
-    handler({clientX, clientY});
+    handler({ clientX, clientY });
 };
 
 const withMouse = (handler: (e: Params) => void, checkButtons?: boolean) => (e: MouseEvent) => {
@@ -47,7 +47,7 @@ const withMouse = (handler: (e: Params) => void, checkButtons?: boolean) => (e: 
         // nothing
     }
     else {
-        handler({clientX, clientY});
+        handler({ clientX, clientY });
     }
 };
 
@@ -60,7 +60,7 @@ const useEventListener = (ref: RefObject<HTMLDivElement>) => {
                 return;
             }
 
-            const handleStart = ({clientX, clientY}: Params) => {
+            const handleStart = ({ clientX, clientY }: Params) => {
                 const coordinate = getCoordinate(element, clientX, clientY);
                 setCurrentCoordinate(coordinate);
             };
@@ -68,7 +68,7 @@ const useEventListener = (ref: RefObject<HTMLDivElement>) => {
             const handleTouchStart = withTouch(handleStart);
             const handleMouseDown = withMouse(handleStart);
 
-            const handleMove = ({clientX, clientY}: Params) => {
+            const handleMove = ({ clientX, clientY }: Params) => {
                 const coordinate = getCoordinate(element, clientX, clientY);
                 setCurrentCoordinate(coordinate);
                 handleBlockClickWithCatch(coordinate);
@@ -77,7 +77,7 @@ const useEventListener = (ref: RefObject<HTMLDivElement>) => {
             const handleTouchMove = withTouch(handleMove);
             const handleMouseMove = withMouse(handleMove, true);
 
-            const handleEnd = ({clientX, clientY}: Params) => {
+            const handleEnd = ({ clientX, clientY }: Params) => {
                 const coordinate = getCoordinate(element, clientX, clientY);
                 handleBlockClickWithCatch(coordinate);
                 resetCurrentCoordinate();
@@ -89,7 +89,7 @@ const useEventListener = (ref: RefObject<HTMLDivElement>) => {
             // passive false 禁止默认滚动
             document.body.addEventListener('touchstart', handleTouchStart);
             document.body.addEventListener('mousedown', handleMouseDown);
-            document.body.addEventListener('touchmove', handleTouchMove, {passive: false});
+            document.body.addEventListener('touchmove', handleTouchMove, { passive: false });
             document.body.addEventListener('mousemove', handleMouseMove);
             document.body.addEventListener('touchend', handleTouchEnd);
             document.body.addEventListener('mouseup', handleMouseUp);

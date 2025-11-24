@@ -1,4 +1,4 @@
-import {Info} from '../types';
+import { Info } from '../types';
 
 export type GraphEdge = [GraphVertex, GraphVertex];
 

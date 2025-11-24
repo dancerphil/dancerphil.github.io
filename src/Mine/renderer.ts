@@ -1,4 +1,4 @@
-import {createRegion} from 'region-react';
+import { createRegion } from 'region-react';
 
 const region = createRegion<number>(0);
 

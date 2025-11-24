@@ -1,6 +1,6 @@
-import {createRegion} from 'region-react';
-import {Option} from '../types';
-import {emitNodesAndLinks} from './nodesAndLinks';
+import { createRegion } from 'region-react';
+import { Option } from '../types';
+import { emitNodesAndLinks } from './nodesAndLinks';
 
 const optionRegion = createRegion<Option>({
     'friend-friend+follower': true,

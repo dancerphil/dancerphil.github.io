@@ -1,5 +1,5 @@
-import {streamText} from 'ai';
-import {deepseek} from '@/ai/models';
+import { streamText } from 'ai';
+import { deepseek } from '@/ai/models';
 
 export interface StreamParams {
     sentence?: string;
@@ -9,7 +9,7 @@ export interface StreamParams {
     children?: string[];
 }
 
-export const streamSentence = ({sentence, parent, prev, next, children}: StreamParams) => {
+export const streamSentence = ({ sentence, parent, prev, next, children }: StreamParams) => {
     let context = '';
     if (parent || prev || next || children?.length) {
         context += `上下文包括：\n\n`;

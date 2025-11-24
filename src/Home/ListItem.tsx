@@ -1,5 +1,5 @@
-import {css} from '@emotion/css';
-import {ReactNode} from 'react';
+import { css } from '@emotion/css';
+import { ReactNode } from 'react';
 
 const listItemCss = css`
     padding: 8px 4px;
@@ -26,7 +26,7 @@ interface ListItemProps {
     description?: ReactNode;
 }
 
-export const ListItem = ({href, title, description}: ListItemProps) => {
+export const ListItem = ({ href, title, description }: ListItemProps) => {
     return (
         <a className={listItemCss} target="_blank" href={href} rel="noreferrer">
             <span className={aCss}>{title}</span>

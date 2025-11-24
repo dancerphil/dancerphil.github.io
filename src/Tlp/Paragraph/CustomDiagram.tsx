@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import styled from '@emotion/styled';
-import {add, multiply, vertical, Vector} from './vector';
+import { add, multiply, vertical, Vector } from './vector';
 
 const Label = styled.text`
     font-size: 12px;
@@ -25,7 +25,7 @@ interface Bracket {
     curveScale?: number;
 }
 
-const generateBracket = ({start, end, isLeftBracket, curveScale = 0.05}: Bracket) => {
+const generateBracket = ({ start, end, isLeftBracket, curveScale = 0.05 }: Bracket) => {
     const vector: Vector = {
         x: end.x - start.x,
         y: end.y - start.y,
@@ -64,28 +64,28 @@ const generateBracket = ({start, end, isLeftBracket, curveScale = 0.05}: Bracket
 };
 
 const points_1 = {
-    leftW: {x: 30, y: 70},
-    left: {x: 50, y: 70},
-    leftF: {x: 70, y: 70},
-    rightW: {x: 230, y: 70},
-    right: {x: 250, y: 70},
-    rightF: {x: 270, y: 70},
+    leftW: { x: 30, y: 70 },
+    left: { x: 50, y: 70 },
+    leftF: { x: 70, y: 70 },
+    rightW: { x: 230, y: 70 },
+    right: { x: 250, y: 70 },
+    rightF: { x: 270, y: 70 },
 };
 
 const points_5 = {
-    leftW: {x: 30, y: 100},
-    left: {x: 50, y: 100},
-    leftF: {x: 70, y: 100},
-    leftFW: {x: 50, y: 70},
-    leftWF: {x: 50, y: 130},
-    rightW: {x: 210, y: 100},
-    right: {x: 230, y: 100},
-    rightF: {x: 250, y: 100},
+    leftW: { x: 30, y: 100 },
+    left: { x: 50, y: 100 },
+    leftF: { x: 70, y: 100 },
+    leftFW: { x: 50, y: 70 },
+    leftWF: { x: 50, y: 130 },
+    rightW: { x: 210, y: 100 },
+    right: { x: 230, y: 100 },
+    rightF: { x: 250, y: 100 },
 };
 
 const diff = {
-    up: {x: 0, y: -10},
-    down: {x: 0, y: 10},
+    up: { x: 0, y: -10 },
+    down: { x: 0, y: 10 },
 };
 
 const brackets_1 = {

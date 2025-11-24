@@ -1,4 +1,4 @@
-import {Category, Link, Node} from '../types';
+import { Category, Link, Node } from '../types';
 
 const categories: Category[] = [
     'me',
@@ -22,7 +22,7 @@ export const getOptions = (nodes: Node[], links: Link[]) => {
             },
             draggable: true,
             data: nodes,
-            categories: categories.map(name => ({name})),
+            categories: categories.map(name => ({ name })),
             force: {
                 initLayout: 'circular',
                 edgeLength: [10, 80],

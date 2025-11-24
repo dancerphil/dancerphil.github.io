@@ -9,6 +9,6 @@ export const mineNumber = Math.floor(blockNumber * 0.2);
 // 0 mark，1 smart，2 reveal 时会 smart，3 smart 后会对周围 smart
 export const intelligenceLevel = 3;
 
-export const panelStyle = {width: xNumber * size, height: yNumber * size};
-export const blockStyle = {width: size, height: size};
-export const castRangeStyle = {width: size * 3, height: size * 3};
+export const panelStyle = { width: xNumber * size, height: yNumber * size };
+export const blockStyle = { width: size, height: size };
+export const castRangeStyle = { width: size * 3, height: size * 3 };

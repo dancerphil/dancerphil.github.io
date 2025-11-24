@@ -1,6 +1,6 @@
-import {createRoot} from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import '@/styles';
-import {Mbti} from '@/Mbti/Mbti';
+import { Mbti } from '@/Mbti/Mbti';
 
 const root = createRoot(document.body);
 

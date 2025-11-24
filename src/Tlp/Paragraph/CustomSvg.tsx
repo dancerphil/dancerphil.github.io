@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import {size} from '@panda-design/components';
+import { size } from '@panda-design/components';
 
 const Label = styled.text`
     font-size: 12px;

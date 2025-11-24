@@ -1,7 +1,7 @@
-import {PanelGroup, Panel, PanelResizeHandle, PanelProps} from 'react-resizable-panels';
-import {css} from '@emotion/css';
-import {ReactNode} from 'react';
-import {token} from '@/constants/token';
+import { PanelGroup, Panel, PanelResizeHandle, PanelProps } from 'react-resizable-panels';
+import { css } from '@emotion/css';
+import { ReactNode } from 'react';
+import { token } from '@/constants/token';
 
 const handleCss = css`
     position: relative;

@@ -1,8 +1,8 @@
-import {useState, useEffect} from 'react';
-import {createRegion} from 'region-react';
-import {css, injectGlobal} from '@emotion/css';
-import {DatePicker} from '@/components/DatePicker';
-import {width} from '@panda-design/components';
+import { useState, useEffect } from 'react';
+import { createRegion } from 'region-react';
+import { css, injectGlobal } from '@emotion/css';
+import { DatePicker } from '@/components/DatePicker';
+import { width } from '@panda-design/components';
 
 const birthRegion = createRegion<number>(undefined, {
     withLocalStorageKey: 'birth',

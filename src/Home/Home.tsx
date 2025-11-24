@@ -1,9 +1,9 @@
-import {Divider} from 'antd';
-import {css} from '@emotion/css';
-import {ReactNode} from 'react';
-import {ShaderHeader} from '@/components/ShaderHeader';
-import {HeaderContent} from './HeaderContent';
-import {ListItem} from './ListItem';
+import { Divider } from 'antd';
+import { css } from '@emotion/css';
+import { ReactNode } from 'react';
+import { ShaderHeader } from '@/components/ShaderHeader';
+import { HeaderContent } from './HeaderContent';
+import { ListItem } from './ListItem';
 
 const mainCss = css`
     max-width: 1000px;
@@ -35,7 +35,7 @@ interface TitleProps {
     children: ReactNode;
 }
 
-const Title = ({children}: TitleProps) => {
+const Title = ({ children }: TitleProps) => {
     return <div className={titleCss}>{children}</div>;
 };
 

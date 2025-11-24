@@ -1,8 +1,8 @@
-import {useState} from 'react';
-import {Sandpack} from '@codesandbox/sandpack-react';
-import {Streamdown} from 'streamdown';
-import {Modal} from 'antd';
-import {useShortKey} from 'use-short-key';
+import { useState } from 'react';
+import { Sandpack } from '@codesandbox/sandpack-react';
+import { Streamdown } from 'streamdown';
+import { Modal } from 'antd';
+import { useShortKey } from 'use-short-key';
 import App from './App?raw';
 import useCsv from './useCsv?raw';
 import Component from './Component?raw';

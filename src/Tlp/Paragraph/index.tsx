@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
-import {Segment} from './Segment';
-import {Footnote} from './Components';
-import {codeFamily, responsive} from '@/Tlp/styles';
+import { Segment } from './Segment';
+import { Footnote } from './Components';
+import { codeFamily, responsive } from '@/Tlp/styles';
 
 const Container = styled.div`
     display: flex;
@@ -42,7 +42,7 @@ interface Props {
     item: string;
 }
 
-export const Paragraph = ({item}: Props) => {
+export const Paragraph = ({ item }: Props) => {
     const [dataKey, content] = item.split('\t');
 
     const document = parser.parseFromString(`<container>${content}</container>`, 'application/xml');

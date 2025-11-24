@@ -1,6 +1,6 @@
 import 'shader-doodle';
-import {ReactNode, useLayoutEffect, useRef} from 'react';
-import {css} from '@emotion/css';
+import { ReactNode, useLayoutEffect, useRef } from 'react';
+import { css } from '@emotion/css';
 
 const headerCss = css`
     position: relative;
@@ -90,7 +90,7 @@ interface Props {
     children: ReactNode;
 }
 
-export const ShaderHeader = ({children}: Props) => {
+export const ShaderHeader = ({ children }: Props) => {
     const ref = useRef<HTMLDivElement>(null);
 
     useLayoutEffect(

@@ -1,6 +1,6 @@
-import {createRoot} from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import '@/styles';
-import {Skyline} from '@/Skyline/Skyline';
+import { Skyline } from '@/Skyline/Skyline';
 
 const root = createRoot(document.body);
 

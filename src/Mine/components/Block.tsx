@@ -1,22 +1,22 @@
 import cx from 'classnames';
 import styles from './Block.module.css';
 import theme from './Theme2.module.css';
-import {useBlock} from '../region';
-import {blockStyle as style} from '../constant';
-import {Coordinate} from '../types';
+import { useBlock } from '../region';
+import { blockStyle as style } from '../constant';
+import { Coordinate } from '../types';
 
 interface Props {
     coordinate: Coordinate;
 }
 
-const Block = ({coordinate}: Props) => {
+const Block = ({ coordinate }: Props) => {
     const block = useBlock(coordinate);
 
     if (!block) {
         return null;
     }
 
-    const {mine, reveal, mark, label} = block;
+    const { mine, reveal, mark, label } = block;
 
     if (!reveal) {
         const className = cx(

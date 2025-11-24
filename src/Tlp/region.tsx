@@ -1,4 +1,4 @@
-import {createRegion} from 'region-react';
+import { createRegion } from 'region-react';
 
 const nodesRegion = createRegion<NodeListOf<HTMLElement>>();
 

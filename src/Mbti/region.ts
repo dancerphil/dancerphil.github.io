@@ -1,8 +1,8 @@
-import {createRegion} from 'region-react';
+import { createRegion } from 'region-react';
 
 const personalityRegion = createRegion<string>(
     '',
-    {withLocalStorageKey: 'mbti/personality'},
+    { withLocalStorageKey: 'mbti/personality' },
 );
 
 export const usePersonality = personalityRegion.useValue;

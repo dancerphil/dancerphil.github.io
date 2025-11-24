@@ -1,11 +1,11 @@
-import {TruthTable} from './TruthTable';
+import { TruthTable } from './TruthTable';
 import styled from '@emotion/styled';
-import {CustomCube, CustomSight} from './CustomSvg';
-import {CustomDiagram1, CustomDiagram2, CustomDiagram3, CustomDiagram4, CustomDiagram5} from './CustomDiagram';
-import {Centered} from './Components';
-import {marginLeft} from '@panda-design/components';
-import {codeFamily, responsive} from '@/Tlp/styles';
-import {FlexContainer, CustomTruthTable} from '@/Tlp/Paragraph/CustomTruthTable';
+import { CustomCube, CustomSight } from './CustomSvg';
+import { CustomDiagram1, CustomDiagram2, CustomDiagram3, CustomDiagram4, CustomDiagram5 } from './CustomDiagram';
+import { Centered } from './Components';
+import { marginLeft } from '@panda-design/components';
+import { codeFamily, responsive } from '@/Tlp/styles';
+import { FlexContainer, CustomTruthTable } from '@/Tlp/Paragraph/CustomTruthTable';
 
 const ListContainer = styled.div`
     font-size: 13px;
@@ -55,7 +55,7 @@ interface Props {
     index?: string;
 }
 
-export const Custom = ({dataKey, index}: Props) => {
+export const Custom = ({ dataKey, index }: Props) => {
     if (dataKey === '4.31') {
         return <CustomTruthTable />;
     }

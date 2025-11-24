@@ -3,9 +3,9 @@
  * Component 提供对每一个数据项的显示和修改能力。
  * 对于不同的数据标注需求，你需要实现对应的 Component。
  */
-import {Dispatch, SetStateAction, useState} from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import Editor from 'react-simple-code-editor';
-import {highlight, languages} from 'prismjs';
+import { highlight, languages } from 'prismjs';
 import 'prismjs/components/prism-json';
 import 'prismjs/themes/prism.css';
 
@@ -23,10 +23,10 @@ interface Props {
     setData: Dispatch<SetStateAction<Data>>;
 }
 
-export const Component = ({data, setData}: Props) => {
+export const Component = ({ data, setData }: Props) => {
     const [code, setCode] = useState(JSON.stringify(data, null, 4));
     return (
-        <div style={{border: '1px solid aliceblue', padding: 20}}>
+        <div style={{ border: '1px solid aliceblue', padding: 20 }}>
             <Editor
                 value={code}
                 onValueChange={(code) => {

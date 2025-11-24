@@ -28,7 +28,7 @@
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.0",
     "ai": "^5.0.95",
-    "antd": "^5.29.1",
+    "antd": "^6.0.0",
     "axios": "^1.13.2",
     "axios-interface": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -50,7 +50,7 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
-    "@hero-u/eslint-config": "^0.2.0",
+    "@hero-u/eslint-config": "^0.3.1",
     "@types/katex": "^0.16.7",
     "@types/lodash": "^4.17.20",
     "@types/lodash-es": "^4.17.12",

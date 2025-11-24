@@ -1,6 +1,6 @@
-import {createRoot} from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import '@/styles';
-import {Annotate} from './Annotate';
+import { Annotate } from './Annotate';
 
 const root = createRoot(document.body);
 

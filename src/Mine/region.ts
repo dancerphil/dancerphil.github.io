@@ -1,7 +1,7 @@
-import {compact} from 'lodash-es';
-import {createMappedRegion} from 'region-react';
-import {Block, Coordinate} from './types';
-import {xyList} from './utils';
+import { compact } from 'lodash-es';
+import { createMappedRegion } from 'region-react';
+import { Block, Coordinate } from './types';
+import { xyList } from './utils';
 
 const blockRegion = createMappedRegion<Coordinate, Block>();
 
@@ -14,17 +14,17 @@ export const setBlock = blockRegion.set;
 export const getBlockList = (): Block[] => compact(xyList.map(getBlock));
 
 export const getSurroundingBlocks = (block: Block) => {
-    const {x, y} = block;
+    const { x, y } = block;
     const blockList = [
-        getBlock({x: x - 1, y: y - 1}), getBlock({x: x - 1, y: y}), getBlock({x: x - 1, y: y + 1}),
-        getBlock({x: x, y: y - 1}), getBlock({x: x, y: y + 1}),
-        getBlock({x: x + 1, y: y - 1}), getBlock({x: x + 1, y: y}), getBlock({x: x + 1, y: y + 1}),
+        getBlock({ x: x - 1, y: y - 1 }), getBlock({ x: x - 1, y: y }), getBlock({ x: x - 1, y: y + 1 }),
+        getBlock({ x: x, y: y - 1 }), getBlock({ x: x, y: y + 1 }),
+        getBlock({ x: x + 1, y: y - 1 }), getBlock({ x: x + 1, y: y }), getBlock({ x: x + 1, y: y + 1 }),
     ];
     return compact(blockList);
 };
 
 const initBlock = () => {
-    xyList.forEach(({x, y}) => {
+    xyList.forEach(({ x, y }) => {
         const block = {
             x,
             y,
@@ -33,7 +33,7 @@ const initBlock = () => {
             mark: false,
             label: 0,
         };
-        setBlock({x, y}, block);
+        setBlock({ x, y }, block);
     });
 };
 

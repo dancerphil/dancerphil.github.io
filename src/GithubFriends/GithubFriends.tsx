@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
-import {useCallback, useEffect, useState, ReactNode, KeyboardEvent} from 'react';
-import {createRegion} from 'region-react';
-import {start} from './region/task';
+import { useCallback, useEffect, useState, ReactNode, KeyboardEvent } from 'react';
+import { createRegion } from 'region-react';
+import { start } from './region/task';
 import {
     useOption,
     handleFollowerChange,
@@ -10,12 +10,12 @@ import {
     handleFriendFriendFriendFollowerChange,
     handleFriendFriendFriendChange,
 } from './region/option';
-import {useCurrentId} from './region/currentId';
-import {useNodesAndLinks} from './region/nodesAndLinks';
+import { useCurrentId } from './region/currentId';
+import { useNodesAndLinks } from './region/nodesAndLinks';
 import Graph from './echarts/Graph';
 import c from './App.module.css';
-import {useDescription} from './region/description';
-import {useExceptions} from './region/exception';
+import { useDescription } from './region/description';
+import { useExceptions } from './region/exception';
 
 const tokenRegion = createRegion<string>(undefined, {
     withLocalStorageKey: 'github-token',
@@ -74,7 +74,7 @@ interface LineProps {
     children: ReactNode;
 }
 
-const Line = ({className, children}: LineProps) => {
+const Line = ({ className, children }: LineProps) => {
     return <div className={className ? `${c.line} ${className}` : c.line}>{children}</div>;
 };
 

@@ -1,16 +1,16 @@
-import {useMemo} from 'react';
-import {Custom} from './Custom';
-import {Footnote, Katex, KaiTi, Emphasis, Centered} from './Components';
+import { useMemo } from 'react';
+import { Custom } from './Custom';
+import { Footnote, Katex, KaiTi, Emphasis, Centered } from './Components';
 
 interface SegmentProps {
     dataKey: string;
     node: HTMLElement;
 }
 
-export const Segment = ({dataKey, node}: SegmentProps) => {
+export const Segment = ({ dataKey, node }: SegmentProps) => {
     return useMemo(
         () => {
-            const {nodeName, textContent, childNodes} = node;
+            const { nodeName, textContent, childNodes } = node;
             switch (nodeName) {
                 case 'emphasis':
                     return <Emphasis>{textContent}</Emphasis>;

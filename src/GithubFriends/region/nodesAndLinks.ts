@@ -1,8 +1,8 @@
-import {useSyncExternalStore} from 'react';
-import {Link, Node} from '../types';
-import {getOption} from './option';
-import {getCurrentId} from './currentId';
-import {BFS} from '../dataStructures/BFS';
+import { useSyncExternalStore } from 'react';
+import { Link, Node } from '../types';
+import { getOption } from './option';
+import { getCurrentId } from './currentId';
+import { BFS } from '../dataStructures/BFS';
 
 type Listener = () => void;
 

@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
-import {useCallback, useEffect, MouseEvent} from 'react';
-import {ResizeLayout} from '@/components/ResizeLayout';
-import {content} from './content';
-import {Paragraph} from './Paragraph';
-import {activeTarget, setNodes, useActiveNodeKey} from './region';
-import {Header} from './Header';
-import {useShortKeys} from './useShortKeys';
-import {Stream} from './Stream';
-import {responsive} from '@/Tlp/styles';
+import { useCallback, useEffect, MouseEvent } from 'react';
+import { ResizeLayout } from '@/components/ResizeLayout';
+import { content } from './content';
+import { Paragraph } from './Paragraph';
+import { activeTarget, setNodes, useActiveNodeKey } from './region';
+import { Header } from './Header';
+import { useShortKeys } from './useShortKeys';
+import { Stream } from './Stream';
+import { responsive } from '@/Tlp/styles';
 
 const Container = styled.div`
     height: 100vh;
@@ -36,7 +36,7 @@ export const Tlp = () => {
                 const target = document.querySelector(`[data-key="${key}"]`);
                 if (target) {
                     activeTarget(target as HTMLElement);
-                    target.scrollIntoView({behavior: 'smooth', block: 'center'});
+                    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
             }
         },

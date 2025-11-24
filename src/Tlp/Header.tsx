@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import {fontSize} from '@panda-design/components';
+import { fontSize } from '@panda-design/components';
 
 const Container = styled.div`
     position: relative;

@@ -1,5 +1,5 @@
-import GraphVertex, {GraphEdge} from './GraphVertex';
-import {Info} from '../types';
+import GraphVertex, { GraphEdge } from './GraphVertex';
+import { Info } from '../types';
 
 type Vertices = Record<string, GraphVertex>;
 

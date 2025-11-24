@@ -3,8 +3,8 @@
  * useCsv 提供了上传 csv 文件并解析为数据集的功能。
  * 如果你需要支持其他的文件格式，可以在此基础上进行扩展。
  */
-import {ChangeEvent, useCallback, useEffect, useState} from 'react';
-import {parse} from 'papaparse';
+import { ChangeEvent, useCallback, useEffect, useState } from 'react';
+import { parse } from 'papaparse';
 
 type AsyncFunction = (...args: any[]) => Promise<any>;
 
@@ -44,7 +44,7 @@ const parseCSV = async (csvText: string): Promise<AbstractData[]> => {
             dynamicTyping: true,
             skipEmptyLines: true,
             complete: (results) => {
-                const dataset: AbstractData[] = results.data.map((item: any, _index) => ({_index, ...item}));
+                const dataset: AbstractData[] = results.data.map((item: any, _index) => ({ _index, ...item }));
                 resolve(dataset);
             },
             error: (error: any) => {

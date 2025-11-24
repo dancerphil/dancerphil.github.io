@@ -1,11 +1,11 @@
-import {useRef} from 'react';
-import {getBlockList} from '../region';
-import {useRender} from '../renderer';
+import { useRef } from 'react';
+import { getBlockList } from '../region';
+import { useRender } from '../renderer';
 import Block from './Block';
 import c from './Mine.module.css';
-import {handleReset} from '../handlers';
-import {panelStyle} from '../constant';
-import {xyList} from '../utils';
+import { handleReset } from '../handlers';
+import { panelStyle } from '../constant';
+import { xyList } from '../utils';
 import useEventListener from './useEventListener';
 import CastRange from './CastRange';
 
