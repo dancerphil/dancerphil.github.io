@@ -20,6 +20,7 @@
   "dependencies": {
     "@ai-sdk/deepseek": "^1.0.28",
     "@codesandbox/sandpack-react": "^2.20.0",
+    "@ctrl/tinycolor": "^4.2.0",
     "@emotion/css": "^11.13.5",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",

@@ -96,6 +96,16 @@ export const Home = () => {
                     description="async await 代码风格指南"
                 />
                 <ListItem
+                    href="./cash-flow"
+                    title="现金流计算器"
+                    description="计算一笔现金流资产值多少钱"
+                />
+                <ListItem
+                    href="./color"
+                    title="颜色计算器"
+                    description="计算一个颜色在透明模式下的色值"
+                />
+                <ListItem
                     href="./coder"
                     title="coder"
                     description="基于 localStorage 的在线的编辑器（代码很老）"

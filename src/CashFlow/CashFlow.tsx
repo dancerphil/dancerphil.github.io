@@ -1,6 +1,14 @@
 import { useState } from 'react';
 import { InputNumber, Select } from 'antd';
-import c from './CashFlow.module.css';
+import { css } from '@emotion/css';
+import { width } from '@panda-design/components';
+
+const containerCss = css`
+    display: flex;
+    flex-flow: wrap;
+    font-size: 24px;
+    gap: 20px 8px;
+`;
 
 interface Params {
     ratePercentage: number;
@@ -40,9 +48,10 @@ export const CashFlow = () => {
     const [termValue, setTermValue] = useState(1);
 
     return (
-        <div className={c.container}>
+        <div className={containerCss}>
             有一笔现金流，从1期后开始，每
             <Select
+                className={width(80)}
                 value={gap}
                 onChange={setGap}
                 options={[{ value: 'year', label: '年' }, { value: 'month', label: '月' }, { value: 'day', label: '天' }]}
@@ -58,6 +67,7 @@ export const CashFlow = () => {
             />
             元，持续
             <InputNumber
+                className={width(60)}
                 value={term}
                 onChange={(v) => {
                     if (v) {
@@ -67,14 +77,16 @@ export const CashFlow = () => {
             />
             期，按贴现率
             <InputNumber
+                className={width(80)}
                 value={ratePercentage}
+                suffix="%"
                 onChange={(v) => {
                     if (v) {
                         setRatePercentage(v);
                     }
                 }}
             />
-            %计算，这笔现金流当前价值为
+            计算，这笔现金流当前价值为
             <InputNumber value={computeValue({ ratePercentage, gap, term, termValue })} />
             元
         </div>

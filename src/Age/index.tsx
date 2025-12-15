@@ -1,6 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import '@/styles';
-import { Age } from '@/Age/Age';
+import '@/styles/verticalCentered';
+import '@/styles/dark';
+import { Age } from './Age';
 
 const root = createRoot(document.body);
 

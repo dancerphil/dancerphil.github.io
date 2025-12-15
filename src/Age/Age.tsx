@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { createRegion } from 'region-react';
-import { css, injectGlobal } from '@emotion/css';
+import { css } from '@emotion/css';
 import { DatePicker } from '@/components/DatePicker';
 import { width } from '@panda-design/components';
 
@@ -8,22 +8,9 @@ const birthRegion = createRegion<number>(undefined, {
     withLocalStorageKey: 'birth',
 });
 
-injectGlobal`
-    body {
-        width: 100vw;
-        height: 100vh;
-        background: #333;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-`;
-
 const containerCss = css`
     font-family: 'Monaco', monospace;
     font-size: 120px;
-    color: rgb(255, 255, 255);
 `;
 
 export const useLoopRerender = () => {
