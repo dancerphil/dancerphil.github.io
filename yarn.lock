@@ -964,6 +964,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hero-u/ant-design@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "@hero-u/ant-design@npm:0.0.1"
+  peerDependencies:
+    antd: ">=6.0.0"
+    react: ">=19"
+  checksum: 10c0/3d9be43316267177a2ded89ead97054d36b2dff7a512c39fcad0077adf50e0a472adcefc7d7fc9019c2a4beee1eecfd4cab54c9b5ab5652dc2a504aa90a6ed1a
+  languageName: node
+  linkType: hard
+
 "@hero-u/eslint-config@npm:^0.3.2":
   version: 0.3.2
   resolution: "@hero-u/eslint-config@npm:0.3.2"
@@ -3642,6 +3652,7 @@ __metadata:
     "@emotion/css": "npm:^11.13.5"
     "@emotion/react": "npm:^11.14.0"
     "@emotion/styled": "npm:^11.14.1"
+    "@hero-u/ant-design": "npm:^0.0.1"
     "@hero-u/eslint-config": "npm:^0.3.2"
     "@octokit/rest": "npm:^22.0.1"
     "@panda-design/components": "npm:^0.5.7"

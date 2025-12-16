@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import '@/styles';
-import '@/styles/verticalCentered';
+import '@/styles/simplePage';
 import { CashFlow } from './CashFlow';
 
 const root = createRoot(document.body);

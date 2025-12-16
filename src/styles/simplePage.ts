@@ -9,4 +9,8 @@ injectGlobal`
         width: 80vw;
         margin: 0 auto;
     }
+    
+    h1 {
+        margin-block-start: 2em;
+    }
 `;

@@ -9,6 +9,9 @@ const birthRegion = createRegion<number>(undefined, {
 });
 
 const containerCss = css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Monaco', monospace;
     font-size: 120px;
 `;
