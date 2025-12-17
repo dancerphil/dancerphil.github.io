@@ -78,9 +78,9 @@ export const Custom = ({ dataKey, index }: Props) => {
         return (
             <FlexCentered>
                 <AlignRight>
-                    0 ＋ 1 ＝ 1 <span className="margin-left-20">Def.</span><br />
-                    0 ＋ 1 ＋ 1 ＝ 2 <span className="margin-left-20">Def.</span><br />
-                    0 ＋ 1 ＋ 1 ＋ 1 ＝ 3 <span className="margin-left-20">Def.</span>
+                    0 ＋ 1 ＝ 1 <span className="ml-20">Def.</span><br />
+                    0 ＋ 1 ＋ 1 ＝ 2 <span className="ml-20">Def.</span><br />
+                    0 ＋ 1 ＋ 1 ＋ 1 ＝ 3 <span className="ml-20">Def.</span>
                 </AlignRight>
             </FlexCentered>
         );

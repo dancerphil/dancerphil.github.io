@@ -50,7 +50,7 @@ export const CashFlow = () => {
         <div className={containerCss}>
             有一笔现金流，从1期后开始，每
             <Select
-                className="width-80"
+                className="w-80"
                 value={gap}
                 onChange={setGap}
                 options={[{ value: 'year', label: '年' }, { value: 'month', label: '月' }, { value: 'day', label: '天' }]}
@@ -66,7 +66,7 @@ export const CashFlow = () => {
             />
             元，持续
             <InputNumber
-                className="width-60"
+                className="w-60"
                 value={term}
                 onChange={(v) => {
                     if (v) {
@@ -76,7 +76,7 @@ export const CashFlow = () => {
             />
             期，按贴现率
             <InputNumber
-                className="width-80"
+                className="w-80"
                 value={ratePercentage}
                 suffix="%"
                 onChange={(v) => {

@@ -47,7 +47,7 @@ export const Age = () => {
         return (
             <DatePicker
                 showTime
-                className="width-457"
+                className="w-457"
                 onChange={(date) => {
                     if (date) {
                         birthRegion.set(date.getTime());

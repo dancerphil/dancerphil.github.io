@@ -3046,6 +3046,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@unocss/preset-rem-to-px@npm:^66.5.10":
+  version: 66.5.10
+  resolution: "@unocss/preset-rem-to-px@npm:66.5.10"
+  dependencies:
+    "@unocss/core": "npm:66.5.10"
+  checksum: 10c0/064baa9deffb9da92644f0d67508cadc0e24031f512357934ab29414781d595359ab4cb98635a9eb07cfc92a6a59eeb5199f32efa4d440a8cfde1e1f006d330f
+  languageName: node
+  linkType: hard
+
 "@unocss/preset-tagify@npm:66.5.10":
   version: 66.5.10
   resolution: "@unocss/preset-tagify@npm:66.5.10"
@@ -4072,6 +4081,7 @@ __metadata:
     "@types/react": "npm:^19.2.6"
     "@types/react-dom": "npm:^19.2.3"
     "@types/three": "npm:^0.181.0"
+    "@unocss/preset-rem-to-px": "npm:^66.5.10"
     "@vitejs/plugin-react": "npm:^5.1.1"
     ai: "npm:^5.0.95"
     antd: "npm:^6.0.0"

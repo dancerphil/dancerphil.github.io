@@ -1,23 +1,15 @@
-import { defineConfig, Rule } from 'unocss';
-
-const generateRule = (name: string): Rule => {
-    return [
-        new RegExp(`^${name}-([.\\d]+)$`),
-        ([_, num]) => ({ [name]: `${num}px` }),
-    ];
-};
+import { defineConfig, presetMini } from 'unocss';
+import presetRemToPx from '@unocss/preset-rem-to-px';
 
 export default defineConfig({
-    rules: [
-        generateRule('margin'),
-        generateRule('margin-left'),
-        generateRule('margin-right'),
-        generateRule('margin-top'),
-        generateRule('margin-bottom'),
-        generateRule('padding'),
-        generateRule('width'),
-        generateRule('height'),
-        generateRule('font-size'),
-        [/^size-([.\d]+)$/, ([_, num]) => ({ width: `${num}px`, height: `${num}px` })],
+    theme: {
+        preflightRoot: ':root',
+    },
+    presets: [
+        presetRemToPx({ baseFontSize: 4 }),
+        presetMini({
+            variablePrefix: '',
+            preflight: 'on-demand',
+        }),
     ],
 });

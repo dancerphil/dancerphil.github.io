@@ -63,6 +63,7 @@
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
     "@types/three": "^0.181.0",
+    "@unocss/preset-rem-to-px": "^66.5.10",
     "@vitejs/plugin-react": "^5.1.1",
     "eslint": "^9.39.1",
     "gh-pages": "^6.3.0",
