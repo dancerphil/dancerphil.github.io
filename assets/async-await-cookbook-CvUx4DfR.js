@@ -1,4 +1,4 @@
-import{h as e,n as t}from"./emotion-react-jsx-runtime.browser.esm-DaEj45wX.js";import"./styles-eEdi3ivS.js";import"./simplePage-BaGBdH4X.js";import{t as n}from"./Markdown-BkfzFJ3U.js";(0,e().createRoot)(document.body).render(t(n,{children:`# async await 代码风格指南
+import{h as e,n as t}from"./emotion-react-jsx-runtime.browser.esm-DaEj45wX.js";import"./styles-nbVye3to.js";import"./simplePage-DazrkH8w.js";import{t as n}from"./Markdown-BkfzFJ3U.js";(0,e().createRoot)(document.body).render(t(n,{children:`# async await 代码风格指南
 
 _如何用最合理的方式书写 async await 代码_
 
