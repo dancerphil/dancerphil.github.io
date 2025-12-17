@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { size } from '@panda-design/components';
 
 const Label = styled.text`
     font-size: 12px;
@@ -28,7 +27,7 @@ const back = {
 
 export const CustomCube = () => {
     return (
-        <svg className={size(200)} viewBox="0 0 200 150">
+        <svg className="size-200" viewBox="0 0 200 150">
             {/* 前面的边 */}
             <Edge x1={front.a1[0]} y1={front.a1[1]} x2={front.a2[0]} y2={front.a2[1]} />
             <Edge x1={front.a2[0]} y1={front.a2[1]} x2={front.a3[0]} y2={front.a3[1]} />

@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { createRegion } from 'region-react';
 import { css } from '@emotion/css';
 import { DatePicker } from '@/components/DatePicker';
-import { width } from '@panda-design/components';
 
 const birthRegion = createRegion<number>(undefined, {
     withLocalStorageKey: 'birth',
@@ -48,7 +47,7 @@ export const Age = () => {
         return (
             <DatePicker
                 showTime
-                className={width(457)}
+                className="width-457"
                 onChange={(date) => {
                     if (date) {
                         birthRegion.set(date.getTime());

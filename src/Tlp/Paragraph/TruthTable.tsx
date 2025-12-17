@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { marginTop, marginLeft } from '@panda-design/components';
 import { css, cx } from '@emotion/css';
 
 const Grid = styled.div`
@@ -14,8 +13,6 @@ const Cell = styled.div`
     width: 50px;
 `;
 
-const mt = marginTop(2);
-const ml = marginLeft(2);
 const bt = css`
     border-top-width: 1px !important;
 `;
@@ -49,8 +46,8 @@ export const TruthTable = ({ rowSeparate = 1, col, colSeparate = -1, values }: P
                     <Cell
                         key={index}
                         className={cx(
-                            rowIndex === rowSeparate ? cx(mt, bt) : '',
-                            colIndex === colSeparate ? cx(ml, bl) : '',
+                            rowIndex === rowSeparate ? cx('margin-top-2', bt) : '',
+                            colIndex === colSeparate ? cx('margin-left-2', bl) : '',
                             colIndex === col - 1 ? '' : br,
                             bb,
                         )}

@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import { CustomCube, CustomSight } from './CustomSvg';
 import { CustomDiagram1, CustomDiagram2, CustomDiagram3, CustomDiagram4, CustomDiagram5 } from './CustomDiagram';
 import { Centered } from './Components';
-import { marginLeft } from '@panda-design/components';
 import { codeFamily, responsive } from '@/Tlp/styles';
 import { FlexContainer, CustomTruthTable } from '@/Tlp/Paragraph/CustomTruthTable';
 
@@ -79,9 +78,9 @@ export const Custom = ({ dataKey, index }: Props) => {
         return (
             <FlexCentered>
                 <AlignRight>
-                    0 ＋ 1 ＝ 1 <span className={marginLeft(20)}>Def.</span><br />
-                    0 ＋ 1 ＋ 1 ＝ 2 <span className={marginLeft(20)}>Def.</span><br />
-                    0 ＋ 1 ＋ 1 ＋ 1 ＝ 3 <span className={marginLeft(20)}>Def.</span>
+                    0 ＋ 1 ＝ 1 <span className="margin-left-20">Def.</span><br />
+                    0 ＋ 1 ＋ 1 ＝ 2 <span className="margin-left-20">Def.</span><br />
+                    0 ＋ 1 ＋ 1 ＋ 1 ＝ 3 <span className="margin-left-20">Def.</span>
                 </AlignRight>
             </FlexCentered>
         );

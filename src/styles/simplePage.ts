@@ -7,7 +7,7 @@ injectGlobal`
         justify-content: center;
         min-height: 100vh;
         width: 80vw;
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
     
     h1 {

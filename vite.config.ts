@@ -1,6 +1,7 @@
-import {defineConfig} from 'vite';
-import {resolve, extname} from 'path';
-import {readdirSync} from 'fs';
+import { defineConfig } from 'vite';
+import { resolve, extname } from 'path';
+import { readdirSync } from 'fs';
+import uno from 'unocss/vite';
 // @ts-expect-error
 import react from '@vitejs/plugin-react';
 
@@ -39,6 +40,7 @@ export default defineConfig(() => {
                     ],
                 },
             }),
+            uno(),
         ],
         resolve: {
             alias: {

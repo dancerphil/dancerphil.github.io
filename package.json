@@ -26,7 +26,6 @@
     "@emotion/styled": "^11.14.1",
     "@hero-u/ant-design": "^0.0.1",
     "@octokit/rest": "^22.0.1",
-    "@panda-design/components": "^0.5.7",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.0",
     "ai": "^5.0.95",
@@ -71,6 +70,7 @@
     "husky": "^9.1.7",
     "knip": "^5.70.0",
     "typescript": "^5.9.3",
+    "unocss": "^66.5.10",
     "vite": "npm:rolldown-vite@^7.2.5"
   },
   "repository": {
