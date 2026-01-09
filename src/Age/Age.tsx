@@ -41,13 +41,18 @@ const View = () => {
     );
 };
 
+const datePickerCss = css`
+    width: 457px;
+    margin: 0 auto;
+`;
+
 export const Age = () => {
     const birth = birthRegion.useValue();
     if (!birth) {
         return (
             <DatePicker
                 showTime
-                className="w-457"
+                className={datePickerCss}
                 onChange={(date) => {
                     if (date) {
                         birthRegion.set(date.getTime());

@@ -106,6 +106,11 @@ export const Home = () => {
                     description="计算一个颜色在透明模式下的色值"
                 />
                 <ListItem
+                    href="./compact"
+                    title="compact"
+                    description="移除样式、保留结构和值的 HTML 清理器"
+                />
+                <ListItem
                     href="./coder"
                     title="coder"
                     description="基于 localStorage 的在线的编辑器（代码很老）"
