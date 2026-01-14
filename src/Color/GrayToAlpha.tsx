@@ -1,7 +1,6 @@
-import { ColorPicker } from 'antd';
+import { ColorPicker, ColorSwatch, Popover, TextInput, UnstyledButton } from '@mantine/core';
 import { css } from '@emotion/css';
 import { TinyColor } from '@ctrl/tinycolor';
-import cx from 'classnames';
 import { useState } from 'react';
 import { calculateAlpha } from './calculate';
 
@@ -15,16 +14,6 @@ const gridItemCss = css`
     display: flex;
     align-items: center;
     gap: 8px;
-`;
-
-const blackCss = css`
-    .ant-color-picker-trigger {
-        background: black;
-        
-        .ant-color-picker-color-block {
-            background-image: conic-gradient(rgba(255, 255, 255, 0.06) 25%, transparent 25% 50%, rgba(255, 255, 255, 0.06) 50% 75%, transparent 75% 100%)
-        }
-    }
 `;
 
 /** 灰色 Hex 转透明色 */
@@ -79,28 +68,58 @@ interface RowProps {
 
 export const Row = ({ value }: RowProps) => {
     const [hex, setHex] = useState(value);
+    const [colorPickerValue, setColorPickerValue] = useState(value);
     const { grayValue, rgbaOnWhite, rgbaOnBlack } = toColor(hex);
+
+    const handleColorChange = (color: string) => {
+        setColorPickerValue(color);
+        const r = color.slice(1, 3);
+        setHex(`#${r}${r}${r}`);
+    };
+
     return (
         <>
             <div className={gridItemCss}>
-                <ColorPicker
-                    value={hex}
-                    onChange={(value) => {
-                        const r = value.toHexString().slice(1, 3);
-                        setHex(`#${r}${r}${r}`);
-                    }}
-                />
+                <Popover radius="md" position="bottom" shadow="md">
+                    <Popover.Target>
+                        <UnstyledButton>
+                            <ColorSwatch color={hex} size={32} radius="sm" />
+                        </UnstyledButton>
+                    </Popover.Target>
+                    <Popover.Dropdown p={8}>
+                        <ColorPicker
+                            value={colorPickerValue}
+                            onChange={handleColorChange}
+                            format="hex"
+                        />
+                        <TextInput
+                            value={colorPickerValue}
+                            onChange={e => handleColorChange(e.currentTarget.value)}
+                            placeholder="Enter color"
+                            size="xs"
+                            mt="xs"
+                        />
+                    </Popover.Dropdown>
+                </Popover>
                 {hex}
             </div>
             <div className={gridItemCss}>
                 {grayValue}
             </div>
             <div className={gridItemCss}>
-                <ColorPicker value={rgbaOnWhite} />
+                <ColorSwatch color={rgbaOnWhite} size={32} radius="sm" />
                 {rgbaOnWhite}
             </div>
-            <div className={cx(gridItemCss, blackCss)}>
-                <ColorPicker value={rgbaOnBlack} />
+            <div className={gridItemCss}>
+                <ColorSwatch
+                    color={rgbaOnBlack}
+                    size={32}
+                    radius="sm"
+                    style={{
+                        '--alpha-overlay-color': 'var(--mantine-color-gray-9)',
+                        '--alpha-overlay-bg': 'var(--mantine-color-black)',
+                    } as React.CSSProperties}
+                />
                 {rgbaOnBlack}
             </div>
         </>

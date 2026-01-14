@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     background-color: #ccc;
+    user-select: none;
 }
 
 .panel {

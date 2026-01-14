@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createRegion } from 'region-react';
 import { css } from '@emotion/css';
-import { DatePicker } from '@/components/DatePicker';
+import { DateTimePicker } from '@mantine/dates';
 
 const birthRegion = createRegion<number>(undefined, {
     withLocalStorageKey: 'birth',
@@ -48,17 +48,22 @@ const datePickerCss = css`
 
 export const Age = () => {
     const birth = birthRegion.useValue();
+    const [date, setDate] = useState<string>();
+
     if (!birth) {
         return (
-            <DatePicker
-                showTime
+            <DateTimePicker
                 className={datePickerCss}
-                onChange={(date) => {
-                    if (date) {
-                        birthRegion.set(date.getTime());
-                    }
-                }}
+                value={date}
+                onChange={setDate}
                 placeholder="请选择出生日期"
+                submitButtonProps={{
+                    onClick: () => {
+                        if (date) {
+                            birthRegion.set(new Date(date).getTime());
+                        }
+                    },
+                }}
             />
         );
     }

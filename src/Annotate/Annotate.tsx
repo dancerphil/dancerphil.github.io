@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Sandpack } from '@codesandbox/sandpack-react';
 import { Markdown } from '@/components/Markdown';
-import { Modal } from 'antd';
+import { Modal } from '@mantine/core';
 import { useShortKey } from 'use-short-key';
 import App from './App?raw';
 import useCsv from './useCsv?raw';
@@ -41,8 +41,8 @@ export const Annotate = () => {
                 }}
             />
             <Modal
-                open={open}
-                onCancel={() => setOpen(false)}
+                opened={open}
+                onClose={() => setOpen(false)}
             >
                 <Markdown>{md}</Markdown>
             </Modal>

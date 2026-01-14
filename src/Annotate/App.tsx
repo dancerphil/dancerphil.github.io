@@ -5,7 +5,7 @@
  * 另外，你可以为沙盒添加 npm 依赖，按下 Command + K 打开命令面板进行配置（待开发）
  */
 import { Dispatch, SetStateAction, useCallback, useRef } from 'react';
-import { Button } from 'antd';
+import { Button } from '@mantine/core';
 import { useCsv } from './useCsv';
 import { Component } from './Component';
 
@@ -46,7 +46,6 @@ const App = () => {
         <div style={{ padding: 20 }}>
             <label>
                 <Button
-                    type="primary"
                     loading={loading}
                     onClick={handleButtonClick}
                 >

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { css } from '@emotion/css';
 import { useCallback, useEffect, MouseEvent } from 'react';
 import { ResizeLayout } from '@/components/ResizeLayout';
 import { content } from './content';
@@ -9,12 +9,12 @@ import { useShortKeys } from './useShortKeys';
 import { Stream } from './Stream';
 import { responsive } from '@/Tlp/styles';
 
-const Container = styled.div`
+const containerCss = css`
     height: 100vh;
     overflow-y: auto;
 `;
 
-const Content = styled.div`
+const contentCss = css`
     position: relative;
     padding: 40px 20px;
     font-size: ${responsive.fontSize};
@@ -58,14 +58,14 @@ export const Tlp = () => {
     return (
         <ResizeLayout
             left={(
-                <Container>
+                <div className={containerCss}>
                     <Header />
-                    <Content onClick={handleClick}>
+                    <div className={contentCss} onClick={handleClick}>
                         {content.map((item, index) => {
                             return <Paragraph key={index} item={item} />;
                         })}
-                    </Content>
-                </Container>
+                    </div>
+                </div>
             )}
             right={activeNodeKey && <Stream />}
             rightProps={{

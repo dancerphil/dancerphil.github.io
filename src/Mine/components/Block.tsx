@@ -1,4 +1,4 @@
-import cx from 'classnames';
+import { cx } from '@emotion/css';
 import styles from './Block.module.css';
 import theme from './Theme2.module.css';
 import { useBlock } from '../region';

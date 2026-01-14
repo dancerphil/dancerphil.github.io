@@ -1,9 +1,9 @@
-import styled from '@emotion/styled';
+import { css } from '@emotion/css';
 import { Segment } from './Segment';
 import { Footnote } from './Components';
 import { codeFamily, responsive } from '@/Tlp/styles';
 
-const Container = styled.div`
+const containerCss = css`
     display: flex;
     padding: 8px 15px;
     border: 1px solid transparent;
@@ -28,7 +28,7 @@ const Container = styled.div`
     }
 `;
 
-const Key = styled.div`
+const keyCss = css`
     width: ${responsive.keyWidth};
     font-family: ${codeFamily};
     flex-shrink: 0;
@@ -48,15 +48,15 @@ export const Paragraph = ({ item }: Props) => {
     const document = parser.parseFromString(`<container>${content}</container>`, 'application/xml');
 
     return (
-        <Container data-key={dataKey ?? '0'}>
-            <Key>
+        <div className={containerCss} data-key={dataKey ?? '0'}>
+            <div className={keyCss}>
                 {dataKey}
                 {dataKey === '1' && tip}
-            </Key>
+            </div>
             <div>{[...document.documentElement.childNodes].map((node, index) => (
                 <Segment key={index} node={node as HTMLElement} dataKey={dataKey} />
             ))}
             </div>
-        </Container>
+        </div>
     );
 };

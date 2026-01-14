@@ -1,26 +1,38 @@
 import { TruthTable } from './TruthTable';
-import styled from '@emotion/styled';
+import { css } from '@emotion/css';
 import { CustomCube, CustomSight } from './CustomSvg';
 import { CustomDiagram1, CustomDiagram2, CustomDiagram3, CustomDiagram4, CustomDiagram5 } from './CustomDiagram';
 import { Centered } from './Components';
 import { codeFamily, responsive } from '@/Tlp/styles';
 import { FlexContainer, CustomTruthTable } from '@/Tlp/Paragraph/CustomTruthTable';
 
-const ListContainer = styled.div`
+const listContainerCss = css`
     font-size: 13px;
     font-family: ${codeFamily};
     padding: ${responsive.contentPadding};
 `;
 
-const FlexCentered = styled.div`
+const ListContainer = ({ children }: { children: React.ReactNode }) => (
+    <div className={listContainerCss}>{children}</div>
+);
+
+const flexCenteredCss = css`
     width: ${responsive.contentWidth};
     display: flex;
     justify-content: center;
 `;
 
-const AlignRight = styled.div`
+const FlexCentered = ({ children }: { children: React.ReactNode }) => (
+    <div className={flexCenteredCss}>{children}</div>
+);
+
+const alignRightCss = css`
     text-align: right;
 `;
+
+const AlignRight = ({ children }: { children: React.ReactNode }) => (
+    <div className={alignRightCss}>{children}</div>
+);
 
 const values4442 = [
     'p', 'q', '',

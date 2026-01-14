@@ -1,28 +1,31 @@
 import { PanelGroup, Panel, PanelResizeHandle, PanelProps } from 'react-resizable-panels';
 import { css } from '@emotion/css';
 import { ReactNode } from 'react';
-import { token } from '@/constants/token';
+import { useMantineTheme } from '@mantine/core';
 
-const handleCss = css`
-    position: relative;
-    width: 1px;
-
-    .devops-resize-handle-line {
-        position: absolute;
+const useHandleCss = () => {
+    const theme = useMantineTheme();
+    return css`
+        position: relative;
         width: 1px;
-        height: 100%;
-        background-color: ${token.colorBorder};
-    }
 
-    &[data-resize-handle-state="hover"],
-    &[data-resize-handle-state="drag"] {
         .devops-resize-handle-line {
-            width: 3px;
-            left: -1px;
-            background-color: ${token.colorPrimaryBgHover};
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: ${theme.colors.gray[3]};
         }
-    }
-`;
+
+        &[data-resize-handle-state="hover"],
+        &[data-resize-handle-state="drag"] {
+            .devops-resize-handle-line {
+                width: 3px;
+                left: -1px;
+                background-color: ${theme.colors.blue[5]};
+            }
+        }
+    `;
+};
 
 interface Props {
     autoSaveId?: string;
@@ -43,6 +46,7 @@ export const ResizeLayout = ({
     centerProps,
     rightProps,
 }: Props) => {
+    const handleCss = useHandleCss();
     return (
         <PanelGroup direction="horizontal" autoSaveId={autoSaveId}>
             {left && <Panel order={1} {...leftProps}>{left}</Panel>}

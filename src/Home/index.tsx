@@ -1,7 +1,13 @@
 import { createRoot } from 'react-dom/client';
+import { MantineProvider } from '@mantine/core';
+import '@mantine/core/styles.css';
 import '@/styles';
 import { Home } from '@/Home/Home';
 
 const root = createRoot(document.body);
 
-root.render(<Home />);
+root.render(
+    <MantineProvider>
+        <Home />
+    </MantineProvider>,
+);

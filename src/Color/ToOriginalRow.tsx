@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import { ColorPicker } from 'antd';
+import { ColorPicker, ColorSwatch, Popover, TextInput, Tooltip, UnstyledButton } from '@mantine/core';
 import { css } from '@emotion/css';
-import { withTooltip } from '@hero-u/ant-design';
-import { QuestionCircleOutlined } from '@ant-design/icons';
 import { calculateOriginal } from './calculate';
 
 const iconCss = css`
@@ -11,9 +9,10 @@ const iconCss = css`
     cursor: pointer;
 `;
 
-const HelpIcon = withTooltip(
-    QuestionCircleOutlined,
-    { className: iconCss },
+const HelpIcon = ({ tooltip }: { tooltip: string }) => (
+    <Tooltip label={tooltip}>
+        <span className={iconCss}>ⓘ</span>
+    </Tooltip>
 );
 
 const gridItemCss = css`
@@ -45,28 +44,50 @@ interface RowProps {
 
 export const ToOriginalRow = ({ displayColor, alpha, backgroundColor }: RowProps) => {
     const [color, setColor] = useState(displayColor);
+    const [colorPickerValue, setColorPickerValue] = useState(displayColor);
     const { original, valid } = calculateOriginal({ displayColor: color, alpha, backgroundColor });
     const originalColor = original.toHexString();
     const originalRgba = original.setAlpha(alpha).toHex8String(false);
     const help = !valid && <HelpIcon tooltip="该原始颜色不存在，取值最接近的颜色" />;
+
+    const handleColorChange = (value: string) => {
+        setColorPickerValue(value);
+        setColor(value);
+    };
+
     return (
         <>
             <div className={gridItemCss}>
-                <ColorPicker
-                    value={color}
-                    onChange={(value) => {
-                        setColor(value.toHexString());
-                    }}
-                />
+                <Popover radius="md" position="bottom" shadow="md">
+                    <Popover.Target>
+                        <UnstyledButton>
+                            <ColorSwatch color={color} size={32} radius="sm" />
+                        </UnstyledButton>
+                    </Popover.Target>
+                    <Popover.Dropdown p={8}>
+                        <ColorPicker
+                            value={colorPickerValue}
+                            onChange={handleColorChange}
+                            format="hex"
+                        />
+                        <TextInput
+                            value={colorPickerValue}
+                            onChange={e => handleColorChange(e.currentTarget.value)}
+                            placeholder="Enter color"
+                            size="xs"
+                            mt="xs"
+                        />
+                    </Popover.Dropdown>
+                </Popover>
                 {color}
             </div>
             <div className={gridItemCss}>
-                <ColorPicker value={originalColor} />
+                <ColorSwatch color={originalColor} size={32} radius="sm" />
                 {originalColor}
                 {help}
             </div>
             <div className={gridItemCss}>
-                <ColorPicker value={originalRgba} />
+                <ColorSwatch color={originalRgba} size={32} radius="sm" />
                 {originalRgba}
                 {help}
             </div>

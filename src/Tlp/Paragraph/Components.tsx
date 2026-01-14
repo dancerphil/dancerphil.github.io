@@ -1,10 +1,8 @@
 import { useEffect, useRef } from 'react';
-import { Tooltip } from 'antd';
+import { Tooltip } from '@mantine/core';
 import { render } from 'katex';
 import 'katex/dist/katex.css';
-import { QuestionCircleOutlined } from '@ant-design/icons';
 import { css } from '@emotion/css';
-import styled from '@emotion/styled';
 import { responsive } from '@/Tlp/styles';
 
 const dot = css`
@@ -44,8 +42,8 @@ const iconCss = css`
 
 export const Footnote = ({ children }: ChildrenProps) => {
     return (
-        <Tooltip title={children}>
-            <sup><QuestionCircleOutlined className={iconCss} /></sup>
+        <Tooltip label={children}>
+            <sup className={iconCss}>ⓘ</sup>
         </Tooltip>
     );
 };
@@ -70,12 +68,20 @@ export const Katex = ({ children }: ChildrenProps) => {
     return <span ref={ref} />;
 };
 
-export const KaiTi = styled.span`
+const kaiTiCss = css`
     font-family: 'KaiTi', '楷体', 'STKaiti', '华文楷体', 'SimKai', serif;
     font-size: 17px;
 `;
 
-export const Centered = styled.div`
+export const KaiTi = ({ children }: { children: React.ReactNode }) => (
+    <span className={kaiTiCss}>{children}</span>
+);
+
+const centeredCss = css`
     text-align: center;
     width: ${responsive.contentWidth};
 `;
+
+export const Centered = ({ children }: { children: React.ReactNode }) => (
+    <div className={centeredCss}>{children}</div>
+);

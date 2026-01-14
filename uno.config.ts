@@ -1,15 +1,10 @@
-import { defineConfig, presetMini } from 'unocss';
-import presetRemToPx from '@unocss/preset-rem-to-px';
+import { defineConfig, presetWind4 } from 'unocss';
 
 export default defineConfig({
-    theme: {
-        preflightRoot: ':root',
-    },
     presets: [
-        presetRemToPx({ baseFontSize: 4 }),
-        presetMini({
-            variablePrefix: '',
-            preflight: 'on-demand',
-        }),
+        presetWind4(),
     ],
+    shortcuts: {
+        ellipsis: 'truncate',
+    },
 });

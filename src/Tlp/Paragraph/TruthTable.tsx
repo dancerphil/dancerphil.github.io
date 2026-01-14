@@ -1,11 +1,10 @@
-import styled from '@emotion/styled';
 import { css, cx } from '@emotion/css';
 
-const Grid = styled.div`
+const gridCss = css`
     display: grid;
 `;
 
-const Cell = styled.div`
+const cellCss = css`
     border-style: solid;
     border-color: #aaa;
     text-align: center;
@@ -35,17 +34,18 @@ interface Props {
 }
 
 export const TruthTable = ({ rowSeparate = 1, col, colSeparate = -1, values }: Props) => {
-    const gridCss = css`grid-template-columns: repeat(${col}, 1fr);`;
+    const gridTemplateCss = css`grid-template-columns: repeat(${col}, 1fr);`;
 
     return (
-        <Grid className={gridCss}>
+        <div className={cx(gridCss, gridTemplateCss)}>
             {values.map((value, index) => {
                 const rowIndex = Math.floor(index / col);
                 const colIndex = index % col;
                 return (
-                    <Cell
+                    <div
                         key={index}
                         className={cx(
+                            cellCss,
                             rowIndex === rowSeparate ? cx('margin-top-2', bt) : '',
                             colIndex === colSeparate ? cx('margin-left-2', bl) : '',
                             colIndex === col - 1 ? '' : br,
@@ -53,9 +53,9 @@ export const TruthTable = ({ rowSeparate = 1, col, colSeparate = -1, values }: P
                         )}
                     >
                         {value}
-                    </Cell>
+                    </div>
                 );
             })}
-        </Grid>
+        </div>
     );
 };

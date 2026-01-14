@@ -1,9 +1,8 @@
-import { CloseOutlined } from '@ant-design/icons';
 import { Markdown } from '@/components/Markdown';
 import { useEffect, useState } from 'react';
-import { Button, Skeleton } from 'antd';
+import { Button, Skeleton } from '@mantine/core';
 import { StreamParams, streamSentence } from '@/Tlp/utils';
-import styled from '@emotion/styled';
+import { css } from '@emotion/css';
 import { useActiveNodeKey, getNodes, resetActiveNodeKey } from '@/Tlp/region';
 import { responsive } from '@/Tlp/styles';
 
@@ -12,7 +11,7 @@ const handleClose = () => {
     window.location.hash = '';
 };
 
-const Sticky = styled.div`
+const stickyCss = css`
     padding: 20px;
     position: sticky;
     top: 0;
@@ -60,11 +59,11 @@ export const Stream = () => {
     );
 
     return (
-        <Sticky>
-            <Button color="default" variant="filled" icon={<CloseOutlined />} onClick={handleClose} />
+        <div className={stickyCss}>
+            <Button variant="default" onClick={handleClose}>× Close</Button>
             {content ? (
                 <Markdown>{content}</Markdown>
-            ) : <Skeleton active />}
-        </Sticky>
+            ) : <Skeleton height={200} />}
+        </div>
     );
 };

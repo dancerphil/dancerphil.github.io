@@ -1,5 +1,5 @@
 /* eslint-disable max-lines */
-import { Divider } from 'antd';
+import { Divider } from '@mantine/core';
 import { css } from '@emotion/css';
 import { ReactNode } from 'react';
 import { ShaderHeader } from '@/components/ShaderHeader';
@@ -53,7 +53,7 @@ export const Home = () => {
                     title="我的 github 主页"
                 />
 
-                <Divider />
+                <Divider my="lg" />
 
                 <Title>推荐</Title>
                 <ListItem
@@ -77,7 +77,7 @@ export const Home = () => {
                     description="当前站点的源码"
                 />
 
-                <Divider />
+                <Divider my="lg" />
 
                 <Title>随手写的玩具</Title>
                 <ListItem
@@ -135,7 +135,7 @@ export const Home = () => {
                     title="3d commit 记录"
                     description="用 three.js 画的提交历史天际线玩具，但现在运行不了"
                 />
-                <Divider />
+                <Divider my="lg" />
 
                 <Title>随手写的动画</Title>
                 <ListItem
@@ -178,7 +178,7 @@ export const Home = () => {
                     href="./w"
                     title="纯 css 动画"
                 />
-                <Divider />
+                <Divider my="lg" />
                 <div className={textCenterCss}>
                     {'With Love. '}
                     <a target="_blank" href="https://github.com/dancerphil" rel="noreferrer">Dancerphil</a>

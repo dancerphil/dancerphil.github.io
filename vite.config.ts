@@ -25,21 +25,8 @@ export default defineConfig(() => {
                 input: getInput(),
             },
         },
-        optimizeDeps: {
-            include: [
-                '@emotion/react',
-                '@emotion/styled',
-            ],
-        },
         plugins: [
-            react({
-                jsxImportSource: '@emotion/react',
-                babel: {
-                    plugins: [
-                        '@emotion/babel-plugin',
-                    ],
-                },
-            }),
+            react(),
             uno(),
         ],
         resolve: {

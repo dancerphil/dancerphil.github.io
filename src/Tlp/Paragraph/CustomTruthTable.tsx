@@ -1,8 +1,8 @@
 import { TruthTable } from './TruthTable';
-import styled from '@emotion/styled';
+import { css } from '@emotion/css';
 import { responsive } from '@/Tlp/styles';
 
-export const FlexContainer = styled.div`
+const flexContainerCss = css`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -10,12 +10,20 @@ export const FlexContainer = styled.div`
     padding: ${responsive.contentPadding};
 `;
 
-const FlexSecondary = styled.div`
+const flexSecondaryCss = css`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 `;
+
+export const FlexContainer = ({ children }: { children: React.ReactNode }) => (
+    <div className={flexContainerCss}>{children}</div>
+);
+
+const FlexSecondary = ({ children }: { children: React.ReactNode }) => (
+    <div className={flexSecondaryCss}>{children}</div>
+);
 
 const values431_1 = [
     'p', 'q', 'r',

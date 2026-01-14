@@ -1,9 +1,8 @@
-import { Button, Input, Space, Switch, Typography, message } from 'antd';
+import { Button, Textarea, Group, Switch, Title, Text } from '@mantine/core';
+import { notifications } from '@mantine/notifications';
 import { css } from '@emotion/css';
 import { useMemo, useState } from 'react';
 import { compactHtml } from './compactHtml';
-
-const { TextArea } = Input;
 
 const textareaCss = css`
     margin-top: 8px;
@@ -22,12 +21,6 @@ const previewCss = css`
     min-height: 200px;
     max-height: 520px;
     overflow: auto;
-`;
-
-const switchCss = css`
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
 `;
 
 export const Compact = () => {
@@ -61,58 +54,76 @@ export const Compact = () => {
         }
         try {
             await navigator.clipboard.writeText(output);
-            message.success('已复制到剪贴板');
+            notifications.show({
+                message: '已复制到剪贴板',
+                color: 'green',
+            });
         }
         catch {
-            message.error('复制失败，请手动复制');
+            notifications.show({
+                message: '复制失败，请手动复制',
+                color: 'red',
+            });
         }
     };
 
     return (
         <>
-            <Typography.Title level={2}>compact</Typography.Title>
-            <Typography.Paragraph type="secondary">
+            <Title order={2}>compact</Title>
+            <Text c="dimmed" mb="md">
                 粘贴原始 html（例如报表导出的内容），移除样式相关内容，只保留结构与文本值。
-            </Typography.Paragraph>
+            </Text>
 
-            <Space size="middle" wrap>
-                <span className={switchCss}>
-                    <Switch size="small" checked={keepClass} onChange={setKeepClass} />
-                    <span>保留 class 属性</span>
-                </span>
-                <span className={switchCss}>
-                    <Switch size="small" checked={keepId} onChange={setKeepId} />
-                    <span>保留 id 属性</span>
-                </span>
-                <span className={switchCss}>
-                    <Switch size="small" checked={stripScripts} onChange={setStripScripts} />
-                    <span>移除 script/style 标签</span>
-                </span>
-                <Button type="primary" disabled={!output} onClick={handleCopy}>复制结果</Button>
-            </Space>
+            <Group mb="md">
+                <Switch
+                    label="保留 class 属性"
+                    size="sm"
+                    checked={keepClass}
+                    onChange={event => setKeepClass(event.currentTarget.checked)}
+                />
+                <Switch
+                    label="保留 id 属性"
+                    size="sm"
+                    checked={keepId}
+                    onChange={event => setKeepId(event.currentTarget.checked)}
+                />
+                <Switch
+                    label="移除 script/style 标签"
+                    size="sm"
+                    checked={stripScripts}
+                    onChange={event => setStripScripts(event.currentTarget.checked)}
+                />
+                <Button disabled={!output} onClick={handleCopy}>复制结果</Button>
+            </Group>
 
             {error && (
-                <Typography.Text type="danger">{error}</Typography.Text>
+                <Text c="red" mb="md">{error}</Text>
             )}
 
             <div>
-                <Typography.Text strong>输入</Typography.Text>
-                <TextArea
+                <Text fw={700} mb="xs">输入</Text>
+                <Textarea
                     value={input}
                     onChange={event => setInput(event.target.value)}
                     placeholder="粘贴 html 内容，支持带样式的报表"
                     className={textareaCss}
+                    autosize
+                    minRows={10}
+                    maxRows={20}
                 />
             </div>
             <div>
-                <Typography.Text strong>输出</Typography.Text>
-                <TextArea
+                <Text fw={700} mb="xs" mt="md">输出</Text>
+                <Textarea
                     readOnly
                     value={output}
                     placeholder="转换后的纯结构 html"
                     className={textareaCss}
+                    autosize
+                    minRows={10}
+                    maxRows={20}
                 />
-                <Typography.Text strong style={{ marginTop: 12, display: 'block' }}>预览</Typography.Text>
+                <Text fw={700} mt="md" mb="xs">预览</Text>
                 <div
                     className={previewCss}
                     // eslint-disable-next-line react/no-danger

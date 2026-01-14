@@ -1,22 +1,34 @@
 /* eslint-disable max-lines */
-import styled from '@emotion/styled';
+import { css } from '@emotion/css';
 import { add, multiply, vertical, Vector } from './vector';
 
-const Label = styled.text`
+const labelCss = css`
     font-size: 12px;
     fill: black;
     user-select: none;
 `;
 
-const Line = styled.line`
+const Label = ({ children, ...props }: React.SVGProps<SVGTextElement>) => (
+    <text className={labelCss} {...props}>{children}</text>
+);
+
+const lineCss = css`
     stroke: #aaa;
     stroke-width: 1.5;
 `;
 
-const Edge = styled.line`
+const Line = (props: React.SVGProps<SVGLineElement>) => (
+    <line className={lineCss} {...props} />
+);
+
+const edgeCss = css`
     stroke: black;
     stroke-width: 1.5;
 `;
+
+const Edge = (props: React.SVGProps<SVGLineElement>) => (
+    <line className={edgeCss} {...props} />
+);
 
 interface Bracket {
     start: Vector;

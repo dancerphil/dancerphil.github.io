@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ColorPicker, InputNumber, Slider } from 'antd';
+import { ColorPicker, ColorSwatch, NumberInput, Popover, Slider, TextInput, UnstyledButton } from '@mantine/core';
 import { css } from '@emotion/css';
 import { ToOriginalRow } from './ToOriginalRow';
 
@@ -40,17 +40,38 @@ const colors = [
 export const ToOriginal = () => {
     const [alpha, setAlpha] = useState(0.7);
     const [backgroundColor, setBackgroundColor] = useState('#ffffff');
+    const [colorPickerBg, setColorPickerBg] = useState('#ffffff');
+
+    const handleBgColorChange = (color: string) => {
+        setColorPickerBg(color);
+        setBackgroundColor(color);
+    };
 
     const header = (
         <div className={headerCss}>
             <div className={headerItemCss}>
                 <span>背景色：</span>
-                <ColorPicker
-                    value={backgroundColor}
-                    onChange={(value) => {
-                        setBackgroundColor(value.toHexString());
-                    }}
-                />
+                <Popover radius="md" position="bottom" shadow="md">
+                    <Popover.Target>
+                        <UnstyledButton>
+                            <ColorSwatch color={backgroundColor} size={32} radius="sm" />
+                        </UnstyledButton>
+                    </Popover.Target>
+                    <Popover.Dropdown p={8}>
+                        <ColorPicker
+                            value={colorPickerBg}
+                            onChange={handleBgColorChange}
+                            format="hex"
+                        />
+                        <TextInput
+                            value={colorPickerBg}
+                            onChange={e => handleBgColorChange(e.currentTarget.value)}
+                            placeholder="Enter color"
+                            size="xs"
+                            mt="xs"
+                        />
+                    </Popover.Dropdown>
+                </Popover>
                 <span>{backgroundColor}</span>
             </div>
             <div className={headerItemCss}>
@@ -63,13 +84,13 @@ export const ToOriginal = () => {
                     value={alpha}
                     onChange={setAlpha}
                 />
-                <InputNumber
+                <NumberInput
                     style={{ width: '80px' }}
                     min={0.01}
                     max={1}
                     step={0.01}
                     value={alpha}
-                    onChange={value => setAlpha(value || 0.01)}
+                    onChange={value => setAlpha(typeof value === 'number' ? value : 0.01)}
                 />
                 <span>({Math.round(alpha * 100)}%)</span>
             </div>

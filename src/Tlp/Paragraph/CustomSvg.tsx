@@ -1,15 +1,23 @@
-import styled from '@emotion/styled';
+import { css } from '@emotion/css';
 
-const Label = styled.text`
+const labelCss = css`
     font-size: 12px;
     fill: black;
     user-select: none;
 `;
 
-const Edge = styled.line`
+const Label = ({ children, ...props }: React.SVGProps<SVGTextElement>) => (
+    <text className={labelCss} {...props}>{children}</text>
+);
+
+const edgeCss = css`
     stroke: black;
     stroke-width: 1.5;
 `;
+
+const Edge = (props: React.SVGProps<SVGLineElement>) => (
+    <line className={edgeCss} {...props} />
+);
 
 // 定义立方体的顶点坐标
 const front = {
@@ -56,18 +64,18 @@ export const CustomCube = () => {
     );
 };
 
-const SightSvg = styled.svg`
+const sightSvgCss = css`
     width: 300px;
     height: 100px;
 `;
 
-const Circle = styled.circle`
+const circleCss = css`
     fill: white;
     stroke: black;
     stroke-width: 1.5;
 `;
 
-const Curve = styled.path`
+const curveCss = css`
     fill: none;
     stroke: black;
     stroke-width: 1.5;
@@ -85,14 +93,16 @@ const controlPoint2Y = 180;
 
 export const CustomSight = () => {
     return (
-        <SightSvg viewBox="0 0 300 100">
-            <Curve d={`M ${centerX} ${centerY}
-                      C ${controlPoint1X} ${controlPoint1Y},
-                        ${controlPoint2X} ${controlPoint2Y},
-                        ${centerX} ${centerY}`}
+        <svg className={sightSvgCss} viewBox="0 0 300 100">
+            <path
+                className={curveCss}
+                d={`M ${centerX} ${centerY}
+                    C ${controlPoint1X} ${controlPoint1Y},
+                    ${controlPoint2X} ${controlPoint2Y},
+                    ${centerX} ${centerY}`}
             />
-            <Circle cx={centerX} cy={centerY} r={radius} />
+            <circle className={circleCss} cx={centerX} cy={centerY} r={radius} />
             <Label x={centerX - 50} y={centerY + 4}>{'眼睛 -'}</Label>
-        </SightSvg>
+        </svg>
     );
 };

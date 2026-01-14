@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { InputNumber, Select } from 'antd';
+import { NumberInput, Select } from '@mantine/core';
 import { css } from '@emotion/css';
 
 const containerCss = css`
@@ -50,43 +50,48 @@ export const CashFlow = () => {
         <div className={containerCss}>
             有一笔现金流，从1期后开始，每
             <Select
-                className="w-80"
+                className="w-20"
                 value={gap}
-                onChange={setGap}
-                options={[{ value: 'year', label: '年' }, { value: 'month', label: '月' }, { value: 'day', label: '天' }]}
+                onChange={value => setGap(value || 'month')}
+                data={[{ value: 'year', label: '年' }, { value: 'month', label: '月' }, { value: 'day', label: '天' }]}
             />
             获得
-            <InputNumber
+            <NumberInput
+                className="w-20"
                 value={termValue}
                 onChange={(v) => {
-                    if (v) {
+                    if (typeof v === 'number') {
                         setTermValue(v);
                     }
                 }}
             />
             元，持续
-            <InputNumber
-                className="w-60"
+            <NumberInput
+                className="w-20"
                 value={term}
                 onChange={(v) => {
-                    if (v) {
+                    if (typeof v === 'number') {
                         setTerm(v);
                     }
                 }}
             />
             期，按贴现率
-            <InputNumber
-                className="w-80"
+            <NumberInput
+                className="w-20"
                 value={ratePercentage}
                 suffix="%"
                 onChange={(v) => {
-                    if (v) {
+                    if (typeof v === 'number') {
                         setRatePercentage(v);
                     }
                 }}
             />
             计算，这笔现金流当前价值为
-            <InputNumber value={computeValue({ ratePercentage, gap, term, termValue })} />
+            <NumberInput
+                className="w-20"
+                value={computeValue({ ratePercentage, gap, term, termValue })}
+                readOnly
+            />
             元
         </div>
     );
