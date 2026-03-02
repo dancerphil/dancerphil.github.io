@@ -101,6 +101,11 @@ export const Home = () => {
                     description="计算一笔现金流资产值多少钱"
                 />
                 <ListItem
+                    href="./capital"
+                    title="资本视图"
+                    description="用 echarts 桑基图可视化资产配置结构"
+                />
+                <ListItem
                     href="./color"
                     title="颜色计算器"
                     description="计算一个颜色在透明模式下的色值"
