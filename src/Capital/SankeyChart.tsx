@@ -100,9 +100,22 @@ export const SankeyChart = ({ assetItems, categories }: SankeyChartProps) => {
                 trigger: 'item',
                 formatter: (params: any) => {
                     if (params.dataType === 'edge') {
-                        return `${params.data.source} → ${params.data.target}<br/>金额: ¥${params.data.value.toLocaleString()}`;
+                        const percentage = ((params.data.value / totalAmount) * 100).toFixed(1);
+                        return `${params.data.source} → ${params.data.target}<br/>金额: ¥${params.data.value.toLocaleString()} (${percentage}%)`;
                     }
-                    return params.name;
+                    // 节点的 tooltip
+                    const nodeName = params.name;
+                    if (nodeName === '总资产') {
+                        return `${nodeName}<br/>金额: ¥${totalAmount.toLocaleString()}`;
+                    }
+                    let nodeValue = 0;
+                    links.forEach((link) => {
+                        if (link.target === nodeName) {
+                            nodeValue += link.value;
+                        }
+                    });
+                    const percentage = ((nodeValue / totalAmount) * 100).toFixed(1);
+                    return `${nodeName}<br/>金额: ¥${nodeValue.toLocaleString()} (${percentage}%)`;
                 },
             },
             series: [
@@ -119,6 +132,22 @@ export const SankeyChart = ({ assetItems, categories }: SankeyChartProps) => {
                     },
                     label: {
                         fontSize: 14,
+                        formatter: (params: any) => {
+                            // 计算该节点的总值（入边或出边的值）
+                            const nodeName = params.name;
+                            if (nodeName === '总资产') {
+                                return nodeName;
+                            }
+                            // 计算该节点的值
+                            let nodeValue = 0;
+                            links.forEach((link) => {
+                                if (link.target === nodeName) {
+                                    nodeValue += link.value;
+                                }
+                            });
+                            const percentage = ((nodeValue / totalAmount) * 100).toFixed(1);
+                            return `${nodeName} ${percentage}%`;
+                        },
                     },
                     layoutIterations: 0,
                 },
