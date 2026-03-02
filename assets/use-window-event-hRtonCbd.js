@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-DpLG-Tlo.js";import{i as t}from"./jsx-runtime-DIMy92-V.js";var n=e(t(),1);function r(e,t,r){(0,n.useEffect)(()=>(window.addEventListener(e,t,r),()=>window.removeEventListener(e,t,r)),[e,t])}export{r as t};
