@@ -3,17 +3,21 @@
   "version": "0.1.0",
   "description": "",
   "type": "module",
-  "main": "index.html",
-  "packageManager": "yarn@4.10.3",
+  "author": "Cong Zhang <dancerphil1994@gmail.com>",
+  "license": "MIT",
+  "repository": "github:dancerphil/dancerphil.github.io",
+  "bugs": "https://github.com/dancerphil/dancerphil.github.io/issues",
+  "homepage": "https://dancerphil.github.io",
   "engines": {
     "node": ">=24.11.0"
   },
+  "main": "index.html",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build && node scripts/copyStatic.js",
     "lint": "eslint src",
     "lint-type": "tsc",
-    "deploy": "yarn build && gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist",
     "prepare": "husky || true",
     "knip": "knip"
   },
@@ -77,15 +81,5 @@
     "typescript": "^5.9.3",
     "unocss": "^66.5.10",
     "vite": "npm:rolldown-vite@latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/panda-design-team/panda-design-team.github.io"
-  },
-  "author": "Cong Zhang <dancerphil1994@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/panda-design-team/panda-design-team.github.io/issues"
-  },
-  "homepage": "https://panda-design-team.github.io"
+  }
 }
