@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Stack, Group, Title, TextInput, NumberInput, Button, Select } from '@mantine/core';
 import { Category } from './types';
 import { sectionCss } from './styles';
@@ -12,22 +12,31 @@ export const AddAssetItemForm = ({ categories, onAdd }: AddAssetItemFormProps) =
     const [newItemName, setNewItemName] = useState('');
     const [newItemCategory, setNewItemCategory] = useState('');
     const [newItemAmount, setNewItemAmount] = useState<number | string>(0);
+    const nameInputRef = useRef<HTMLInputElement>(null);
 
     const handleAdd = () => {
         if (!newItemName.trim() || !newItemCategory) return;
         const amount = typeof newItemAmount === 'number' ? newItemAmount : parseFloat(newItemAmount) || 0;
         onAdd(newItemName.trim(), newItemCategory, amount);
         setNewItemName('');
-        setNewItemCategory('');
         setNewItemAmount(0);
+        nameInputRef.current?.focus();
     };
 
     return (
         <div className={sectionCss}>
             <Title order={4} mb="md">添加资产项</Title>
-            <Stack gap="sm">
+            <Stack
+                gap="sm"
+                component="form"
+                onSubmit={(event) => {
+                    event.preventDefault();
+                    handleAdd();
+                }}
+            >
                 <Group gap="xs" align="end">
                     <TextInput
+                        ref={nameInputRef}
                         label="名称"
                         placeholder="例如：工商银行"
                         value={newItemName}
@@ -52,7 +61,7 @@ export const AddAssetItemForm = ({ categories, onAdd }: AddAssetItemFormProps) =
                     thousandSeparator=","
                     decimalScale={2}
                 />
-                <Button onClick={handleAdd} fullWidth>
+                <Button type="submit" fullWidth>
                     添加资产项
                 </Button>
             </Stack>
