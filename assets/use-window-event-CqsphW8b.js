@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-3kWrMgZJ.js";import{i as t}from"./jsx-runtime-3ftlAu2a.js";var n=e(t(),1);function r(e,t,r){let i=(0,n.useEffectEvent)(t);(0,n.useEffect)(()=>(window.addEventListener(e,i,r),()=>window.removeEventListener(e,i,r)),[e])}export{r as t};

@@ -1,1 +1,0 @@
-import{a as e}from"./chunk-DpLG-Tlo.js";import{i as t,t as n}from"./jsx-runtime-DIMy92-V.js";var r=e(n(),1),i=e(t(),1);function a(e=null){let t=(0,i.createContext)(e);return[({children:e,value:n})=>(0,r.jsx)(t.Provider,{value:n,children:e}),()=>(0,i.useContext)(t)]}export{a as t};
