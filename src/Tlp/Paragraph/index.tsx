@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
+import { codeFamily, responsive } from '@/Tlp/styles';
 import { Segment } from './Segment';
 import { Footnote } from './Components';
-import { codeFamily, responsive } from '@/Tlp/styles';
 
 const containerCss = css`
     display: flex;

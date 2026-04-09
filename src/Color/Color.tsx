@@ -1,6 +1,6 @@
+import { Title } from '@mantine/core';
 import { GrayToAlpha } from './GrayToAlpha';
 import { ToOriginal } from './ToOriginal';
-import { Title } from '@mantine/core';
 
 export const Color = () => {
     return (

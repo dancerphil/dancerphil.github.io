@@ -1,6 +1,6 @@
+import { compact, sumBy } from 'lodash-es';
 import { Block, Coordinate, Diff } from './types';
 import { getSurroundingBlocks } from './region';
-import { compact, sumBy } from 'lodash-es';
 import { intelligenceLevel, xNumber, yNumber } from './constant';
 
 export const xyList: Coordinate[] = [];

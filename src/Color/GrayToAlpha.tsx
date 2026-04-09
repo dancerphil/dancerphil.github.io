@@ -1,7 +1,7 @@
+import { useState } from 'react';
 import { ColorPicker, ColorSwatch, Popover, TextInput, UnstyledButton } from '@mantine/core';
 import { css } from '@emotion/css';
 import { TinyColor } from '@ctrl/tinycolor';
-import { useState } from 'react';
 import { calculateAlpha } from './calculate';
 
 const gridCss = css`

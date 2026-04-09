@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
+import { ReactNode } from 'react';
 import { Divider } from '@mantine/core';
 import { css } from '@emotion/css';
-import { ReactNode } from 'react';
 import { ShaderHeader } from '@/components/ShaderHeader';
 import { HeaderContent } from './HeaderContent';
 import { ListItem } from './ListItem';
@@ -57,7 +57,7 @@ export const Home = () => {
 
                 <Title>推荐</Title>
                 <ListItem
-                    href="https://tradingagents.zeabur.app/"
+                    href="https://agents.dancerphil.com"
                     title="股票分析"
                     description="多智能体股票分析工作流"
                 />
@@ -135,11 +135,11 @@ export const Home = () => {
                     title="扫雷"
                     description="适配手机端的扫雷游戏"
                 />
-                <ListItem
-                    href="./skyline"
-                    title="3d commit 记录"
-                    description="用 three.js 画的提交历史天际线玩具，但现在运行不了"
-                />
+                {/* <ListItem */}
+                {/*    href="./skyline" */}
+                {/*    title="3d commit 记录" */}
+                {/*    description="用 three.js 画的提交历史天际线玩具，但现在运行不了" */}
+                {/* /> */}
                 <Divider my="lg" />
 
                 <Title>随手写的动画</Title>

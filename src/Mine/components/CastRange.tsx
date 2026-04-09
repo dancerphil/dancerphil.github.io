@@ -1,6 +1,6 @@
 import { memo } from 'react';
-import { useCurrentCoordinate } from './useEventListener';
 import { castRangeStyle, intelligenceLevel, size } from '../constant';
+import { useCurrentCoordinate } from './useEventListener';
 import c from './CastRange.module.css';
 
 function CastRange() {

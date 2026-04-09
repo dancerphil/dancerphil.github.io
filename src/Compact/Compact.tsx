@@ -1,7 +1,7 @@
+import { useMemo, useState } from 'react';
 import { Button, Textarea, Group, Switch, Title, Text } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import { css } from '@emotion/css';
-import { useMemo, useState } from 'react';
 import { compactHtml } from './compactHtml';
 
 const textareaCss = css`

@@ -1,6 +1,6 @@
-import { PanelGroup, Panel, PanelResizeHandle, PanelProps } from 'react-resizable-panels';
-import { css } from '@emotion/css';
 import { ReactNode } from 'react';
+import { Group, Panel, PanelProps, Separator, useDefaultLayout } from 'react-resizable-panels';
+import { css } from '@emotion/css';
 import { useMantineTheme } from '@mantine/core';
 
 const useHandleCss = () => {
@@ -16,8 +16,8 @@ const useHandleCss = () => {
             background-color: ${theme.colors.gray[3]};
         }
 
-        &[data-resize-handle-state="hover"],
-        &[data-resize-handle-state="drag"] {
+        &[data-separator="hover"],
+        &[data-separator="drag"] {
             .devops-resize-handle-line {
                 width: 3px;
                 left: -1px;
@@ -28,7 +28,7 @@ const useHandleCss = () => {
 };
 
 interface Props {
-    autoSaveId?: string;
+    groupId?: string;
     left?: ReactNode;
     center?: ReactNode;
     right?: ReactNode;
@@ -38,7 +38,7 @@ interface Props {
 }
 
 export const ResizeLayout = ({
-    autoSaveId,
+    groupId,
     left,
     center,
     right,
@@ -47,21 +47,26 @@ export const ResizeLayout = ({
     rightProps,
 }: Props) => {
     const handleCss = useHandleCss();
+
+    const { defaultLayout, onLayoutChanged } = useDefaultLayout({
+        groupId,
+        storage: localStorage,
+    });
     return (
-        <PanelGroup direction="horizontal" autoSaveId={autoSaveId}>
-            {left && <Panel order={1} {...leftProps}>{left}</Panel>}
+        <Group defaultLayout={defaultLayout} onLayoutChange={onLayoutChanged}>
+            {left && <Panel {...leftProps}>{left}</Panel>}
             {left && center && (
-                <PanelResizeHandle className={handleCss}>
+                <Separator className={handleCss}>
                     <div className="devops-resize-handle-line" />
-                </PanelResizeHandle>
+                </Separator>
             )}
-            {center && <Panel order={2} {...centerProps}>{center}</Panel>}
+            {center && <Panel {...centerProps}>{center}</Panel>}
             {(left || center) && right && (
-                <PanelResizeHandle className={handleCss}>
+                <Separator className={handleCss}>
                     <div className="devops-resize-handle-line" />
-                </PanelResizeHandle>
+                </Separator>
             )}
-            {right && <Panel order={3} {...rightProps}>{right}</Panel>}
-        </PanelGroup>
+            {right && <Panel {...rightProps}>{right}</Panel>}
+        </Group>
     );
 };

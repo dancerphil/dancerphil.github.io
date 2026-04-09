@@ -1,10 +1,10 @@
-import { TruthTable } from './TruthTable';
 import { css } from '@emotion/css';
+import { codeFamily, responsive } from '@/Tlp/styles';
+import { FlexContainer, CustomTruthTable } from '@/Tlp/Paragraph/CustomTruthTable';
+import { TruthTable } from './TruthTable';
 import { CustomCube, CustomSight } from './CustomSvg';
 import { CustomDiagram1, CustomDiagram2, CustomDiagram3, CustomDiagram4, CustomDiagram5 } from './CustomDiagram';
 import { Centered } from './Components';
-import { codeFamily, responsive } from '@/Tlp/styles';
-import { FlexContainer, CustomTruthTable } from '@/Tlp/Paragraph/CustomTruthTable';
 
 const listContainerCss = css`
     font-size: 13px;

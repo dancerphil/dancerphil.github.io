@@ -1,9 +1,9 @@
 import { cx } from '@emotion/css';
-import styles from './Block.module.css';
-import theme from './Theme2.module.css';
 import { useBlock } from '../region';
 import { blockStyle as style } from '../constant';
 import { Coordinate } from '../types';
+import theme from './Theme2.module.css';
+import styles from './Block.module.css';
 
 interface Props {
     coordinate: Coordinate;

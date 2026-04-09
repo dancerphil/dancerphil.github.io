@@ -1,7 +1,7 @@
 import { getMeInfo, getUserApi } from '../github-api';
+import { getFriends, addEdge, initVertex, getVertex, updateVertexInfo } from '../dataStructures/Entities';
 import { setCurrentId } from './currentId';
 import { emitNodesAndLinks } from './nodesAndLinks';
-import { getFriends, addEdge, initVertex, getVertex, updateVertexInfo } from '../dataStructures/Entities';
 import { setDescription } from './description';
 import { pushException } from './exception';
 

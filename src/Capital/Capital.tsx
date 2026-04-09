@@ -175,7 +175,7 @@ export const Capital = () => {
     return (
         <div className={containerCss}>
             <ResizeLayout
-                autoSaveId="capital-layout"
+                groupId="capital-layout"
                 left={leftPanel}
                 right={rightPanel}
                 leftProps={{ defaultSize: 30, minSize: 20 }}

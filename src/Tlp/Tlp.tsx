@@ -1,13 +1,13 @@
-import { css } from '@emotion/css';
 import { useCallback, useEffect, MouseEvent } from 'react';
+import { css } from '@emotion/css';
 import { ResizeLayout } from '@/components/ResizeLayout';
+import { responsive } from '@/Tlp/styles';
 import { content } from './content';
 import { Paragraph } from './Paragraph';
 import { activeTarget, setNodes, useActiveNodeKey } from './region';
 import { Header } from './Header';
 import { useShortKeys } from './useShortKeys';
 import { Stream } from './Stream';
-import { responsive } from '@/Tlp/styles';
 
 const containerCss = css`
     height: 100vh;

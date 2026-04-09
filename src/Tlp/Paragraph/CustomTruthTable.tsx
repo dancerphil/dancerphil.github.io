@@ -1,6 +1,6 @@
-import { TruthTable } from './TruthTable';
 import { css } from '@emotion/css';
 import { responsive } from '@/Tlp/styles';
+import { TruthTable } from './TruthTable';
 
 const flexContainerCss = css`
     display: flex;

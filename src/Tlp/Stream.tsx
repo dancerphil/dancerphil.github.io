@@ -1,8 +1,8 @@
-import { Markdown } from '@/components/Markdown';
 import { useEffect, useState } from 'react';
 import { Button, Skeleton } from '@mantine/core';
-import { StreamParams, streamSentence } from '@/Tlp/utils';
 import { css } from '@emotion/css';
+import { StreamParams, streamSentence } from '@/Tlp/utils';
+import { Markdown } from '@/components/Markdown';
 import { useActiveNodeKey, getNodes, resetActiveNodeKey } from '@/Tlp/region';
 import { responsive } from '@/Tlp/styles';
 

@@ -1,10 +1,10 @@
+import { useMemo } from 'react';
 import { css } from '@emotion/css';
 import { ActionIcon, Group, Menu } from '@mantine/core';
 import { useHotkeys } from '@mantine/hooks';
-import { usePersonality, setPersonality } from './region';
-import { useMemo } from 'react';
 import { getCognition } from '@/Mbti/utils';
 import { HelpIcon } from '@/ui';
+import { usePersonality, setPersonality } from './region';
 
 const containerCss = css`
     max-width: 1000px;
