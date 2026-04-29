@@ -5,7 +5,6 @@
  * 另外，你可以为沙盒添加 npm 依赖，按下 Command + K 打开命令面板进行配置（待开发）
  */
 import { Dispatch, SetStateAction, useCallback, useRef } from 'react';
-import { Button } from '@mantine/core';
 import { useCsv } from './useCsv';
 import { Component } from './Component';
 
@@ -35,7 +34,7 @@ const ComponentWrapper = ({ data, setDataset }: ComponentWrapperProps) => {
 };
 
 const App = () => {
-    const { onFileChange, loading, dataset, setDataset } = useCsv();
+    const { onFileChange, dataset, setDataset } = useCsv();
     const fileInputRef = useRef(null);
 
     const handleButtonClick = () => {
@@ -45,12 +44,9 @@ const App = () => {
     return (
         <div style={{ padding: 20 }}>
             <label>
-                <Button
-                    loading={loading}
-                    onClick={handleButtonClick}
-                >
+                <button onClick={handleButtonClick}>
                     上传 CSV
-                </Button>
+                </button>
                 <input
                     ref={fileInputRef}
                     type="file"

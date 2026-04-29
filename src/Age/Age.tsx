@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { createRegion } from 'region-react';
 import { css } from '@emotion/css';
 import { DateTimePicker } from '@mantine/dates';
+import { useInterval, useForceUpdate } from '@mantine/hooks';
 
 const birthRegion = createRegion<number>(undefined, {
     withLocalStorageKey: 'birth',
@@ -15,22 +16,9 @@ const containerCss = css`
     font-size: 120px;
 `;
 
-export const useLoopRerender = () => {
-    const [, setTick] = useState(0);
-
-    useEffect(
-        () => {
-            const timer = setInterval(() => {
-                setTick(tick => tick + 1);
-            }, 100);
-            return () => clearInterval(timer);
-        },
-        [],
-    );
-};
-
 const View = () => {
-    useLoopRerender();
+    const forceUpdate = useForceUpdate();
+    useInterval(forceUpdate, 100, { autoInvoke: true });
     const birth = birthRegion.useValue();
     // eslint-disable-next-line react-hooks/purity
     const diff = ((Date.now() - birth) / 1000 / 31556926).toFixed(8);

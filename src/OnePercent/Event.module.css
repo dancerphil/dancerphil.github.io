@@ -1,0 +1,66 @@
+.eventPanel {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.eventTitle {
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+
+.eventDescription {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 400px;
+  white-space: pre-line;
+}
+
+.eventProgressBar {
+  width: 100%;
+  max-width: 320px;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.eventProgressFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.05s linear;
+}
+
+.eventChoices {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.eventChoiceBtn {
+  background: none;
+  border: 1px solid var(--text);
+  color: var(--text);
+  padding: 10px 32px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  transition: all 0.15s;
+}
+
+.eventChoiceBtn:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.eventQueueHint {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}

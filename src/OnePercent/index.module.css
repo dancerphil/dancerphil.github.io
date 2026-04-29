@@ -1,0 +1,640 @@
+:root {
+  --bg: #f5f2eb;
+  --surface: #eee9df;
+  --border: #d4cfc4;
+  --text: #1a1814;
+  --muted: #7a7570;
+  --accent: #1a5c2a;
+  --warn: #7a5a10;
+  --danger: #8b2020;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── Layout ── */
+
+.app {
+  display: grid;
+  grid-template-columns: 240px 1fr 300px;
+  grid-template-rows: 48px 1fr;
+  grid-template-areas:
+    "header header header"
+    "shop   main   log";
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+
+.header {
+  grid-area: header;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 24px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.moneyDisplay {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  flex: 1;
+  text-align: center;
+}
+
+.dayDisplay {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ── Panels ── */
+
+.shopPanel {
+  grid-area: shop;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.mainPanel {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logPanel {
+  grid-area: log;
+  border-left: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Panel label ── */
+
+.panelLabel {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+/* ── Shop items ── */
+
+.shopItem {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.1s, color 0.1s;
+  user-select: none;
+}
+
+.shopItemName {
+  font-size: 11px;
+  font-weight: bold;
+  flex: 1;
+  min-width: 0;
+}
+
+.shopItemCost {
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 60px;
+}
+
+.unaffordable {
+  color: var(--danger);
+}
+
+.shopItemAffordable {
+  cursor: pointer;
+}
+
+.shopItemAffordable:hover {
+  background: var(--text) !important;
+  color: var(--bg);
+}
+
+.shopItemAffordable:hover .shopItemCost {
+  color: inherit;
+}
+
+.shopItemAffordable:hover .unaffordable {
+  color: inherit;
+}
+
+/* ── Auto-buy popover ── */
+
+.autoBuySection {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.autoBuySectionBtn {
+  width: 100%;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  transition: all 0.1s;
+}
+
+.autoBuySectionBtn:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.autoBuyPopover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border: 1px solid var(--text);
+  z-index: 20;
+  max-height: 360px;
+  overflow-y: auto;
+  padding: 8px 0;
+  margin-top: 2px;
+}
+
+.popoverBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 19;
+}
+
+.popoverGroupLabel {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 8px 12px 4px;
+}
+
+.popoverGroupLabel:first-child {
+  padding-top: 4px;
+}
+
+.popoverItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 12px;
+  font-size: 11px;
+}
+
+.popoverItem:hover {
+  background: var(--bg);
+}
+
+.popoverToggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 2px 10px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 10px;
+  transition: all 0.1s;
+}
+
+.popoverToggle:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+.popoverToggleActive {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* ── Stats ── */
+
+.statsCard {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 0;
+  font-size: 12px;
+}
+
+.statKey {
+  color: var(--muted);
+}
+
+.statVal {
+  font-weight: bold;
+}
+
+/* ── Log ── */
+
+.logArea {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.logEntry {
+  font-size: 11px;
+  color: var(--muted);
+  border-left: 2px solid var(--border);
+  padding-left: 8px;
+  animation: fadeIn 0.4s ease;
+  display: flex;
+  gap: 8px;
+}
+
+.logDay {
+  color: var(--muted);
+  flex-shrink: 0;
+  font-size: 10px;
+}
+
+.logWarning {
+  color: var(--warn);
+  border-left-color: var(--warn);
+}
+
+.logMilestone {
+  color: var(--text);
+  border-left-color: var(--text);
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px 8px;
+  background: var(--surface);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Scrollbar ── */
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); }
+
+/* ── Victory inline ── */
+
+.victoryInline {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.victoryInline h2 {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.victoryInline p {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.resetBtn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 32px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  margin-top: 8px;
+  transition: all 0.2s;
+}
+
+.resetBtn:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+/* ── Company panel ── */
+
+.companyPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.companyHint {
+  text-align: center;
+  padding: 32px 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.companyHint p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.companyCost {
+  font-weight: bold;
+  color: var(--text) !important;
+}
+
+.companyBtn {
+  background: none;
+  border: 1px solid var(--text);
+  color: var(--text);
+  padding: 10px 32px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  margin-top: 12px;
+  transition: all 0.2s;
+}
+
+.companyBtn:hover:not(:disabled) {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.companyBtn:disabled {
+  border-color: var(--border);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.companyBtnSecondary {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 10px 24px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  margin-top: 12px;
+  transition: all 0.2s;
+}
+
+.companyBtnSecondary:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+.companyInput {
+  background: var(--bg);
+  border: 1px solid var(--text);
+  color: var(--text);
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  outline: none;
+  margin-top: 8px;
+}
+
+.companyInput::placeholder {
+  color: var(--muted);
+}
+
+.companyActions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.companyHeader {
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.companyName {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+/* ── Resource card ── */
+
+.resourceCard {
+  border: 1px solid var(--border);
+  padding: 12px;
+}
+
+.resourceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.resourceLabel {
+  color: var(--muted);
+}
+
+.resourceVal {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.resourceDivider {
+  border-top: 1px solid var(--border);
+  margin: 8px 0;
+}
+
+.resourceSliderRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  font-size: 13px;
+}
+
+.resourceRate {
+  font-weight: bold;
+  font-size: 13px;
+  min-width: 32px;
+}
+
+.resourceToday {
+  color: var(--muted);
+  font-size: 11px;
+  flex: 1;
+  text-align: right;
+}
+
+/* ── Manpower slider ── */
+
+.manpowerSlider {
+  width: 100%;
+  margin: 6px 0 2px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.manpowerSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--text);
+  cursor: pointer;
+  border: none;
+}
+
+.manpowerSlider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--text);
+  cursor: pointer;
+  border: none;
+}
+
+/* ── Research list ── */
+
+.researchList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.researchItem {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  transition: all 0.1s;
+  user-select: none;
+}
+
+.researchItem.researchDone {
+  opacity: 0.5;
+}
+
+.researchItem.researchActive {
+  border-color: var(--text);
+  background: var(--surface);
+}
+
+.researchItem.researchAvailable {
+  cursor: pointer;
+}
+
+.researchItem.researchAvailable:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.researchItem.researchAvailable:hover .researchCosts,
+.researchItem.researchAvailable:hover .researchDesc {
+  color: inherit;
+  opacity: 0.7;
+}
+
+.researchItem.researchAvailable:hover .resourceShort {
+  color: inherit;
+  opacity: 0.7;
+}
+
+.researchName {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.researchCheck {
+  color: var(--accent);
+}
+
+.researchActiveTag {
+  color: var(--accent);
+  font-size: 11px;
+}
+
+.researchDesc {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.researchProgressBar {
+  position: relative;
+  height: 18px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+.researchProgressFill {
+  height: 100%;
+  background: var(--accent);
+  opacity: 0.3;
+  transition: width 0.3s ease;
+}
+
+.researchProgressText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: var(--text);
+  pointer-events: none;
+}
+
+.researchCosts {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.resourceShort {
+  color: var(--danger);
+}
+

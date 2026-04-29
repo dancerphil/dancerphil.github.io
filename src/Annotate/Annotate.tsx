@@ -30,7 +30,6 @@ export const Annotate = () => {
                 files={files}
                 customSetup={{
                     dependencies: {
-                        'antd': 'latest',
                         'papaparse': 'latest',
                         'react-simple-code-editor': 'latest',
                         'prismjs': 'latest',

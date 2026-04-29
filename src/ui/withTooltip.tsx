@@ -1,4 +1,4 @@
-import { ComponentType, forwardRef, ReactNode } from 'react';
+import { ComponentType, ReactNode } from 'react';
 import { Tooltip } from '@mantine/core';
 
 function cn(...classes: unknown[]) {
@@ -22,8 +22,8 @@ export function withTooltip<T>(ComponentIn: ComponentType<T> | any, defaultProps
         ...defaultRest
     } = (defaultProps as any) ?? {};
 
-    const ComponentInner = (props: any, ref: any) => {
-        const { className, tooltip = defaultTooltip, disabledReason = defaultDisabledReason, ...rest } = props;
+    const ComponentOut = (props: any) => {
+        const { className, tooltip = defaultTooltip, disabledReason = defaultDisabledReason, ref, ...rest } = props;
         const nextClassName = cn(defaultClassName, className);
         const nextProps = { className: nextClassName, ...defaultRest, ...rest };
 
@@ -47,6 +47,5 @@ export function withTooltip<T>(ComponentIn: ComponentType<T> | any, defaultProps
         return element;
     };
 
-    const ComponentOut = forwardRef(ComponentInner);
     return ComponentOut as any as ComponentType<T & WithTooltipExtraProps>;
 }

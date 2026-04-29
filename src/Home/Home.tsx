@@ -135,6 +135,11 @@ export const Home = () => {
                     title="扫雷"
                     description="适配手机端的扫雷游戏"
                 />
+                <ListItem
+                    href="./one-percent"
+                    title="每天百分之一"
+                    description="一个关于钱、时间和意义的增量游戏"
+                />
                 {/* <ListItem */}
                 {/*    href="./skyline" */}
                 {/*    title="3d commit 记录" */}
