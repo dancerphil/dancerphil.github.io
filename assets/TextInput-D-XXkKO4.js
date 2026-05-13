@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-CuVtWdxS.js";import{l as t,n}from"./styles-76NOZsBv.js";import{t as r}from"./InputBase-DY_aXQpN.js";var i=e(),a=n(e=>(0,i.jsx)(r,{component:`input`,...t([`Input`,`InputWrapper`,`TextInput`],null,e),__staticSelector:`TextInput`}));a.classes=r.classes,a.displayName=`@mantine/core/TextInput`;export{a as t};
