@@ -1,0 +1,1 @@
+import{c as e}from"./_MapCache-B6oBmePv.js";var t=function(){try{var t=e(Object,`defineProperty`);return t({},``,{}),t}catch{}}();export{t};

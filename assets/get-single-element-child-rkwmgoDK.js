@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-C_XZQ3IF.js";import{i as t}from"./jsx-runtime-CuVtWdxS.js";var n=e(t(),1);function r(e){return Array.isArray(e)||e===null?!1:typeof e==`object`?e.type!==n.Fragment:!1}function i(e){let t=n.Children.toArray(e);return t.length!==1||!r(t[0])?null:t[0]}export{r as n,i as t};
