@@ -1,7 +1,7 @@
 import { useRef, useLayoutEffect, useEffect } from 'react';
 import { init, EChartsType } from 'echarts';
 import { AssetItem, Category } from './types';
-import { chartCss } from './styles';
+import s from './styles.module.css';
 
 interface SankeyChartProps {
     assetItems: AssetItem[];
@@ -157,5 +157,5 @@ export const SankeyChart = ({ assetItems, categories }: SankeyChartProps) => {
         chartInstance.current.setOption(option);
     }, [categories, assetItems]);
 
-    return <div ref={chartRef} className={chartCss} />;
+    return <div ref={chartRef} className={s.chart} />;
 };

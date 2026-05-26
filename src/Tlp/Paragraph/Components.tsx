@@ -1,25 +1,9 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, ReactNode } from 'react';
 import { Tooltip } from '@mantine/core';
 import { render } from 'katex';
 import 'katex/dist/katex.css';
-import { css } from '@emotion/css';
 import { responsive } from '@/Tlp/styles';
-
-const dot = css`
-    position: relative;
-
-    ::after {
-        content: '.';
-        position: absolute;
-        bottom: 0.15em;
-        left: 0;
-        right: 0;
-        text-align: center;
-        font-size: 1.4em;
-        color: #333;
-        line-height: 0;
-    }
-`;
+import c from './Components.module.css';
 
 interface ChildrenProps {
     children: string;
@@ -27,23 +11,16 @@ interface ChildrenProps {
 
 export const Emphasis = ({ children }: ChildrenProps) => {
     return children.split('').map((char, index) => (
-        <span key={index} className={dot}>
+        <span key={index} className={c.dot}>
             {char}
         </span>
     ));
 };
 
-const iconCss = css`
-    font-size: 12px;
-    color: #999;
-    cursor: help;
-    margin: 0 3px 0 1px;
-`;
-
 export const Footnote = ({ children }: ChildrenProps) => {
     return (
         <Tooltip label={children}>
-            <sup className={iconCss}>ⓘ</sup>
+            <sup className={c.icon}>ⓘ</sup>
         </Tooltip>
     );
 };
@@ -68,20 +45,10 @@ export const Katex = ({ children }: ChildrenProps) => {
     return <span ref={ref} />;
 };
 
-const kaiTiCss = css`
-    font-family: 'KaiTi', '楷体', 'STKaiti', '华文楷体', 'SimKai', serif;
-    font-size: 17px;
-`;
-
-export const KaiTi = ({ children }: { children: React.ReactNode }) => (
-    <span className={kaiTiCss}>{children}</span>
+export const KaiTi = ({ children }: { children: ReactNode }) => (
+    <span className={c.kaiTi}>{children}</span>
 );
 
-const centeredCss = css`
-    text-align: center;
-    width: ${responsive.contentWidth};
-`;
-
-export const Centered = ({ children }: { children: React.ReactNode }) => (
-    <div className={centeredCss}>{children}</div>
+export const Centered = ({ children }: { children: ReactNode }) => (
+    <div className={c.centered} style={{ width: responsive.contentWidth }}>{children}</div>
 );

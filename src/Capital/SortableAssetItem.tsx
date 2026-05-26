@@ -3,7 +3,7 @@ import { IconTrash, IconGripVertical } from '@tabler/icons-react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { AssetItem, Category } from './types';
-import { sortableItemCss, dragHandleCss } from './styles';
+import s from './styles.module.css';
 
 interface SortableAssetItemProps {
     item: AssetItem;
@@ -38,8 +38,8 @@ export const SortableAssetItem = ({
     };
 
     return (
-        <div ref={setNodeRef} style={style} className={sortableItemCss}>
-            <div {...attributes} {...listeners} className={dragHandleCss}>
+        <div ref={setNodeRef} style={style} className={s.sortableItem}>
+            <div {...attributes} {...listeners} className={s.dragHandle}>
                 <IconGripVertical size={18} />
             </div>
             <TextInput

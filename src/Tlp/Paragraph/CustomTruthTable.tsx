@@ -1,28 +1,13 @@
-import { css } from '@emotion/css';
+import { Flex } from '@mantine/core';
 import { responsive } from '@/Tlp/styles';
 import { TruthTable } from './TruthTable';
 
-const flexContainerCss = css`
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: ${responsive.contentPadding};
-`;
-
-const flexSecondaryCss = css`
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-`;
-
 export const FlexContainer = ({ children }: { children: React.ReactNode }) => (
-    <div className={flexContainerCss}>{children}</div>
+    <Flex align="center" wrap="wrap" gap={40} style={{ padding: responsive.contentPadding }}>{children}</Flex>
 );
 
 const FlexSecondary = ({ children }: { children: React.ReactNode }) => (
-    <div className={flexSecondaryCss}>{children}</div>
+    <Flex align="center" wrap="wrap" gap={10}>{children}</Flex>
 );
 
 const values431_1 = [

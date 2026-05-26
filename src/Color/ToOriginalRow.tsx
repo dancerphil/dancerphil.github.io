@@ -1,40 +1,13 @@
 import { useState } from 'react';
-import { ColorPicker, ColorSwatch, Popover, TextInput, Tooltip, UnstyledButton } from '@mantine/core';
-import { css } from '@emotion/css';
+import { ColorPicker, ColorSwatch, Popover, TextInput, Tooltip, UnstyledButton, Flex } from '@mantine/core';
 import { calculateOriginal } from './calculate';
-
-const iconCss = css`
-    font-size: 16px;
-    color: #faad14;
-    cursor: pointer;
-`;
+import c from './ToOriginalRow.module.css';
 
 const HelpIcon = ({ tooltip }: { tooltip: string }) => (
     <Tooltip label={tooltip}>
-        <span className={iconCss}>ⓘ</span>
+        <span className={c.icon}>ⓘ</span>
     </Tooltip>
 );
-
-const gridItemCss = css`
-    display: flex;
-    align-items: center;
-    gap: 8px;
-`;
-
-const displayBgCss = css`
-    width: 64px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-`;
-
-const displayBgInnerCss = css`
-    width: 56px;
-    height: 24px;
-    border-radius: 4px;
-`;
 
 interface RowProps {
     displayColor: string;
@@ -57,7 +30,7 @@ export const ToOriginalRow = ({ displayColor, alpha, backgroundColor }: RowProps
 
     return (
         <>
-            <div className={gridItemCss}>
+            <Flex align="center" gap={8}>
                 <Popover radius="md" position="bottom" shadow="md">
                     <Popover.Target>
                         <UnstyledButton>
@@ -80,23 +53,23 @@ export const ToOriginalRow = ({ displayColor, alpha, backgroundColor }: RowProps
                     </Popover.Dropdown>
                 </Popover>
                 {color}
-            </div>
-            <div className={gridItemCss}>
+            </Flex>
+            <Flex align="center" gap={8}>
                 <ColorSwatch color={originalColor} size={32} radius="sm" />
                 {originalColor}
                 {help}
-            </div>
-            <div className={gridItemCss}>
+            </Flex>
+            <Flex align="center" gap={8}>
                 <ColorSwatch color={originalRgba} size={32} radius="sm" />
                 {originalRgba}
                 {help}
-            </div>
-            <div className={gridItemCss}>
-                <div className={displayBgCss} style={{ backgroundColor }}>
-                    <div className={displayBgInnerCss} style={{ backgroundColor: originalRgba }} />
+            </Flex>
+            <Flex align="center" gap={8}>
+                <div className={c.displayBg} style={{ backgroundColor }}>
+                    <div className={c.displayBgInner} style={{ backgroundColor: originalRgba }} />
                 </div>
                 {help}
-            </div>
+            </Flex>
         </>
     );
 };

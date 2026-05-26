@@ -12,8 +12,6 @@ import {
     Divider,
     Box,
 } from '@mantine/core';
-import { css } from '@emotion/css';
-
 interface LevelRow {
     level: number;
     /** 需要产出多少个本级物品 */
@@ -116,25 +114,6 @@ function calculate(targetLevel: number, targetCount: number): CalcResult {
     return { rows52, rowsMin, total52, totalMin, produced52, producedMin, valuePerItem, totalValue52, totalValueMin };
 }
 
-const tableCss = css`
-    th {
-        white-space: nowrap;
-    }
-`;
-
-const highlightCss = css`
-    font-weight: bold;
-    color: #228be6;
-`;
-
-const surplusCss = css`
-    color: #f03e3e;
-`;
-
-const savedCss = css`
-    color: #2f9e44;
-`;
-
 export const FiveInTwo = () => {
     const [targetLevel, setTargetLevel] = useState<number>(10);
     const [targetCount, setTargetCount] = useState<number>(1);
@@ -192,7 +171,7 @@ export const FiveInTwo = () => {
                         <Text size="sm" c="dimmed" mb="md">
                             每次将 5 个低级合成 2 个高级，可能产生剩余。
                         </Text>
-                        <Table className={tableCss} striped highlightOnHover withTableBorder withColumnBorders>
+                        <Table striped highlightOnHover withTableBorder withColumnBorders>
                             <Table.Thead>
                                 <Table.Tr>
                                     <Table.Th>目标等级</Table.Th>
@@ -214,15 +193,15 @@ export const FiveInTwo = () => {
                                         <Table.Td>
                                             {row.produced.toLocaleString()}
                                             {row.surplus > 0 && (
-                                                <span className={surplusCss}> (+{row.surplus})</span>
+                                                <span style={{ color: '#f03e3e' }}> (+{row.surplus})</span>
                                             )}
                                         </Table.Td>
                                         <Table.Td>
                                             {row.surplus > 0
-                                                ? <span className={surplusCss}>{row.surplus}</span>
+                                                ? <span style={{ color: '#f03e3e' }}>{row.surplus}</span>
                                                 : 0}
                                         </Table.Td>
-                                        <Table.Td className={highlightCss}>
+                                        <Table.Td fw="bold" c="blue">
                                             {row.consumed.toLocaleString()}
                                         </Table.Td>
                                     </Table.Tr>
@@ -241,7 +220,7 @@ export const FiveInTwo = () => {
                         <Text size="sm" c="dimmed" mb="md">
                             偶数需求时全用 5合2；奇数需求时用 (n-1)/2 次 5合2 + 1 次 3合1，不产生剩余。
                         </Text>
-                        <Table className={tableCss} striped highlightOnHover withTableBorder withColumnBorders>
+                        <Table striped highlightOnHover withTableBorder withColumnBorders>
                             <Table.Thead>
                                 <Table.Tr>
                                     <Table.Th>目标等级</Table.Th>
@@ -267,14 +246,14 @@ export const FiveInTwo = () => {
                                             <Table.Td>{row.need.toLocaleString()}</Table.Td>
                                             <Table.Td>{row.batches52.toLocaleString()}</Table.Td>
                                             <Table.Td>{row.batches31 > 0
-                                                ? <span className={surplusCss}>{row.batches31}</span>
+                                                ? <span style={{ color: '#f03e3e' }}>{row.batches31}</span>
                                                 : 0}
                                             </Table.Td>
                                             <Table.Td>{row.produced.toLocaleString()}</Table.Td>
-                                            <Table.Td className={highlightCss}>
+                                            <Table.Td fw="bold" c="blue">
                                                 {row.consumed.toLocaleString()}
                                             </Table.Td>
-                                            <Table.Td className={savedCss}>{ratio}%</Table.Td>
+                                            <Table.Td c="#2f9e44">{ratio}%</Table.Td>
                                         </Table.Tr>
                                     );
                                 })}

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Sandpack } from '@codesandbox/sandpack-react';
 import { Modal } from '@mantine/core';
 import { useShortKey } from 'use-short-key';
-import { Markdown } from '@/components/Markdown';
+import { Markdown } from '@hero-u/mantine';
 import App from './App?raw';
 import useCsv from './useCsv?raw';
 import Component from './Component?raw';

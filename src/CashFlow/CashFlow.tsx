@@ -1,13 +1,5 @@
 import { useState } from 'react';
-import { NumberInput, Select } from '@mantine/core';
-import { css } from '@emotion/css';
-
-const containerCss = css`
-    display: flex;
-    flex-flow: wrap;
-    font-size: 24px;
-    gap: 20px 8px;
-`;
+import { NumberInput, Select, Flex, Text } from '@mantine/core';
 
 interface Params {
     ratePercentage: number;
@@ -47,17 +39,17 @@ export const CashFlow = () => {
     const [termValue, setTermValue] = useState(1);
 
     return (
-        <div className={containerCss}>
-            有一笔现金流，从1期后开始，每
+        <Flex align="center" wrap="wrap" gap="xs" style={{ fontSize: '24px' }}>
+            <Text size="xl" component="span">有一笔现金流，从1期后开始，每</Text>
             <Select
-                className="w-20"
+                w={72}
                 value={gap}
                 onChange={value => setGap(value || 'month')}
                 data={[{ value: 'year', label: '年' }, { value: 'month', label: '月' }, { value: 'day', label: '天' }]}
             />
-            获得
+            <Text size="xl" component="span">获得</Text>
             <NumberInput
-                className="w-20"
+                w={72}
                 value={termValue}
                 onChange={(v) => {
                     if (typeof v === 'number') {
@@ -65,9 +57,9 @@ export const CashFlow = () => {
                     }
                 }}
             />
-            元，持续
+            <Text size="xl" component="span">元，持续</Text>
             <NumberInput
-                className="w-20"
+                w={72}
                 value={term}
                 onChange={(v) => {
                     if (typeof v === 'number') {
@@ -75,9 +67,9 @@ export const CashFlow = () => {
                     }
                 }}
             />
-            期，按贴现率
+            <Text size="xl" component="span">期，按贴现率</Text>
             <NumberInput
-                className="w-20"
+                w={72}
                 value={ratePercentage}
                 suffix="%"
                 onChange={(v) => {
@@ -86,13 +78,13 @@ export const CashFlow = () => {
                     }
                 }}
             />
-            计算，这笔现金流当前价值为
+            <Text size="xl" component="span">计算，这笔现金流当前价值为</Text>
             <NumberInput
-                className="w-20"
+                w={92}
                 value={computeValue({ ratePercentage, gap, term, termValue })}
                 readOnly
             />
-            元
-        </div>
+            <Text size="xl" component="span">元</Text>
+        </Flex>
     );
 };

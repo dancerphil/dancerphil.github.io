@@ -5,7 +5,7 @@ import { DndContext, closestCenter, DragEndEvent, useSensors } from '@dnd-kit/co
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { Category } from './types';
 import { SortableCategoryItem } from './SortableCategoryItem';
-import { sectionCss } from './styles';
+import s from './styles.module.css';
 
 interface CategorySectionProps {
     categories: Category[];
@@ -31,7 +31,7 @@ export const CategorySection = ({
     };
 
     return (
-        <div className={sectionCss}>
+        <div className={s.section}>
             <Title order={4} mb="md">资产类别</Title>
             <DndContext
                 sensors={sensors}

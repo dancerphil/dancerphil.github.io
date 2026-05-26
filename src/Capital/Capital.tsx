@@ -5,7 +5,7 @@ import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable';
 import { ResizeLayout } from '@/components/ResizeLayout';
 import { Category, AssetItem } from './types';
 import { STORAGE_KEY, defaultCategories, defaultAssetItems } from './constants';
-import { containerCss, leftPanelCss, rightPanelCss, sectionCss } from './styles';
+import s from './styles.module.css';
 import { CategorySection } from './CategorySection';
 import { AssetItemSection } from './AssetItemSection';
 import { AddAssetItemForm } from './AddAssetItemForm';
@@ -118,7 +118,7 @@ export const Capital = () => {
     };
 
     const leftPanel = (
-        <div className={leftPanelCss}>
+        <div className={s.leftPanel}>
             <Stack gap="lg">
                 <CategorySection
                     categories={categories}
@@ -144,7 +144,7 @@ export const Capital = () => {
                     onAdd={handleAddItem}
                 />
 
-                <div className={sectionCss}>
+                <div className={s.section}>
                     <Button
                         variant="outline"
                         color="gray"
@@ -166,14 +166,14 @@ export const Capital = () => {
     );
 
     const rightPanel = (
-        <div className={rightPanelCss}>
+        <div className={s.rightPanel}>
             <SankeyChart assetItems={assetItems} categories={categories} />
         </div>
     );
 
     // eslint-disable-next-line max-lines
     return (
-        <div className={containerCss}>
+        <div className={s.container}>
             <ResizeLayout
                 groupId="capital-layout"
                 left={leftPanel}

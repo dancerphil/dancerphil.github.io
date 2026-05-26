@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  padding: 8px 15px;
+  border: 1px solid transparent;
+  overflow: hidden;
+
+  &:global(.active) {
+    background-color: #f0f8ff;
+    border-color: #d0e7ff;
+    border-radius: 4px;
+  }
+
+  &:global(.related) {
+    background-color: #f4faff;
+  }
+
+  &:global(.hide) {
+    display: none;
+  }
+
+  &:global(.collapsed) {
+    border-bottom: 4px solid #f2f2f2;
+  }
+}
+
+.key {
+  flex-shrink: 0;
+}

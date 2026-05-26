@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import { resolve, extname } from 'path';
 import { readdirSync } from 'fs';
-import uno from 'unocss/vite';
 import react from '@vitejs/plugin-react';
 
 const getInput = () => {
@@ -26,7 +25,6 @@ export default defineConfig(() => {
         },
         plugins: [
             react(),
-            uno(),
         ],
         resolve: {
             alias: {

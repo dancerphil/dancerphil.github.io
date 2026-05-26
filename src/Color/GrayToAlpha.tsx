@@ -1,32 +1,23 @@
 import { useState } from 'react';
-import { ColorPicker, ColorSwatch, Popover, TextInput, UnstyledButton } from '@mantine/core';
-import { css } from '@emotion/css';
+import { ColorPicker, ColorSwatch, Popover, TextInput, UnstyledButton, Flex } from '@mantine/core';
 import { TinyColor } from '@ctrl/tinycolor';
 import { calculateAlpha } from './calculate';
 
-const gridCss = css`
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 10px;
-`;
+const gridStyle: React.CSSProperties = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, minmax(200px, 1fr))',
+    gap: '10px',
+};
 
-const gridItemCss = css`
-    display: flex;
-    align-items: center;
-    gap: 8px;
-`;
-
-/** 灰色 Hex 转透明色 */
 function toColor(hex: string) {
     const color = new TinyColor(hex);
     const { r, g, b } = color.toRgb();
 
-    // 验证是否为灰色
     if (r !== g || g !== b) {
         throw new Error(`${hex} is not a gray color! RGB values must be equal.`);
     }
 
-    const grayValue = r; // 灰色的 R=G=B
+    const grayValue = r;
 
     const alphaOnWhite = calculateAlpha({
         displayColor: hex,
@@ -79,7 +70,7 @@ export const Row = ({ value }: RowProps) => {
 
     return (
         <>
-            <div className={gridItemCss}>
+            <Flex align="center" gap={8}>
                 <Popover radius="md" position="bottom" shadow="md">
                     <Popover.Target>
                         <UnstyledButton>
@@ -102,15 +93,15 @@ export const Row = ({ value }: RowProps) => {
                     </Popover.Dropdown>
                 </Popover>
                 {hex}
-            </div>
-            <div className={gridItemCss}>
+            </Flex>
+            <Flex align="center" gap={8}>
                 {grayValue}
-            </div>
-            <div className={gridItemCss}>
+            </Flex>
+            <Flex align="center" gap={8}>
                 <ColorSwatch color={rgbaOnWhite} size={32} radius="sm" />
                 {rgbaOnWhite}
-            </div>
-            <div className={gridItemCss}>
+            </Flex>
+            <Flex align="center" gap={8}>
                 <ColorSwatch
                     color={rgbaOnBlack}
                     size={32}
@@ -121,14 +112,14 @@ export const Row = ({ value }: RowProps) => {
                     } as React.CSSProperties}
                 />
                 {rgbaOnBlack}
-            </div>
+            </Flex>
         </>
     );
 };
 
 export const GrayToAlpha = () => {
     return (
-        <div className={gridCss}>
+        <div style={gridStyle}>
             <div>灰色 Hex（此列可调整）</div>
             <div>灰度值</div>
             <div>透明黑色（白底）</div>

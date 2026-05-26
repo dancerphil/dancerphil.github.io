@@ -1,29 +1,6 @@
 import 'shader-doodle';
 import { ReactNode, useLayoutEffect, useRef } from 'react';
-import { css } from '@emotion/css';
-
-const headerCss = css`
-    position: relative;
-    color: #fff;
-    text-align: center;
-    background-color: #159957;
-    background-image: linear-gradient(120deg, #155799, #159957);
-    padding: 80px 100px;
-`;
-
-const doodleContainerCss = css`
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    #shader {
-        width: 100%;
-        height: 100%;
-        opacity: 0.2;
-    }
-`;
+import c from './ShaderHeader.module.css';
 
 const shader = `
 <shader-doodle id="shader">
@@ -103,8 +80,8 @@ export const ShaderHeader = ({ children }: Props) => {
     );
 
     return (
-        <div className={headerCss}>
-            <div className={doodleContainerCss} ref={ref} />
+        <div className={c.header}>
+            <div className={c.doodleContainer} ref={ref} />
             {children}
         </div>
     );

@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { Markdown } from '@/components/Markdown';
+import { Markdown } from '@hero-u/mantine';
 import '@/styles';
 import '@/styles/simplePage';
 import './index.css';

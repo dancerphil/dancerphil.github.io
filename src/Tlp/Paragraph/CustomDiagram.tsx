@@ -1,33 +1,18 @@
 /* eslint-disable max-lines */
-import { css } from '@emotion/css';
+import { SVGProps } from 'react';
+import c from './CustomDiagram.module.css';
 import { add, multiply, vertical, Vector } from './vector';
 
-const labelCss = css`
-    font-size: 12px;
-    fill: black;
-    user-select: none;
-`;
-
-const Label = ({ children, ...props }: React.SVGProps<SVGTextElement>) => (
-    <text className={labelCss} {...props}>{children}</text>
+const Label = ({ children, ...props }: SVGProps<SVGTextElement>) => (
+    <text className={c.label} {...props}>{children}</text>
 );
 
-const lineCss = css`
-    stroke: #aaa;
-    stroke-width: 1.5;
-`;
-
-const Line = (props: React.SVGProps<SVGLineElement>) => (
-    <line className={lineCss} {...props} />
+const Line = (props: SVGProps<SVGLineElement>) => (
+    <line className={c.line} {...props} />
 );
 
-const edgeCss = css`
-    stroke: black;
-    stroke-width: 1.5;
-`;
-
-const Edge = (props: React.SVGProps<SVGLineElement>) => (
-    <line className={edgeCss} {...props} />
+const Edge = (props: SVGProps<SVGLineElement>) => (
+    <line className={c.edge} {...props} />
 );
 
 interface Bracket {

@@ -1,29 +1,4 @@
-import { css, cx } from '@emotion/css';
-
-const gridCss = css`
-    display: grid;
-`;
-
-const cellCss = css`
-    border-style: solid;
-    border-color: #aaa;
-    text-align: center;
-    border-width: 0;
-    width: 50px;
-`;
-
-const bt = css`
-    border-top-width: 1px !important;
-`;
-const br = css`
-    border-right-width: 1px !important;
-`;
-const bb = css`
-    border-bottom-width: 1px !important;
-`;
-const bl = css`
-    border-left-width: 1px !important;
-`;
+import c from './TruthTable.module.css';
 
 interface Props {
     row?: number;
@@ -34,23 +9,25 @@ interface Props {
 }
 
 export const TruthTable = ({ rowSeparate = 1, col, colSeparate = -1, values }: Props) => {
-    const gridTemplateCss = css`grid-template-columns: repeat(${col}, 1fr);`;
+    const columnStyle: Record<string, string> = {
+        gridTemplateColumns: `repeat(${col}, 1fr)`,
+    };
 
     return (
-        <div className={cx(gridCss, gridTemplateCss)}>
+        <div className={c.grid} style={columnStyle}>
             {values.map((value, index) => {
                 const rowIndex = Math.floor(index / col);
                 const colIndex = index % col;
                 return (
                     <div
                         key={index}
-                        className={cx(
-                            cellCss,
-                            rowIndex === rowSeparate ? cx('margin-top-2', bt) : '',
-                            colIndex === colSeparate ? cx('margin-left-2', bl) : '',
-                            colIndex === col - 1 ? '' : br,
-                            bb,
-                        )}
+                        className={[
+                            c.cell,
+                            rowIndex === rowSeparate ? c.bt : '',
+                            colIndex === colSeparate ? c.bl : '',
+                            colIndex === col - 1 ? '' : c.br,
+                            c.bb,
+                        ].join(' ')}
                     >
                         {value}
                     </div>

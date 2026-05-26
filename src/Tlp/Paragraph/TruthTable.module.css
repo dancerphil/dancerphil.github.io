@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+}
+
+.cell {
+  border-style: solid;
+  border-color: #aaa;
+  text-align: center;
+  border-width: 0;
+  width: 50px;
+}
+
+.bt {
+  border-top-width: 1px !important;
+}
+
+.br {
+  border-right-width: 1px !important;
+}
+
+.bb {
+  border-bottom-width: 1px !important;
+}
+
+.bl {
+  border-left-width: 1px !important;
+}

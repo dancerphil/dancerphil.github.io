@@ -1,5 +1,5 @@
 import { useCallback, useEffect, MouseEvent } from 'react';
-import { css } from '@emotion/css';
+import { Box } from '@mantine/core';
 import { ResizeLayout } from '@/components/ResizeLayout';
 import { responsive } from '@/Tlp/styles';
 import { content } from './content';
@@ -8,19 +8,6 @@ import { activeTarget, setNodes, useActiveNodeKey } from './region';
 import { Header } from './Header';
 import { useShortKeys } from './useShortKeys';
 import { Stream } from './Stream';
-
-const containerCss = css`
-    height: 100vh;
-    overflow-y: auto;
-`;
-
-const contentCss = css`
-    position: relative;
-    padding: 40px 20px;
-    font-size: ${responsive.fontSize};
-    line-height: 2;
-    white-space: pre-line;
-`;
 
 export const Tlp = () => {
     const activeNodeKey = useActiveNodeKey();
@@ -58,18 +45,25 @@ export const Tlp = () => {
     return (
         <ResizeLayout
             left={(
-                <div className={containerCss}>
+                <Box h="100vh" style={{ overflowY: 'auto' }}>
                     <Header />
-                    <div className={contentCss} onClick={handleClick}>
+                    <Box
+                        pos="relative"
+                        px={20}
+                        py={40}
+                        style={{ lineHeight: 2, whiteSpace: 'pre-line', fontSize: responsive.fontSize }}
+                        onClick={handleClick}
+                    >
                         {content.map((item, index) => {
                             return <Paragraph key={index} item={item} />;
                         })}
-                    </div>
-                </div>
+                    </Box>
+                </Box>
             )}
             right={activeNodeKey && <Stream />}
             rightProps={{
-                defaultSize: 30,
+                defaultSize: '30%',
+                minSize: '25%',
             }}
         />
     );

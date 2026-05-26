@@ -1,0 +1,7 @@
+- 总是尽可能沿用现有的技术栈
+- 组件文件使用 PascalCase 如 `App.tsx`，其他文件使用 camelCase 如 `utils.ts`。
+- 只使用具名导出如 `export const App = () => { ... }`
+- 每个文件控制在 140 行以内，如果超出则拆分代码
+- 在需要查看文档时访问：
+  - Mantine: https://mantine.dev/llms.txt
+  - Region: https://raw.githubusercontent.com/regionjs/region/refs/heads/main/docs/Document-zh_CN.md

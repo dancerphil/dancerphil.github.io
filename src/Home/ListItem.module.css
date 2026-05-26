@@ -1,0 +1,14 @@
+.listItem {
+  padding: 8px 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+}
+
+.name {
+  width: 300px;
+}

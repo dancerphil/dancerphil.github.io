@@ -1,0 +1,21 @@
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  & a {
+    color: #1e6bb8;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #159957;
+}

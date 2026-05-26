@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { Stack, Group, Title, TextInput, NumberInput, Button, Select } from '@mantine/core';
 import { Category } from './types';
-import { sectionCss } from './styles';
+import s from './styles.module.css';
 
 interface AddAssetItemFormProps {
     categories: Category[];
@@ -24,7 +24,7 @@ export const AddAssetItemForm = ({ categories, onAdd }: AddAssetItemFormProps) =
     };
 
     return (
-        <div className={sectionCss}>
+        <div className={s.section}>
             <Title order={4} mb="md">添加资产项</Title>
             <Stack
                 gap="sm"

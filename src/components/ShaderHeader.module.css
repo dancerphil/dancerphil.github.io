@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  padding: 80px 100px;
+}
+
+.doodleContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  :global(#shader) {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+}

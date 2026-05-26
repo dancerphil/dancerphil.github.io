@@ -1,4 +1,3 @@
-import { cx } from '@emotion/css';
 import { useBlock } from '../region';
 import { blockStyle as style } from '../constant';
 import { Coordinate } from '../types';
@@ -19,13 +18,11 @@ const Block = ({ coordinate }: Props) => {
     const { mine, reveal, mark, label } = block;
 
     if (!reveal) {
-        const className = cx(
+        const className = [
             styles.block,
             theme.cover,
-            {
-                [theme.mark]: mark,
-            },
-        );
+            mark ? theme.mark : '',
+        ].filter(Boolean).join(' ');
         return (
             <div
                 className={className}
@@ -35,14 +32,12 @@ const Block = ({ coordinate }: Props) => {
             </div>
         );
     }
-    const className = cx(
+    const className = [
         styles.block,
         theme.reveal,
-        {
-            [theme[`label${label}`]]: !mine,
-            [theme.mine]: mine,
-        },
-    );
+        !mine ? theme[`label${label}`] : '',
+        mine ? theme.mine : '',
+    ].filter(Boolean).join(' ');
     return (
         <div
             className={className}

@@ -1,27 +1,9 @@
 import { useMemo } from 'react';
-import { css } from '@emotion/css';
-import { ActionIcon, Group, Menu } from '@mantine/core';
+import { ActionIcon, Container, Group, Menu, Stack } from '@mantine/core';
 import { useHotkeys } from '@mantine/hooks';
 import { getCognition } from '@/Mbti/utils';
 import { HelpIcon } from '@/ui';
 import { usePersonality, setPersonality } from './region';
-
-const containerCss = css`
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 60px 0;
-`;
-
-const headerCss = css`
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 20px;
-`;
-
-const resultCss = css`
-    padding: 20px 12px;
-`;
 
 const POSITION_OPTIONS = [
     { position: 0, options: ['I', 'E'], labels: ['I - 内向', 'E - 外向'] },
@@ -56,11 +38,11 @@ export const Mbti = () => {
     ]);
 
     return (
-        <div className={containerCss}>
-            <div className={headerCss}>
+        <Container size="lg" py={60}>
+            <Group gap="xs" mb="xl">
                 <span>使用键盘快捷键快速输入：</span>
                 <HelpIcon tooltip="I/E: 内向/外向 | N/S: 直觉/感觉 | T/F: 思考/情感 | J/P: 判断/感知" />
-            </div>
+            </Group>
             <Group gap="md" mb="xl">
                 {POSITION_OPTIONS.map(({ position, options, labels }) => (
                     <Menu key={position} position="bottom">
@@ -84,7 +66,7 @@ export const Mbti = () => {
                     </Menu>
                 ))}
             </Group>
-            <div className={resultCss}>{result.join(' ')}</div>
-        </div>
+            <Stack py="md">{result.join(' ')}</Stack>
+        </Container>
     );
 };

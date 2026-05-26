@@ -3,7 +3,7 @@ import { DndContext, closestCenter, DragEndEvent, useSensors } from '@dnd-kit/co
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { AssetItem, Category } from './types';
 import { SortableAssetItem } from './SortableAssetItem';
-import { sectionCss } from './styles';
+import s from './styles.module.css';
 
 interface AssetItemSectionProps {
     assetItems: AssetItem[];
@@ -27,7 +27,7 @@ export const AssetItemSection = ({
     onDelete,
 }: AssetItemSectionProps) => {
     return (
-        <div className={sectionCss}>
+        <div className={s.section}>
             <Title order={4} mb="md">资产项列表</Title>
             <DndContext
                 sensors={sensors}

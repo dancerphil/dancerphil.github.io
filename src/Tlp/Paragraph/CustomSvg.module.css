@@ -1,0 +1,27 @@
+.label {
+  font-size: 12px;
+  fill: black;
+  user-select: none;
+}
+
+.edge {
+  stroke: black;
+  stroke-width: 1.5;
+}
+
+.sightSvg {
+  width: 300px;
+  height: 100px;
+}
+
+.circle {
+  fill: white;
+  stroke: black;
+  stroke-width: 1.5;
+}
+
+.curve {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5;
+}

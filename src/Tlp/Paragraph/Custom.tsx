@@ -1,37 +1,21 @@
-import { css } from '@emotion/css';
+import { ReactNode } from 'react';
 import { codeFamily, responsive } from '@/Tlp/styles';
 import { FlexContainer, CustomTruthTable } from '@/Tlp/Paragraph/CustomTruthTable';
-import { TruthTable } from './TruthTable';
 import { CustomCube, CustomSight } from './CustomSvg';
 import { CustomDiagram1, CustomDiagram2, CustomDiagram3, CustomDiagram4, CustomDiagram5 } from './CustomDiagram';
 import { Centered } from './Components';
+import { TruthTable } from './TruthTable';
 
-const listContainerCss = css`
-    font-size: 13px;
-    font-family: ${codeFamily};
-    padding: ${responsive.contentPadding};
-`;
-
-const ListContainer = ({ children }: { children: React.ReactNode }) => (
-    <div className={listContainerCss}>{children}</div>
+const ListContainer = ({ children }: { children: ReactNode }) => (
+    <div style={{ fontSize: '13px', fontFamily: codeFamily, padding: responsive.contentPadding }}>{children}</div>
 );
 
-const flexCenteredCss = css`
-    width: ${responsive.contentWidth};
-    display: flex;
-    justify-content: center;
-`;
-
-const FlexCentered = ({ children }: { children: React.ReactNode }) => (
-    <div className={flexCenteredCss}>{children}</div>
+const FlexCentered = ({ children }: { children: ReactNode }) => (
+    <div style={{ width: responsive.contentWidth, display: 'flex', justifyContent: 'center' }}>{children}</div>
 );
 
-const alignRightCss = css`
-    text-align: right;
-`;
-
-const AlignRight = ({ children }: { children: React.ReactNode }) => (
-    <div className={alignRightCss}>{children}</div>
+const AlignRight = ({ children }: { children: ReactNode }) => (
+    <div style={{ textAlign: 'right' }}>{children}</div>
 );
 
 const values4442 = [
@@ -90,9 +74,9 @@ export const Custom = ({ dataKey, index }: Props) => {
         return (
             <FlexCentered>
                 <AlignRight>
-                    0 ＋ 1 ＝ 1 <span className="ml-20">Def.</span><br />
-                    0 ＋ 1 ＋ 1 ＝ 2 <span className="ml-20">Def.</span><br />
-                    0 ＋ 1 ＋ 1 ＋ 1 ＝ 3 <span className="ml-20">Def.</span>
+                    0 ＋ 1 ＝ 1 <span style={{ marginLeft: '20px' }}>Def.</span><br />
+                    0 ＋ 1 ＋ 1 ＝ 2 <span style={{ marginLeft: '20px' }}>Def.</span><br />
+                    0 ＋ 1 ＋ 1 ＋ 1 ＝ 3 <span style={{ marginLeft: '20px' }}>Def.</span>
                 </AlignRight>
             </FlexCentered>
         );

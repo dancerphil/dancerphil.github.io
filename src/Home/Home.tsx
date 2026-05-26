@@ -1,44 +1,8 @@
-/* eslint-disable max-lines */
-import { ReactNode } from 'react';
 import { Divider } from '@mantine/core';
-import { css } from '@emotion/css';
 import { ShaderHeader } from '@/components/ShaderHeader';
 import { HeaderContent } from './HeaderContent';
 import { ListItem } from './ListItem';
-
-const mainCss = css`
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 60px 0;
-    
-    a {
-        color: #1e6bb8;
-        text-decoration: none;
-        
-        :hover {
-            text-decoration: underline;
-        }
-    }
-`;
-
-const textCenterCss = css`
-    text-align: center;
-`;
-
-const titleCss = css`
-    margin-bottom: 16px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #159957;
-`;
-
-interface TitleProps {
-    children: ReactNode;
-}
-
-const Title = ({ children }: TitleProps) => {
-    return <div className={titleCss}>{children}</div>;
-};
+import c from './Home.module.css';
 
 export const Home = () => {
     return (
@@ -46,8 +10,8 @@ export const Home = () => {
             <ShaderHeader>
                 <HeaderContent />
             </ShaderHeader>
-            <div className={mainCss}>
-                <Title>关于我</Title>
+            <div className={c.main}>
+                <div className={c.title}>关于我</div>
                 <ListItem
                     href="https://github.com/dancerphil"
                     title="我的 github 主页"
@@ -55,7 +19,7 @@ export const Home = () => {
 
                 <Divider my="lg" />
 
-                <Title>推荐</Title>
+                <div className={c.title}>推荐</div>
                 <ListItem
                     href="https://agents.dancerphil.com"
                     title="股票分析"
@@ -79,7 +43,7 @@ export const Home = () => {
 
                 <Divider my="lg" />
 
-                <Title>随手写的玩具</Title>
+                <div className={c.title}>随手写的玩具</div>
                 <ListItem
                     href="./age"
                     title="age"
@@ -140,14 +104,9 @@ export const Home = () => {
                     title="每天百分之一"
                     description="一个关于钱、时间和意义的增量游戏"
                 />
-                {/* <ListItem */}
-                {/*    href="./skyline" */}
-                {/*    title="3d commit 记录" */}
-                {/*    description="用 three.js 画的提交历史天际线玩具，但现在运行不了" */}
-                {/* /> */}
                 <Divider my="lg" />
 
-                <Title>随手写的动画</Title>
+                <div className={c.title}>随手写的动画</div>
                 <ListItem
                     href="./10/once.html"
                     title="10 随机迷宫"
@@ -160,10 +119,6 @@ export const Home = () => {
                     href="https://codepen.io/dancerphil/pen/POdeWy"
                     title="纯 css 动画：bees"
                 />
-                {/* <ListItem */}
-                {/*    href="https://codepen.io/dissimulate/pen/eZxEBO" */}
-                {/*    title="窗帘动画 from codepen" */}
-                {/* /> */}
                 <ListItem
                     href="./d"
                     title="任务管理"
@@ -176,20 +131,12 @@ export const Home = () => {
                     href="./m"
                     title="material-design v0 颜色分析"
                 />
-                {/* <ListItem */}
-                {/*    href="https://vincentgarreau.com/particles.js/" */}
-                {/*    title="particles 动画" */}
-                {/* /> */}
-                {/* <ListItem */}
-                {/*    href="https://seenjs.io/demo-2048.html" */}
-                {/*    title="3d 2048 游戏" */}
-                {/* /> */}
                 <ListItem
                     href="./w"
                     title="纯 css 动画"
                 />
                 <Divider my="lg" />
-                <div className={textCenterCss}>
+                <div style={{ textAlign: 'center' }}>
                     {'With Love. '}
                     <a target="_blank" href="https://github.com/dancerphil" rel="noreferrer">Dancerphil</a>
                 </div>

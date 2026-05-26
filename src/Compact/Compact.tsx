@@ -1,27 +1,15 @@
 import { useMemo, useState } from 'react';
 import { Button, Textarea, Group, Switch, Title, Text } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
-import { css } from '@emotion/css';
 import { compactHtml } from './compactHtml';
+import c from './Compact.module.css';
 
-const textareaCss = css`
-    margin-top: 8px;
-    width: 100%;
-    min-height: 420px;
-    font-family: 'JetBrains Mono', 'Monaco', monospace;
-    font-size: 12px;
-`;
-
-const previewCss = css`
-    margin-top: 12px;
-    padding: 12px;
-    border: 1px solid #e5e5e5;
-    border-radius: 6px;
-    background: #ffffff;
-    min-height: 200px;
-    max-height: 520px;
-    overflow: auto;
-`;
+const textareaStyles = {
+    input: {
+        fontFamily: '"JetBrains Mono", Monaco, monospace',
+        fontSize: '12px',
+    },
+};
 
 export const Compact = () => {
     const [input, setInput] = useState('');
@@ -106,7 +94,8 @@ export const Compact = () => {
                     value={input}
                     onChange={event => setInput(event.target.value)}
                     placeholder="粘贴 html 内容，支持带样式的报表"
-                    className={textareaCss}
+                    mt={8}
+                    styles={textareaStyles}
                     autosize
                     minRows={10}
                     maxRows={20}
@@ -118,15 +107,15 @@ export const Compact = () => {
                     readOnly
                     value={output}
                     placeholder="转换后的纯结构 html"
-                    className={textareaCss}
+                    mt={8}
+                    styles={textareaStyles}
                     autosize
                     minRows={10}
                     maxRows={20}
                 />
                 <Text fw={700} mt="md" mb="xs">预览</Text>
                 <div
-                    className={previewCss}
-                    // eslint-disable-next-line @eslint-react/dom-no-dangerously-set-innerhtml
+                    className={c.preview}
                     dangerouslySetInnerHTML={{ __html: output }}
                 />
             </div>

@@ -1,57 +1,42 @@
-import { css } from '@emotion/css';
+import { SVGProps } from 'react';
+import c from './CustomSvg.module.css';
 
-const labelCss = css`
-    font-size: 12px;
-    fill: black;
-    user-select: none;
-`;
-
-const Label = ({ children, ...props }: React.SVGProps<SVGTextElement>) => (
-    <text className={labelCss} {...props}>{children}</text>
+const Label = ({ children, ...props }: SVGProps<SVGTextElement>) => (
+    <text className={c.label} {...props}>{children}</text>
 );
 
-const edgeCss = css`
-    stroke: black;
-    stroke-width: 1.5;
-`;
-
-const Edge = (props: React.SVGProps<SVGLineElement>) => (
-    <line className={edgeCss} {...props} />
+const Edge = (props: SVGProps<SVGLineElement>) => (
+    <line className={c.edge} {...props} />
 );
 
-// 定义立方体的顶点坐标
 const front = {
-    a1: [50 - 10, 130 + 10], // 左下
-    a2: [150 - 10, 130 + 10], // 右下
-    a3: [150 - 10, 30 + 10], // 右上
-    a4: [50 - 10, 30 + 10], // 左上
+    a1: [50 - 10, 130 + 10],
+    a2: [150 - 10, 130 + 10],
+    a3: [150 - 10, 30 + 10],
+    a4: [50 - 10, 30 + 10],
 };
 const back = {
-    b1: [80, 100], // 左下
-    b2: [180, 100], // 右下
-    b3: [180, 0], // 右上
-    b4: [80, 0], // 左上
+    b1: [80, 100],
+    b2: [180, 100],
+    b3: [180, 0],
+    b4: [80, 0],
 };
 
 export const CustomCube = () => {
     return (
-        <svg className="size-200" viewBox="0 0 200 150">
-            {/* 前面的边 */}
+        <svg style={{ width: '200px', height: '200px' }} viewBox="0 0 200 150">
             <Edge x1={front.a1[0]} y1={front.a1[1]} x2={front.a2[0]} y2={front.a2[1]} />
             <Edge x1={front.a2[0]} y1={front.a2[1]} x2={front.a3[0]} y2={front.a3[1]} />
             <Edge x1={front.a3[0]} y1={front.a3[1]} x2={front.a4[0]} y2={front.a4[1]} />
             <Edge x1={front.a4[0]} y1={front.a4[1]} x2={front.a1[0]} y2={front.a1[1]} />
-            {/* 后面的边 */}
             <Edge x1={back.b1[0]} y1={back.b1[1]} x2={back.b2[0]} y2={back.b2[1]} />
             <Edge x1={back.b2[0]} y1={back.b2[1]} x2={back.b3[0]} y2={back.b3[1]} />
             <Edge x1={back.b3[0]} y1={back.b3[1]} x2={back.b4[0]} y2={back.b4[1]} />
             <Edge x1={back.b4[0]} y1={back.b4[1]} x2={back.b1[0]} y2={back.b1[1]} />
-            {/* 连接前后的边 */}
             <Edge x1={front.a1[0]} y1={front.a1[1]} x2={back.b1[0]} y2={back.b1[1]} />
             <Edge x1={front.a2[0]} y1={front.a2[1]} x2={back.b2[0]} y2={back.b2[1]} />
             <Edge x1={front.a3[0]} y1={front.a3[1]} x2={back.b3[0]} y2={back.b3[1]} />
             <Edge x1={front.a4[0]} y1={front.a4[1]} x2={back.b4[0]} y2={back.b4[1]} />
-            {/* 顶点标签 */}
             <Label x={front.a1[0] - 3} y={front.a1[1] + 12}>a</Label>
             <Label x={front.a2[0] - 3} y={front.a2[1] + 12}>a</Label>
             <Label x={front.a3[0] - 6} y={front.a3[1] - 5}>a</Label>
@@ -64,28 +49,10 @@ export const CustomCube = () => {
     );
 };
 
-const sightSvgCss = css`
-    width: 300px;
-    height: 100px;
-`;
-
-const circleCss = css`
-    fill: white;
-    stroke: black;
-    stroke-width: 1.5;
-`;
-
-const curveCss = css`
-    fill: none;
-    stroke: black;
-    stroke-width: 1.5;
-`;
-
 const centerX = 50;
 const centerY = 50;
 const radius = 4;
 
-// 贝塞尔曲线的控制点
 const controlPoint1X = 300;
 const controlPoint1Y = -80;
 const controlPoint2X = 300;
@@ -93,15 +60,15 @@ const controlPoint2Y = 180;
 
 export const CustomSight = () => {
     return (
-        <svg className={sightSvgCss} viewBox="0 0 300 100">
+        <svg className={c.sightSvg} viewBox="0 0 300 100">
             <path
-                className={curveCss}
+                className={c.curve}
                 d={`M ${centerX} ${centerY}
                     C ${controlPoint1X} ${controlPoint1Y},
                     ${controlPoint2X} ${controlPoint2Y},
                     ${centerX} ${centerY}`}
             />
-            <circle className={circleCss} cx={centerX} cy={centerY} r={radius} />
+            <circle className={c.circle} cx={centerX} cy={centerY} r={radius} />
             <Label x={centerX - 50} y={centerY + 4}>{'眼睛 -'}</Label>
         </svg>
     );

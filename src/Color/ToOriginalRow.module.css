@@ -1,0 +1,20 @@
+.icon {
+  font-size: 16px;
+  color: #faad14;
+  cursor: pointer;
+}
+
+.displayBg {
+  width: 64px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.displayBgInner {
+  width: 56px;
+  height: 24px;
+  border-radius: 4px;
+}

@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Button, Skeleton } from '@mantine/core';
-import { css } from '@emotion/css';
+import { Button, Skeleton, Box } from '@mantine/core';
+import { Markdown } from '@hero-u/mantine';
 import { StreamParams, streamSentence } from '@/Tlp/utils';
-import { Markdown } from '@/components/Markdown';
 import { useActiveNodeKey, getNodes, resetActiveNodeKey } from '@/Tlp/region';
 import { responsive } from '@/Tlp/styles';
 
@@ -10,16 +9,6 @@ const handleClose = () => {
     resetActiveNodeKey();
     window.location.hash = '';
 };
-
-const stickyCss = css`
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    font-size: ${responsive.fontSizeSmall};
-    line-height: 1.5;
-    height: 100vh;
-    overflow-y: auto;
-`;
 
 export const Stream = () => {
     const activeNodeKey = useActiveNodeKey();
@@ -59,11 +48,17 @@ export const Stream = () => {
     );
 
     return (
-        <div className={stickyCss}>
+        <Box
+            p={20}
+            pos="sticky"
+            top={0}
+            h="100vh"
+            style={{ fontSize: responsive.fontSizeSmall, lineHeight: 1.5, overflowY: 'auto' }}
+        >
             <Button variant="default" onClick={handleClose}>× Close</Button>
             {content ? (
                 <Markdown>{content}</Markdown>
             ) : <Skeleton height={200} />}
-        </div>
+        </Box>
     );
 };

@@ -1,24 +1,6 @@
 import { ReactNode } from 'react';
-import { css } from '@emotion/css';
-
-const listItemCss = css`
-    padding: 8px 4px;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    
-    :hover {
-        background-color: rgba(0, 0, 0, 0.03);
-    }
-`;
-
-const aCss = css`
-    width: 300px;
-`;
-
-const descriptionCss = css`
-    color: rgba(0, 0, 0, 0.45);
-`;
+import { Text } from '@mantine/core';
+import c from './ListItem.module.css';
 
 interface ListItemProps {
     href: string;
@@ -28,9 +10,9 @@ interface ListItemProps {
 
 export const ListItem = ({ href, title, description }: ListItemProps) => {
     return (
-        <a className={listItemCss} target="_blank" href={href} rel="noreferrer">
-            <span className={aCss}>{title}</span>
-            {description && <span className={descriptionCss}>{description}</span>}
+        <a className={c.listItem} target="_blank" href={href} rel="noreferrer">
+            <span className={c.name}>{title}</span>
+            {description && <Text c="dimmed" component="span">{description}</Text>}
         </a>
     );
 };

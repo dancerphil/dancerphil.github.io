@@ -1,40 +1,26 @@
 import { useState } from 'react';
-import { ColorPicker, ColorSwatch, NumberInput, Popover, Slider, TextInput, UnstyledButton } from '@mantine/core';
-import { css } from '@emotion/css';
+import { ColorPicker, ColorSwatch, NumberInput, Popover, Slider, TextInput, UnstyledButton, Flex } from '@mantine/core';
 import { ToOriginalRow } from './ToOriginalRow';
 
-const headerCss = css`
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-`;
+const gridStyle: React.CSSProperties = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, minmax(200px, 1fr))',
+    gap: '10px',
+};
 
-const headerItemCss = css`
-    display: flex;
-    align-items: center;
-    gap: 8px;
-`;
-
-const gridCss = css`
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 10px;
-`;
-
-// 示例颜色列表
 const colors = [
-    '#b3b3b3', // 灰色
-    '#e6b3b3', // 浅红
-    '#b3e6b3', // 浅绿
-    '#b3b3e6', // 浅蓝
-    '#e6e6b3', // 浅黄
-    '#e6b3e6', // 浅紫
-    '#b3e6e6', // 浅青
-    '#ffcccc', // 粉红
-    '#ccffcc', // 浅草绿
-    '#ccccff', // 浅蓝紫
-    '#ffffcc', // 浅黄
-    '#ffccff', // 浅粉紫
+    '#b3b3b3',
+    '#e6b3b3',
+    '#b3e6b3',
+    '#b3b3e6',
+    '#e6e6b3',
+    '#e6b3e6',
+    '#b3e6e6',
+    '#ffcccc',
+    '#ccffcc',
+    '#ccccff',
+    '#ffffcc',
+    '#ffccff',
 ];
 
 export const ToOriginal = () => {
@@ -48,8 +34,8 @@ export const ToOriginal = () => {
     };
 
     const header = (
-        <div className={headerCss}>
-            <div className={headerItemCss}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '40px' }}>
+            <Flex align="center" gap={8}>
                 <span>背景色：</span>
                 <Popover radius="md" position="bottom" shadow="md">
                     <Popover.Target>
@@ -73,8 +59,8 @@ export const ToOriginal = () => {
                     </Popover.Dropdown>
                 </Popover>
                 <span>{backgroundColor}</span>
-            </div>
-            <div className={headerItemCss}>
+            </Flex>
+            <Flex align="center" gap={8}>
                 <span>透明度：</span>
                 <Slider
                     style={{ width: '200px' }}
@@ -93,7 +79,7 @@ export const ToOriginal = () => {
                     onChange={value => setAlpha(typeof value === 'number' ? value : 0.01)}
                 />
                 <span>({Math.round(alpha * 100)}%)</span>
-            </div>
+            </Flex>
             <div></div>
         </div>
     );
@@ -101,7 +87,7 @@ export const ToOriginal = () => {
     return (
         <div style={{ marginBottom: '20px' }}>
             {header}
-            <div className={gridCss}>
+            <div style={gridStyle}>
                 <div>显示颜色（此列可调整）</div>
                 <div>原始颜色</div>
                 <div>原始颜色（带透明度）</div>
