@@ -12,7 +12,7 @@ import {
 } from './region/option';
 import { useCurrentId } from './region/currentId';
 import { useNodesAndLinks } from './region/nodesAndLinks';
-import Graph from './echarts/Graph';
+import { Graph } from './echarts/Graph';
 import c from './App.module.css';
 import { useDescription } from './region/description';
 import { useExceptions } from './region/exception';

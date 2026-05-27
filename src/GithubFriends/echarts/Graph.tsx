@@ -11,7 +11,7 @@ interface Props {
     links: Link[];
 }
 
-const Graph: FC<Props> = ({ nodes, links }) => {
+export const Graph: FC<Props> = ({ nodes, links }) => {
     const ref = useRef<HTMLDivElement>(null);
     useLayoutEffect(
         () => {
@@ -46,5 +46,3 @@ const Graph: FC<Props> = ({ nodes, links }) => {
 
     return <div className={c.container} ref={ref} />;
 };
-
-export default Graph;

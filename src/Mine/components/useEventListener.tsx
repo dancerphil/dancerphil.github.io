@@ -51,7 +51,7 @@ const withMouse = (handler: (e: Params) => void, checkButtons?: boolean) => (e: 
     }
 };
 
-const useEventListener = (ref: RefObject<HTMLDivElement>) => {
+export const useEventListener = (ref: RefObject<HTMLDivElement>) => {
     useEffect(
         () => {
             const element = ref.current;
@@ -108,5 +108,3 @@ const useEventListener = (ref: RefObject<HTMLDivElement>) => {
 
     return ref;
 };
-
-export default useEventListener;

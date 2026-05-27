@@ -5,9 +5,9 @@ import { handleReset } from '../handlers';
 import { panelStyle } from '../constant';
 import { xyList } from '../utils';
 import c from './Mine.module.css';
-import Block from './Block';
-import useEventListener from './useEventListener';
-import CastRange from './CastRange';
+import { Block } from './Block';
+import { useEventListener } from './useEventListener';
+import { CastRange } from './CastRange';
 
 export const Mine = () => {
     useRender();

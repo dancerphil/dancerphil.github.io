@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, CSSProperties } from 'react';
 import { ColorPicker, ColorSwatch, Popover, TextInput, UnstyledButton, Flex } from '@mantine/core';
 import { TinyColor } from '@ctrl/tinycolor';
 import { calculateAlpha } from './calculate';
 
-const gridStyle: React.CSSProperties = {
+const gridStyle: CSSProperties = {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, minmax(200px, 1fr))',
     gap: '10px',
@@ -109,7 +109,7 @@ export const Row = ({ value }: RowProps) => {
                     style={{
                         '--alpha-overlay-color': 'var(--mantine-color-gray-9)',
                         '--alpha-overlay-bg': 'var(--mantine-color-black)',
-                    } as React.CSSProperties}
+                    } as CSSProperties}
                 />
                 {rgbaOnBlack}
             </Flex>

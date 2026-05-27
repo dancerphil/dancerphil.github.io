@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, CSSProperties } from 'react';
 import { ColorPicker, ColorSwatch, NumberInput, Popover, Slider, TextInput, UnstyledButton, Flex } from '@mantine/core';
 import { ToOriginalRow } from './ToOriginalRow';
 
-const gridStyle: React.CSSProperties = {
+const gridStyle: CSSProperties = {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, minmax(200px, 1fr))',
     gap: '10px',

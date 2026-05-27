@@ -1,12 +1,17 @@
+import { ReactNode } from 'react';
 import { Flex } from '@mantine/core';
 import { responsive } from '@/Tlp/styles';
 import { TruthTable } from './TruthTable';
 
-export const FlexContainer = ({ children }: { children: React.ReactNode }) => (
+interface Props {
+    children: ReactNode;
+}
+
+export const FlexContainer = ({ children }: Props) => (
     <Flex align="center" wrap="wrap" gap={40} style={{ padding: responsive.contentPadding }}>{children}</Flex>
 );
 
-const FlexSecondary = ({ children }: { children: React.ReactNode }) => (
+const FlexSecondary = ({ children }: Props) => (
     <Flex align="center" wrap="wrap" gap={10}>{children}</Flex>
 );
 

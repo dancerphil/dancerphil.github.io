@@ -8,7 +8,7 @@ interface Props {
     coordinate: Coordinate;
 }
 
-const Block = ({ coordinate }: Props) => {
+export const Block = ({ coordinate }: Props) => {
     const block = useBlock(coordinate);
 
     if (!block) {
@@ -47,5 +47,3 @@ const Block = ({ coordinate }: Props) => {
         </div>
     );
 };
-
-export default Block;

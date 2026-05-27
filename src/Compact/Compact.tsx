@@ -116,6 +116,7 @@ export const Compact = () => {
                 <Text fw={700} mt="md" mb="xs">预览</Text>
                 <div
                     className={c.preview}
+                    // eslint-disable-next-line @eslint-react/dom-no-dangerously-set-innerhtml
                     dangerouslySetInnerHTML={{ __html: output }}
                 />
             </div>

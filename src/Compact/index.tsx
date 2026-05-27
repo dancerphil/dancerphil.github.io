@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
-import { MantineProvider } from '@/components/MantineProvider';
 import { Notifications } from '@mantine/notifications';
+import { MantineProvider } from '@/components/MantineProvider';
 import '@mantine/notifications/styles.css';
 import '@/styles';
 import '@/styles/simplePage';

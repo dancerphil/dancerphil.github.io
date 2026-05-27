@@ -2,7 +2,8 @@ import { Info } from '../types';
 
 export type GraphEdge = [GraphVertex, GraphVertex];
 
-export default class GraphVertex {
+// eslint-disable-next-line no-restricted-syntax
+export class GraphVertex {
     value: string;
     info?: Info;
     edges: GraphEdge[];

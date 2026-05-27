@@ -12,6 +12,7 @@ const View = () => {
     const forceUpdate = useForceUpdate();
     useInterval(forceUpdate, 100, { autoInvoke: true });
     const birth = birthRegion.useValue();
+    // eslint-disable-next-line react-hooks/purity
     const diff = ((Date.now() - birth) / 1000 / 31556926).toFixed(8);
     return (
         <Center

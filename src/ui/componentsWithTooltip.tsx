@@ -1,20 +1,23 @@
-import { ComponentType } from 'react';
+import { ComponentType, ReactNode } from 'react';
 import {
     ActionIcon as MActionIcon,
     ActionIconProps as MActionIconProps,
     Button as MButton,
     ButtonProps as MButtonProps,
-    PolymorphicComponentProps,
 } from '@mantine/core';
 import { IconHelp, IconProps } from '@tabler/icons-react';
-import { withTooltip, WithTooltipExtraProps } from './withTooltip';
+import { withTooltip } from '@hero-u/mantine';
 
-type ButtonProps = PolymorphicComponentProps<'button', MButtonProps & WithTooltipExtraProps>;
+interface WithTooltipExtraProps {
+    tooltip?: ReactNode;
+    disabledReason?: ReactNode;
+}
 
-export const Button = withTooltip(MButton) as ComponentType<ButtonProps>;
+export const Button = withTooltip<MButtonProps>(MButton);
 
-type ActionIconProps = PolymorphicComponentProps<'button', MActionIconProps & WithTooltipExtraProps>;
+export const ActionIcon = withTooltip<MActionIconProps>(MActionIcon, { size: 32 });
 
-export const ActionIcon = withTooltip(MActionIcon, { size: 32 }) as ComponentType<ActionIconProps>;
-
-export const HelpIcon = withTooltip(IconHelp, { className: 'inline-flex size-4 text-gray-500 cursor-help' }) as ComponentType<IconProps & WithTooltipExtraProps>;
+export const HelpIcon = withTooltip(IconHelp, {
+    size: 16,
+    style: { display: 'inline-flex', cursor: 'help', color: 'var(--mantine-color-gray-6)' },
+}) as ComponentType<IconProps & WithTooltipExtraProps>;

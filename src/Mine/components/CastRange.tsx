@@ -3,7 +3,7 @@ import { castRangeStyle, intelligenceLevel, size } from '../constant';
 import { useCurrentCoordinate } from './useEventListener';
 import c from './CastRange.module.css';
 
-function CastRange() {
+function CastRangeInner() {
     const currentCoordinate = useCurrentCoordinate();
     if (intelligenceLevel < 3) {
         return null;
@@ -15,4 +15,4 @@ function CastRange() {
     return <div className={c.castRange} style={{ ...castRangeStyle, left: (x - 1) * size, top: (y - 1) * size }} />;
 }
 
-export default memo(CastRange);
+export const CastRange = memo(CastRangeInner);
