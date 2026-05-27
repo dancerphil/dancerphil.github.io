@@ -1,1 +1,0 @@
-import{c as e}from"./_MapCache-C0az_qek.js";var t=function(){try{var t=e(Object,`defineProperty`);return t({},``,{}),t}catch{}}();export{t};

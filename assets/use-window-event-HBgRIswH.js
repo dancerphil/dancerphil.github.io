@@ -1,0 +1,1 @@
+import{i as e,l as t}from"./jsx-runtime-Bvy0Qi3k.js";var n=t(e(),1);function r(e,t,r){let i=(0,n.useEffectEvent)(t);(0,n.useEffect)(()=>(window.addEventListener(e,i,r),()=>window.removeEventListener(e,i,r)),[e])}export{r as t};

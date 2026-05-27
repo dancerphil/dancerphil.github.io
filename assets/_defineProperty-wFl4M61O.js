@@ -1,0 +1,1 @@
+import{c as e}from"./_MapCache-BOCN-DKn.js";var t=function(){try{var t=e(Object,`defineProperty`);return t({},``,{}),t}catch{}}();export{t};
