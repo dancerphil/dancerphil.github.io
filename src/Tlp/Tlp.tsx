@@ -54,8 +54,8 @@ export const Tlp = () => {
                         style={{ lineHeight: 2, whiteSpace: 'pre-line', fontSize: responsive.fontSize }}
                         onClick={handleClick}
                     >
-                        {content.map((item, index) => {
-                            return <Paragraph key={index} item={item} />;
+                        {content.map((item) => {
+                            return <Paragraph key={item[0]} item={item} />;
                         })}
                     </Box>
                 </Box>

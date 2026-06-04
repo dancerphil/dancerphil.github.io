@@ -8,11 +8,11 @@ const tip = <Footnote>标记各个命题的十进数表明这些命题的逻辑�
 const parser = new DOMParser();
 
 interface Props {
-    item: string;
+    item: [string, string];
 }
 
 export const Paragraph = ({ item }: Props) => {
-    const [dataKey, content] = item.split('\t');
+    const [dataKey, content] = item;
 
     const document = parser.parseFromString(`<container>${content}</container>`, 'application/xml');
 
