@@ -39,7 +39,7 @@ export const Tlp = () => {
             if (!target) {
                 return;
             }
-            activeTarget(target);
+            // activeTarget(target);
         },
         [],
     );

@@ -2,7 +2,6 @@ import { useEffect, useRef, ReactNode } from 'react';
 import { Tooltip } from '@mantine/core';
 import { render } from 'katex';
 import 'katex/dist/katex.css';
-import { responsive } from '@/Tlp/styles';
 import c from './Components.module.css';
 
 interface ChildrenProps {
@@ -50,5 +49,5 @@ export const KaiTi = ({ children }: { children: ReactNode }) => (
 );
 
 export const Centered = ({ children }: { children: ReactNode }) => (
-    <div className={c.centered} style={{ width: responsive.contentWidth }}>{children}</div>
+    <div className={c.centered}>{children}</div>
 );

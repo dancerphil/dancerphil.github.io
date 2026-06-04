@@ -12,6 +12,8 @@ export const Segment = ({ dataKey, node }: SegmentProps) => {
         () => {
             const { nodeName, textContent, childNodes } = node;
             switch (nodeName) {
+                case 'i':
+                    return <i style={{ border: '1px solid blue' }}>{textContent}</i>;
                 case 'emphasis':
                     return <Emphasis>{textContent}</Emphasis>;
                 case 'footnote':
@@ -27,7 +29,7 @@ export const Segment = ({ dataKey, node }: SegmentProps) => {
                     return <Centered>{children}</Centered>;
                 }
                 case 'custom': {
-                    return <Custom dataKey={dataKey} index={node.getAttribute('index')} />;
+                    return <Custom dataKey={dataKey} index={node.getAttribute('index')} language={node.getAttribute('language')} />;
                 }
                 case '#text':
                     return <>{textContent}</>;
