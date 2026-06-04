@@ -1,10 +1,12 @@
 /* eslint-disable max-lines */
-export const content: [string, string][] = [[
+export const content: string[][] = [[
     '1',
-    '世界是一切发生的事情。',
+    '世界是一切发生的事情。<footnote>标记各个命题的十进数表明这些命题的逻辑重要性和在我的叙述中对它们的强调。命题 n.1，n.2，n.3 等等是对命题 n 的评述；命题 n.m1，n.m2 等等是对命题 n.m 的评述；余类推。</footnote>',
+    'The world is everything that is the case.<footnote>The decimal figures as numbers of the separate propositions indicate the logical importance of the propositions, the emphasis laid upon them in my exposition. The propositions n.1, n.2, n.3, etc., are comments on proposition No. n; the propositions n.m1, n.m2, etc., are comments on the proposition No. n.m; and so on.</footnote>',
 ], [
     '1.1',
     '世界是事实的总体，而不是事物的总体。',
+    'The world is the totality of facts, not of things.',
 ], [
     '1.11',
     '世界为诸事实所规定，为它们即是<emphasis>全部</emphasis>事实所规定。',

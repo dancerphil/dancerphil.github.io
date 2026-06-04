@@ -131,10 +131,6 @@ export const Home = () => {
                     href="./m"
                     title="material-design v0 颜色分析"
                 />
-                <ListItem
-                    href="./w"
-                    title="纯 css 动画"
-                />
                 <Divider my="lg" />
                 <div style={{ textAlign: 'center' }}>
                     {'With Love. '}

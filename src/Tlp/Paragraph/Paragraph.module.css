@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  padding: 8px 15px;
+  padding: 10px 15px;
   border: 1px solid transparent;
   overflow: hidden;
+  gap: 60px;
 
   &:global(.active) {
     background-color: #f0f8ff;
@@ -24,5 +25,10 @@
 }
 
 .key {
+  width: 140px;
   flex-shrink: 0;
+}
+
+.content {
+  flex: 1 0 0;
 }

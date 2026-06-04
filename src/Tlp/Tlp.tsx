@@ -1,4 +1,4 @@
-import { useCallback, useEffect, MouseEvent } from 'react';
+import { MouseEvent, useCallback, useEffect } from 'react';
 import { Box } from '@mantine/core';
 import { ResizeLayout } from '@/components/ResizeLayout';
 import { responsive } from '@/Tlp/styles';
@@ -8,9 +8,11 @@ import { activeTarget, setNodes, useActiveNodeKey } from './region';
 import { Header } from './Header';
 import { useShortKeys } from './useShortKeys';
 import { Stream } from './Stream';
+import { useLanguages } from './useLanguage';
 
 export const Tlp = () => {
     const activeNodeKey = useActiveNodeKey();
+    const [languages, toggleLanguage] = useLanguages();
 
     useShortKeys();
 
@@ -42,11 +44,15 @@ export const Tlp = () => {
         [],
     );
 
+    const cn = languages.includes('cn');
+    const en = languages.includes('en');
+    const de = languages.includes('de');
+
     return (
         <ResizeLayout
             left={(
                 <Box h="100vh" style={{ overflowY: 'auto' }}>
-                    <Header />
+                    <Header languages={languages} onToggle={toggleLanguage} />
                     <Box
                         pos="relative"
                         px={20}
@@ -55,7 +61,7 @@ export const Tlp = () => {
                         onClick={handleClick}
                     >
                         {content.map((item) => {
-                            return <Paragraph key={item[0]} item={item} />;
+                            return <Paragraph key={item[0]} item={item} cn={cn} en={en} de={de} />;
                         })}
                     </Box>
                 </Box>
