@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import { SVGProps } from 'react';
-import c from './CustomDiagram.module.css';
+import c from './CustomSvg.module.css';
 import { add, multiply, vertical, Vector } from './vector';
 
 const Label = ({ children, ...props }: SVGProps<SVGTextElement>) => (
@@ -160,52 +160,56 @@ const brackets_5 = {
     },
 };
 
-export const CustomDiagram1 = () => {
+export const CustomDiagram1 = ({ language }: { language?: string | null }) => {
+    const w = (language === 'en' || language === 'de') ? 'T' : 'W';
+    const f = (language === 'en' || language === 'de') ? 'F' : 'F';
     return (
         <svg viewBox="0 0 300 150" width="300" height="150">
             <path d={generateBracket(brackets_1.ww)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_1.wf)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_1.fw)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_1.ff)} fill="none" stroke="black" strokeWidth="1.5" />
-            <Label x={points_1.leftW.x - 4} y={points_1.leftW.y + 4}>W</Label>
+            <Label x={points_1.leftW.x - 4} y={points_1.leftW.y + 4}>{w}</Label>
             <Label x={points_1.left.x - 4} y={points_1.left.y + 4}>p</Label>
-            <Label x={points_1.leftF.x - 4} y={points_1.leftF.y + 4}>F</Label>
-            <Label x={points_1.rightW.x - 4} y={points_1.rightW.y + 4}>W</Label>
+            <Label x={points_1.leftF.x - 4} y={points_1.leftF.y + 4}>{f}</Label>
+            <Label x={points_1.rightW.x - 4} y={points_1.rightW.y + 4}>{w}</Label>
             <Label x={points_1.right.x - 4} y={points_1.right.y + 4}>q</Label>
-            <Label x={points_1.rightF.x - 4} y={points_1.rightF.y + 4}>F</Label>
+            <Label x={points_1.rightF.x - 4} y={points_1.rightF.y + 4}>{f}</Label>
         </svg>
     );
 };
 
-export const CustomDiagram2 = () => {
+export const CustomDiagram2 = ({ language }: { language?: string | null }) => {
+    const w = (language === 'en' || language === 'de') ? 'T' : 'W';
     return (
         <svg viewBox="0 0 300 150" width="300" height="150">
             <path d={generateBracket(brackets_1.ww)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_1.wf)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_1.fw)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_1.ff)} fill="none" stroke="black" strokeWidth="1.5" />
-            <Label x={points_1.leftW.x - 4} y={points_1.leftW.y + 4}>W</Label>
+            <Label x={points_1.leftW.x - 4} y={points_1.leftW.y + 4}>{w}</Label>
             <Label x={points_1.left.x - 4} y={points_1.left.y + 4}>p</Label>
             <Label x={points_1.leftF.x - 4} y={points_1.leftF.y + 4}>F</Label>
-            <Label x={points_1.rightW.x - 4} y={points_1.rightW.y + 4}>W</Label>
+            <Label x={points_1.rightW.x - 4} y={points_1.rightW.y + 4}>{w}</Label>
             <Label x={points_1.right.x - 4} y={points_1.right.y + 4}>q</Label>
             <Label x={points_1.rightF.x - 4} y={points_1.rightF.y + 4}>F</Label>
             <Line x1={130} y1={41} x2={145} y2={112} />
             <Line x1={150} y1={95} x2={148} y2={112} />
             <Line x1={170} y1={115} x2={155} y2={118} />
-            <Label x={140} y={125}>W</Label>
+            <Label x={140} y={125}>{w}</Label>
             <Label x={147} y={14}>F</Label>
         </svg>
     );
 };
 
-export const CustomDiagram3 = () => {
+export const CustomDiagram3 = ({ language }: { language?: string | null }) => {
+    const w = (language === 'en' || language === 'de') ? 'T' : 'W';
     return (
         <svg viewBox="0 0 100 200" width="100" height="200">
-            <Label x={points_5.leftW.x - 4} y={points_5.leftW.y + 4}>W</Label>
+            <Label x={points_5.leftW.x - 4} y={points_5.leftW.y + 4}>{w}</Label>
             <Label x={points_5.left.x - 4} y={points_5.left.y + 4}>ξ</Label>
             <Label x={points_5.leftF.x - 4} y={points_5.leftF.y + 4}>F</Label>
-            <Label x={points_5.leftFW.x - 4} y={points_5.leftFW.y + 4}>W</Label>
+            <Label x={points_5.leftFW.x - 4} y={points_5.leftFW.y + 4}>{w}</Label>
             <Label x={points_5.leftWF.x - 4} y={points_5.leftWF.y + 4}>F</Label>
             <Edge x1={points_5.leftW.x + 4} y1={points_5.leftW.y + 8} x2={points_5.leftWF.x - 4} y2={points_5.leftWF.y - 8} />
             <Edge x1={points_5.leftF.x - 4} y1={points_5.leftF.y - 8} x2={points_5.leftFW.x + 4} y2={points_5.leftFW.y + 8} />
@@ -213,42 +217,44 @@ export const CustomDiagram3 = () => {
     );
 };
 
-export const CustomDiagram4 = () => {
+export const CustomDiagram4 = ({ language }: { language?: string | null }) => {
+    const w = (language === 'en' || language === 'de') ? 'T' : 'W';
     return (
         <svg viewBox="0 0 300 150" width="300" height="150">
             <path d={generateBracket(brackets_4.ww)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_4.wf)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_4.fw)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_4.ff)} fill="none" stroke="black" strokeWidth="1.5" />
-            <Label x={points_1.leftW.x - 4} y={points_1.leftW.y + 4}>W</Label>
+            <Label x={points_1.leftW.x - 4} y={points_1.leftW.y + 4}>{w}</Label>
             <Label x={points_1.left.x - 4} y={points_1.left.y + 4}>ξ</Label>
             <Label x={points_1.leftF.x - 4} y={points_1.leftF.y + 4}>F</Label>
-            <Label x={points_1.rightW.x - 4} y={points_1.rightW.y + 4}>W</Label>
+            <Label x={points_1.rightW.x - 4} y={points_1.rightW.y + 4}>{w}</Label>
             <Label x={points_1.right.x - 4} y={points_1.right.y + 4}>η</Label>
             <Label x={points_1.rightF.x - 4} y={points_1.rightF.y + 4}>F</Label>
             <Line x1={130} y1={95} x2={125} y2={24} />
             <Line x1={170} y1={26} x2={162} y2={122} />
             <Line x1={150} y1={45} x2={160} y2={122} />
             <Line x1={150} y1={121} x2={157} y2={124} />
-            <Label x={120} y={20}>W</Label>
+            <Label x={120} y={20}>{w}</Label>
             <Label x={158} y={135}>F</Label>
         </svg>
     );
 };
 
-export const CustomDiagram5 = () => {
+export const CustomDiagram5 = ({ language }: { language?: string | null }) => {
+    const w = (language === 'en' || language === 'de') ? 'T' : 'W';
     return (
         <svg viewBox="0 0 300 200" width="300" height="200">
             <path d={generateBracket(brackets_5.wfw)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_5.wff)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_5.fww)} fill="none" stroke="black" strokeWidth="1.5" />
             <path d={generateBracket(brackets_5.fwf)} fill="none" stroke="black" strokeWidth="1.5" />
-            <Label x={points_5.leftW.x - 4} y={points_5.leftW.y + 4}>W</Label>
+            <Label x={points_5.leftW.x - 4} y={points_5.leftW.y + 4}>{w}</Label>
             <Label x={points_5.left.x - 4} y={points_5.left.y + 4}>q</Label>
             <Label x={points_5.leftF.x - 4} y={points_5.leftF.y + 4}>F</Label>
-            <Label x={points_5.leftFW.x - 4} y={points_5.leftFW.y + 4}>W</Label>
+            <Label x={points_5.leftFW.x - 4} y={points_5.leftFW.y + 4}>{w}</Label>
             <Label x={points_5.leftWF.x - 4} y={points_5.leftWF.y + 4}>F</Label>
-            <Label x={points_5.rightW.x - 4} y={points_5.rightW.y + 4}>W</Label>
+            <Label x={points_5.rightW.x - 4} y={points_5.rightW.y + 4}>{w}</Label>
             <Label x={points_5.right.x - 4} y={points_5.right.y + 4}>p</Label>
             <Label x={points_5.rightF.x - 4} y={points_5.rightF.y + 4}>F</Label>
             <Edge x1={points_5.leftW.x + 4} y1={points_5.leftW.y + 8} x2={points_5.leftWF.x - 4} y2={points_5.leftWF.y - 8} />
@@ -257,11 +263,11 @@ export const CustomDiagram5 = () => {
             <Line x1={155} y1={40} x2={160} y2={166} />
             <Line x1={133} y1={141} x2={154} y2={167} />
             <Line x1={155} y1={159} x2={157} y2={166} />
-            <Label x={140} y={35}>W</Label>
+            <Label x={140} y={35}>{w}</Label>
             <Label x={170} y={15}>F</Label>
             <Edge x1={153} y1={25} x2={168} y2={15} />
             <Label x={155} y={179}>F</Label>
-            <Label x={175} y={199}>W</Label>
+            <Label x={175} y={199}>{w}</Label>
             <Edge x1={163} y1={178} x2={174} y2={188} />
         </svg>
     );

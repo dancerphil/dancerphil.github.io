@@ -59,7 +59,7 @@ const controlPoint2X = 300;
 const controlPoint2Y = 180;
 
 export const CustomSight = ({ language }: { language?: string | null }) => {
-    const label = language === 'en' ? 'Eye -' : '眼睛 -';
+    const label = language === 'en' ? 'Eye' : language === 'de' ? 'Auge' : '眼睛';
     return (
         <svg className={c.sightSvg} viewBox="0 0 300 100">
             <path
@@ -71,6 +71,7 @@ export const CustomSight = ({ language }: { language?: string | null }) => {
             />
             <circle className={c.circle} cx={centerX} cy={centerY} r={radius} />
             <Label x={centerX - 50} y={centerY + 4}>{label}</Label>
+            <path className={c.line} d={`M 28 ${centerY} L 42 ${centerY}`} />
         </svg>
     );
 };

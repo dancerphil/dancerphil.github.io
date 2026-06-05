@@ -4,6 +4,11 @@
   user-select: none;
 }
 
+.line {
+  stroke: #aaa;
+  stroke-width: 1.5;
+}
+
 .edge {
   stroke: black;
   stroke-width: 1.5;

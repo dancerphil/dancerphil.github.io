@@ -25,21 +25,21 @@ export const Paragraph = ({ item, cn, en, de }: Props) => {
                 {dataKey}
             </div>
             {cn && (
-                <div className={c.content}>
+                <div className={c.cn}>
                     {getNodes(textCn).map((node, index) => (
                         <Segment key={index} node={node as HTMLElement} dataKey={dataKey} />
                     ))}
                 </div>
             )}
             {en && (
-                <div className={c.content}>
+                <div className={c.en}>
                     {getNodes(textEn).map((node, index) => (
                         <Segment key={index} node={node as HTMLElement} dataKey={dataKey} />
                     ))}
                 </div>
             )}
             {de && (
-                <div className={c.content}>
+                <div className={c.de}>
                     {getNodes(textDe).map((node, index) => (
                         <Segment key={index} node={node as HTMLElement} dataKey={dataKey} />
                     ))}

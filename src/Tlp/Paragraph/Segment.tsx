@@ -12,6 +12,7 @@ export const Segment = ({ dataKey, node }: SegmentProps) => {
         () => {
             const { nodeName, textContent, childNodes } = node;
             switch (nodeName) {
+                case 'emph':
                 case 'i':
                     return <i style={{ border: '1px solid blue' }}>{textContent}</i>;
                 case 'emphasis':
