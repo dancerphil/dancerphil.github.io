@@ -1,7 +1,6 @@
 import { MouseEvent, useCallback, useEffect } from 'react';
 import { Box } from '@mantine/core';
 import { ResizeLayout } from '@/components/ResizeLayout';
-import { responsive } from '@/Tlp/styles';
 import { content } from './content';
 import { Paragraph } from './Paragraph';
 import { activeTarget, setNodes, useActiveNodeKey } from './region';
@@ -39,7 +38,7 @@ export const Tlp = () => {
             if (!target) {
                 return;
             }
-            // activeTarget(target);
+            activeTarget(target);
         },
         [],
     );
@@ -57,7 +56,7 @@ export const Tlp = () => {
                         pos="relative"
                         px={20}
                         py={40}
-                        style={{ lineHeight: 2, whiteSpace: 'pre-line', fontSize: responsive.fontSize }}
+                        style={{ lineHeight: 2, whiteSpace: 'pre-line' }}
                         onClick={handleClick}
                     >
                         {content.map((item) => {

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Custom } from './Custom';
-import { Footnote, Katex, KaiTi, Emphasis, Centered } from './Components';
+import { Footnote, Katex, KaiTi, Emphasis, Centered, I } from './Components';
 
 interface SegmentProps {
     dataKey: string;
@@ -14,7 +14,7 @@ export const Segment = ({ dataKey, node }: SegmentProps) => {
             switch (nodeName) {
                 case 'emph':
                 case 'i':
-                    return <i style={{ border: '1px solid blue' }}>{textContent}</i>;
+                    return <I>{textContent}</I>;
                 case 'emphasis':
                     return <Emphasis>{textContent}</Emphasis>;
                 case 'footnote':

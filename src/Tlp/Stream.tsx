@@ -3,7 +3,6 @@ import { Button, Skeleton, Box } from '@mantine/core';
 import { Markdown } from '@hero-u/mantine';
 import { StreamParams, streamSentence } from '@/Tlp/utils';
 import { useActiveNodeKey, getNodes, resetActiveNodeKey } from '@/Tlp/region';
-import { responsive } from '@/Tlp/styles';
 
 const handleClose = () => {
     resetActiveNodeKey();
@@ -53,7 +52,7 @@ export const Stream = () => {
             pos="sticky"
             top={0}
             h="100vh"
-            style={{ fontSize: responsive.fontSizeSmall, lineHeight: 1.5, overflowY: 'auto' }}
+            style={{ lineHeight: 1.5, overflowY: 'auto' }}
         >
             <Button variant="default" onClick={handleClose}>× Close</Button>
             {content ? (

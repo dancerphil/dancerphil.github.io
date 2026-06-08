@@ -51,3 +51,7 @@ export const KaiTi = ({ children }: { children: ReactNode }) => (
 export const Centered = ({ children }: { children: ReactNode }) => (
     <div className={c.centered}>{children}</div>
 );
+
+export const I = ({ children }: { children: ReactNode }) => (
+    <i className={c.i}>{children}</i>
+);
