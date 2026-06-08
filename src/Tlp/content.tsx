@@ -87,7 +87,7 @@ export const content: string[][] = [[
 ], [
     '2.0131',
     '空间对象必须处在无限的空间之中。（一个空间点就是一个主目位置。）\n视域里的一个斑块，虽然不一定是红的，但它必须有某种颜色：所以说它被颜色空间[Farbenraum]所包围。音调必须具有<emphasis>某种</emphasis>高度，触觉对象必须具有<emphasis>某种</emphasis>硬度，等等。',
-    'A spatial object must lie in infinite space. (A point in space is an argument place.)\nA speck in a visual field need not be red, but it must have a colour; it has, so to speak, a colour space round it. A tone must have <i>a</i> pitch, the object of the sense of touch <i>a</i> hardnessetc.',
+    'A spatial object must lie in infinite space. (A point in space is an argument place.)\nA speck in a visual field need not be red, but it must have a colour; it has, so to speak, a colour space round it. A tone must have <i>a</i> pitch, the object of the sense of touch <i>a</i> hardness, etc.',
     'Der räumliche Gegenstand muss im unendlichen Raume liegen. (Der Raumpunkt ist eine Argumentstelle.) Der Fleck im Gesichtsfeld muss zwar nicht rot sein, aber eine Farbe muss er haben: er hat sozusagen den Farbenraum um sich. Der Ton muss <emph>eine</emph> Höhe haben, der Gegenstand des Tastsinnes <emph>eine</emph> Härte usw.',
 ], [
     '2.014',
@@ -153,7 +153,7 @@ export const content: string[][] = [[
 ], [
     '2.02331',
     '或者一个事物具有别的任何事物都没有的属性，这时我们可以直接用一个描述使它同别的事物区分开来并指谓它；或者另一种情形，有好几个事物，它们的全部属性都是共有的，这时就完全不可能从它们之中指出某一个来。\n因为如果没有任何东西来区分一个事物，我就不能区分它，不然的话它总是会被区分开来的。',
-    'Either a thing has properties which no other has, and then one can distinguish it straght away from the others by a description and refer to it; or, on the other hand, there are several things which have the totality of their properties in common, and then it is quite impossible to point to any one of them.\nFor it a thing is not distinguished by anything, I cannot distinguish it -- for otherwise it would be distinguished.',
+    'Either a thing has properties which no other has, and then one can distinguish it straight away from the others by a description and refer to it; or, on the other hand, there are several things which have the totality of their properties in common, and then it is quite impossible to point to any one of them.\nFor it a thing is not distinguished by anything, I cannot distinguish it -- for otherwise it would be distinguished.',
     'Entweder ein Ding hat Eigenschaften, die kein anderes hat, dann kann man es ohneweiteres durch eine Beschreibung aus den anderen herausheben, und darauf hinweisen; oder aber, es gibt mehrere Dinge, die ihre sämtlichen Eigenschaften gemeinsam haben, dann ist es überhaupt unmöglich auf eines von ihnen zu zeigen. Denn, ist das Ding durch nichts hervorgehoben, so kann ich es nicht hervorheben, denn sonst ist es eben hervorgehoben.',
 ], [
     '2.024',
@@ -168,7 +168,7 @@ export const content: string[][] = [[
 ], [
     '2.0251',
     '空间、时间和颜色（有色性）是对象的形式。',
-    'Space, time and colour (colouredness) are forms of obejcts.',
+    'Space, time and colour (colouredness) are forms of objects.',
     'Raum, Zeit und Farbe (Färbigkeit) sind Formen der Gegenstände.',
 ], [
     '2.026',
@@ -239,7 +239,7 @@ export const content: string[][] = [[
 [
     '2.062',
     '从一个事态的存在或不存在不能推出另一个事态的存在或不存在。',
-    'From the existence of non-existence of an atomic fact we cannot infer the existence of non-existence of another.',
+    'From the existence or non-existence of an atomic fact we cannot infer the existence or non-existence of another.',
     'Aus dem Bestehen oder Nichtbestehen eines Sachverhaltes kann nicht auf das Bestehen oder Nichtbestehen eines anderen geschlossen werden.',
 ],
 [
@@ -285,7 +285,7 @@ export const content: string[][] = [[
     'Das Bild ist eine Tatsache.',
 ], [
     '2.15',
-    '图像的要素以一定的方式相互关联，这表明事物也是以同样方式相直关联的。\n图像要素的这种关联称为图像的结构，而这种结构的可能性则称为图像的图示形式。',
+    '图像的要素以一定的方式相互关联，这表明事物也是以同样方式相互关联的。\n图像要素的这种关联称为图像的结构，而这种结构的可能性则称为图像的图示形式。',
     'That the elements of the picture are combined with one another in a definite way, represents that the things are so combined with one another.\nThis connexion of the elements of the picture is called its structure, and the possibility of this structure is called the form of representation of the picture.',
     'Dass sich die Elemente des Bildes in bestimmter Art und Weise zu einander verhalten stellt vor, dass sich die Sachen so zu einander verhalten. Dieser Zusammenhang der Elemente des Bildes heisse seine Struktur und ihre Möglichkeit seine Form der Abbildung.',
 ], [
@@ -317,7 +317,7 @@ export const content: string[][] = [[
 ], [
     '2.1514',
     '图示关系是由图像要素和事物之间的相关构成的。',
-    'The representing releation consists of the co-ordinations of the elements of the picture and the things.',
+    'The representing relation consists of the co-ordinations of the elements of the picture and the things.',
     'Die abbildende Beziehung besteht aus den Zuordnungen der Elemente des Bildes und der Sachen.',
 ], [
     '2.1515',
@@ -338,13 +338,13 @@ export const content: string[][] = [[
 ], [
     '2.17',
     '图像为了能以自己的方式——正确地或错误地——图示实在而必须和实在共有的东西，就是它的图示形式。',
-    'What the picture must have in common with reality in order to be able to represent it after is manner -- rightly or falsely -- is its form of representation.',
+    'What the picture must have in common with reality in order to be able to represent it after its manner -- rightly or falsely -- is its form of representation.',
     'Was das Bild mit der Wirklichkeit gemein haben muss, um sie auf seine Art und Weise---richtig oder falsch---abbilden zu können, ist seine Form der Abbildung.',
 ],
 [
     '2.171',
-    '图像能够图承其形式为图像所具有的一切实在。\n空间图像能够图示一切空间的东西，颜色图像能够图示一切有色的东西，等等。',
-    'The picture can represent every reality whose form it has.\nThe spatial picture, everything spatial, the coloured, everything colouredetc.',
+    '图像能够图示其形式为图像所具有的一切实在。\n空间图像能够图示一切空间的东西，颜色图像能够图示一切有色的东西，等等。',
+    'The picture can represent every reality whose form it has.\nThe spatial picture, everything spatial, the coloured, everything coloured, etc.',
     'Das Bild kann jede Wirklichkeit abbilden, deren Form es hat. Das räumliche Bild alles Räumliche, das farbige alles Farbige, etc.',
 ],
 [
@@ -466,7 +466,7 @@ export const content: string[][] = [[
 ], [
     '3.02',
     '思想包含它所思想的情况的可能性。可以思想的东西也就是可能的东西。',
-    'The though contains the possibility of the state of affairs which it thinks.\nWhat is thinkable is also possible.',
+    'The thought contains the possibility of the state of affairs which it thinks.\nWhat is thinkable is also possible.',
     'Der Gedanke enthält die Möglichkeit der Sachlage die er denkt. Was denkbar ist, ist auch möglich.',
 ], [
     '3.03',
@@ -506,17 +506,17 @@ export const content: string[][] = [[
 ], [
     '3.11',
     '我们用命题中的可由感官感知的记号（声音的或书写的记号等等）作为可能情况的投影。\n投影的方法就是思考命题的意义。',
-    'We use the sensibly perceptible sign (sound or written signetc.) of the proposition as a projection of the possible state of affairs.\nThe method of projection is the thinking of the sense of the proposition.',
+    'We use the sensibly perceptible sign (sound or written sign, etc.) of the proposition as a projection of the possible state of affairs.\nThe method of projection is the thinking of the sense of the proposition.',
     'Wir benützen das sinnlich wahrnehmbare Zeichen (Laut- oder Schriftzeichen etc.) des Satzes als Projektion der möglichen Sachlage. Die Projektionsmethode ist das Denken des Satz-Sinnes.',
 ], [
     '3.12',
     '我们用以表达思想的记号我称为命题记号。一个命题就是一个处在对世界的投影关系中的命题记号。',
-    'The sign through which we express the though I call the proposition sign. And the proposition is the proposition sign in its projective relation to the world.',
+    'The sign through which we express the thought I call the proposition sign. And the proposition is the proposition sign in its projective relation to the world.',
     'Das Zeichen, durch welches wir den Gedanken ausdrücken, nenne ich das Satzzeichen. Und der Satz ist das Satzzeichen in seiner projektiven Beziehung zur Welt.',
 ], [
     '3.13',
     '命题包括投影所包括的一切，而不包括被投影者。\n因此命题包括的是被投影者的可能性，而不是被投影者本身。\n因此命题中也不包含命题的意义，而只包含表达其意义的可能性。\n（“命题的内容”是指有意义的命题的内容。）\n命题中包含命题意义的形式而非其内容。',
-    'To the proposition belongs everything which belongs to the projection; but not what is projected.\nTherefore the possibility of what is projected but not this itself.\nIn the proposition, therefore, its sense is not yet contained, but the possibility of expressing it.\n("The content of the proposition" means the content of the signicant proposition.)\nIn the proposition the form of its sense is contained, but not its content.',
+    'To the proposition belongs everything which belongs to the projection; but not what is projected.\nTherefore the possibility of what is projected but not this itself.\nIn the proposition, therefore, its sense is not yet contained, but the possibility of expressing it.\n("The content of the proposition" means the content of the significant proposition.)\nIn the proposition the form of its sense is contained, but not its content.',
     'Zum Satz gehört alles, was zur Projektion gehört; aber nicht das Projizierte. Also die Möglichkeit des Projizierten, aber nicht dieses selbst. Im Satz ist also sein Sinn noch nicht enthalten, wohl aber die Möglichkeit ihn auszudrücken. („Der Inhalt des Satzes“ heisst der Inhalt des sinnvollen Satzes.) Im Satz ist die Form seines Sinnes enthalten, aber nicht dessen Inhalt.',
 ], [
     '3.14',
@@ -541,12 +541,12 @@ export const content: string[][] = [[
 ], [
     '3.1431',
     '如果我们设想一个命题记号是由一些空间对象（例如桌子、椅子和书本）组成，而不是由一些书写记号组成，它的本质就会看得很清楚。\n于是这些东西的空间分布就表达出这个命题的意义。',
-    'The essential nature of the propositional sign becomes very clean when we imagine it made up of spatial objects (such as tables, chairs, books) instead of written signs.\nThe mutual spatial position of these things then expresses the sense of the proposition.',
+    'The essential nature of the propositional sign becomes very clear when we imagine it made up of spatial objects (such as tables, chairs, books) instead of written signs.\nThe mutual spatial position of these things then expresses the sense of the proposition.',
     'Sehr klar wird das Wesen des Satzzeichens, wenn wir es uns, statt aus Schriftzeichen, aus räumlichen Gegenständen (etwa Tischen, Stühlen, Büchern) zusammengesetzt denken. Die gegenseitige räumliche Lage dieser Dinge drückt dann den Sinn des Satzes aus.',
 ], [
     '3.1432',
     '我们必不可说：“复合记号‘<katex>aRb</katex>’说的是 <katex>a</katex> 和 <katex>b</katex> 处在关系 <katex>R</katex> 中”，而必须说：“‘<katex>a</katex>’和‘<katex>b</katex>’”处于某种关系中<emphasis>这一事实</emphasis>说的是，<katex>aRb</katex> <emphasis>这一事实</emphasis>。”',
-    'We must not say, "The complex sign ‘<katex>aRb</katex>’ says ‘<katex>a</katex> stands in relation <katex>R</katex> to <katex>b</katex>’"; but we must says, "<i>That</i> ‘<katex>a</katex>’ stands in a certain relation to ‘<katex>b</katex>’ says <i>that</i> <katex>aRb</katex>".',
+    'We must not say, "The complex sign ‘<katex>aRb</katex>’ says ‘<katex>a</katex> stands in relation <katex>R</katex> to <katex>b</katex>’"; but we must say, "<i>That</i> ‘<katex>a</katex>’ stands in a certain relation to ‘<katex>b</katex>’ says <i>that</i> <katex>aRb</katex>".',
     'Nicht: „Das komplexe Zeichen ‚<katex>aRb</katex>‘ sagt, dass <katex>a</katex> in der Beziehung <katex>R</katex> zu <katex>b</katex> steht“, sondern: <emph>Dass</emph> „<katex>a</katex>“ in einer gewissen Beziehung zu „<katex>b</katex>“ steht, sagt, <emph>dass</emph> <katex>aRb</katex>.',
 ], [
     '3.144',
@@ -596,7 +596,7 @@ export const content: string[][] = [[
 ], [
     '3.24',
     '关于复合物的命题与关于其组成部分的命题有一种内在的关系。\n复合物只能通过对它的描述而给出，这描述可以是正确的或错误的。说到一个复合物的命题，如果这个复合物不存在，那么这个命题不是无意义的，而只是假的。\n当一个命题要素标示一个复合物时，可以从它在其中出现的命题的不确定性看出来。我们<emphasis>知道</emphasis>，这种情形下这个命题有些东西是没有规定的。（概括性记号总是<emphasis>包含</emphasis>一种原型。）\n把复合物的符号压缩为简单符号，可以用定义来表达。',
-    'A proposition about a complex stands in internal relation to the proposition about its consituent part.\nA complex can only be given by its description, and this will either be right or wrong. The propostion in which there is mention of a complex, if this does not exist, becomes not nonsense but simply false.\nThat a propositional element signifies a complex can be seen from an indeterminateness in the propositions in which it occurs. We <i>know</i> that everything is not yet determined by this proposition. (The notation for generality contains a prototype.)\nThe combination of the symbols of a complex in a simple symbol can be expressed by a definition.',
+    'A proposition about a complex stands in internal relation to the proposition about its constituent part.\nA complex can only be given by its description, and this will either be right or wrong. The proposition in which there is mention of a complex, if this does not exist, becomes not nonsense but simply false.\nThat a propositional element signifies a complex can be seen from an indeterminateness in the propositions in which it occurs. We <i>know</i> that everything is not yet determined by this proposition. (The notation for generality contains a prototype.)\nThe combination of the symbols of a complex in a simple symbol can be expressed by a definition.',
     'Der Satz, welcher vom Komplex handelt, steht in interner Beziehung zum Satze, der von dessen Bestandteil handelt. Der Komplex kann nur durch seine Beschreibung gegeben sein, und diese wird stimmen oder nicht stimmen. Der Satz, in welchem von einem Komplex die Rede ist, wird, wenn dieser nicht existiert, nicht unsinnig, sondern einfach falsch sein. Dass ein Satzelement einen Komplex bezeichnet, kann man aus einer Unbestimmtheit in den Sätzen sehen, worin es vorkommt. Wir <emph>wissen</emph>, durch diesen Satz ist noch nicht alles bestimmt. (Die Allgemeinheitsbezeichnung <emph>enthält</emph> ja ein Urbild.) Die Zusammenfassung des Symbols eines Komplexes in ein einfaches Symbol kann durch eine Definition ausgedrückt werden.',
 ], [
     '3.25',
@@ -695,7 +695,7 @@ export const content: string[][] = [[
     'Es kann nie das gemeinsame Merkmal zweier Gegenstände anzeigen, dass wir sie mit demselben Zeichen, aber durch zwei verschiedene <emph>Bezeichnungsweisen</emph> bezeichnen. Denn das Zeichen ist ja willkürlich. Man könnte also auch zwei verschiedene Zeichen wählen, und wo bliebe dann das Gemeinsame in der Bezeichnung.',
 ], [
     '3.323',
-    '在日常语言中经常碰到同一个词有着不同的标示方式——因而属于不同的符号——，或者有着不同标示方式的两个词以表面上相似的方式应用于命题之中。\n就如“是”（ist）这个词既作为系词，也作为相等的记号和存在的表达式<footnote>德语“ist”一间也可用作表示“存在’、“有”。——译者</footnote>出现，“存在”（existieren）作为像“去”（gehen）一样的不及物动词出现；“同一的”（identisch）作为一个形容词出现；我们说到<emphasis>某事</emphasis>，同时也意味着说到<emphasis>某事</emphasis>的发生。\n（在命题“Gtün ist grün<footnote>“格林是不成熟的。”——译者</footnote>”中，第一个词“Grün”是一个人的专名，最后一个词“grün”是一个形容词，这两个词不仅具有不同的指谓，而且它们是<emphasis>不同的符号</emphasis>。）',
+    '在日常语言中经常碰到同一个词有着不同的标示方式——因而属于不同的符号——，或者有着不同标示方式的两个词以表面上相似的方式应用于命题之中。\n就如“是”（ist）这个词既作为系词，也作为相等的记号和存在的表达式<footnote>德语“ist”一间也可用作表示“存在’、“有”。——译者</footnote>出现，“存在”（existieren）作为像“去”（gehen）一样的不及物动词出现；“同一的”（identisch）作为一个形容词出现；我们说到<emphasis>某事</emphasis>，同时也意味着说到<emphasis>某事</emphasis>的发生。\n（在命题“Grün ist grün<footnote>“格林是不成熟的。”——译者</footnote>”中，第一个词“Grün”是一个人的专名，最后一个词“grün”是一个形容词，这两个词不仅具有不同的指谓，而且它们是<emphasis>不同的符号</emphasis>。）',
     'In the language of everyday life it very often happens that the same word signifies in two different ways -- and therefore belongs to two different symbols -- or that two words, which signify in different ways, are apparently applied in the same way in the proposition.\nThus the word "is" appears as the copula, as the sign of equality, and as the expression of existence; "to exist" as an intransitive verb like "to go"; "identical" as an adjective; we speak of <i>something</i> but also of the fact of <i>something</i> happening.\n(In the proposition "Green is green" -- where the first word is a proper name as the last an adjective -- these words have not merely different meanings but they are <i>different symbols</i>.)',
     'In der Umgangssprache kommt es ungemein häufig vor, dass dasselbe Wort auf verschiedene Art und Weise bezeichnet---also verschiedenen Symbolen angehört---, oder, dass zwei Wörter, die auf verschiedene Art und Weise bezeichnen, äusserlich in der gleichen Weise im Satze angewandt werden. So erscheint das Wort „ist“ als Kopula, als Gleichheitszeichen und als Ausdruck der Existenz; „existieren“ als intransitives Zeitwort wie „gehen“; „identisch“ als Eigenschaftswort; wir reden von <emph>Etwas</emph>, aber auch davon, dass <emph>etwas</emph> geschieht. (Im Satze „Grün ist grün“---wo das erste Wort ein Personenname, das letzte ein Eigenschaftswort ist---haben diese Worte nicht einfach verschiedene Bedeutung, sondern es sind <emph>verschiedene Symbole</emph>.)',
 ], [
@@ -706,7 +706,7 @@ export const content: string[][] = [[
 ], [
     '3.325',
     '为了避免这类错误，我们必须使用一种能够排除这类错误的记号语言，其中不将同一记号用于不同的符号中，也不以表面上相似的方式应用那些有着不同的标示方式的记号：也就是说，要使用一种遵从<emphasis>逻辑</emphasis>语法——逻辑句法——的语言记号。\n（弗雷格和罗素的概念记号系统就是这样的一种语言，诚然它也还未能排除一切错误。）',
-    'In order to avoid these errors, we must employ a symbolism which exlucdes them, by not applying the same sign in different symbols and by not applying signs in the same way which signify in different ways. A symbolism, that is to say, which obeys the rules of <i>logical</i> grammar -- of logical syntax.\n(The logical symbolism of Frege and Russell is such a language, which, however, does still not exclude all errors.)',
+    'In order to avoid these errors, we must employ a symbolism which excludes them, by not applying the same sign in different symbols and by not applying signs in the same way which signify in different ways. A symbolism, that is to say, which obeys the rules of <i>logical</i> grammar -- of logical syntax.\n(The logical symbolism of Frege and Russell is such a language, which, however, does still not exclude all errors.)',
     'Um diesen Irrtümern zu entgehen, müssen wir eine Zeichensprache verwenden, welche sie ausschliesst, indem sie nicht das gleiche Zeichen in verschiedenen Symbolen, und Zeichen, welche auf verschiedene Art bezeichnen, nicht äusserlich auf die gleiche Art verwendet. Eine Zeichensprache also, die der <emph>logischen</emph> Grammatik---der logischen Syntax---gehorcht. (Die Begriffsschrift Frege\'s und Russell\'s ist eine solche Sprache, die allerdings noch nicht alle Fehler ausschliesst.)',
 ], [
     '3.326',
@@ -740,8 +740,8 @@ export const content: string[][] = [[
     'Kein Satz kann etwas über sich selbst aussagen, weil das Satzzeichen nicht in sich selbst enthalten sein kann, (das ist die ganze „Theory of types“).',
 ], [
     '3.333',
-    '一个函项所以不能成为它自身的主目，因为函项的记号已经包含着其主目的原型，而且它不能包含自身。\n让我们假设函项 <katex>F(fx)</katex> 可以成为它自身的主目，这时就会有一个命题 "<katex>F(F(fx))</katex>"，其中的外函项 <katex>F</katex> 和内函项 <katex>F</katex> 必定有不同的指谓，因为内函项具有 <katex>\\phi(fx)</katex> 的形式，而外函项则具有 <katex>\\Psi(\\phi(fx))</katex> 的形式。只有字母"<katex>F</katex>"对于两个函项是共同的，但是字母本身不标示任何东西。\n如果我们把"<katex>F(F(u))</katex>"写作"<katex>(\\exists\\phi) : F(\\phi u) . \\phi u=Fu</katex>"，这一点就立刻清楚了。\n这样罗素的悖论就消解了。',
-    'A function cannot be its own argument, because the functional sign already contains the prototype of its own argument and it cannot contain itself.\nIf, for example, we suppose that the function <katex>F(fx)</katex> could be its own argument, then there would be a proposition "<katex>F(F(fx))</katex>", and in this the outer functions <katex>F</katex> and the inner function <katex>F</katex> must have different meanings; for the inner has the form <katex>\\Psi(fx)</katex>, the outer the form <katex>\\Psi(\\Psi(fx))</katex>. Common to both functions is only the letter "<katex>F</katex>", which by itself signifies nothing.\nThis is at once clear, if instead of "<katex>F(F(u))</katex>" we write "<katex>(\\exists\\phi) : F(\\phi u) . \\phi u=Fu</katex>".\nHerewith Russell\'s paradox vanishes.',
+    '一个函项所以不能成为它自身的主目，因为函项的记号已经包含着其主目的原型，而且它不能包含自身。\n让我们假设函项 <katex>F(fx)</katex> 可以成为它自身的主目，这时就会有一个命题 "<katex>F(F(fx))</katex>"，其中的外函项 <katex>F</katex> 和内函项 <katex>F</katex> 必定有不同的指谓，因为内函项具有 <katex>\\phi(fx)</katex> 的形式，而外函项则具有 <katex>\\psi(\\phi(fx))</katex> 的形式。只有字母"<katex>F</katex>"对于两个函项是共同的，但是字母本身不标示任何东西。\n如果我们把"<katex>F(F(u))</katex>"写作"<katex>(\\exists\\phi) : F(\\phi u) \\cdot \\phi u=Fu</katex>"，这一点就立刻清楚了。\n这样罗素的悖论就消解了。',
+    'A function cannot be its own argument, because the functional sign already contains the prototype of its own argument and it cannot contain itself.\nIf, for example, we suppose that the function <katex>F(fx)</katex> could be its own argument, then there would be a proposition "<katex>F(F(fx))</katex>", and in this the outer functions <katex>F</katex> and the inner function <katex>F</katex> must have different meanings; for the inner has the form <katex>\\phi(fx)</katex>, the outer the form <katex>\\psi(\\phi(fx))</katex>. Common to both functions is only the letter "<katex>F</katex>", which by itself signifies nothing.\nThis is at once clear, if instead of "<katex>F(F(u))</katex>" we write "<katex>(\\exists\\phi) : F(\\phi u) \\cdot \\phi u=Fu</katex>".\nHerewith Russell\'s paradox vanishes.',
     'Eine Funktion kann darum nicht ihr eigenes Argument sein, weil das Funktionszeichen bereits das Urbild seines Arguments enthält und es sich nicht selbst enthalten kann. Nehmen wir nämlich an, die Funktion <katex>F(fx)</katex> könnte ihr eigenes Argument sein; dann gäbe es also einen Satz: „<katex>F(F(fx))</katex>" und in diesem müssen die äussere Funktion <katex>F</katex> und die innere Funktion <katex>F</katex> verschiedene Bedeutungen haben, denn die innere hat die Form <katex>\\phi(fx)</katex>, die äussere, die Form <katex>\\psi(\\phi(fx))</katex>. Gemeinsam ist den beiden Funktionen nur der Buchstabe „<katex>F</katex>", der aber allein nichts bezeichnet.\nDies wird sofort klar, wenn wir statt „<katex>F(F(u))</katex>" schreiben „<katex>(\\exists\\phi) : F(\\phi u) \\cdot \\phi u = Fu</katex>".\nHiermit erledigt sich Russell\'s Paradox.',
 ], [
     '3.334',
@@ -796,7 +796,7 @@ export const content: string[][] = [[
 ], [
     '3.4',
     '一个命题规定逻辑空间中的一个位置。命题的各组成部分的存在——有意义的命题的存在，即保证了这种逻辑位置的存在。',
-    'The proposition determines a place in logical space: the existence of this logical place is guaranteed by the existence of the consituent parts alone, by the existence of the significant proposition.',
+    'The proposition determines a place in logical space: the existence of this logical place is guaranteed by the existence of the constituent parts alone, by the existence of the significant proposition.',
     'Der Satz bestimmt einen Ort im logischen Raum. Die Existenz dieses logischen Ortes ist durch die Existenz der Bestandteile allein verbürgt, durch die Existenz des sinnvollen Satzes.',
 ], [
     '3.41',
@@ -811,7 +811,7 @@ export const content: string[][] = [[
 ], [
     '3.42',
     '一个命题虽然只能规定逻辑空间中的一个位置，然而整个逻辑空间也应该已经由它而给出。\n（不然的话，通过否定、逻辑和、逻辑积等等就会在坐标上不断引入新的要素）\n（围绕着一个图像的逻辑脚手架规定着逻辑空间。一个命题有贯通整个逻辑空间的力量。）',
-    'Although a proposition may only determine one place in logical space, the whole logical space must already be given by it.\n(Otherwise denial, the logical sum, the logical productetc., would always introduce new elements -- in co-ordination.)\n(The logical scaffolding round the picture determines the logical space. The proposition reaches through the whole logical space.)',
+    'Although a proposition may only determine one place in logical space, the whole logical space must already be given by it.\n(Otherwise denial, the logical sum, the logical product, etc., would always introduce new elements -- in co-ordination.)\n(The logical scaffolding round the picture determines the logical space. The proposition reaches through the whole logical space.)',
     'Obwohl der Satz nur einen Ort des logischen Raumes bestimmen darf, so muss doch durch ihn schon der ganze logische Raum gegeben sein. (Sonst würden durch die Verneinung, die logische Summe, das logische Produkt, etc.\ immer neue Elemente---in Koordination---eingeführt.) (Das logische Gerüst um das Bild herum bestimmt den logischen Raum. Der Satz durchgreift den ganzen logischen Raum.)',
 ], [
     '3.5',
@@ -831,7 +831,7 @@ export const content: string[][] = [[
 ], [
     '4.002',
     '人有能力构造语言，可以用它表达任何意义，而无须想到每一个词怎样具有指谓和指谓的是什么。——就像人们说话时无须知道每个声音是怎样发生的一样。\n日常语言是人的机体的一部分，而且也像机体那样复杂。\n人不可能直接从日常语言中懂得语言逻辑。\n语言掩饰着思想。而且达到这种程度，就像不能根据衣服的外形来推出它所遮盖的思想的形式一样；因为衣服外形的设计不是为了揭示身体的形状，而是为了全然不同的目的。\n理解日常语言所要依赖的种种默契是极其复杂的。',
-    'Man possesses the capacity of constructing languages, in which every sense can be expressed, without having an idea how and what each word means -- just as one speaks without knowing how the single sounds are produced.\nColloquial language is a part of the human organism and is not less complicated than it.\nFrom it it is humanly impossible to gather immediately the logical of language.\nLanguage disguises the thought; so that from the external form of the clothes one cannot infer the form of the thought they clothe, because the external form of the clothes is constructed with quite another object than to let the form of the body be recog nized.\nThe silent adjustments to understand colloquial language are enormously complicated.',
+    'Man possesses the capacity of constructing languages, in which every sense can be expressed, without having an idea how and what each word means -- just as one speaks without knowing how the single sounds are produced.\nColloquial language is a part of the human organism and is not less complicated than it.\nFrom it it is humanly impossible to gather immediately the logical of language.\nLanguage disguises the thought; so that from the external form of the clothes one cannot infer the form of the thought they clothe, because the external form of the clothes is constructed with quite another object than to let the form of the body be recognized.\nThe silent adjustments to understand colloquial language are enormously complicated.',
     'Der Mensch besitzt die Fähigkeit Sprachen zu bauen, womit sich jeder Sinn ausdrücken lässt, ohne eine Ahnung davon zu haben, wie und was jedes Wort bedeutet.---Wie man auch spricht, ohne zu wissen, wie die einzelnen Laute hervorgebracht werden. Die Umgangssprache ist ein Teil des menschlichen Organismus und nicht weniger kompliziert als dieser. Es ist menschenunmöglich, die Sprachlogik aus ihr unmittelbar zu entnehmen. Die Sprache verkleidet den Gedanken. Und zwar so, dass man nach der äusseren Form des Kleides, nicht auf die Form des bekleideten Gedankens schliessen kann; weil die äussere Form des Kleides nach ganz anderen Zwecken gebildet ist, als danach, die Form des Körpers erkennen zu lassen. Die stillschweigenden Abmachungen zum Verständnis der Umgangssprache sind enorm kompliziert.',
 ], [
     '4.003',
@@ -841,7 +841,7 @@ export const content: string[][] = [[
 ], [
     '4.0031',
     '全部哲学都是一种“语言批判”（当然不是在毛特纳的意义上的批判。）罗素的功绩在于指明了一个命题表面的逻辑形式不一定就是它真正的逻辑形式。',
-    'All philosophy is "Critique of language" (but not at all in Mathner\'s sense). Russell\'s merit is to have shown that the apparent logical form of the proposition need not be its real form.',
+    'All philosophy is "Critique of language" (but not at all in Mauthner\'s sense). Russell\'s merit is to have shown that the apparent logical form of the proposition need not be its real form.',
     'Alle Philosophie ist „Sprachkritik“. (Allerdings nicht im Sinne Mauthners.) Russell\'s Verdienst ist es, gezeigt zu haben, dass die scheinbare logische Form des Satzes nicht seine wirkliche sein muss.',
 ], [
     '4.01',
@@ -861,7 +861,7 @@ export const content: string[][] = [[
 ], [
     '4.013',
     '如果我们深入到图像特性的本质，就会看到，这种特性并<emphasis>不</emphasis>因<emphasis>表面的不规则性</emphasis>（如乐谱中使用 ♯ 和 ♭）而蒙受损害。\n因为就是这种不规则性也图示它们想要表达的东西；不过用的是另外一种方式。',
-    'And if we penetrate to the essence of this pictorial nature we see that his is not disturbed by <i>apparent irregularities</i> (like the use of ♯ and ♭ in the score).\nFor these irregularities also picture what they are to express; only in another way.',
+    'And if we penetrate to the essence of this pictorial nature we see that this is not disturbed by <i>apparent irregularities</i> (like the use of ♯ and ♭ in the score).\nFor these irregularities also picture what they are to express; only in another way.',
     'Und wenn wir in das Wesentliche dieser Bildhaftigkeit eindringen, so sehen wir, dass dieselbe durch <emph>scheinbare Unregelmässigkeiten</emph> (wie die Verwendung der <katex>\\sharp</katex> und <katex>\\flat</katex> in der Notenschrift) <emph>nicht</emph> gestört wird. Denn auch diese Unregelmässigkeiten bilden das ab, was sie ausdrücken sollen; nur auf eine andere Art und Weise.',
 ], [
     '4.014',
@@ -871,7 +871,7 @@ export const content: string[][] = [[
 ], [
     '4.0141',
     '有一条总的规则，使得音乐家能从总谱读出交响乐，使得我们能够通过唱片的沟纹放出交响乐来.而且应用原规则还可以从交响乐重新推得总谱。这些看起来完全不同的东西之间的内在相似性正在于此。这条规则就是将交响乐投射到音符语言上去的投影法则，也是把这种音符语言翻译为唱片语言的规则。',
-    'In the fact that there is a general rule by which the musician is able to read the symphony out of the score, and that there is a rule by which one could reconstruct the symphony from the line on a gramophone reord and from this again -- by means of the first rule -- construct the score, herein lies the internal similarity between these things which at first sight seem to be entirely different. And the rule is the law of projection which projects the symphony into the language of the musical score. It is the rule of translation of this language into the language of the gramophone record.',
+    'In the fact that there is a general rule by which the musician is able to read the symphony out of the score, and that there is a rule by which one could reconstruct the symphony from the line on a gramophone record and from this again -- by means of the first rule -- construct the score, herein lies the internal similarity between these things which at first sight seem to be entirely different. And the rule is the law of projection which projects the symphony into the language of the musical score. It is the rule of translation of this language into the language of the gramophone record.',
     'Dass es eine allgemeine Regel gibt, durch die der Musiker aus der Partitur die Symphonie entnehmen kann, durch welche man aus der Linie auf der Grammophonplatte die Symphonie und nach der ersten Regel wieder die Partitur ableiten kann, darin besteht eben die innere Ähnlichkeit dieser scheinbar so ganz verschiedenen Gebilde. Und jene Regel ist das Gesetz der Projektion, welches die Symphonie in die Notensprache projiziert. Sie ist die Regel der Übersetzung der Notensprache in die Sprache der Grammophonplatte.',
 ], [
     '4.015',
@@ -891,7 +891,7 @@ export const content: string[][] = [[
 ], [
     '4.021',
     '命题是实在的图像；因为当我理解一个命题，我就知道它所表述的情况，而且无须向我解释其意义，我就理解这个命题。',
-    'The proposition is a picture of reality, for I know the state of affaires presented by it, if I understand the proposition. And I understand the proposition, without its sense having been explained to me.',
+    'The proposition is a picture of reality, for I know the state of affairs presented by it, if I understand the proposition. And I understand the proposition, without its sense having been explained to me.',
     'Der Satz ist ein Bild der Wirklichkeit: Denn ich kenne die von ihm dargestellte Sachlage, wenn ich den Satz verstehe. Und den Satz verstehe ich, ohne dass mir sein Sinn erklärt wurde.',
 ], [
     '4.022',
@@ -901,17 +901,17 @@ export const content: string[][] = [[
 ], [
     '4.023',
     '命题对实在的确定必须达到二者取一：是或者否。\n为此命题必须完全地描述实在。\n命题是对事态的描述。\n正如一个对象是通过给出其外部属性来加以描述一样命题是通过实在的内部属性来描述实在的。\n命题借助一种逻辑的脚手架来构造一个世界，因此<emphasis>如果</emphasis>一个命题为真，就可从中看出所有合乎逻辑的东西是怎样的。人们可以从假的命题<emphasis>作出推论</emphasis>。',
-    'The proposition determines reality to this extent, that one only needs to say "Yes" or "No" to it to make it agree with reality.\nReality must therefore be completely described by the proposition.\nA proposition is the description of a fact.\nAs the description of an object describes it by its external properties so propositions describe reality by its internal properties.\nThe proposition constructs a world with the help of a logical scaffolding, and therefore one can actually see in the proposition all the logical features possessed by reaility <i>if</i> it is true. One can <i>draw conclusions</i> from a false proposition.',
+    'The proposition determines reality to this extent, that one only needs to say "Yes" or "No" to it to make it agree with reality.\nReality must therefore be completely described by the proposition.\nA proposition is the description of a fact.\nAs the description of an object describes it by its external properties so propositions describe reality by its internal properties.\nThe proposition constructs a world with the help of a logical scaffolding, and therefore one can actually see in the proposition all the logical features possessed by reality <i>if</i> it is true. One can <i>draw conclusions</i> from a false proposition.',
     'Die Wirklichkeit muss durch den Satz auf ja oder nein fixiert sein. Dazu muss sie durch ihn vollständig beschrieben werden. Der Satz ist die Beschreibung eines Sachverhaltes. Wie die Beschreibung einen Gegenstand nach seinen externen Eigenschaften, so beschreibt der Satz die Wirklichkeit nach ihren internen Eigenschaften. Der Satz konstruiert eine Welt mit Hilfe eines logischen Gerüstes und darum kann man am Satz auch sehen, wie sich alles Logische verhält, <emph>wenn</emph> er wahr ist. Man kann aus einem falschen Satz <emph>Schlüsse ziehen</emph>.',
 ], [
     '4.024',
     '理解一个命题意味着知道若命题为真事情该是怎样的。\n（因此，不知道一个命题是否为真也可以理解它。）\n理解一个命题的组成部分也就理解这个命题。',
-    'To understand a proposition means to know what is the case, if it is true.\n(One can therefore understand it without knowing whether it is true or not.)\nOne understands it if one understands it consituent parts.',
+    'To understand a proposition means to know what is the case, if it is true.\n(One can therefore understand it without knowing whether it is true or not.)\nOne understands it if one understands it constituent parts.',
     'Einen Satz verstehen, heisst, wissen was der Fall ist, wenn er wahr ist. (Man kann ihn also verstehen, ohne zu wissen, ob er wahr ist.) Man versteht ihn, wenn man seine Bestandteile versteht.',
 ], [
     '4.025',
     '把一种语言翻译为另一种语言时，我们并不是把一种语言的每一个<emphasis>命题</emphasis>翻译为另一种语言的<emphasis>命题</emphasis>，而是只翻译命题的组成部分。\n（字典不仅翻译名词，也翻译动词、形容词和连接词等等，它以同样方式对待所有这些词。）',
-    'The translation of one language into another is not a process of translating each proposition of the one into a proposition of the other, but only the consituent parts of propositions are translated.\n(And the dictionary does not only translate substantives but also adverbs and conjunctionsetc., and it treats them all alike.)',
+    'The translation of one language into another is not a process of translating each proposition of the one into a proposition of the other, but only the constituent parts of propositions are translated.\n(And the dictionary does not only translate substantives but also adverbs and conjunctions, etc., and it treats them all alike.)',
     'Die Übersetzung einer Sprache in eine andere geht nicht so vor sich, dass man jeden <emph>Satz</emph> der einen in einen <emph>Satz</emph> der anderen übersetzt, sondern nur die Satzbestandteile werden übersetzt. (Und das Wörterbuch übersetzt nicht nur Substantiva, sondern auch Zeit-, Eigenschafts- und Bindewörter etc.; und es behandelt sie alle gleich.)',
 ], [
     '4.026',
@@ -951,7 +951,7 @@ export const content: string[][] = [[
 ], [
     '4.04',
     '在一个命题和它所表述的情况中，应该恰好具有同样多的可以区分开来的部分。\n两者必定具有同样的逻辑（数学）的多样性。（参照赫兹的《力学》论动力学模型。）',
-    'In the proposition there must be exactly as many thing distinguishable as there are in the state of affairs, which it represents.\nThey must both possess the same logical (mathematical) multiplicity (cf. Hertz\'s Mechanics, on Dynamic Models).',
+    'In the proposition there must be exactly as many things distinguishable as there are in the state of affairs, which it represents.\nThey must both possess the same logical (mathematical) multiplicity (cf. Hertz\'s Mechanics, on Dynamic Models).',
     'Am Satz muss gerade soviel zu unterscheiden sein, als an der Sachlage die er darstellt. Die beiden müssen die gleiche logische (mathematische) Mannigfaltigkeit besitzen. (Vergleiche Hertz\'s Mechanik, über Dynamische Modelle.)',
 ], [
     '4.041',
@@ -961,12 +961,12 @@ export const content: string[][] = [[
 ], [
     '4.0411',
     '例如，如果我们想把"<katex>(x) \\cdot fx</katex>"所表达的东西，通过在"<katex>fx</katex>"前面加上一个附标来表达，如写作"<katex>\\text{Alg } \\cdot fx</katex>" <footnote>"alg"是"Allgemeine"（一般、普遍）的缩写.本条下面的下标\'a\'和主目位置的\'A\'也是该词的缩写。——译者</footnote>，那是不恰当的：我们会不知道那个附标概括的是什么。如果想用一个下标"<katex>a</katex>"来标示，如写作"<katex>f(x_a)</katex>"，也不恰当：我们会不知道那个概括记号的范围。\n如果试图在主目位置上引入一个标记来表达，如写作"<katex>(A, A) \\cdot F(A, A)</katex>"，仍然不恰当：我们会不能确立诸变项的同一性。如此等等。\n所有这些标示方式都不恰当，因为它们没有必须的数学多样性。',
-    'If we tried, for example, to express what is expressed by "<katex>(x) . fx</katex>" by putting an index before <katex>fx</katex>, like: "<katex>\\text{Gen. } fx</katex>", it would not do, we should not know what was generalized. If we tried to show it by an index <katex>g</katex>, like: "<katex>f(x_g)</katex>" it would not do -- we should not know the scope of the generalization.\nIf we were to try it by introducing a mark in the argument places, like "<katex>(G, G) . F(G, G)</katex>", it would not do -- we could not determine the identity of the variablesetc.\nAll these ways of symbolizing are inadequate because they have not the necessary mathematical multiplicity.',
+    'If we tried, for example, to express what is expressed by "<katex>(x) . fx</katex>" by putting an index before <katex>fx</katex>, like: "<katex>\\text{Gen. } fx</katex>", it would not do, we should not know what was generalized. If we tried to show it by an index <katex>g</katex>, like: "<katex>f(x_g)</katex>" it would not do -- we should not know the scope of the generalization.\nIf we were to try it by introducing a mark in the argument places, like "<katex>(G, G) . F(G, G)</katex>", it would not do -- we could not determine the identity of the variables, etc.\nAll these ways of symbolizing are inadequate because they have not the necessary mathematical multiplicity.',
     'Wollten wir z. B. das, was wir durch „<katex>(x) fx</katex>“ ausdrücken, durch Vorsetzen eines Indexes vor „<katex>fx</katex>“ ausdrücken---etwa so: „Alg. <katex>fx</katex>“, es würde nicht genügen---wir wüssten nicht, was verallgemeinert wurde. Wollten wir es durch einen Index „<katex>a</katex>“ anzeigen---etwa so: „<katex>f(x_{a}</katex>)“---es würde auch nicht genügen---wir wüssten nicht den Bereich der Allgemeinheitsbezeichnung. Wollten wir es durch Einführung einer Marke in die Argumentstellen versuchen---etwa so: „<katex>(A, A) \\cdot F (A, A)</katex>“---es würde nicht genügen---wir könnten die Identität der Variablen nicht feststellen. U.s.w. Alle diese Bezeichnungsweisen genügen nicht, weil sie nicht die notwendige mathematische Mannigfaltigkeit haben.',
 ], [
     '4.0412',
     '同样的道理，唯心主义者以“空间眼镜”解释空间关系的视觉是不恰当的，因为它不能解释这些关系的多样性。',
-    'For the same reason the idealist explanation of the see of spatial relations through "spatial spectacles" does not do, because it cannot explain the multiplicity of these relations.',
+    'For the same reason the idealist explanation of the seeing of spatial relations through "spatial spectacles" does not do, because it cannot explain the multiplicity of these relations.',
     'Aus demselben Grunde genügt die idealistische Erklärung des Sehens der räumlichen Beziehungen durch die „Raumbrille“ nicht, weil sie nicht die Mannigfaltigkeit dieser Beziehungen erklären kann.',
 ], [
     '4.05',
@@ -981,7 +981,7 @@ export const content: string[][] = [[
 ], [
     '4.061',
     '决不可忽略命题有一种独立于事实的意义，否则就很容易认为真和假是记号和它们所标示的东西之间具有同等地位的关系。\n例如，这时人们就可以说，"<katex>p</katex>"以真的方式标示"<katex>\\sim p</katex>"以假的方式所标示的东西，等等。',
-    'If one does not observer that propositions have a sense independent of the facts, one can easily believe that true and false are two relations between signs and things signified with equal rights.\nOne could, then, for example, say that "<katex>p</katex>" signifies in the true way what "<katex>\\sim p</katex>" signifies in the false wayetc.',
+    'If one does not observe that propositions have a sense independent of the facts, one can easily believe that true and false are two relations between signs and things signified with equal rights.\nOne could, then, for example, say that "<katex>p</katex>" signifies in the true way what "<katex>\\sim p</katex>" signifies in the false way, etc.',
     'Beachtet man nicht, dass der Satz einen von den Tatsachen unabhängigen Sinn hat, so kann man leicht glauben, dass wahr und falsch gleichberechtigte Beziehungen von Zeichen und Bezeichnetem sind. Man könnte dann z. B. sagen, dass „<katex>p</katex>“ auf die wahre Art bezeichnet, was „<katex>\\sim p</katex>“ auf die falsche Art, etc.',
 ], [
     '4.062',
@@ -992,16 +992,16 @@ export const content: string[][] = [[
     '4.0621',
     '然而记号"<katex>p</katex>"和"<katex>\\sim p</katex>"<emphasis>能</emphasis>说同样的东西，这一点很重要，因为它表明实在中没有与记号"<katex>\\sim</katex>"相对应的东西。\n一个命题中出现的否定，不足以表征这个命题的意义（<katex>\\sim\\sim p = p</katex>）。\n命题"<katex>p</katex>"和"<katex>\\sim p</katex>"具有相反的意义，但是和它们相对应的是同一个实在。',
     'That, however, the signs "<katex>p</katex>" and "<katex>\\sim p</katex>" <i>can</i> say the same thing is important, for it shows that the sign "<katex>\\sim</katex>" corresponds to nothing in reality.\nThat negation occurs in a proposition, is no characteristic of its sense (<katex>\\sim\\sim p = p</katex>).\nThe propositions "<katex>p</katex>" and "<katex>\\sim p</katex>" have opposite senses, but to them corresponds one and the same reality.',
-    'Dass aber die Zeichen „<katex>p</katex>“ und „<katex>\\sim p</katex>“ das gleiche sagen <emph>können</emph>, ist wichtig. Denn es zeigt, dass dem Zeichen „<katex>\\sim{}</katex>“ in der Wirklichkeit nichts entspricht. Dass in einem Satz die Verneinung vorkommt, ist noch kein Merkmal seines Sinnes (<katex>\\sim{\\sim p} = p</katex>). Die Sätze „<katex>p</katex>“ und „<katex>\\sim p</katex>“ haben entgegengesetzten Sinn, aber es entspricht ihnen eine und dieselbe Wirklichkeit.',
+    'Dass aber die Zeichen „<katex>p</katex>“ und „<katex>\\sim p</katex>“ das gleiche sagen <emph>können</emph>, ist wichtig. Denn es zeigt, dass dem Zeichen „<katex>\\sim</katex>“ in der Wirklichkeit nichts entspricht. Dass in einem Satz die Verneinung vorkommt, ist noch kein Merkmal seines Sinnes (<katex>\\sim{\\sim p} = p</katex>). Die Sätze „<katex>p</katex>“ und „<katex>\\sim p</katex>“ haben entgegengesetzten Sinn, aber es entspricht ihnen eine und dieselbe Wirklichkeit.',
 ], [
     '4.063',
     '可用一个比喻来说明真这个概念：设想白纸上有一个黑斑块：通过指明这纸上的每一点是黑的还是白的，就可描述这个斑块的形状。一个点是黑的事实，相应于一个肯定的事实，一个点是白（非黑）的事实，则相应于一个否定的事实。如果我在纸面上指出一个点（即弗雷格所谓的真值），这就相应于一个为判断而提出的假定，如此等等。\n但是为了能够说出一个点是黑的或者白的，我必须首先知道一个点在什么情况下称为黑的和在什么情况下称为白的：为了能够说"<katex>p</katex>"为真（或者假），我必须规定在何种情况下我称"<katex>p</katex>"为真，并由此而规定这命题的意义。\n这一比喻的不足之处在于：即使我们不知道什么是黑的和白的，我们也可以指出纸上的一点；但是如果一个命题没有意义，是没有什么东西与它相对应的，因为它并不标示一个具有可以称为"假"或"真"这种属性的东西（即真值）。一个命题的动词，并非如弗雷格所认为的，"为真"或者"为假"，而是"为真"的东西必须已经包含着动词。',
-    'An illustration to explain the concept of truth. A black spot on white paper; the form of the spot can be described by saying of each point of the plane whether it is white or black. To the fact that a point is black corresponds a positive fact; to the fact that a point is white (not black), a negative fact. If I indicate a point of the plane (a truth-value in Frege\'s terminology), this corresponds to the assumption proposed for judgementetc. etc.\nBut to be able to say that a point is black or white, I must first know under what conditions a point is called white or black; in order to be able to say "<katex>p</katex>" is true (or false) I must have determined under what conditions I call "<katex>p</katex>" true, and thereby I determine the sense of the proposition.\nThe point at which the simile breaks down is this: we can indicate a point on the paper, without know what white and black are; but to a proposition without a sense corresponds n othing at all, for it signifies no thing (truth-value) whose properties are called "false" or "true"; the verb of the proposition is not "is true" or "is false" -- as Frege thought -- but that which "is true" must already contain the verb.',
+    'An illustration to explain the concept of truth. A black spot on white paper; the form of the spot can be described by saying of each point of the plane whether it is white or black. To the fact that a point is black corresponds a positive fact; to the fact that a point is white (not black), a negative fact. If I indicate a point of the plane (a truth-value in Frege\'s terminology), this corresponds to the assumption proposed for judgement, etc. etc.\nBut to be able to say that a point is black or white, I must first know under what conditions a point is called white or black; in order to be able to say "<katex>p</katex>" is true (or false) I must have determined under what conditions I call "<katex>p</katex>" true, and thereby I determine the sense of the proposition.\nThe point at which the simile breaks down is this: we can indicate a point on the paper, without know what white and black are; but to a proposition without a sense corresponds nothing at all, for it signifies no thing (truth-value) whose properties are called "false" or "true"; the verb of the proposition is not "is true" or "is false" -- as Frege thought -- but that which "is true" must already contain the verb.',
     'Ein Bild zur Erklärung des Wahrheitsbegriffes: Schwarzer Fleck auf weissem Papier; die Form des Fleckes kann man beschreiben, indem man für jeden Punkt der Fläche angibt, ob er weiss oder schwarz ist. Der Tatsache, dass ein Punkt schwarz ist, entspricht eine positive---der, dass ein Punkt weiss (nicht schwarz) ist, eine negative Tatsache. Bezeichne ich einen Punkt der Fläche (einen Frege\'schen Wahrheitswert), so entspricht dies der Annahme, die zur Beurteilung aufgestellt wird, etc. etc. Um aber sagen zu können, ein Punkt sei schwarz oder weiss, muss ich vorerst wissen, wann man einen Punkt schwarz und wann man ihn weiss nennt; um sagen zu können: „<katex>p</katex>“ ist wahr (oder falsch), muss ich bestimmt haben, unter welchen Umständen ich „<katex>p</katex>“ wahr nenne, und damit bestimme ich den Sinn des Satzes. Der Punkt an dem das Gleichnis hinkt ist nun der: Wir können auf einen Punkt des Papiers zeigen, auch ohne zu wissen, was weiss und schwarz ist; einem Satz ohne Sinn aber entspricht gar nichts, denn er bezeichnet kein Ding (Wahrheitswert) dessen Eigenschaften etwa „falsch“ oder „wahr“ hiessen; das Verbum eines Satzes ist nicht „ist wahr“ oder „ist falsch“---wie Frege glaubte---, sondern das, was „wahr ist“ muss das Verbum schon enthalten.',
 ], [
     '4.064',
     '每个命题必须<emphasis>已经</emphasis>具有一个意义：肯定并不能给命题以意义，因为所肯定的东西正好就是命题的意义。这一点同样也适用于否定，等等。',
-    'Every proposition must <i>already</i> have a sense; assertion cannot give it a sense, for what it asserts is the sense itself. And the same holds of denialetc.',
+    'Every proposition must <i>already</i> have a sense; assertion cannot give it a sense, for what it asserts is the sense itself. And the same holds of denial, etc.',
     'Jeder Satz muss <emph>schon</emph> einen Sinn haben; die Bejahung kann ihn ihm nicht geben, denn sie bejaht ja gerade den Sinn. Und dasselbe gilt von der Verneinung, etc.',
 ], [
     '4.0641',
@@ -1056,7 +1056,7 @@ export const content: string[][] = [[
 ], [
     '4.116',
     '凡是能思考的东西都能清楚地思考。凡是可以说的东西都可以清楚地说出来。',
-    'Everything that can be thought at all can be thuoght clearly. Everything that can be said can be said clearly.',
+    'Everything that can be thought at all can be thought clearly. Everything that can be said can be said clearly.',
     'Alles was überhaupt gedacht werden kann, kann klar gedacht werden. Alles was sich aussprechen lässt, lässt sich klar aussprechen.',
 ], [
     '4.12',
@@ -1071,7 +1071,7 @@ export const content: string[][] = [[
 ], [
     '4.1211',
     '因此，一个命题“<katex>fa</katex>”显示：对象 <katex>a</katex> 出现在该命题的意义中：两个命题“<katex>fa</katex>”和“<katex>ga</katex>”则显示：二者说的是同一个对象。\n如果两个命题互相矛盾，则它们的结构显示这一点；如果其中一个从另一个推导出来，也由其结构显示出来。如此等等。',
-    'Thus a proposition "<katex>fa</katex>" shows that in its sense the object <katex>a</katex> occurs, two propositions "<katex>fa</katex>" and "<katex>ga</katex>" that they are both about the same object.\nIf two propositions contradict one another, this is shown by their structure; similarly if one follows from anotheretc.',
+    'Thus a proposition "<katex>fa</katex>" shows that in its sense the object <katex>a</katex> occurs, two propositions "<katex>fa</katex>" and "<katex>ga</katex>" that they are both about the same object.\nIf two propositions contradict one another, this is shown by their structure; similarly if one follows from another, etc.',
     'So zeigt ein Satz „<katex>fa</katex>“, dass in seinem Sinn der Gegenstand <katex>a</katex> vorkommt, zwei Sätze „<katex>fa</katex>“ und „<katex>ga</katex>“, dass in ihnen beiden von demselben Gegenstand die Rede ist. Wenn zwei Sätze einander widersprechen, so zeigt dies ihre Struktur; ebenso, wenn einer aus dem anderen folgt. U.s.w.',
 ], [
     '4.1212',
@@ -1080,13 +1080,13 @@ export const content: string[][] = [[
     'Was gezeigt werden <emph>kann</emph>, <emph>kann</emph> nicht gesagt werden.',
 ], [
     '4.1213',
-    '现在我们也理解了我们的这种感觉：只要我们的记号语言中一切都得到正确处理，我们也就有了一个正确的逻缉观点。',
+    '现在我们也理解了我们的这种感觉：只要我们的记号语言中一切都得到正确处理，我们也就有了一个正确的逻辑观点。',
     'Now we understand our feeling that we are in possession of the right logical conception, if only all is right in our symbolism.',
     'Jetzt verstehen wir auch unser Gefühl: dass wir im Besitze einer richtigen logischen Auffassung seien, wenn nur einmal alles in unserer Zeichensprache stimmt.',
 ], [
     '4.122',
     '在某种意义上我们可以谈对象和事态的形式属性，或者，对事实而言，谈它们的结构属性，以及在同一意义上谈它们的形式关系和结构关系。\n［我也可以不说“结构属性”而说“内部属性”；不说“结构关系”而说“内部关系”。\n我引入这些表达式，是为了指明在哲学家当中广为流行的混淆内部关系和真正的（外部）关系的根源。］\n不过，这些内部属性和关系的存在不能通过命题来断言，而是在表述有关事态和涉及有关对象的命题中它们自己显示出来。',
-    'We can speak in a certain sense of formal properties of objects and atomic facts, or of properties of the structure of facts, and in the same sense of formal relations and relations of structures.\n(Instead of property of the structure I also say "internal property"; instead of relation of structures "internal relation".\nI introduce these expressions in order to show the reason for the confusion, very widespread among philosophers, betwen internal relations and proper (external) relations.)\nThe holding of such internal properties and relations cannot, however, be asserted by propositions, but it shows itself in the propositions, which present the facts and treat of the objects in question.',
+    'We can speak in a certain sense of formal properties of objects and atomic facts, or of properties of the structure of facts, and in the same sense of formal relations and relations of structures.\n(Instead of property of the structure I also say "internal property"; instead of relation of structures "internal relation".\nI introduce these expressions in order to show the reason for the confusion, very widespread among philosophers, between internal relations and proper (external) relations.)\nThe holding of such internal properties and relations cannot, however, be asserted by propositions, but it shows itself in the propositions, which present the facts and treat of the objects in question.',
     'Wir können in gewissem Sinne von formalen Eigenschaften der Gegenstände und Sachverhalte bezw. von Eigenschaften der Struktur der Tatsachen reden und in demselben Sinne von formalen Relationen und Relationen von Strukturen. (Statt Eigenschaft der Struktur sage ich auch „interne Eigenschaft“; statt Relation der Strukturen „interne Relation“. Ich führe diese Ausdrücke ein, um den Grund der, bei den Philosophen sehr verbreiteten Verwechslung zwischen den internen Relationen und den eigentlichen (externen) Relationen zu zeigen.) Das Bestehen solcher interner Eigenschaften und Relationen kann aber nicht durch Sätze behauptet werden, sondern es zeigt sich in den Sätzen, welche jene Sachverhalte darstellen und von jenen Gegenständen handeln.',
 ], [
     '4.1221',
@@ -1101,12 +1101,12 @@ export const content: string[][] = [[
 ], [
     '4.124',
     '一个可能情况的某个内部属性的存在，不是用命题来表达，而是在表述这个情况的命题中，通过该命题的一个内部属性自己表达出来。\n断言命题具有一种形式属性和否认它具有一种形式属性，同样是无意义的。',
-    'The existence of an internal property of a possible state of affairs is not expressed by a proposition, but it expresses itself in the proposition which presents that state of affairs, by an intern al property of this proposition.\nIt would be as senseless to ascribe a formal property to a proposition as to deny it the formal property.',
+    'The existence of an internal property of a possible state of affairs is not expressed by a proposition, but it expresses itself in the proposition which presents that state of affairs, by an internal property of this proposition.\nIt would be as senseless to ascribe a formal property to a proposition as to deny it the formal property.',
     'Das Bestehen einer internen Eigenschaft einer möglichen Sachlage wird nicht durch einen Satz ausgedrückt, sondern es drückt sich in dem sie darstellenden Satz, durch eine interne Eigenschaft dieses Satzes aus. Es wäre ebenso unsinnig, dem Satze eine formale Eigenschaft zuzusprechen, als sie ihm abzusprechen.',
 ], [
     '4.1241',
     '说一种形式具有这种属性而另一种形式具有那种属性，是不可能把两种形式彼此区分开来的：因为这样就要假定二者之中任一属性归属任一形式是有意义的。',
-    'One cannot distinguish forms from one another by saying that one has this proerty, the other that: for this assumes that there is a sense in asserting either property of either form.',
+    'One cannot distinguish forms from one another by saying that one has this property, the other that: for this assumes that there is a sense in asserting either property of either form.',
     'Formen kann man nicht dadurch von einander unterscheiden, dass man sagt, die eine habe diese, die andere aber jene Eigenschaft; denn dies setzt voraus, dass es einen Sinn habe, beide Eigenschaften von beiden Formen auszusagen.',
 ], [
     '4.125',
@@ -1126,7 +1126,7 @@ export const content: string[][] = [[
 ], [
     '4.126',
     '现在我们也可以在形式属性的意义上来谈形式概念。\n（我引入这个表达式，是为了弄清楚那贯穿于整个传统逻辑中的混淆形式概念和真正概念的根源。）\n当某种东西归入形式概念而成为后者的一个对象，这一点是不能用命题来表达的，而是在这个对象的记号自身中显示出来。（一个名称显示它标示一个对象，一个数的记号显示它标示一个数，等等。）\n形式概念确实不能和专有概念一样从函项来表述。\n因为它们的特征，即形式属性，是不能用函项来表达的。\n形式属性的表达式是一定符号的特征。\n因此，代表一个形式概念特征的记号，是其指谓属于该概念的所有符号的特有特征。\n因此，一个形式概念的表达式是一个以这种特有特征为唯一常项的命题变项。',
-    'In the sense in which we speak of formal properties we can now speak also of formal concepts.\n(I introduce this expression in order to make clear the confusion of formal concepts with proper concepts which runs through the whole of the old logic.)\nThat anything falls under a formal concept as an object belonging to it, cannot be expressed by a proposition. But it is shown in the symbol for the object itself. (The name shows that it signifies an object, the numerical sign that it signifies a number, etc.)\nFormal concepts, cannot, like proper concepts, be presented by a function.\nFor their characteristics, the formal properties, are not expressed by the functions.\nThe expression of a formal property is a feature of certain symbols.\nThe sign that signifies the charcteristics of a formal concept is, therefore, a characteristic feature of all symbols, whose meanings fall under the concept.\nThe expression of the formal concept is therefore a propositional variable in which only this characteristic feature is constant.',
+    'In the sense in which we speak of formal properties we can now speak also of formal concepts.\n(I introduce this expression in order to make clear the confusion of formal concepts with proper concepts which runs through the whole of the old logic.)\nThat anything falls under a formal concept as an object belonging to it, cannot be expressed by a proposition. But it is shown in the symbol for the object itself. (The name shows that it signifies an object, the numerical sign that it signifies a number, etc.)\nFormal concepts, cannot, like proper concepts, be presented by a function.\nFor their characteristics, the formal properties, are not expressed by the functions.\nThe expression of a formal property is a feature of certain symbols.\nThe sign that signifies the characteristics of a formal concept is, therefore, a characteristic feature of all symbols, whose meanings fall under the concept.\nThe expression of the formal concept is therefore a propositional variable in which only this characteristic feature is constant.',
     'In dem Sinne, in welchem wir von formalen Eigenschaften sprechen, können wir nun auch von formalen Begriffen reden. (Ich führe diesen Ausdruck ein, um den Grund der Verwechslung der formalen Begriffe mit den eigentlichen Begriffen, welche die ganze alte Logik durchzieht, klar zu machen.) Dass etwas unter einen formalen Begriff als dessen Gegenstand fällt, kann nicht durch einen Satz ausgedrückt werden. Sondern es zeigt sich an dem Zeichen dieses Gegenstandes selbst. (Der Name zeigt, dass er einen Gegenstand bezeichnet, das Zahlenzeichen, dass es eine Zahl bezeichnet etc.) Die formalen Begriffe können ja nicht, wie die eigentlichen Begriffe, durch eine Funktion dargestellt werden. Denn ihre Merkmale, die formalen Eigenschaften, werden nicht durch Funktionen ausgedrückt. Der Ausdruck der formalen Eigenschaft ist ein Zug gewisser Symbole. Das Zeichen der Merkmale eines formalen Begriffes ist also ein charakteristischer Zug aller Symbole, deren Bedeutungen unter den Begriff fallen. Der Ausdruck des formalen Begriffes also, eine Satzvariable, in welcher nur dieser charakteristische Zug konstant ist.',
 ], [
     '4.127',
@@ -1162,7 +1162,7 @@ export const content: string[][] = [[
     '4.128',
     '逻辑形式是<emphasis>无</emphasis>数的。\n因此在逻辑中没有特殊的数，因此也没有哲学的一元论和二元论的可能性，等等。',
     'The logical forms are <i>anumerical</i>.\nTherefore there are in logic no pre-eminent numbers, and therefore there is no philosophical monism or dualism, etc.',
-    'Die logischen Formen sind zahl\<emph>los</emph>. Darum gibt es in der Logik keine ausgezeichneten Zahlen und darum gibt es keinen philosophischen Monismus oder Dualismus, etc.',
+    'Die logischen Formen sind zahl<emph>los</emph>. Darum gibt es in der Logik keine ausgezeichneten Zahlen und darum gibt es keinen philosophischen Monismus oder Dualismus, etc.',
 ], [
     '4.2',
     '命题的意义是它与事态的存在和不存在的可能性符合和不符合。',
@@ -1216,7 +1216,7 @@ export const content: string[][] = [[
 ], [
     '4.243',
     '如果不知道两个名称是标示同一个事物还是标示两个不同事物，我们能够理解这两个名称吗？——如果不知道在一个命题中出现的两个名称的指谓是相同还是不同，我们能够理解这个命题吗？\n假如我知道一个英文词和一个具有相同指谓的德文词的指谓：那么我就不可能不知道二者是具有相同指谓的，我必定能把其中一个翻译为另一个。\n像“<katex>a = a</katex>”这样的表达式以及从中推得的那些表达式，既不是基本命题，也不是另一类有意义的记号。（下面将会表明这一点。）',
-    'Can we understand two names without knowing whether they signify the same thing o r two different things? Can we understand a proposition in which two names occur, without knowing if they mean the same or different things?\nIf I know the meaning of an English and a synonymous German word, it is impossible for me not to know that they are synonymous, it is impossible for me not to be able to translate them into one another.\nExpressions like "<katex>a = a</katex>", or expressions deduced from these are neither elementary propositions nor otherwise significant signs. (This will be shown later.)',
+    'Can we understand two names without knowing whether they signify the same thing or two different things? Can we understand a proposition in which two names occur, without knowing if they mean the same or different things?\nIf I know the meaning of an English and a synonymous German word, it is impossible for me not to know that they are synonymous, it is impossible for me not to be able to translate them into one another.\nExpressions like "<katex>a = a</katex>", or expressions deduced from these are neither elementary propositions nor otherwise significant signs. (This will be shown later.)',
     'Können wir zwei Namen verstehen, ohne zu wissen, ob sie dasselbe Ding oder zwei verschiedene Dinge bezeichnen?---Können wir einen Satz, worin zwei Namen vorkommen, verstehen, ohne zu wissen, ob sie Dasselbe oder Verschiedenes bedeuten? Kenne ich etwa die Bedeutung eines englischen und eines gleichbedeutenden deutschen Wortes, so ist es unmöglich, dass ich nicht weiss, dass die beiden gleichbedeutend sind; es ist unmöglich, dass ich sie nicht ineinander übersetzen kann. Ausdrücke wie „<katex>a = a</katex>“, oder von diesen abgeleitete, sind weder Elementarsätze, noch sonst sinnvolle Zeichen. (Dies wird sich später zeigen.)',
 ], [
     '4.25',
@@ -1291,7 +1291,7 @@ export const content: string[][] = [[
 ], [
     '4.442',
     '例如，以下就是一个命题记号：<custom />（弗雷格的“断定号”“<katex>\\vdash</katex>”逻辑上是完全无指谓的：在弗雷格（和罗素）的著作中，它不过表示作者主张用这个记号标记的命题是真的。因此，“<katex>\\vdash</katex>”不是命题的组成部分，就像命题的编号不是命题的组成部分一样。一个命题不可能宣称自己为真。）\n如果一个图式中真值可能性的排列次序是由组合规则一次性地固定好的，那么最后一列本身就是一个真值条件的表达式。将这一列写成为一行，上述命题记号就成为：<centered>“<katex>(WW{}-{}W)(p, q)</katex>”</centered>或者，更清楚一点：<centered>“<katex>(WWFW)(p, q)</katex>”</centered>（左边括号中的位数由右边括号中的项数决定。）',
-    'Thus <i>e.g.</i><custom language="en" /> is a propositional sign.\n(Frege\'s assertion sign "<katex>\\vdash</katex>" is logically altogether meaningless; in Frege (and Russell) it only shows that these authors hold as true the propositions marked in this way.\n"<katex>\\vdash</katex>" belongs therefore to the propositions no more than does the number of the proposition. A proposition cannot possible assert of itself that it is true.)\nIf the sequence of the truth-possibilities in the scheme is once for all determined by a rule of combination, then the last column is by itself an expression of the truth-conditions. If we write this column as a row the propositional sign becomes: <centered>"<katex>(T T - T)(p, q)</katex>"</centered> or more plainly: <centered>"<katex>(T T F T)(p, q)</katex>"</centered>\n(The number of places in the left-hand bracket is determined by the number of terms in the right-hand bracket.)',
+    'Thus <i>e.g.</i><custom language="en" /> is a propositional sign.\n(Frege\'s assertion sign "<katex>\\vdash</katex>" is logically altogether meaningless; in Frege (and Russell) it only shows that these authors hold as true the propositions marked in this way.\n"<katex>\\vdash</katex>" belongs therefore to the propositions no more than does the number of the proposition. A proposition cannot possibly assert of itself that it is true.)\nIf the sequence of the truth-possibilities in the scheme is once for all determined by a rule of combination, then the last column is by itself an expression of the truth-conditions. If we write this column as a row the propositional sign becomes: <centered>"<katex>(T T - T)(p, q)</katex>"</centered> or more plainly: <centered>"<katex>(T T F T)(p, q)</katex>"</centered>\n(The number of places in the left-hand bracket is determined by the number of terms in the right-hand bracket.)',
     'Es ist z. B.<custom /> ein Satzzeichen. (Frege\'s „Urteilsstrich" „<katex>\\vdash</katex>" ist logisch ganz bedeutungslos; er zeigt bei Frege (und Russell) nur an, dass diese Autoren die so bezeichneten Sätze für wahr halten. „<katex>\\vdash</katex>" gehört daher ebenso wenig zum Satzgefüge, wie etwa die Nummer des Satzes. Ein Satz kann unmöglich von sich selbst aussagen, dass er wahr ist.) Ist die Reihenfolge der Wahrheitsmöglichkeiten im Schema durch eine Kombinationsregel ein für allemal festgesetzt, dann ist die letzte Kolonne allein schon ein Ausdruck der Wahrheitsbedingungen. Schreiben wir diese Kolonne als Reihe hin, so wird das Satzzeichen zu: „(WW--W)(<katex>p</katex>, <katex>q</katex>)" oder deutlicher „(WWFW)(<katex>p</katex>, <katex>q</katex>)". (Die Anzahl der Stellen in der linken Klammer ist durch die Anzahl der Glieder in der rechten bestimmt.)',
 ], [
     '4.45',
@@ -1321,7 +1321,7 @@ export const content: string[][] = [[
 ], [
     '4.463',
     '命题的真值条件规定它给事实留出的范围。\n（一个命题，一个图像或者一个模型，在否定的意义上就像一个固体，限制着其它物体的活动自由；在肯定的意义上就像用固体物质围住的一片空间，其中有一个物体活动的场所。）\n重言式为实在留出了全部——整个无限的——逻辑空间；矛盾式则占满了全部逻辑空间，一点也没有留给实在。因而二者都不以任何方式规定实在。',
-    'The truth-conditions determine the range, which is left to the facts by the proposition.\n(The proposition, the picture, the modem, are in a negative sense like a solid body, which restricts the free movement of another: in a positive sense, like the space limited by solid substance, in which a body may be placed.)\nTautology leaves to reality the whole infinite logical space; contradiction fills the whole logical space and leaves no point to reality. Neither of them, therefore, can in any way determine reality.',
+    'The truth-conditions determine the range, which is left to the facts by the proposition.\n(The proposition, the picture, the model, are in a negative sense like a solid body, which restricts the free movement of another: in a positive sense, like the space limited by solid substance, in which a body may be placed.)\nTautology leaves to reality the whole infinite logical space; contradiction fills the whole logical space and leaves no point to reality. Neither of them, therefore, can in any way determine reality.',
     'Die Wahrheitsbedingungen bestimmen den Spielraum, der den Tatsachen durch den Satz gelassen wird. (Der Satz, das Bild, das Modell, sind im negativen Sinne wie ein fester Körper, der die Bewegungsfreiheit der anderen beschränkt; im positiven Sinne, wie der von fester Substanz begrenzte Raum, worin ein Körper Platz hat.) Die Tautologie lässt der Wirklichkeit den ganzen---unendlichen---logischen Raum; die Kontradiktion erfüllt den ganzen logischen Raum und lässt der Wirklichkeit keinen Punkt. Keine von beiden kann daher die Wirklichkeit irgendwie bestimmen.',
 ], [
     '4.464',
@@ -1336,7 +1336,7 @@ export const content: string[][] = [[
 ], [
     '4.466',
     '记号的一定的合乎逻辑的结合，对应着其指谓的一定的合乎逻辑的结合。能与<emphasis>每一种任意的</emphasis>结合对应的只能是非结合的记号。\n换句话说，对于每一种情况都为真的命题，根本不可能是记号的结合；因为，如果它们是记号的结合，就只能有对象的一定的结合与它们相对应。\n（而不合乎逻辑的结合是<emphasis>没有</emphasis>一种对象的结合与之相对应的。）\n重言式和矛盾式是记号结合的极限情形：即记号结合的解体。',
-    'To a definite logical combination of signs corresponds a definite logical combination of their meanings; <i>every arbitrary</i> combination only corresponds to the unconnected signs.\nThat is, propositions which are true for every stat of affairs cannot be combinations of signs at all, for otherwise there could only correspond to them definite combinations of objects.\n(And to no logical combination corresponds <i>no</i> combination of the objects.)\nTautology and contradiction are the limiting cases of the combination of symbols, namely their dissolution.',
+    'To a definite logical combination of signs corresponds a definite logical combination of their meanings; <i>every arbitrary</i> combination only corresponds to the unconnected signs.\nThat is, propositions which are true for every state of affairs cannot be combinations of signs at all, for otherwise there could only correspond to them definite combinations of objects.\n(And to no logical combination corresponds <i>no</i> combination of the objects.)\nTautology and contradiction are the limiting cases of the combination of symbols, namely their dissolution.',
     'Einer bestimmten logischen Verbindung von Zeichen entspricht eine bestimmte logische Verbindung ihrer Bedeutungen; <emph>jede beliebige</emph> Verbindung entspricht nur den unverbundenen Zeichen. Das heisst, Sätze die für jede Sachlage wahr sind, können überhaupt keine Zeichenverbindungen sein, denn sonst könnten ihnen nur bestimmte Verbindungen von Gegenständen entsprechen. (Und keiner logischen Verbindung entspricht <emph>keine</emph> Verbindung der Gegenstände.) Tautologie und Kontradiktion sind die Grenzfälle der Zeichenverbindung, nämlich ihre Auflösung.',
 ], [
     '4.4661',
@@ -1376,8 +1376,8 @@ export const content: string[][] = [[
 ], [
     '5.02',
     '函项的主目很容易和名称的附标相混淆。因为从主目和附标我都能看出包含它们的那些记号的指谓。\n例如，当罗素写“<katex>+_c</katex>”时，其中“<katex>c</katex>”就是一个附标，它指明整个记号是用于基数的加号。但是这种标记法是一种任意约定的结果，因而完全可能选择一个简单的记号来代替“<katex>+_c</katex>”；可是，在“<katex>\\sim p</katex>”中，“<katex>p</katex>”不是附标而是主目：除非已经先理解了“<katex>p</katex>”的意义，“<katex>\\sim p</katex>”的意义就<emphasis>不可能</emphasis>理解。（在名称尤利乌斯·恺撒中，“尤利乌斯”是一个附标。附标总是对对象的描述的一部分，我们把它附加到对象的名称上面：例如尤利乌斯家族中的<emphasis>这位</emphasis>恺撒。）\n如果我没有弄错，弗雷格关于命题和函项的指谓理论，就是建立在混淆主目和附标的基础之上的。弗雷格认为逻辑命题是名称，而它们的主目则是这些名称的附标。',
-    'It is natural to confuse the arguments of functions with the indices of names. For I recognize the meaning of the sign containing it from the argument just as much as from the index.\nIn Russell\'s "<katex>+_c</katex>", for example, "<katex>c</katex>" is an index which indicates that the whole sign is the addition sign for cardinal numbers. But this way of symbolizing depends on arbitrary agreement, and could choose a simple sign instead of "<katex>+_c</katex>": but in "<katex>\\sim p</katex>" "<katex>p</katex>" is not an index but an argument; the sense of "<katex>\\sim p</katex>" <i>cannot</i> be understood, unless the sense of "<katex>p</katex>" has previously been understood. (In the name Julius Caesar, Julius is an index. The index is always part of a description of the object to whose name we attach it, <i>e.g.</i> <i>The</i> Caesar of the Julian gens.)\nThe confusion of argument and index is, if I am not mistaken, at the root of Frege\'s theory of the meaning of propositions and functions. For Frege the propositions of logical were names and their arguments the indices of these names.',
-    'Es liegt nahe, die Argumente von Funktionen mit den Indices von Namen zu verwechseln. Ich erkenne nämlich sowohl am Argument wie am Index die Bedeutung des sie enthaltenden Zeichens. In Russell\'s „<katex>+_{c}</katex>“ ist z. B. „<katex>c</katex>“ ein Index, der darauf hinweist, dass das ganze Zeichen das Additionszeichen für Kardinalzahlen ist. Aber diese Bezeichnung beruht auf willkürlicher Übereinkunft und man könnte statt „<katex>+_{c}</katex>“ auch ein einfaches Zeichen wählen; in „<katex>\\sim{p}</katex>“ aber ist „<katex>p</katex>“ kein Index, sondern ein Argument: der Sinn von „<katex>\\sim{p}</katex>“ <emph>kann nicht</emph> verstanden werden, ohne dass vorher der Sinn von „<katex>p</katex>“ verstanden worden wäre. (Im Namen Julius Cäsar ist „Julius“ ein Index. Der Index ist immer ein Teil einer Beschreibung des Gegenstandes, dessen Namen wir ihn anhängen. Z. B. <emph>Der</emph> Cäsar aus dem Geschlechte der Julier.) Die Verwechslung von Argument und Index liegt, wenn ich mich nicht irre, der Theorie Frege\'s von der Bedeutung der Sätze und Funktionen zugrunde. Für Frege waren die Sätze der Logik Namen, und deren Argumente die Indices dieser Namen.',
+    'It is natural to confuse the arguments of functions with the indices of names. For I recognize the meaning of the sign containing it from the argument just as much as from the index.\nIn Russell\'s "<katex>+_c</katex>", for example, "<katex>c</katex>" is an index which indicates that the whole sign is the addition sign for cardinal numbers. But this way of symbolizing depends on arbitrary agreement, and could choose a simple sign instead of "<katex>+_c</katex>": but in "<katex>\\sim p</katex>" "<katex>p</katex>" is not an index but an argument; the sense of "<katex>\\sim p</katex>" <i>cannot</i> be understood, unless the sense of "<katex>p</katex>" has previously been understood. (In the name Julius Caesar, Julius is an index. The index is always part of a description of the object to whose name we attach it, <i>e.g.</i> <i>The</i> Caesar of the Julian gens.)\nThe confusion of argument and index is, if I am not mistaken, at the root of Frege\'s theory of the meaning of propositions and functions. For Frege the propositions of logic were names and their arguments the indices of these names.',
+    'Es liegt nahe, die Argumente von Funktionen mit den Indices von Namen zu verwechseln. Ich erkenne nämlich sowohl am Argument wie am Index die Bedeutung des sie enthaltenden Zeichens. In Russell\'s „<katex>+_{c}</katex>“ ist z. B. „<katex>c</katex>“ ein Index, der darauf hinweist, dass das ganze Zeichen das Additionszeichen für Kardinalzahlen ist. Aber diese Bezeichnung beruht auf willkürlicher Übereinkunft und man könnte statt „<katex>+_{c}</katex>“ auch ein einfaches Zeichen wählen; in „<katex>\\sim p</katex>“ aber ist „<katex>p</katex>“ kein Index, sondern ein Argument: der Sinn von „<katex>\\sim p</katex>“ <emph>kann nicht</emph> verstanden werden, ohne dass vorher der Sinn von „<katex>p</katex>“ verstanden worden wäre. (Im Namen Julius Cäsar ist „Julius“ ein Index. Der Index ist immer ein Teil einer Beschreibung des Gegenstandes, dessen Namen wir ihn anhängen. Z. B. <emph>Der</emph> Cäsar aus dem Geschlechte der Julier.) Die Verwechslung von Argument und Index liegt, wenn ich mich nicht irre, der Theorie Frege\'s von der Bedeutung der Sätze und Funktionen zugrunde. Für Frege waren die Sätze der Logik Namen, und deren Argumente die Indices dieser Namen.',
 ], [
     '5.1',
     '真值函项可以排成系列。\n这是概率论的基础。',
@@ -1437,7 +1437,7 @@ export const content: string[][] = [[
     '5.1311',
     '当我们从 <katex>p \\lor q</katex> 和 <katex>\\sim p</katex> 推出 <katex>q</katex> 时，命题形式“<katex>p \\lor q</katex>”和“<katex>\\sim p</katex>”之间的关系在这里被我们的标示方式所掩盖。但是，例如，若将“<katex>p \\lor q</katex>”写为“<katex>p \\mid q \\; \\cdot\\mid\\cdot \\; p \\mid q</katex>”，将“<katex>\\sim p</katex>”写为“<katex>p \\mid p</katex>”（<katex>p \\mid q</katex> = 既非 <katex>p</katex> 也非 <katex>q</katex>），其内在联系就显而易见了。\n（从 <katex>(x) \\cdot fx</katex> 可以推出 <katex>fa</katex>，这表明符号 <katex>(x) \\cdot fx</katex> 本身也包含着概括。）',
     'When we conclude from <katex>p \\lor q</katex> and <katex>\\sim p</katex> to <katex>q</katex> the relation between the forms of the propositions "<katex>p \\lor q</katex>" and "<katex>\\sim p</katex>" is here concealed by the method of symbolizing. But if we write, <i>e.g.</i> instead of "<katex>p \\lor q</katex>" "<katex>p \\mid q \\; \\cdot\\mid\\cdot \\; p \\mid q</katex>" and instead of "<katex>\\sim p</katex>" "<katex>p \\mid p</katex>" (<katex>p \\mid q</katex> = neither <katex>p</katex> nor <katex>q</katex>), then the inner connexion becomes obvious.\n(The fact that we can infer <katex>fa</katex> from <katex>(x) \\cdot fx</katex> shows that generality is present also in the symbol "<katex>(x) \\cdot fx</katex>".',
-    'Wenn wir von <katex>p \\lor q</katex> und <katex>\\sim{p}</katex> auf <katex>q</katex> schliessen, so ist hier durch die Bezeichnungsweise die Beziehung der Satzformen von „<katex>p \\lor q</katex>“ und „<katex>\\sim{p}</katex>“ verhüllt. Schreiben wir aber z. B. statt „<katex>p \\lor q</katex>“ „<katex>p | q \\cdot | \\cdot p | q</katex>“ und statt „<katex>\\sim{p}</katex>“ „<katex>p | p</katex>“ (<katex>p | q</katex> = weder <katex>p</katex>, noch <katex>q</katex>), so wird der innere Zusammenhang offenbar. (Dass man aus <katex>(x) \\cdot fx</katex> auf <katex>fa</katex> schliessen kann, das zeigt, dass die Allgemeinheit auch im Symbol „<katex>(x) \\cdot fx</katex>“ vorhanden ist.)',
+    'Wenn wir von <katex>p \\lor q</katex> und <katex>\\sim p</katex> auf <katex>q</katex> schliessen, so ist hier durch die Bezeichnungsweise die Beziehung der Satzformen von „<katex>p \\lor q</katex>“ und „<katex>\\sim p</katex>“ verhüllt. Schreiben wir aber z. B. statt „<katex>p \\lor q</katex>“ „<katex>p | q \\cdot | \\cdot p | q</katex>“ und statt „<katex>\\sim p</katex>“ „<katex>p | p</katex>“ (<katex>p | q</katex> = weder <katex>p</katex>, noch <katex>q</katex>), so wird der innere Zusammenhang offenbar. (Dass man aus <katex>(x) \\cdot fx</katex> auf <katex>fa</katex> schliessen kann, das zeigt, dass die Allgemeinheit auch im Symbol „<katex>(x) \\cdot fx</katex>“ vorhanden ist.)',
 ], [
     '5.132',
     '如果 <katex>p</katex> 从 <katex>q</katex> 得出来，则我能作出从 <katex>q</katex> 到 <katex>p</katex> 的推论，即从 <katex>q</katex> 推出 <katex>p</katex> 来。\n单从这两个命题即可了解推论的特性。\n只有这两个命题本身才能证明此推论的正确。\n如弗雷格和罗素著作中用以证明推论为正确的“推演律”是缺少意义的，因而是多余的。',
@@ -1507,7 +1507,7 @@ export const content: string[][] = [[
     '5.151',
     '在如上述 5.101 那样的图式中，设 <katex>W_r</katex> 是命题 <katex>r</katex> 的“W”数，<katex>W_{rs}</katex> 是和命题 <katex>r</katex> 的那些“W”同列的命题 <katex>s</katex> 的“W”数。则命题 <katex>r</katex> 给命题 <katex>s</katex> 以概率 <katex>W_{rs}:W_r</katex>。',
     'Suppose in a scheme like that above in No. 5.101 <katex>T_r</katex> is the number of the "T"\'s in the proposition <katex>r</katex>, <katex>T_{rs}</katex> the number of those "T"\'s in the proposition <katex>s</katex>, which stand in the same columns as "T"\'s of the proposition <katex>r</katex>; then the proposition <katex>r</katex> gives to the proposition <katex>s</katex> the probability <katex>T_{rs} : T_r</katex>.',
-    'Sei in einem Schema wie dem obigen in No.~5.101 <katex>W_{r}</katex> die Anzahl der „<katex>W</katex>“ im Satze <katex>r</katex>; <katex>W_{rs}</katex> die Anzahl derjenigen „<katex>W</katex>“ im Satze <katex>s</katex>, die in gleichen Kolonnen mit „<katex>W</katex>“ des Satzes <katex>r</katex> stehen. Der Satz <katex>r</katex> gibt dann dem Satze <katex>s</katex> die Wahrscheinlichkeit: <katex>W_{rs} : W_{r}</katex>.',
+    'Sei in einem Schema wie dem obigen in No. 5.101 <katex>W_{r}</katex> die Anzahl der „<katex>W</katex>“ im Satze <katex>r</katex>; <katex>W_{rs}</katex> die Anzahl derjenigen „<katex>W</katex>“ im Satze <katex>s</katex>, die in gleichen Kolonnen mit „<katex>W</katex>“ des Satzes <katex>r</katex> stehen. Der Satz <katex>r</katex> gibt dann dem Satze <katex>s</katex> die Wahrscheinlichkeit: <katex>W_{rs} : W_{r}</katex>.',
 ], [
     '5.1511',
     '没有概率命题特有的特殊对象。',
@@ -1517,17 +1517,17 @@ export const content: string[][] = [[
     '5.152',
     '彼此之间没有共同的真值主目的命题，我们称它们是相互独立的。\n两个基本命题彼此给予概率 <katex>\\frac{1}{2}</katex>。\n如果 <katex>p</katex> 从 <katex>q</katex> 得出来，则命题“<katex>q</katex>”给予命题“<katex>p</katex>”概率 <katex>1</katex>。逻辑推论的确实性是概率的一种极限情况。\n（应用于重言式和矛盾式。）',
     'Propositions which have no truth-arguments in common with one another we call independent.\nTwo elementary propositions give to one another the probability <katex>\\frac{1}{2}</katex>.\nIf <katex>p</katex> follows from <katex>q</katex>, the proposition <katex>q</katex> gives to the proposition <katex>p</katex> the probability <katex>1</katex>. The certainty of logical conclusion is a limiting case of probability.\n(Application to tautology and contradiction.)',
-    'Sätze, welche keine Wahrheitsargumente mit einander gemein haben, nennen wir von einander unabhängig. Von einander unabhängige Sätze (z. B. irgend zwei Elementarsätze) geben einander die Wahrscheinlichkeit~<katex>\\frac{1}{2}</katex>. Folgt <katex>p</katex> aus <katex>q</katex>, so gibt der Satz „<katex>q</katex>“ dem Satz „<katex>p</katex>“ die Wahrscheinlichkeit~1. Die Gewissheit des logischen Schlusses ist ein Grenzfall der Wahrscheinlichkeit. (Anwendung auf Tautologie und Kontradiktion.)',
+    'Sätze, welche keine Wahrheitsargumente mit einander gemein haben, nennen wir von einander unabhängig. Von einander unabhängige Sätze (z. B. irgend zwei Elementarsätze) geben einander die Wahrscheinlichkeit <katex>\\frac{1}{2}</katex>. Folgt <katex>p</katex> aus <katex>q</katex>, so gibt der Satz „<katex>q</katex>“ dem Satz „<katex>p</katex>“ die Wahrscheinlichkeit 1. Die Gewissheit des logischen Schlusses ist ein Grenzfall der Wahrscheinlichkeit. (Anwendung auf Tautologie und Kontradiktion.)',
 ], [
     '5.153',
     '就其自身而言，一个命题既不是概率的也不是非概率的。一个事件或者发生，或者不发生。没有中间状况。',
-    'A proposition is in itself neither probable nor improbable. An even occurs or does not occur, there is no middle course.',
+    'A proposition is in itself neither probable nor improbable. An event occurs or does not occur, there is no middle course.',
     'Ein Satz ist an sich weder wahrscheinlich noch unwahrscheinlich. Ein Ereignis trifft ein, oder es trifft nicht ein, ein Mittelding gibt es nicht.',
 ], [
     '5.154',
     '设在一个罐子里有相等数量的白球和黑球（且没有任何别种颜色的球）。我一个一个地取出球来，又将它放回罐里。用这种试验我能够确定，随着不断地这样做下去，取出来的黑球数和白球数是彼此接近的。\n所以<emphasis>这</emphasis>不是一个数学的真实。\n如果我说：“我取到一个白球的概率和取到一个黑球的概率是相等的”，这就意昧着，我所知道的全部情况（包括作为假设的自然律）给予一个事件发生的概率不<emphasis>大于</emphasis>另一个事件发生的概率。也就是说，正如从以上的说明所不难理解的，给予每个事件以概率 <katex>\\frac{1}{2}</katex>。\n通过试验我能够确认的是：这两个事件的发生是独立于我并不详细知道的种种情况的。',
-    'In an urn there are equal numbers of white and black balls (and no others). I draw on ball after another and put them back in the urn. Then I can determine by the experiment that the numbers of the black and white balls which are drawn approximate as the drawing continues.\nSo <i>this</i> is not a mathematical fact.\nIf then, I say, It is equally probable that I should d raw a white and a black ball, this means, All the circumstances known to me (including the natural laws hypothetically assumed) give to the occurrence of the one event no more probability than to the occurrence of the other. That is they give -- as can easily be understood from the above explanations -- to each the probability <katex>\\frac{1}{2}</katex>.\nWhat I can verify by the experiment is that the occurrence of the two events is independent of the circumstances with which I have no closer acquaintance.',
-    'In einer Urne seien gleichviel weisse und schwarze Kugeln (und keine anderen). Ich ziehe eine Kugel nach der anderen und lege sie wieder in die Urne zurück. Dann kann ich durch den Versuch feststellen, dass sich die Zahlen der gezogenen schwarzen und weissen Kugeln bei fortgesetztem Ziehen einander nähern. <emph>Das</emph> ist also kein mathematisches Faktum. Wenn ich nun sage: Es ist gleich wahrscheinlich, dass ich eine weisse Kugel wie eine schwarze ziehen werde, so heisst das: Alle mir bekannten Umstände (die hypothetisch angenommenen Naturgesetze mitinbegriffen) geben dem Eintreffen des einen Ereignisses nicht <emph>mehr</emph> Wahrscheinlichkeit als dem Eintreffen des anderen. Das heisst, sie geben---wie aus den obigen Erklärungen leicht zu entnehmen ist---jedem die Wahrscheinlichkeit~<katex>\\frac{1}{2}</katex>. Was ich durch den Versuch bestätige ist, dass das Eintreffen der beiden Ereignisse von den Umständen, die ich nicht näher kenne, unabhängig ist.',
+    'In an urn there are equal numbers of white and black balls (and no others). I draw one ball after another and put them back in the urn. Then I can determine by the experiment that the numbers of the black and white balls which are drawn approximate as the drawing continues.\nSo <i>this</i> is not a mathematical fact.\nIf then, I say, It is equally probable that I should draw a white and a black ball, this means, All the circumstances known to me (including the natural laws hypothetically assumed) give to the occurrence of the one event no more probability than to the occurrence of the other. That is they give -- as can easily be understood from the above explanations -- to each the probability <katex>\\frac{1}{2}</katex>.\nWhat I can verify by the experiment is that the occurrence of the two events is independent of the circumstances with which I have no closer acquaintance.',
+    'In einer Urne seien gleichviel weisse und schwarze Kugeln (und keine anderen). Ich ziehe eine Kugel nach der anderen und lege sie wieder in die Urne zurück. Dann kann ich durch den Versuch feststellen, dass sich die Zahlen der gezogenen schwarzen und weissen Kugeln bei fortgesetztem Ziehen einander nähern. <emph>Das</emph> ist also kein mathematisches Faktum. Wenn ich nun sage: Es ist gleich wahrscheinlich, dass ich eine weisse Kugel wie eine schwarze ziehen werde, so heisst das: Alle mir bekannten Umstände (die hypothetisch angenommenen Naturgesetze mitinbegriffen) geben dem Eintreffen des einen Ereignisses nicht <emph>mehr</emph> Wahrscheinlichkeit als dem Eintreffen des anderen. Das heisst, sie geben---wie aus den obigen Erklärungen leicht zu entnehmen ist---jedem die Wahrscheinlichkeit <katex>\\frac{1}{2}</katex>. Was ich durch den Versuch bestätige ist, dass das Eintreffen der beiden Ereignisse von den Umständen, die ich nicht näher kenne, unabhängig ist.',
 ], [
     '5.155',
     '概率命题的最小单元是：诸情况——我对它们别无所知——对一特定事件的发生给予某一概率度。',
@@ -1576,7 +1576,7 @@ export const content: string[][] = [[
 ], [
     '5.234',
     '基本命题的真值函项是以基本命题为基础的运算的结果（我称这些运算为真值运算。）',
-    'The truth-functions of elementary proposition. are results of operations which have the elementary propositions as bases. (I call these operations, truth-operations.)',
+    'The truth-functions of elementary propositions, are results of operations which have the elementary propositions as bases. (I call these operations, truth-operations.)',
     'Die Wahrheitsfunktionen der Elementarsätze sind Resultate von Operationen, die die Elementarsätze als Basen haben. (Ich nenne diese Operationen Wahrheitsoperationen.)',
 ], [
     '5.2341',
@@ -1586,7 +1586,7 @@ export const content: string[][] = [[
 ], [
     '5.24',
     '运算显示于变项中，它显示我们怎样可以从命题的一种形式得到另一种形式。\n运算表达形式之间的差异。\n（运算的基础与其结果之间所共有的恰为这些基础本身。）',
-    'An operation shows itself in a variable; it shows how we can proceed from one form of proposition to another.\nIt gives expression to the difference between the forms.\n(And that which is common the the bases, and the result of an operation, is the bases themselves.)',
+    'An operation shows itself in a variable; it shows how we can proceed from one form of proposition to another.\nIt gives expression to the difference between the forms.\n(And that which is common to the bases, and the result of an operation, is the bases themselves.)',
     'Die Operation zeigt sich in einer Variablen; sie zeigt, wie man von einer Form von Sätzen zu einer anderen gelangen kann. Sie bringt den Unterschied der Formen zum Ausdruck. (Und das Gemeinsame zwischen den Basen und dem Resultat der Operation sind eben die Basen.)',
 ], [
     '5.241',
@@ -1621,12 +1621,12 @@ export const content: string[][] = [[
 ], [
     '5.2522',
     '因此我把形式系列 <katex>a, O\' a, O\' O\' a</katex>，……的通项记为“<katex>[a, x, O\' x]</katex>”。这个括起来的表达式是一个变项：其中第一项是形式系列的首项，第二项是系列中任意选取的项 <katex>x</katex> 的形式，第三项是系列中紧接 <katex>x</katex> 之后的那一项的形式。',
-    'The general term of the formal series <katex>a, O\' a, O\' O\' a</katex>, . . . I write thus: "<katex>[a, x, O\' x]</katex>". This expression in brackets is a variable. The first term of the expression is the beginning of the formal series, the second the form of an arbitrary term <katex>x</katex> of the series, and the third the form of that term of the series which immediately follws <katex>x</katex>.',
+    'The general term of the formal series <katex>a, O\' a, O\' O\' a</katex>, . . . I write thus: "<katex>[a, x, O\' x]</katex>". This expression in brackets is a variable. The first term of the expression is the beginning of the formal series, the second the form of an arbitrary term <katex>x</katex> of the series, and the third the form of that term of the series which immediately follows <katex>x</katex>.',
     'Das allgemeine Glied einer Formenreihe <katex>a</katex>, <katex>O\' a</katex>, <katex>O\' O\' a</katex>, <katex>\....</katex> schreibe ich daher so: „<katex>[a, x, O\' x]</katex>“. Dieser Klammerausdruck ist eine Variable. Das erste Glied des Klammerausdruckes ist der Anfang der Formenreihe, das zweite die Form eines beliebigen Gliedes <katex>x</katex> der Reihe und das dritte die Form desjenigen Gliedes der Reihe, welches auf <katex>x</katex> unmittelbar folgt.',
 ], [
     '5.2523',
     '连续应用一个运算的概念和“如此等等”这个概念是等价的。',
-    'The concept of the success application of an operation is equivalent to the concept "and so on".',
+    'The concept of the successive application of an operation is equivalent to the concept "and so on".',
     'Der Begriff der successiven Anwendung der Operation ist äquivalent mit dem Begriff „und so weiter“.',
 ], [
     '5.253',
@@ -1641,13 +1641,13 @@ export const content: string[][] = [[
 ], [
     '5.3',
     '所有命题都是基本命题的真值运算结果。\n真值运算是从基本命题产生出真值函项的方法。\n依据真值运算的本性，就如从基本命题产生出它们的真值函项一样，以同样的方法也可以从真值函项产生出新的真值函项。当一个真值运算施用于基本命题的真值函项，总是产生出基本命题的另一个真值函项，即另一个命题。对基本命题真值运算的结果再作一次真值运算，其结果总可等同于对基本命题施用<emphasis>某一单独的</emphasis>真值运算。\n每个命题都是对基本命题作真值运算的结果。',
-    'All propositions are results of truth-operations on the elementary propositions.\nThe truth-operation is the way in which a truth-function arises from elementary propositions.\nAccording to the nature of truth-operations, in the same way as out of elementary propositions arise their truth-functions, from truth-functions arises a new one. Every truth-operation creates from truth-functions of elementary propositions, another tru th-function of elementary propositions <i>i.e.</i> a proposition. The result of every truth-operation on the reults of truth-operations on elementary propositions is also the result of <i>one</i> truth-operation on elementary propositions.\nEvery proposition is the result of truth-operations on elementary propositions.',
-    'Alle Sätze sind Resultate von Wahrheitsoperationen mit den Elementarsätzen. Die Wahrheitsoperation ist die Art und Weise, wie aus den Elementarsätzen die Wahrheitsfunktion entsteht. Nach dem Wesen der Wahrheitsoperation wird auf die gleiche Weise, wie aus den Elementarsätzen ihre Wahrheitsfunktion, aus Wahrheitsfunktionen eine Neue. Jede Wahrheitsoperation erzeugt aus Wahrheitsfunktionen von Elementarsätzen wieder eine Wahrheitsfunktion von Elementarsätzen, einen Satz. Das Resultat jeder Wahrheitsoperation mit den Resultaten von Wahrheitsoperationen mit Elementarsätzen ist wieder das Resultat <emph>Einer</emph> Wahrheitsoperation mit Elementarsätzen.} Jeder Satz ist das Resultat von Wahrheitsoperationen mit Elementarsätzen.',
+    'All propositions are results of truth-operations on the elementary propositions.\nThe truth-operation is the way in which a truth-function arises from elementary propositions.\nAccording to the nature of truth-operations, in the same way as out of elementary propositions arise their truth-functions, from truth-functions arises a new one. Every truth-operation creates from truth-functions of elementary propositions, another truth-function of elementary propositions <i>i.e.</i> a proposition. The result of every truth-operation on the results of truth-operations on elementary propositions is also the result of <i>one</i> truth-operation on elementary propositions.\nEvery proposition is the result of truth-operations on elementary propositions.',
+    'Alle Sätze sind Resultate von Wahrheitsoperationen mit den Elementarsätzen. Die Wahrheitsoperation ist die Art und Weise, wie aus den Elementarsätzen die Wahrheitsfunktion entsteht. Nach dem Wesen der Wahrheitsoperation wird auf die gleiche Weise, wie aus den Elementarsätzen ihre Wahrheitsfunktion, aus Wahrheitsfunktionen eine Neue. Jede Wahrheitsoperation erzeugt aus Wahrheitsfunktionen von Elementarsätzen wieder eine Wahrheitsfunktion von Elementarsätzen, einen Satz. Das Resultat jeder Wahrheitsoperation mit den Resultaten von Wahrheitsoperationen mit Elementarsätzen ist wieder das Resultat <emph>Einer</emph> Wahrheitsoperation mit Elementarsätzen. Jeder Satz ist das Resultat von Wahrheitsoperationen mit Elementarsätzen.',
 ], [
     '5.31',
     '即使“<katex>p</katex>”、“<katex>q</katex>”、“<katex>r</katex>”等等不是基本命题，4.31 的图式也是有指谓的。\n容易看出，即使“<katex>p</katex>”和“<katex>q</katex>”是基本命题的真值函项，4.42 中的命题记号也仍然是表达基本命题的一个真值函项。',
     'The Schemata No. 4.31 are also significant, if "<katex>p</katex>", "<katex>q</katex>", "<katex>r</katex>", etc. are not elementary propositions.\nAnd it is easy to see that the propositional sign in No. 4.42 expresses one truth-function of elementary propositions even when "<katex>p</katex>" and "<katex>q</katex>" are truth-functions of elementary propositions.',
-    'Die Schemata No.~4.31 haben auch dann eine Bedeutung, wenn „<katex>p</katex>“, „<katex>q</katex>“, „<katex>r</katex>“, etc. nicht Elementarsätze sind. Und es ist leicht zu sehen, dass das Satzzeichen in No.~\4.442, auch wenn „<katex>p</katex>“ und „<katex>q</katex>“ Wahrheitsfunktionen von Elementarsätzen sind, Eine Wahrheitsfunktion von Elementarsätzen ausdrückt.}',
+    'Die Schemata No.~4.31 haben auch dann eine Bedeutung, wenn „<katex>p</katex>“, „<katex>q</katex>“, „<katex>r</katex>“, etc. nicht Elementarsätze sind. Und es ist leicht zu sehen, dass das Satzzeichen in No. 4.442, auch wenn „<katex>p</katex>“ und „<katex>q</katex>“ Wahrheitsfunktionen von Elementarsätzen sind, Eine Wahrheitsfunktion von Elementarsätzen ausdrückt.',
 ], [
     '5.32',
     '所有真值函项都是把有限数量的真值运算连续应用于基本命题的结果。',
@@ -1667,26 +1667,26 @@ export const content: string[][] = [[
     '5.42',
     '显然，<katex>\\lor</katex>、<katex>\\supset</katex>等等不是右和左等等那种意义上的关系。\n弗雷格和罗素的逻辑“初始记号”的交叉定义已足以表明，它们不是初始记号，更不是关系的记号。\n显然，通过“<katex>\\sim</katex>”和“<katex>\\lor</katex>”定义的“<katex>\\supset</katex>”和在“<katex>\\lor</katex>”的定义中与“<katex>\\sim</katex>”一起出现的那个“<katex>\\supset</katex>”是等同的；而且后面这个“<katex>\\lor</katex>”与前一个“<katex>\\lor</katex>”也是等同的，如此等等。',
     'That <katex>\\lor</katex>, <katex>\\supset</katex>, etc., are not relations in the sense of right and left, etc., is obvious.\nThe possibility of crosswise definition of the logical "primitive signs" of Frege and Russell shows by itself that these are not primitive signs and that they signify no relations.\nAnd it is obvious that the "<katex>\\supset</katex>" which we define by means of "<katex>\\sim</katex>" and "<katex>\\lor</katex>" is identical with that by which we define "<katex>\\lor</katex>" with the help of "<katex>\\sim</katex>", and that this "<katex>\\lor</katex>" is the same as the first, and so on.',
-    'Dass <katex>\\lor</katex>, <katex>\\supset</katex>, etc. nicht Beziehungen im Sinne von rechts und links etc. sind, leuchtet ein. Die Möglichkeit des kreuzweisen Definierens der logischen „Urzeichen“ Freges und Russells zeigt schon, dass dies keine Urzeichen sind, und schon erst recht, dass sie keine Relationen bezeichnen. Und es ist offenbar, dass das „<katex>\\supset</katex>“, welches wir durch „<katex>\\sim{}</katex>“ und „<katex>\\lor</katex>“ definieren, identisch ist mit dem, durch welches wir „<katex>\\lor</katex>“ mit „<katex>\\sim{}</katex>“ definieren und dass dieses „<katex>\\lor</katex>“ mit dem ersten identisch ist. U. s. w.',
+    'Dass <katex>\\lor</katex>, <katex>\\supset</katex>, etc. nicht Beziehungen im Sinne von rechts und links etc. sind, leuchtet ein. Die Möglichkeit des kreuzweisen Definierens der logischen „Urzeichen“ Freges und Russells zeigt schon, dass dies keine Urzeichen sind, und schon erst recht, dass sie keine Relationen bezeichnen. Und es ist offenbar, dass das „<katex>\\supset</katex>“, welches wir durch „<katex>\\sim</katex>“ und „<katex>\\lor</katex>“ definieren, identisch ist mit dem, durch welches wir „<katex>\\lor</katex>“ mit „<katex>\\sim</katex>“ definieren und dass dieses „<katex>\\lor</katex>“ mit dem ersten identisch ist. U. s. w.',
 ], [
     '5.43',
     '从一个事实 <katex>p</katex> 会得出无数<emphasis>其它事实</emphasis>，即 <katex>\\sim\\sim p</katex>，<katex>\\sim\\sim\\sim p</katex>等等，这看起来有点令人难以置信。同样使人惊讶的是，无数的逻辑（数学）命题是从半打“初始命题”得出来的。\n但是一切逻辑命题之所说都是相同的，即什么也没有说。',
-    'That from a fact <katex>p</katex> an infinite number of <i>others</i> should follow, namely, <katex>\\sim\\sim p</katex>, <katex>\\sim\\sim\\sim\\sim p</katex>, etc., is indeed hardly to be believed, and it is no less wonderful that the infinite number of propositions of logic (of mathematics) shold follow from half a dozen "primitive propositions".\nBut the propositions of logic say the same thing. That is, nothing.',
-    'Dass aus einer Tatsache <katex>p</katex> unendlich viele <emph>andere</emph> folgen sollten, nämlich <katex>\\sim{\\sim{p}}</katex>, <katex>\\sim{\\sim{\\sim{\\sim{p}}}}</katex>, etc., ist doch von vornherein kaum zu glauben. Und nicht weniger merkwürdig ist, dass die unendliche Anzahl der Sätze der Logik (der Mathematik) aus einem halben Dutzend „Grundgesetzen“ folgen. Alle Sätze der Logik sagen aber dasselbe. Nämlich Nichts.',
+    'That from a fact <katex>p</katex> an infinite number of <i>others</i> should follow, namely, <katex>\\sim\\sim p</katex>, <katex>\\sim\\sim\\sim\\sim p</katex>, etc., is indeed hardly to be believed, and it is no less wonderful that the infinite number of propositions of logic (of mathematics) should follow from half a dozen "primitive propositions".\nBut the propositions of logic say the same thing. That is, nothing.',
+    'Dass aus einer Tatsache <katex>p</katex> unendlich viele <emph>andere</emph> folgen sollten, nämlich <katex>\\sim{\\sim p}</katex>, <katex>\\sim{\\sim{\\sim{\\sim p}}}</katex>, etc., ist doch von vornherein kaum zu glauben. Und nicht weniger merkwürdig ist, dass die unendliche Anzahl der Sätze der Logik (der Mathematik) aus einem halben Dutzend „Grundgesetzen“ folgen. Alle Sätze der Logik sagen aber dasselbe. Nämlich Nichts.',
 ], [
     '5.44',
     '真值函项不是实质函项。\n例如，肯定可以由双否定产生，因此否定是否在某种意义上就包含在肯定之中呢？“<katex>\\sim\\sim p</katex>”是否定 <katex>\\sim p</katex>，还是肯定 <katex>p</katex>，还是两者都是呢？\n命题“<katex>\\sim\\sim p</katex>”并不是把否定作为一个对象而与之相关；而另一方面，否定的可能性在肯定中又是早就预定了的。\n而且，如果存在一个称为“<katex>\\sim</katex>”的对象，那么就会得出，“<katex>\\sim\\sim p</katex>”说了某种不同于“<katex>p</katex>”所说的东西。这是因为一个命题涉及“<katex>\\sim</katex>”，而另一个命题则否。',
     'Truth-functions are not material functions.\nIf <i>e.g.</i> an affirmation can be produced by repeated denial, is the denial -- in any sense -- contained in the affirmation?\nDoes "<katex>\\sim\\sim p</katex>" deny "<katex>\\sim p</katex>", or does it affirm <katex>p</katex>; or both?\nThe proposition "<katex>\\sim\\sim p</katex>" does not treat of denial as an object, but the possibility of denial is already prejudged in affirmation.\nAnd if there was an object called "<katex>\\sim</katex>", then "<katex>\\sim\\sim p</katex>" would have to say something other than "<katex>p</katex>". For the one proposition would then treat of <katex>\\sim</katex>, the other would not.',
-    'Die Wahrheitsfunktionen sind keine materiellen Funktionen. Wenn man z. B. eine Bejahung durch doppelte Verneinung erzeugen kann, ist dann die Verneinung---in irgend einem Sinnin der Bejahung enthalten? Verneint „<katex>\\sim{\\sim{p}}</katex>“ <katex>\\sim{p}</katex>, oder bejaht es <katex>p</katex>; oder beides? Der Satz „<katex>\\sim{\\sim{p}}</katex>“ handelt nicht von der Verneinung wie von einem Gegenstand; wohl aber ist die Möglichkeit der Verneinung in der Bejahung bereits präjudiziert. Und gäbe es einen Gegenstand, der „<katex>\\sim{}</katex>“ hiesse, so müsste „<katex>\\sim{\\sim{p}}</katex>“ etwas anderes sagen als „<katex>p</katex>“. Denn der eine Satz würde dann eben von <katex>\\sim{}</katex> handeln, der andere nicht.',
+    'Die Wahrheitsfunktionen sind keine materiellen Funktionen. Wenn man z. B. eine Bejahung durch doppelte Verneinung erzeugen kann, ist dann die Verneinung---in irgend einem Sinnin der Bejahung enthalten? Verneint „<katex>\\sim{\\sim p}</katex>“ <katex>\\sim p</katex>, oder bejaht es <katex>p</katex>; oder beides? Der Satz „<katex>\\sim{\\sim p}</katex>“ handelt nicht von der Verneinung wie von einem Gegenstand; wohl aber ist die Möglichkeit der Verneinung in der Bejahung bereits präjudiziert. Und gäbe es einen Gegenstand, der „<katex>\\sim</katex>“ hiesse, so müsste „<katex>\\sim{\\sim p}</katex>“ etwas anderes sagen als „<katex>p</katex>“. Denn der eine Satz würde dann eben von <katex>\\sim</katex> handeln, der andere nicht.',
 ], [
     '5.441',
     '这些表面的逻辑常项的这种消失，也发现于“<katex>\\sim(\\exists x) \\cdot \\sim fx</katex>”的情形，它与“<katex>(x) \\cdot fx</katex>”的所说是一样的；或者也发生于“<katex>(\\exists x) \\cdot fx \\cdot x = a</katex>”的情形，它与“<katex>fa</katex>”说的是一回事情。',
     'This disappearance of the apparent logical constants also occurs if "<katex>\\sim(\\exists x) \\cdot \\sim fx</katex>" says the same as "<katex>(x) \\cdot fx</katex>", or "<katex>(\\exists x) \\cdot fx \\cdot x=a</katex>" the same as "<katex>fa</katex>".',
-    'Dieses Verschwinden der scheinbaren logischen Konstanten tritt auch ein, wenn „<katex>\\sim{(\\exists x) \\cdot \\sim{fx}}</katex>“ dasselbe sagt wie „<katex>(x) \\cdot fx</katex>“, oder „<katex>(\\exists x) \\cdot fx \\cdot x = a</katex>“ dasselbe wie „<katex>fa</katex>“.',
+    'Dieses Verschwinden der scheinbaren logischen Konstanten tritt auch ein, wenn „<katex>\\sim{(\\exists x) \\cdot \\sim fx}</katex>“ dasselbe sagt wie „<katex>(x) \\cdot fx</katex>“, oder „<katex>(\\exists x) \\cdot fx \\cdot x = a</katex>“ dasselbe wie „<katex>fa</katex>“.',
 ], [
     '5.442',
     '如果给定一个命题，那么以它为基础的一切真值运算的给果也<emphasis>随之</emphasis>给定。',
-    'If a proposition is given to us then the results of all truth-opoerations which have it as their basis are given <i>with</i> it.',
+    'If a proposition is given to us then the results of all truth-operations which have it as their basis are given <i>with</i> it.',
     'Wenn uns ein Satz gegeben ist, so sind <emph>mit ihm</emph> auch schon die Resultate aller Wahrheitsoperationen, die ihn zur Basis haben, gegeben.',
 ], [
     '5.45',
@@ -1696,8 +1696,8 @@ export const content: string[][] = [[
 ], [
     '5.451',
     '如果逻辑有一些初始概念，它们就应该是互相独立的。如果引入了一个初始概念，那么在它出现的一切结合里，它都是应该是已经引入了的。因此，它不能先对一种结合引入，尔后又对另一种结合再次引入。例如，一旦引入了否定，我们就应该既在“<katex>\\sim p</katex>”形式的命题中理解它，也在“<katex>\\sim(p \\lor q)</katex>”、“<katex>(\\exists x) \\cdot \\sim fx</katex>”等等这样的命题中同样地理解它。我们不应先对一类情况引入它，然后又对另一类情况引入它，因为这样一来，它的指谓在两类情况中是否相同，就值得怀疑，而且没有理由在两类情况下应用同一种记号结合方式。\n（简言之，弗雷格（在《算术的基本定律》中）关于通过定义引入记号的意见，经过适当的修改，也适用于初始记号的引入。）',
-    'If logic has primitive ideas these must be independent of one another. If a primitive idea is introduced it must be introduced in all contexts in which it occurs at all. One cannot therefore introduce it for <i>one</i> context and then again for another. For example, if denial is introduced, we must understand it in propositions of the form "<katex>\\sim p</katex>", just as in propositions like "<katex>\\sim(p \\lor q)</katex>", "<katex>(\\exists x) \\cdot \\sim fx</katex>" and others. We may not first introduce it for oone class of cases and then for another, for it would then remain doubtful whether its meaning in the two cases was the same, and there would be no reason to use the same way of symbolizing in the two cases.\n(In short, what Frege ("Grundgesetze der Arithmetik") has said about the introduction of signs by definitions holds, mutatis mutandis, for the introduction of primitive signs also.)',
-    'Hat die Logik Grundbegriffe, so müssen sie von einander unabhängig sein. Ist ein Grundbegriff eingeführt, so muss er in allen Verbindungen eingeführt sein, worin er überhaupt vorkommt. Man kann ihn also nicht zuerst für <emph>eine</emph> Verbindung, dann noch einmal für eine andere einführen. Z. B.: Ist die Verneinung eingeführt, so müssen wir sie jetzt in Sätzen von der Form „<katex>\\sim{p}</katex>“ ebenso verstehen, wie in Sätzen wie „<katex>\\sim{(p \\lor q)}</katex>“, „<katex>(\\exists x) \\cdot \\sim{fx}</katex>“~u. a.\ Wir dürfen sie nicht erst für die eine Klasse von Fällen, dann für die andere einführen, denn es bliebe dann zweifelhaft, ob ihre Bedeutung in beiden Fällen die gleiche wäre und es wäre kein Grund vorhanden, in beiden Fällen dieselbe Art der Zeichenverbindung zu benützen. (Kurz, für die Einführung der Urzeichen gilt, mutatis mutandis, dasselbe, was Frege („Grundgesetze der Arithmetik“) für die Einführung von Zeichen durch Definitionen gesagt hat.)',
+    'If logic has primitive ideas these must be independent of one another. If a primitive idea is introduced it must be introduced in all contexts in which it occurs at all. One cannot therefore introduce it for <i>one</i> context and then again for another. For example, if denial is introduced, we must understand it in propositions of the form "<katex>\\sim p</katex>", just as in propositions like "<katex>\\sim(p \\lor q)</katex>", "<katex>(\\exists x) \\cdot \\sim fx</katex>" and others. We may not first introduce it for one class of cases and then for another, for it would then remain doubtful whether its meaning in the two cases was the same, and there would be no reason to use the same way of symbolizing in the two cases.\n(In short, what Frege ("Grundgesetze der Arithmetik") has said about the introduction of signs by definitions holds, mutatis mutandis, for the introduction of primitive signs also.)',
+    'Hat die Logik Grundbegriffe, so müssen sie von einander unabhängig sein. Ist ein Grundbegriff eingeführt, so muss er in allen Verbindungen eingeführt sein, worin er überhaupt vorkommt. Man kann ihn also nicht zuerst für <emph>eine</emph> Verbindung, dann noch einmal für eine andere einführen. Z. B.: Ist die Verneinung eingeführt, so müssen wir sie jetzt in Sätzen von der Form „<katex>\\sim p</katex>“ ebenso verstehen, wie in Sätzen wie „<katex>\\sim{(p \\lor q)}</katex>“, „<katex>(\\exists x) \\cdot \\sim fx</katex>“~u. a.\ Wir dürfen sie nicht erst für die eine Klasse von Fällen, dann für die andere einführen, denn es bliebe dann zweifelhaft, ob ihre Bedeutung in beiden Fällen die gleiche wäre und es wäre kein Grund vorhanden, in beiden Fällen dieselbe Art der Zeichenverbindung zu benützen. (Kurz, für die Einführung der Urzeichen gilt, mutatis mutandis, dasselbe, was Frege („Grundgesetze der Arithmetik“) für die Einführung von Zeichen durch Definitionen gesagt hat.)',
 ], [
     '5.452',
     '在逻辑的符号系统中引入任何一种新的手段都必然是一个重大事件。在逻辑中，一种新的手段不能以所谓漫不经心的态度在括号或者脚注中引入。\n（如在罗素和怀特海的《数学原理》中就出现了用文字表达的定义和初始命题。为什么这里忽然出现文字呢？这是需要说明理由的，但是没有提出理由，也必然提不出理由，因为这种程序事实上是非法的。）\n但是，如果证明在某处引入一种新的手段是必要的，我们就应立即追问：这种手段在哪些地方是<emphasis>必须</emphasis>用到的？必须弄清楚它在逻辑中的地位。',
@@ -1756,12 +1756,12 @@ export const content: string[][] = [[
 ], [
     '5.473',
     '逻辑必须照顾自己。\n如果一个记号是<emphasis>可能的</emphasis>，它就应该能起标示作用。凡在逻辑中为可能的都是容许的。（“苏格拉底是同一的”之所以不意指什么，是因为没有称为“同一的”这种属性。这个命题所以无意义，是因为我们无法作出一种任意的规定来，而不是因为这符号本身是不容许的。）\n在一定的意义上，我们不可能在逻辑上犯错误。',
-    'Logic must take care of itself.\nA <i>possible</i> sign must also be able to signify. Everything which is possible in logic is also permitted. ("Socrates is identical" means nothing because there is no property which is called "identical". The proposition is senseless beause we have not made some arbitrary determination, not because the symbol is in itself unpermissible.)\nIn a certain sense we cannot make mistakes in logic.',
+    'Logic must take care of itself.\nA <i>possible</i> sign must also be able to signify. Everything which is possible in logic is also permitted. ("Socrates is identical" means nothing because there is no property which is called "identical". The proposition is senseless because we have not made some arbitrary determination, not because the symbol is in itself unpermissible.)\nIn a certain sense we cannot make mistakes in logic.',
     'Die Logik muss für sich selber sorgen. Ein <emph>mögliches</emph> Zeichen muss auch bezeichnen können. Alles was in der Logik möglich ist, ist auch erlaubt. („Sokrates ist identisch“ heisst darum nichts, weil es keine Eigenschaft gibt, die „identisch“ heisst. Der Satz ist unsinnig, weil wir eine willkürliche Bestimmung nicht getroffen haben, aber nicht darum, weil das Symbol an und für sich unerlaubt wäre.) Wir können uns, in gewissem Sinne, nicht in der Logik irren.',
 ], [
     '5.4731',
     '由于语言本身能防止各种逻辑错误，所以罗素多次说到的自明性才会在逻辑中成为多余的。——逻辑之所以是先天的，就在于<emphasis>不可能</emphasis>非逻辑地思考。',
-    'Self-evidence, of which Russell has said so much, can only be discard in logic by language itself preventing every logical mistake. That logic is a priori consists in the fact that we <i>cannot</i> think illogically.',
+    'Self-evidence, of which Russell has said so much, can only be discarded in logic by language itself preventing every logical mistake. That logic is a priori consists in the fact that we <i>cannot</i> think illogically.',
     'Das Einleuchten, von dem Russell so viel sprach, kann nur dadurch in der Logik entbehrlich werden, dass die Sprache selbst jeden logischen Fehler verhindert.---Dass die Logik a priori ist, besteht darin, dass nicht unlogisch gedacht werden <emph>kann</emph>.',
 ], [
     '5.4732',
@@ -1771,12 +1771,12 @@ export const content: string[][] = [[
 ], [
     '5.47321',
     '奥卡姆法则当然不是一条随意的规则，也不是一条因其在实践上的成功而获得了证明的规则：它表明，记号语言中<emphasis>非必要</emphasis>的单位不指谓任何东西。\n满足<emphasis>一个</emphasis>目的的记号逻辑上是等价的；<emphasis>不</emphasis>满足<emphasis>任何</emphasis>目的的记号逻辑上是无指谓的。',
-    'Occam\'s razor is, of course, not an arbitrary rule nor one justified by its practical success. It simply sais that <i>unnecessary</i> elements in a symbolism mean nothing.\nSigns which serve <i>one</i> purpose are logically equivalent, signs which serve <i>no</i> purpose are logically meaningless.',
+    'Occam\'s razor is, of course, not an arbitrary rule nor one justified by its practical success. It simply says that <i>unnecessary</i> elements in a symbolism mean nothing.\nSigns which serve <i>one</i> purpose are logically equivalent, signs which serve <i>no</i> purpose are logically meaningless.',
     'Occams Devise ist natürlich keine willkürliche, oder durch ihren praktischen Erfolg gerechtfertigte, Regel: Sie besagt, dass <emph>unnötige</emph> Zeicheneinheiten nichts bedeuten. Zeichen, die <emph>Einen</emph> Zweck erfüllen, sind logisch äquivalent, Zeichen, die <emph>keinen</emph> Zweck erfüllen, logisch bedeutungslos.',
 ], [
     '5.4733',
     '弗雷格说：每一个合法则地构造的命题都应当具有意义；而我说：每一个可能的命题都是合法则地构造的，而且，如果它没有意义，那只能是因为我们未能给予它的某些组成部分以<emphasis>指谓</emphasis>。\n（尽管我们认为自己已经这样做了。）\n因此，“苏格拉底是同一的”之所以什么也没有说，是由于我们没有给予“同一的”这个词以<emphasis>任何形容词的</emphasis>指谓。而当它作为同一性记号出现时，它是以完全不同的方式——另外一种标示关系——来标示的，因而在这两种情况下的符号也是完全不同的：这两个符号不过偶然地具有共同的记号。',
-    'Frege says: Every legitimately constructed proposition msut have a sense; and I say: Every possible proposition is legitimately constructed, and if it has no sense this can only be because we have given no <i>meaning</i> to some of its constituent parts.\n(Even if we believe that we have done so.)\nThus "Socrates is identical" says nothing, because we have given <i>no</i> meaning to the word "identical" as <i>adjective</i>. For when it occurs as the isng of equality it symbolizes in an entirely different way -- the symbolizing relation is another -- therefore the symbol is in the two cases entirely different; the two symbols have the sign in common with one another only by accident.',
+    'Frege says: Every legitimately constructed proposition must have a sense; and I say: Every possible proposition is legitimately constructed, and if it has no sense this can only be because we have given no <i>meaning</i> to some of its constituent parts.\n(Even if we believe that we have done so.)\nThus "Socrates is identical" says nothing, because we have given <i>no</i> meaning to the word "identical" as <i>adjective</i>. For when it occurs as the sign of equality it symbolizes in an entirely different way -- the symbolizing relation is another -- therefore the symbol is in the two cases entirely different; the two symbols have the sign in common with one another only by accident.',
     'Frege sagt: Jeder rechtmässig gebildete Satz muss einen Sinn haben; und ich sage: Jeder mögliche Satz ist rechtmässig gebildet, und wenn er keinen Sinn hat, so kann das nur daran liegen, dass wir einigen seiner Bestandteile keine <emph>Bedeutung</emph> gegeben haben. (Wenn wir auch glauben, es getan zu haben.) So sagt „Sokrates ist identisch“ darum nichts, weil wir dem Wort „identisch“ als <emph>Eigenschaftswort</emph> <emph>keine</emph> Bedeutung gegeben haben. Denn, wenn es als Gleichheitszeichen auftritt, so symbolisiert es auf ganz andere Art und Weise---die bezeichnende Beziehung ist eine andere,---also ist auch das Symbol in beiden Fällen ganz verschieden; die beiden Symbole haben nur das Zeichen zufällig miteinander gemein.',
 ], [
     '5.474',
@@ -1801,8 +1801,8 @@ export const content: string[][] = [[
 ], [
     '5.501',
     '一个以命题作为项的括号表达式，如果括号里各项的次序是无关紧要的，我就用一个“<katex>(\\bar{\\xi})</katex>”形式的记号来表示。“<katex>\\xi</katex>”是一个变项，它的值是括号表达式的各个项。变项上面的横线表示，它代表括号里变项所有的值。\n（例如，若 <katex>\\xi</katex> 有三个值 <katex>P</katex>、<katex>Q</katex>、<katex>R</katex>，则<katex>(\\xi) = (P, Q, R)</katex>。）变项的值是规定了的。\n这规定就是对变项所代表的命题的描述。\n括号表达式中各项的描述是怎样产生的，这一点无关紧要。\n我们可以区分三种描述：1.直接列举，这时可以简单地用作为变项取值的常项代换变项。2.给出一个函项 <katex>fx</katex>，它对所有 <katex>x</katex> 值的取值即为要描述的命题。3.给出一个决定命题构成的形式规则，这时括号表达式中的各项就是一个形式系列的所有的项。',
-    'An expression in brackets whose terms are propositions I indicate -- if the order of the terms in the bracket is indifferent -- by a sign of the form "<katex>(\\bar{\\xi})</katex>". "<katex>\\xi</katex>" is a variable whose values are the terms of the expression in brackets, and the line over the veriable indicates that it stands for all its values in the bracket.\n(Thus if <katex>\\xi</katex> has the 3 values <katex>P</katex>, <katex>Q</katex>, <katex>R</katex>, then <katex>(\\bar{\\xi})</katex> = <katex>(P, Q, R)</katex>.)\nThe values of the variables must be determined.\nThe determination is the description of the propositions which the variable stands for.\nHow the description of the terms of the expression in brackets takes place is unessential.\nWe may distinguish 3 kinds of description: 1. Direct enumeration. In this case we can place simply its constant values instead of the variable. 2. Giving a function <katex>fx</katex>, whose values for all values of <katex>x</katex> are the propositions to be described. 3. Giving a formal law, according to which those propositions are constructed. In this case the terms of the expression in brackets are all the terms of a formal series.',
-    'Einen Klammerausdruck, dessen Glieder Sätze sind, deute ichwenn die Reihenfolge der Glieder in der Klammer gleichgültig ist---durch ein Zeichen von der Form „<katex>(\\overline{\\xi})</katex>“ an. „<katex>\\xi</katex>“ ist eine Variable, deren Werte die Glieder des Klammerausdruckes sind; und der Strich über der Variablen deutet an, dass sie ihre sämtlichen Werte in der Klammer vertritt. (Hat also <katex>\\xi</katex> etwa die 3 Werte P, Q, R, so ist (<katex>\\overline{\\xi}</katex>) = (P, Q, R).) Die Werte der Variablen werden festgesetzt. Die Festsetzung ist die Beschreibung der Sätze, welche die Variable vertritt. Wie die Beschreibung der Glieder des Klammerausdruckes geschieht, ist unwesentlich. Wir <emph>können</emph> drei Arten der Beschreibung unterscheiden: 1.~Die direkte Aufzählung. In diesem Fall können wir statt der Variablen einfach ihre konstanten Werte setzen. 2.~Die Angabe einer Funktion <katex>fx</katex>, deren Werte für alle Werte von <katex>x</katex> die zu beschreibenden Sätze sind. 3.~Die Angabe eines formalen Gesetzes, nach welchem jene Sätze gebildet sind. In diesem Falle sind die Glieder des Klammerausdrucks sämtliche Glieder einer Formenreihe.',
+    'An expression in brackets whose terms are propositions I indicate -- if the order of the terms in the bracket is indifferent -- by a sign of the form "<katex>(\\bar{\\xi})</katex>". "<katex>\\xi</katex>" is a variable whose values are the terms of the expression in brackets, and the line over the variable indicates that it stands for all its values in the bracket.\n(Thus if <katex>\\xi</katex> has the 3 values <katex>P</katex>, <katex>Q</katex>, <katex>R</katex>, then <katex>(\\bar{\\xi})</katex> = <katex>(P, Q, R)</katex>.)\nThe values of the variables must be determined.\nThe determination is the description of the propositions which the variable stands for.\nHow the description of the terms of the expression in brackets takes place is unessential.\nWe may distinguish 3 kinds of description: 1. Direct enumeration. In this case we can place simply its constant values instead of the variable. 2. Giving a function <katex>fx</katex>, whose values for all values of <katex>x</katex> are the propositions to be described. 3. Giving a formal law, according to which those propositions are constructed. In this case the terms of the expression in brackets are all the terms of a formal series.',
+    'Einen Klammerausdruck, dessen Glieder Sätze sind, deute ich---wenn die Reihenfolge der Glieder in der Klammer gleichgültig ist---durch ein Zeichen von der Form „<katex>(\\overline{\\xi})</katex>“ an. „<katex>\\xi</katex>“ ist eine Variable, deren Werte die Glieder des Klammerausdruckes sind; und der Strich über der Variablen deutet an, dass sie ihre sämtlichen Werte in der Klammer vertritt. (Hat also <katex>\\xi</katex> etwa die 3 Werte P, Q, R, so ist (<katex>\\overline{\\xi}</katex>) = (P, Q, R).) Die Werte der Variablen werden festgesetzt. Die Festsetzung ist die Beschreibung der Sätze, welche die Variable vertritt. Wie die Beschreibung der Glieder des Klammerausdruckes geschieht, ist unwesentlich. Wir <emph>können</emph> drei Arten der Beschreibung unterscheiden: 1.~Die direkte Aufzählung. In diesem Fall können wir statt der Variablen einfach ihre konstanten Werte setzen. 2.~Die Angabe einer Funktion <katex>fx</katex>, deren Werte für alle Werte von <katex>x</katex> die zu beschreibenden Sätze sind. 3.~Die Angabe eines formalen Gesetzes, nach welchem jene Sätze gebildet sind. In diesem Falle sind die Glieder des Klammerausdrucks sämtliche Glieder einer Formenreihe.',
 ], [
     '5.502',
     '因此，我写作“<katex>N(\\bar{\\xi})</katex>”以代替“<katex>(......W)(\\xi, ......)</katex>”。\n<katex>N(\\bar{\\xi})</katex>是对命题变项 <katex>\\xi</katex> 所有的值的否定。',
@@ -1811,28 +1811,28 @@ export const content: string[][] = [[
 ], [
     '5.503',
     '显然，我们不难表达：命题如何可以用此运算来构成和如何不可以用它来构成；故而为此必可找到一个精确的表达式。',
-    'As it is obviously easy to express how propositions can be constructioned by means of this operation and how propositions are not to be constructed by means of it, this must be capable of exact expression.',
+    'As it is obviously easy to express how propositions can be constructed by means of this operation and how propositions are not to be constructed by means of it, this must be capable of exact expression.',
     'Da sich offenbar leicht ausdrücken lässt, wie mit dieser Operation Sätze gebildet werden können und wie Sätze mit ihr nicht zu bilden sind, so muss dies auch einen exakten Ausdruck finden können.',
 ], [
     '5.51',
     '如果 <katex>\\xi</katex> 只有一个值，则 <katex>N(\\bar{\\xi})</katex>＝<katex>\\sim p</katex>（非 <katex>p</katex>）；如果它有两个值，则 <katex>N(\\bar{\\xi})</katex>＝<katex>\\sim p \\cdot \\sim q</katex>（既非 <katex>p</katex> 也非 <katex>q</katex>）。',
     'If <katex>\\xi</katex> has only one value, then <katex>N(\\bar{\\xi})</katex>=<katex>\\sim p</katex> (not <katex>p</katex>), if it has two values then <katex>N(\\bar{\\xi})</katex>=<katex>\\sim p \\cdot \\sim q</katex> (neither <katex>p</katex> nor <katex>q</katex>).',
-    'Hat <katex>\\xi</katex> nur einen Wert, so ist <katex>N(\\overline{\\xi}) = \\sim{p}</katex> (nicht <katex>p</katex>), hat es zwei Werte, so ist <katex>N(\\overline{\\xi}) = \\sim{p} \\cdot \\sim{q}</katex> (weder <katex>p</katex> noch <katex>q</katex>).',
+    'Hat <katex>\\xi</katex> nur einen Wert, so ist <katex>N(\\overline{\\xi}) = \\sim p</katex> (nicht <katex>p</katex>), hat es zwei Werte, so ist <katex>N(\\overline{\\xi}) = \\sim p \\cdot \\sim{q}</katex> (weder <katex>p</katex> noch <katex>q</katex>).',
 ], [
     '5.511',
     '包容一切而反映着世界的逻辑之所以能够运用这种特别的钩子和装置，是因为它们全都彼此结合着成为一张无比精细的网——一面巨大的镜子。',
-    'How can the all-embracing logic which mirrors the world use such speial catches and manipulations? Only because all these are connected into an infinitely fine network, to the great mirror.',
+    'How can the all-embracing logic which mirrors the world use such special catches and manipulations? Only because all these are connected into an infinitely fine network, to the great mirror.',
     'Wie kann die allumfassende, weltspiegelnde Logik so spezielle Haken und Manipulationen gebrauchen? Nur, indem sich alle diese zu einem unendlich feinen Netzwerk, zu dem grossen Spiegel, verknüpfen.',
 ], [
     '5.512',
     '若“<katex>p</katex>”为假，则“<katex>\\sim p</katex>”为真。因而，在真命题“<katex>\\sim p</katex>”中，“<katex>p</katex>”是一个假命题。那么波线“<katex>\\sim</katex>”怎样能使“<katex>p</katex>”与实在相符合呢？\n但是在“<katex>\\sim p</katex>”中起否定作用的并不是“<katex>\\sim</katex>”，而是这个记号系统中所有否定 <katex>p</katex> 的记号共有的东西。\n也就是说，是构成“<katex>\\sim p</katex>”、“<katex>\\sim\\sim\\sim p</katex>”、“<katex>\\sim p \\lor \\sim p</katex>”、“<katex>\\sim p \\cdot \\sim p</katex>”等等（以至无穷）所遵循的共同规则，这一共同的因素反映着否定。',
     '"<katex>\\sim p</katex>" is true if "<katex>p</katex>" is false. Therefore in the true proposition "<katex>\\sim p</katex>" "<katex>p</katex>" is a false proposition. How then can the stroke "<katex>\\sim</katex>" bring it into agreement with reality?\nThat which denies in "<katex>\\sim p</katex>" is however not "<katex>\\sim</katex>", but that which all signs of this notation, which deny <katex>p</katex>, have in common.\nHence the common rule according to which "<katex>\\sim p</katex>", "<katex>\\sim\\sim\\sim p</katex>", "<katex>\\sim p \\lor \\sim p</katex>", "<katex>\\sim p \\cdot \\sim p</katex>", etc. etc. (to infinity) are constructed. And this which is common to them all mirrors denial.',
-    '„<katex>\\sim{p}</katex>“ ist wahr, wenn „<katex>p</katex>“ falsch ist. Also in dem wahren Satz „<katex>\\sim{p}</katex>“ ist „<katex>p</katex>“ ein falscher Satz. Wie kann ihn nun der Strich „<katex>\\sim{}</katex>“ mit der Wirklichkeit zum Stimmen bringen? Das, was in „<katex>\\sim{p}</katex>“ verneint, ist aber nicht das „<katex>\\sim{}</katex>“, sondern dasjenige, was allen Zeichen dieser Notation, welche <katex>p</katex> verneinen, gemeinsam ist. Also die gemeinsame Regel, nach welcher „<katex>\\sim{p}</katex>“, „<katex>\\sim{\\sim{\\sim{p}}}</katex>“, „<katex>\\sim{p} \\lor \\sim{p}</katex>“, „<katex>\\sim{p} \\cdot \\sim{p}</katex>“, etc. etc. (ad inf.) gebildet werden. Und dies Gemeinsame spiegelt die Verneinung wider.',
+    '„<katex>\\sim p</katex>“ ist wahr, wenn „<katex>p</katex>“ falsch ist. Also in dem wahren Satz „<katex>\\sim p</katex>“ ist „<katex>p</katex>“ ein falscher Satz. Wie kann ihn nun der Strich „<katex>\\sim</katex>“ mit der Wirklichkeit zum Stimmen bringen? Das, was in „<katex>\\sim p</katex>“ verneint, ist aber nicht das „<katex>\\sim</katex>“, sondern dasjenige, was allen Zeichen dieser Notation, welche <katex>p</katex> verneinen, gemeinsam ist. Also die gemeinsame Regel, nach welcher „<katex>\\sim p</katex>“, „<katex>\\sim{\\sim{\\sim p}}</katex>“, „<katex>\\sim p \\lor \\sim p</katex>“, „<katex>\\sim p \\cdot \\sim p</katex>“, etc. etc. (ad inf.) gebildet werden. Und dies Gemeinsame spiegelt die Verneinung wider.',
 ], [
     '5.513',
     '可以说，肯定 <katex>p</katex> 和 <katex>q</katex> 两者的一切符号所共同的东西，就是命题“<katex>p \\cdot q</katex>”；而肯定 <katex>p</katex> 或者 <katex>q</katex> 的一切符号所共同的东西，就是命题“<katex>p \\lor q</katex>”。\n同样可以说，两个命题如果彼此之间没有任何共同的东西，它们就是互相反对的，而且每个命题只有一个否定，因为只有一个命题完全在它之外。\n因此在罗素的记号系统中也同样表明，“<katex>q : p \\lor \\sim p</katex>”和“<katex>q</katex>”说的是一回事情，“<katex>p \\lor \\sim p</katex>”则什么也没有说。',
-    'We could say: What is common to all symbols, which assert both <katex>p</katex> and <katex>q</katex>, is the proposition "<katex>p \\cdot q</katex>". What is common to all symbols, which asserts either <katex>p</katex> or <katex>q</katex>, is the proposition "<katex>p \\lor q</katex>".\nAnd similarly we can say: Two p ropositions are opposed to one another when they have nothing in common with one another; and every proposition has only one negative, because there is only one proposition which lies altogether outside it.\nThus in Russell\'s notation also it appears evident that "<katex>q : p \\lor \\sim p</katex>" says the same thing as "<katex>q</katex>"; that "<katex>p \\lor \\sim p</katex>" says nothing.',
-    'Man könnte sagen: Das Gemeinsame aller Symbole, die sowohl <katex>p</katex> als <katex>q</katex> bejahen, ist der Satz „<katex>p \\cdot q</katex>“. Das Gemeinsame aller Symbole, die entweder <katex>p</katex> oder <katex>q</katex> bejahen, ist der Satz „<katex>p \\lor q</katex>“. Und so kann man sagen: Zwei Sätze sind einander entgegengesetzt, wenn sie nichts miteinander gemein haben, und: Jeder Satz hat nur ein Negativ, weil es nur einen Satz gibt, der ganz ausserhalb seiner liegt. Es zeigt sich so auch in Russells Notation, dass „<katex>q : p \\lor \\sim{p}</katex>“ dasselbe sagt wie „<katex>q</katex>“; dass „<katex>p \\lor \\sim{p}</katex>“ nichts sagt.',
+    'We could say: What is common to all symbols, which assert both <katex>p</katex> and <katex>q</katex>, is the proposition "<katex>p \\cdot q</katex>". What is common to all symbols, which asserts either <katex>p</katex> or <katex>q</katex>, is the proposition "<katex>p \\lor q</katex>".\nAnd similarly we can say: Two propositions are opposed to one another when they have nothing in common with one another; and every proposition has only one negative, because there is only one proposition which lies altogether outside it.\nThus in Russell\'s notation also it appears evident that "<katex>q : p \\lor \\sim p</katex>" says the same thing as "<katex>q</katex>"; that "<katex>p \\lor \\sim p</katex>" says nothing.',
+    'Man könnte sagen: Das Gemeinsame aller Symbole, die sowohl <katex>p</katex> als <katex>q</katex> bejahen, ist der Satz „<katex>p \\cdot q</katex>“. Das Gemeinsame aller Symbole, die entweder <katex>p</katex> oder <katex>q</katex> bejahen, ist der Satz „<katex>p \\lor q</katex>“. Und so kann man sagen: Zwei Sätze sind einander entgegengesetzt, wenn sie nichts miteinander gemein haben, und: Jeder Satz hat nur ein Negativ, weil es nur einen Satz gibt, der ganz ausserhalb seiner liegt. Es zeigt sich so auch in Russells Notation, dass „<katex>q : p \\lor \\sim p</katex>“ dasselbe sagt wie „<katex>q</katex>“; dass „<katex>p \\lor \\sim p</katex>“ nichts sagt.',
 ], [
     '5.514',
     '一个记号系统一旦建立起来，其中就有一条用以构造一切否定 <katex>p</katex> 的命题的规则，一条用以构造一切肯定 <katex>p</katex> 的命题的规则，一条用以构造一切肯定 <katex>p</katex> 或 <katex>q</katex> 的命题的规则，等等。这些规则等价于一些符号，它们的意义就反映在符号之中。',
@@ -1842,7 +1842,7 @@ export const content: string[][] = [[
     '5.515',
     '在我们的符号中必须表明，只有命题才能相互之间从“<katex>\\lor</katex>”、“<katex>\\cdot</katex>”等等结合起来。\n情况的确如此，因为“<katex>p</katex>”和“<katex>q</katex>”的符号本身已假定了“<katex>\\lor</katex>”、“<katex>\\sim</katex>”等等。如果在“<katex>p \\lor q</katex>”中记号“<katex>p</katex>”不代表一个复合记号，那么它自身单独地就不能有意义：而在这种情况下，和“<katex>p</katex>”具有相同意义的记号“<katex>p \\lor p</katex>”、“<katex>p \\cdot p</katex>”等等也就不能有意义。而如果“<katex>p \\lor p</katex>” 没有意义，“<katex>p \\lor q</katex>”也就不可能有任何意义。',
     'It must be recognized in our symbols that what is connected by "<katex>\\lor</katex>", "<katex>\\cdot</katex>", etc., must be propositions.\nAnd this is the case, for the symbols "<katex>p</katex>" and "<katex>q</katex>" presuppose "<katex>\\lor</katex>", "<katex>\\sim</katex>", etc. If the sign "<katex>p</katex>" in "<katex>p \\lor q</katex>" does not stand for a complex sign, then by itself it cannot have sense; but then also the signs "<katex>p \\lor p</katex>", "<katex>p \\cdot p</katex>", etc. which have the same sense as "<katex>p</katex>" have no sense. If, however, "<katex>p \\lor p</katex>" has no sense, then also "<katex>p \\lor q</katex>" can have no sense.',
-    'Es muss sich an unseren Symbolen zeigen, dass das, was durch „<katex>\\lor</katex>“, „<katex>\\cdot</katex>“, etc. miteinander verbunden ist, Sätze sein müssen. Und dies ist auch der Fall, denn das Symbol „<katex>p</katex>“ und „<katex>q</katex>“ setzt ja selbst das „<katex>\\lor</katex>“, „<katex>\\sim{}</katex>“, etc. voraus. Wenn das Zeichen „<katex>p</katex>“ in „<katex>p \\lor q</katex>“ nicht für ein komplexes Zeichen steht, dann kann es allein nicht Sinn haben; dann können aber auch die mit „<katex>p</katex>“ gleichsinnigen Zeichen „<katex>p \\lor p</katex>“, „<katex>p \\cdot p</katex>“, etc. keinen Sinn haben. Wenn aber „<katex>p \\lor p</katex>“ keinen Sinn hat, dann kann auch „<katex>p \\lor q</katex>“ keinen Sinn haben.',
+    'Es muss sich an unseren Symbolen zeigen, dass das, was durch „<katex>\\lor</katex>“, „<katex>\\cdot</katex>“, etc. miteinander verbunden ist, Sätze sein müssen. Und dies ist auch der Fall, denn das Symbol „<katex>p</katex>“ und „<katex>q</katex>“ setzt ja selbst das „<katex>\\lor</katex>“, „<katex>\\sim</katex>“, etc. voraus. Wenn das Zeichen „<katex>p</katex>“ in „<katex>p \\lor q</katex>“ nicht für ein komplexes Zeichen steht, dann kann es allein nicht Sinn haben; dann können aber auch die mit „<katex>p</katex>“ gleichsinnigen Zeichen „<katex>p \\lor p</katex>“, „<katex>p \\cdot p</katex>“, etc. keinen Sinn haben. Wenn aber „<katex>p \\lor p</katex>“ keinen Sinn hat, dann kann auch „<katex>p \\lor q</katex>“ keinen Sinn haben.',
 ], [
     '5.5151',
     '一个否定命题的记号必须要用肯定命题的记号来构成吗？为什么不能用一个否定的事实来表达一个否定命题呢？（例如，设“<katex>a</katex>”不处在对“<katex>b</katex>”的一定关系之中，就可以说为：<katex>aRb</katex> 不是实情。）\n但是即使在这里，否定命题其实也是间接地用肯定命题来构成的。\n肯定<emphasis>命题</emphasis>必须以否定<emphasis>命题</emphasis>的存在为前提，反之亦然。',
@@ -1886,7 +1886,7 @@ export const content: string[][] = [[
 ], [
     '5.5261',
     '一个完全概括的命题，像每个其它命题一样，是组合的。（这一点为我们在“<katex>(\\exists x, \\phi) \\cdot \\phi x</katex>”中必须分开地提及“<katex>\\phi</katex>”和“<katex>x</katex>”这一事实所表明。两者都独立地处在对世界的标示关系中，就像非概括命题的情形一样。）\n组合符号的标志是：它和<emphasis>别的</emphasis>符号有某种共同的东西。',
-    'A completely generalized proposition is like every other proposition composite. (This is shown by the fact that in "<katex>(\\exists x, \\phi) \\cdot \\phi x</katex>" we must mention "<katex>\\phi</katex>" and "<katex>x</katex>" separately. Both stand independently in signifying relations to the worled as in the ungeneralized proposition.)\nA characteristic of a compositie symbol: it has something in common with <i>other</i> symbols.',
+    'A completely generalized proposition is like every other proposition composite. (This is shown by the fact that in "<katex>(\\exists x, \\phi) \\cdot \\phi x</katex>" we must mention "<katex>\\phi</katex>" and "<katex>x</katex>" separately. Both stand independently in signifying relations to the world as in the ungeneralized proposition.)\nA characteristic of a composite symbol: it has something in common with <i>other</i> symbols.',
     'Ein vollkommen verallgemeinerter Satz ist, wie jeder andere Satz zusammengesetzt. (Dies zeigt sich daran, dass wir in „<katex>(\\exists x, \\phi) \\cdot \\phi x</katex>“ „<katex>\\phi</katex>“ und „<katex>x</katex>“ getrennt erwähnen müssen. Beide stehen unabhängig in bezeichnenden Beziehungen zur Welt, wie im unverallgemeinerten Satz.) Kennzeichen des zusammengesetzten Symbols: Es hat etwas mit <emph>anderen</emph> Symbolen gemeinsam.',
 ], [
     '5.5262',
@@ -1897,7 +1897,7 @@ export const content: string[][] = [[
     '5.53',
     '我用记号的同一，而不是用等号，来表达对象的同一。对象的不同则用记号的不同来表达。',
     'Identity of the object I express by identity of the sign and not by means of a sign of identity. Difference of the objects by difference of the signs.',
-    'Gleichheit des Gegenstandes drücke ich durch Gleichheit des Zeichens aus, und nicht mit Hilfe eines Gleichheitszeichens. Verschiedenheit der Gegenstände durch Verschiedenheit der Zeichen.}',
+    'Gleichheit des Gegenstandes drücke ich durch Gleichheit des Zeichens aus, und nicht mit Hilfe eines Gleichheitszeichens. Verschiedenheit der Gegenstände durch Verschiedenheit der Zeichen.',
 ], [
     '5.5301',
     '显然，同一不是对象之间的一种关系。例如，只要考察一下“<katex>(x) : fx \\cdot \\supset \\cdot x = a</katex>”这个命题，这一点就很清楚了。这个命题只是说，<emphasis>只有</emphasis> <katex>a</katex> 满足函项 <katex>f</katex>，而不是说，只有对 <katex>a</katex> 具有一定关系者满足函项<katex>f</katex>。\n当然，也可以说，<emphasis>只有</emphasis> <katex>a</katex> 才对 <katex>a</katex> 具有这种关系；但是为了表达这点，就需要同一记号本身。',
@@ -1917,12 +1917,12 @@ export const content: string[][] = [[
     '5.531',
     '因此我不写“<katex>f(a, b) \\cdot a = b</katex>”，而写“<katex>f(a, a)</katex>”（或者“<katex>f(b, b)</katex>”）。不写“<katex>f(a, b) \\cdot \\sim a = b</katex>”，而写“<katex>f(a, b)</katex>”。',
     'I write therefore not "<katex>f(a, b) \\cdot a = b</katex>" but "<katex>f(a, a)</katex>" (or "<katex>f(b, b)</katex>"). And not "<katex>f(a, b) \\cdot \\sim a = b</katex>", but "<katex>f(a, b)</katex>".',
-    'Ich schreibe also nicht „<katex>f(a,b) \\cdot a = b</katex>“, sondern „<katex>f(a,a)</katex>“ (oder „<katex>f(b,b)</katex>“). Und nicht „<katex>f(a,b) \\cdot \\sim{a = b}</katex>“, sondern „<katex>f(a,b)</katex>“.',
+    'Ich schreibe also nicht „<katex>f(a,b) \\cdot a = b</katex>“, sondern „<katex>f(a,a)</katex>“ (oder „<katex>f(b,b)</katex>“). Und nicht „<katex>f(a,b) \\cdot \\sim a = b</katex>“, sondern „<katex>f(a,b)</katex>“.',
 ], [
     '5.532',
     '以此类推：我不写“<katex>(\\exists x, y) \\cdot f(x, y) \\cdot x = y</katex>”，而写“<katex>(\\exists x) \\cdot f(x, x)</katex>”；不写“<katex>(\\exists x, y) \\cdot f(x, y) \\cdot \\sim x = y</katex>”，而写“<katex>(\\exists x, y) \\cdot f(x, y)</katex>”。（这样，罗素的“<katex>(\\exists x, y) \\cdot f(x, y)</katex>”就成为：“<katex>(\\exists x, y) \\cdot f(x, y) \\lor (\\exists x) \\cdot f(x, x)</katex>”。）',
     'And analogously: not "<katex>(\\exists x, y) \\cdot f(x, y) \\cdot x = y</katex>", but "<katex>(\\exists x) \\cdot f(x, x)</katex>"; and not "<katex>(\\exists x, y) \\cdot f(x, y) \\cdot \\sim x = y</katex>", but "<katex>(\\exists x, y) \\cdot f(x, y)</katex>".\nTherefore instead of Russell\'s "<katex>(\\exists x, y) \\cdot f(x, y)</katex>" : "<katex>(\\exists x, y) \\cdot f(x, y) \\lor (\\exists x) \\cdot f(x, x)</katex>".',
-    'Und analog: Nicht „<katex>(\\exists x,y) \\cdot f(x,y) \\cdot x = y</katex>“, sondern „<katex>(\\exists x) \\cdot f(x,x)</katex>“; und nicht „<katex>(\\exists x,y) \\cdot f(x,y) \\cdot \\sim{x = y}</katex>“, sondern „<katex>(\\exists x,y) \\cdot f(x,y)</katex>“. (Also statt des Russell\'schen „<katex>(\\exists x,y) \\cdot f(x,y)</katex>“: „<katex>(\\exists x,y) \\cdot f(x,y) \\cdot \\lor \\cdot (\\exists x) \\cdot f(x,x)</katex>“.)',
+    'Und analog: Nicht „<katex>(\\exists x,y) \\cdot f(x,y) \\cdot x = y</katex>“, sondern „<katex>(\\exists x) \\cdot f(x,x)</katex>“; und nicht „<katex>(\\exists x,y) \\cdot f(x,y) \\cdot \\sim x = y</katex>“, sondern „<katex>(\\exists x,y) \\cdot f(x,y)</katex>“. (Also statt des Russell\'schen „<katex>(\\exists x,y) \\cdot f(x,y)</katex>“: „<katex>(\\exists x,y) \\cdot f(x,y) \\cdot \\lor \\cdot (\\exists x) \\cdot f(x,x)</katex>“.)',
 ], [
     '5.5321',
     '因此，例如，我们不写“<katex>(x) : fx \\supset x = a</katex>”，而写“<katex>(\\exists x) \\cdot fx \\cdot \\supset \\cdot fa : \\sim(\\exists x, y) \\cdot fx \\cdot fy</katex>”。\n因而，命题“只有一个 <katex>x</katex> 满足 <katex>f( )</katex>”将读作“<katex>(\\exists x) \\cdot fx : \\sim(\\exists x, y) \\cdot fx \\cdot fy</katex>”。',
@@ -1946,8 +1946,8 @@ export const content: string[][] = [[
 ], [
     '5.5351',
     '在某些情形下，人们情不自禁地要使用“<katex>a = a</katex>”或者“<katex>p \\supset p</katex>”之类形式的表达式。当人们想要谈论原型，即命题、事物等等时，就出现这种情形。所以，在罗素的《数学原则》中，“<katex>p</katex>是命题”——这是无意义的——被翻译为符号“<katex>p \\supset p</katex>”，而且把它作为假设置于某些命题前面，以保证处在这些命题主目位置上的只能是命题。（把假设 <katex>p \\supset p</katex> 置于一个命题前面，以保证它的主目具有正确形式，这是无意义的，因为对于以非命题为主目这个假设不是假的而是无意义的，而且因为错误种类的主目也使得这个命题本身成为无意义的，所以在防止错误的主目这一点上，命题本身和为此目的而附加的无意义的假设是同样地有用，或者说，是同样地无用。）',
-    'There are certain cases in which one is tempted to use expressions of the form "<katex>a = a</katex>" or "<katex>p \\supset p</katex>" As, for instance, when one would speak of the archtype Proposition, Thing, etc. So Russell in the <i>Princples of Mathematics</i> has rendered the nonsense "<katex>p</katex> is a proposition" in symbols by "<katex>p \\supset p</katex>" and has put it as hypothesis before certain propositions to show that their places for arguments could only be occurpied by propositions.\n(It is nonsense to place the hypothesis <katex>p \\supset p</katex> before a proposition in order to ensure that its arguments have the right form, because the hypotheses for a non-proposition as arugment becomes not false but meaningless, and because the proposition itself becomes senseless for arguments of the wrong kind, and therefore it survives the wrong arguments no better and no worse than the senseless hypthesis attached for this purpose.)',
-    'Es gibt gewisse Fälle, wo man in Versuchung gerät, Ausdrücke von der Form „<katex>a = a</katex>“ oder „<katex>p \\supset p</katex>“ u.~dgl. zu benützen. Und zwar geschieht dies, wenn man von dem Urbild: Satz, Ding, etc. reden möchte. So hat Russell in den „Principles of Mathematics“ den Unsinn „<katex>p</katex> ist ein Satz“ in Symbolen durch „<katex>p \\supset p</katex>“ wiedergegeben und als Hypothese vor gewisse Sätze gestellt, damit deren Argumentstellen nur von Sätzen besetzt werden könnten. (Es ist schon darum Unsinn, die Hypothese <katex>p \\supset p</katex> vor einen Satz zu stellen, um ihm Argumente der richtigen Form zu sichern, weil die Hypothese für einen Nicht-Satz als Argument nicht falsch, sondern unsinnig wird, und weil der Satz selbst durch die unrichtige Gattung von Argumenten unsinnig wird, also sich selbst ebenso gut, oder so schlecht, vor den unrechten Argumenten bewahrt, wie die zu diesem Zweck angehängte sinnlose Hypothese.)',
+    'There are certain cases in which one is tempted to use expressions of the form "<katex>a = a</katex>" or "<katex>p \\supset p</katex>" As, for instance, when one would speak of the archtype Proposition, Thing, etc. So Russell in the <i>Principles of Mathematics</i> has rendered the nonsense "<katex>p</katex> is a proposition" in symbols by "<katex>p \\supset p</katex>" and has put it as hypothesis before certain propositions to show that their places for arguments could only be occupied by propositions.\n(It is nonsense to place the hypothesis <katex>p \\supset p</katex> before a proposition in order to ensure that its arguments have the right form, because the hypotheses for a non-proposition as argument becomes not false but meaningless, and because the proposition itself becomes senseless for arguments of the wrong kind, and therefore it survives the wrong arguments no better and no worse than the senseless hypothesis attached for this purpose.)',
+    'Es gibt gewisse Fälle, wo man in Versuchung gerät, Ausdrücke von der Form „<katex>a = a</katex>“ oder „<katex>p \\supset p</katex>“ u. dgl. zu benützen. Und zwar geschieht dies, wenn man von dem Urbild: Satz, Ding, etc. reden möchte. So hat Russell in den „Principles of Mathematics“ den Unsinn „<katex>p</katex> ist ein Satz“ in Symbolen durch „<katex>p \\supset p</katex>“ wiedergegeben und als Hypothese vor gewisse Sätze gestellt, damit deren Argumentstellen nur von Sätzen besetzt werden könnten. (Es ist schon darum Unsinn, die Hypothese <katex>p \\supset p</katex> vor einen Satz zu stellen, um ihm Argumente der richtigen Form zu sichern, weil die Hypothese für einen Nicht-Satz als Argument nicht falsch, sondern unsinnig wird, und weil der Satz selbst durch die unrichtige Gattung von Argumenten unsinnig wird, also sich selbst ebenso gut, oder so schlecht, vor den unrechten Argumenten bewahrt, wie die zu diesem Zweck angehängte sinnlose Hypothese.)',
 ], [
     '5.5352',
     '同样地人们想用“<katex>\\sim(\\exists x) \\cdot x = x</katex>”来表达“没有<emphasis>事物</emphasis>”。但是，即使这是一个命题，如果确实“有一些事物”，但这些事物与自身不是同一的，这个命题不也同样为真吗？',
@@ -1972,7 +1972,7 @@ export const content: string[][] = [[
     '5.5421',
     '这也表明，没有像当今肤浅的心理学中所设想的心灵——主体等等——这类东西。\n的确，一个组合的心灵就已经不再是心灵了。',
     'This shows that there is no such thing as the soul -- the subject, etc. -- as it is conceived in superficial psychology.\nA composite soul would not be a soul any longer.',
-    'Dies zeigt auch, dass die Seele---das Subjekt, etc.---wie sie in der heutigen oberflächlichen Psychologie aufgefasst wird, ein Unding ist. Eine zusammengesetzte Seele wäre nämlich keine Seele mehr.}',
+    'Dies zeigt auch, dass die Seele---das Subjekt, etc.---wie sie in der heutigen oberflächlichen Psychologie aufgefasst wird, ein Unding ist. Eine zusammengesetzte Seele wäre nämlich keine Seele mehr.',
 ], [
     '5.5422',
     '对命题形式“A 判断 <katex>p</katex>”的正确解释必须表明：使判断成为一种无意义是不可能的。（罗素的理论不满足这个条件。）',
@@ -2040,7 +2040,7 @@ export const content: string[][] = [[
     'Die empirische Realität ist begrenzt durch die Gesamtheit der Gegenstände. Die Grenze zeigt sich wieder in der Gesamtheit der Elementarsätze. Die Hierarchien sind, und müssen unabhängig von der Realität sein.',
 ], [
     '5.5562',
-    '如果我们根据纳粹逻辑的理由知道必须有基本命题，那么，凡是理解具有未分析形式的命题的人也必定知道这一点。',
+    '如果我们根据纯粹逻辑的理由知道必须有基本命题，那么，凡是理解具有未分析形式的命题的人也必定知道这一点。',
     'If we know on purely logical grounds, that there must be elementary propositions, then this must be known by everyone who understands propositions in their unanalysed form.',
     'Wissen wir aus rein logischen Gründen, dass es Elementarsätze geben muss, dann muss es jeder wissen, der die Sätze in ihrer unanalysierten Form versteht.',
 ], [
@@ -2117,7 +2117,7 @@ export const content: string[][] = [[
     '5.641',
     '因此，确实有种意义使哲学可以用非心理学的方式来谈论自我。\n由于“世界是我的世界”而使自我进入哲学之中。\n哲学上的自我并不是人，也不是人的身体或者心理学所考察的人的心灵，而是形而上主体，是世界的界限——而不是它的一个部分。',
     'There is therefore really a sense in which the philosophy we can talk of a non-psychological I.\nThe I occurs in philosophy through the fact that the "world is my world".\nThe philosophical I is not the man, not the human body or the human soul of which psychology treats, but the metaphysical subject, the limit -- not a part of the world.',
-    'Es gibt also wirklich einen Sinn, in welchem in der Philosophie nicht-psychologisch vom Ich die Rede sein kann. Das Ich tritt in die Philosophie dadurch ein, dass die „Welt meine Welt ist“. Das philosophische Ich ist nicht der Mensch, nicht der menschliche Körper, oder die menschliche Seele, von der die Psychologie handelt, sondern das metaphysische Subjekt, die Grenze---nicht ein Teil der Welt.}',
+    'Es gibt also wirklich einen Sinn, in welchem in der Philosophie nicht-psychologisch vom Ich die Rede sein kann. Das Ich tritt in die Philosophie dadurch ein, dass die „Welt meine Welt ist“. Das philosophische Ich ist nicht der Mensch, nicht der menschliche Körper, oder die menschliche Seele, von der die Psychologie handelt, sondern das metaphysische Subjekt, die Grenze---nicht ein Teil der Welt.',
 ], [
     '6',
     '真值函项的一般形式是：<centered><katex>[\\bar{p}, \\; \\bar{\\xi}, \\; N(\\bar{\\xi})]</katex></centered>这也是命题的一般形式。',
@@ -2176,12 +2176,12 @@ export const content: string[][] = [[
 ], [
     '6.111',
     '凡是使一个逻辑命题显得像是具有内容的理论都是假的。例如，人们也许认为，词“真”和“假”标示着和其它属性一起的两种属性，于是，每个命题都具有这两种属性之一，看起来就是一个很奇怪的事实。按照这种理论，这个事实看起来决不是自明的，正如命题“所有玫瑰花不是黄的就是红的”一样，即使它为真，也不是自明的。的确，这使得逻辑命题获得了自然科学命题的全部特征，而这也就肯定地标志着逻辑命题遭到了误解。',
-    'Theories which make a proposition of logic appear substantial are always false. Once could <i>e.g.</i> believe that the words "true" and "false" signify two properties among other properties, and then it woud appear as a remarkable fact that every proposition possesses one of these properties. This now by no means appears self-evident, no more so than the proposition "All roses are either yellow or red" would seem even if it were true. Indeed our proposition now gets quite the character of a proposition of natural science and this is a certain symptom of its being falsely understood.',
+    'Theories which make a proposition of logic appear substantial are always false. One could <i>e.g.</i> believe that the words "true" and "false" signify two properties among other properties, and then it would appear as a remarkable fact that every proposition possesses one of these properties. This now by no means appears self-evident, no more so than the proposition "All roses are either yellow or red" would seem even if it were true. Indeed our proposition now gets quite the character of a proposition of natural science and this is a certain symptom of its being falsely understood.',
     'Theorien, die einen Satz der Logik gehaltvoll erscheinen lassen, sind immer falsch. Man könnte z. B. glauben, dass die Worte „wahr“ und „falsch“ zwei Eigenschaften unter anderen Eigenschaften bezeichnen, und da erschiene es als eine merkwürdige Tatsache, dass jeder Satz eine dieser Eigenschaften besitzt. Das scheint nun nichts weniger als selbstverständlich zu sein, ebensowenig selbstverständlich, wie etwa der Satz, „alle Rosen sind entweder gelb oder rot“ klänge, auch wenn er wahr wäre. Ja, jener Satz bekommt nun ganz den Charakter eines naturwissenschaftlichen Satzes und dies ist das sichere Anzeichen dafür, dass er falsch aufgefasst wurde.',
 ], [
     '6.112',
     '要正确地说明逻辑命题，就必须在所有命题中给与它们以独特的地位。',
-    'The correct explanation of logical propositions must givem them a peculiar position among all propositions.',
+    'The correct explanation of logical propositions must give them a peculiar position among all propositions.',
     'Die richtige Erklärung der logischen Sätze muss ihnen eine einzigartige Stellung unter allen Sätzen geben.',
 ], [
     '6.113',
@@ -2306,12 +2306,12 @@ export const content: string[][] = [[
 ], [
     '6.127',
     '所有逻辑命题都是同等地位的：其中并没有本质上为初始命题和本质上为派生命题之分。\n每个重言式本身表明它是一个重言式。',
-    'All propositions of logic are of equal rank; there are not some which are essentially primitive and others deduced from there.\nEvery tautology itself shows that it is a tautology.',
+    'All propositions of logic are of equal rank; there are not some which are essentially primitive and others deduced from them.\nEvery tautology itself shows that it is a tautology.',
     'Alle Sätze der Logik sind gleichberechtigt, es gibt unter ihnen nicht wesentlich Grundgesetze und abgeleitete Sätze. Jede Tautologie zeigt selbst, dass sie eine Tautologie ist.',
 ], [
     '6.1271',
     '很清楚，“逻辑的初始命题”的数目是任意的，因为可以从单独一个初始命题，例如，从弗雷格的那些初始命题简单地构成的一个逻辑积，推演出逻辑来。（弗雷格也许会说，这样我们就不再有一个直接自明的初始命题了。但是一位像弗雷格这样的严谨的思想家竟会援引自明的程度作为逻辑命题的标准，那是很奇怪的。）',
-    'It is clear that the number of "primitive propositions of logic" is arbitrary, for we could deduce logic from one primitive proposition by simply forming, for example, the logical produce of Frege\'s primitive propositions. (Frege would perhaps say that this would no longer be immediately self-evident. But it is remarkable that so exact a thinker as Frege should have appealed to the degree of self-evidence as the criterion of a logical proposition.)',
+    'It is clear that the number of "primitive propositions of logic" is arbitrary, for we could deduce logic from one primitive proposition by simply forming, for example, the logical product of Frege\'s primitive propositions. (Frege would perhaps say that this would no longer be immediately self-evident. But it is remarkable that so exact a thinker as Frege should have appealed to the degree of self-evidence as the criterion of a logical proposition.)',
     'Es ist klar, dass die Anzahl der „logischen Grundgesetze“ willkürlich ist, denn man könnte die Logik ja aus Einem Grundgesetz ableiten, indem man einfach z. B. aus Freges Grundgesetzen das logische Produkt bildet. (Frege würde vielleicht sagen, dass dieses Grundgesetz nun nicht mehr unmittelbar einleuchte. Aber es ist merkwürdig, dass ein so exakter Denker wie Frege sich auf den Grad des Einleuchtens als Kriterium des logischen Satzes berufen hat.)',
 ], [
     '6.13',
@@ -2376,7 +2376,7 @@ export const content: string[][] = [[
 ], [
     '6.2331',
     '<emphasis>演算</emphasis>过程正好引进了这种直觉。\n演算并非试验。',
-    'The process of <i>calculation</i> brings about just this intuition.\nCalculation is not an experiement.',
+    'The process of <i>calculation</i> brings about just this intuition.\nCalculation is not an experiment.',
     'Der Vorgang des <emph>Rechnens</emph> vermittelt eben diese Anschauung. Die Rechnung ist kein Experiment.',
 ], [
     '6.234',
@@ -2406,7 +2406,7 @@ export const content: string[][] = [[
 ], [
     '6.31',
     '所谓的归纳律不可能是一条逻辑规律，因为它显然是一个有意义的命题。——因此它也不可能是一条先天的规律。',
-    'The so-called law of induction cannot in any case be a logical law, for it is obviously a significant propositions. -- And therefore it cannot be a law a priori either.',
+    'The so-called law of induction cannot in any case be a logical law, for it is obviously a significant proposition. -- And therefore it cannot be a law a priori either.',
     'Das sogenannte Gesetz der Induktion kann jedenfalls kein logisches Gesetz sein, denn es ist offenbar ein sinnvoller Satz.---Und darum kann es auch kein Gesetz a priori sein.',
 ], [
     '6.32',
@@ -2431,7 +2431,7 @@ export const content: string[][] = [[
 ], [
     '6.34',
     '如充足理由律、自然界的连续性原理和最小耗损原理等等，所有这些命题都是关于科学命题可能的规范形式的先天领悟。',
-    'All propositions, such as the law of causation, the law of continuity in nature, the law of least expenditure in nature, etc. etc., all these are a priori intuitions of possible forms of the propositions of the science.',
+    'All propositions, such as the law of causation, the law of continuity in nature, the law of least expenditure in nature, etc. etc., all these are a priori intuitions of possible forms of the propositions of science.',
     'Alle jene Sätze, wie der Satz vom Grunde, von der Kontinuität in der Natur, vom kleinsten Aufwande in der Natur etc. etc., alle diese sind Einsichten a priori über die mögliche Formgebung der Sätze der Wissenschaft.',
 ], [
     '6.341',
