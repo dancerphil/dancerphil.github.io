@@ -1,0 +1,7 @@
+.maze {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    word-break: break-all;
+    line-height: 16px;
+}

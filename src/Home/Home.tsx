@@ -80,11 +80,6 @@ export const Home = () => {
                     description="移除样式、保留结构和值的 HTML 清理器"
                 />
                 <ListItem
-                    href="./coder"
-                    title="coder"
-                    description="基于 localStorage 的在线的编辑器（代码很老）"
-                />
-                <ListItem
                     href="./github-friends"
                     title="github 关系网"
                     description="用 echarts 关系图分析 github 关系，可以找朋友"
@@ -108,11 +103,11 @@ export const Home = () => {
 
                 <div className={c.title}>随手写的动画</div>
                 <ListItem
-                    href="./10/once.html"
-                    title="10 随机迷宫"
+                    href="./maze"
+                    title="随机迷宫"
                 />
                 <ListItem
-                    href="./b"
+                    href="./background"
                     title="base64 背景图"
                 />
                 <ListItem
@@ -120,16 +115,8 @@ export const Home = () => {
                     title="纯 css 动画：bees"
                 />
                 <ListItem
-                    href="./d"
-                    title="任务管理"
-                />
-                <ListItem
                     href="https://codepen.io/dancerphil/pen/dRmLza"
                     title="自动旋转的画图工具"
-                />
-                <ListItem
-                    href="./m"
-                    title="material-design v0 颜色分析"
                 />
                 <Divider my="lg" />
                 <div style={{ textAlign: 'center' }}>
