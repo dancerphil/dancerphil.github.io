@@ -2,7 +2,7 @@ import { Info } from '../types';
 
 export type GraphEdge = [GraphVertex, GraphVertex];
 
-// eslint-disable-next-line no-restricted-syntax
+// eslint-disable-next-line hero-u/no-class-declaration
 export class GraphVertex {
     value: string;
     info?: Info;

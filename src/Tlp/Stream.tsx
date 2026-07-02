@@ -15,6 +15,8 @@ export const Stream = () => {
 
     useEffect(
         () => {
+            const controller = new AbortController();
+
             const asyncEffect = async () => {
                 setContent('');
 
@@ -34,14 +36,20 @@ export const Stream = () => {
                     }
                 });
 
-                const { textStream } = streamSentence(params);
+                const { textStream } = streamSentence(params, controller.signal);
 
                 for await (const textPart of textStream) {
                     setContent(v => v + textPart);
                 }
             };
 
-            asyncEffect();
+            asyncEffect().catch((error) => {
+                if (error?.name !== 'AbortError') {
+                    throw error;
+                }
+            });
+
+            return () => controller.abort();
         },
         [activeNodeKey],
     );

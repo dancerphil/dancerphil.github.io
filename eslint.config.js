@@ -1,3 +1,3 @@
-import { reactConfig } from '@hero-u/eslint-config/react.js';
+import { reactConfigs } from '@hero-u/eslint-config/react.js';
 
-export default reactConfig;
+export default reactConfigs;

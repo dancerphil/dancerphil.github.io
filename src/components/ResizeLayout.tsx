@@ -26,7 +26,7 @@ export const ResizeLayout = ({
         storage: localStorage,
     });
     return (
-        <Group defaultLayout={defaultLayout} onLayoutChange={onLayoutChanged}>
+        <Group defaultLayout={defaultLayout} onLayoutChanged={onLayoutChanged}>
             {left && <Panel {...leftProps}>{left}</Panel>}
             {left && center && (
                 <Separator className={c.handle}>
