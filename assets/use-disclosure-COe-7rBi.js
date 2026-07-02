@@ -1,0 +1,1 @@
+import{i as e,l as t}from"./jsx-runtime-DFNQ3h-5.js";var n=t(e(),1);function r(e=!1,t={}){let[r,i]=(0,n.useState)(e),a=(0,n.useCallback)(()=>{i(e=>e||(t.onOpen?.(),!0))},[t.onOpen]),o=(0,n.useCallback)(()=>{i(e=>e&&(t.onClose?.(),!1))},[t.onClose]);return[r,{open:a,close:o,toggle:(0,n.useCallback)(()=>{r?o():a()},[o,a,r]),set:i}]}export{r as t};

@@ -1,0 +1,1 @@
+import{i as e,l as t}from"./jsx-runtime-DFNQ3h-5.js";var n=t(e(),1),r=e=>(e+1)%1e6;function i(){let[,e]=(0,n.useReducer)(r,0);return e}export{i as t};

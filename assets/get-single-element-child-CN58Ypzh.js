@@ -1,0 +1,1 @@
+import{i as e,l as t}from"./jsx-runtime-DFNQ3h-5.js";var n=t(e(),1);function r(e){return Array.isArray(e)||e===null?!1:typeof e==`object`?e.type!==n.Fragment:!1}function i(e){let t=n.Children.toArray(e);return t.length!==1||!r(t[0])?null:t[0]}export{r as n,i as t};
