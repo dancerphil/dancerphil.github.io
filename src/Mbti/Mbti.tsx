@@ -81,7 +81,7 @@ export const Mbti = () => {
                                 </span>
                             </ActionIcon>
                             <Text size="sm" c="dimmed">
-                                {index >= 0 ? labels[index] : options.join(' / ')}
+                                {index !== -1 ? labels[index] : options.join(' / ')}
                             </Text>
                         </Stack>
                     );

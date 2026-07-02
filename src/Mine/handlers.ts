@@ -5,18 +5,16 @@ import { Block, Coordinate } from './types';
 import { intelligenceLevel, mineNumber, xNumber, yNumber } from './constant';
 import { applyDiff, combineDiff, computeSmartDiff, handleReveal } from './utils';
 
-let start = false;
+const gameState = { start: false };
 
 export const handleReset = () => {
     getBlockList().forEach((block) => {
         block.reveal = false;
         block.mark = false;
     });
-    start = false;
+    gameState.start = false;
     rerender();
 };
-
-handleReset();
 
 const fillMap = () => {
     getBlockList().forEach((block) => {
@@ -62,9 +60,9 @@ export const handleBlockClick = (coordinate: Coordinate) => {
     if (block.mark) {
         return;
     }
-    if (!start) {
+    if (!gameState.start) {
         fillMapUntilValid(block);
-        start = true;
+        gameState.start = true;
     }
     const { reveal } = block;
     if (reveal) {
@@ -88,8 +86,8 @@ export const handleBlockClickWithCatch = (coordinate: Coordinate) => {
     try {
         handleBlockClick(coordinate);
     }
-    catch (e) {
-        console.error(e);
+    catch (error) {
+        console.error(error);
     }
     finally {
         rerender();

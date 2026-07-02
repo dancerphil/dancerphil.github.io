@@ -31,7 +31,7 @@ const generateBracket = ({ start, end, isLeftBracket, curveScale = 0.05 }: Brack
     const verticalVector = vertical(vector, isLeftBracket);
     const p: Vector[] = [start];
     const addVectorToPoints = (v: Vector) => {
-        const lastPoint = p[p.length - 1];
+        const lastPoint = p.at(-1);
         const nextPoint = add(lastPoint, v);
         p.push(nextPoint);
     };

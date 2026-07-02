@@ -11,11 +11,14 @@ type AsyncFunction = (...args: any[]) => Promise<any>;
 function useActionLoading<A extends AsyncFunction>(action: A): [A, boolean] {
     const [pendingMutex, setPendingMutex] = useState(0);
     const actionWithLoading = useCallback(
-        (...args: Parameters<A>) => {
+        async (...args: Parameters<A>) => {
             setPendingMutex(v => v + 1);
-            const pending = action(...args);
-            pending.finally(() => setPendingMutex(v => v - 1));
-            return pending;
+            try {
+                return await action(...args);
+            }
+            finally {
+                setPendingMutex(v => v - 1);
+            }
         },
         [action],
     );
@@ -59,26 +62,21 @@ export const useCsv = () => {
 
     useEffect(
         () => {
-            parseCSV(defaultCsv).then(setDataset);
+            (async () => {
+                setDataset(await parseCSV(defaultCsv));
+            })();
         },
         [],
     );
 
     const [onFileChange, loading] = useActionLoading(
-        (event: ChangeEvent<HTMLInputElement>): Promise<void> => {
-            return new Promise((resolve) => {
-                const file = event.target.files[0];
-                if (file) {
-                    setDataset([]);
-                    const reader = new FileReader();
-                    reader.onload = async (e) => {
-                        const dataset = await parseCSV(e.target.result as string);
-                        setDataset(dataset);
-                        resolve();
-                    };
-                    reader.readAsText(file);
-                }
-            });
+        async (event: ChangeEvent<HTMLInputElement>): Promise<void> => {
+            const file = event.target.files[0];
+            if (file) {
+                setDataset([]);
+                const dataset = await parseCSV(await file.text());
+                setDataset(dataset);
+            }
         },
     );
 

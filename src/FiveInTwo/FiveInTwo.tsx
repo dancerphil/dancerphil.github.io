@@ -95,8 +95,8 @@ function calcMin(targetLevel: number, targetCount: number): LevelRow[] {
 function calculate(targetLevel: number, targetCount: number): CalcResult {
     const rows52 = calcOnly52(targetLevel, targetCount);
     const rowsMin = calcMin(targetLevel, targetCount);
-    const total52 = rows52[rows52.length - 1]?.consumed ?? targetCount;
-    const totalMin = rowsMin[rowsMin.length - 1]?.consumed ?? targetCount;
+    const total52 = rows52.at(-1)?.consumed ?? targetCount;
+    const totalMin = rowsMin.at(-1)?.consumed ?? targetCount;
     const produced52 = rows52[0]?.produced ?? targetCount;
     const producedMin = targetCount; // 最优方案无剩余
     const valuePerItem = Math.pow(3, targetLevel - 1);

@@ -39,6 +39,8 @@ export const calculateAlpha = ({ displayColor, originalColor, backgroundColor }:
     return Math.max(0, Math.min(1, alpha));
 };
 
+const clamp = (val: number) => Math.max(0, Math.min(255, val));
+
 interface ParamsCalculateOriginalColor {
     displayColor: string;
     backgroundColor: string;
@@ -70,9 +72,6 @@ export const calculateOriginal = ({ displayColor, backgroundColor, alpha }: Para
 
     // 检查计算出的颜色是否在有效范围内（未被截断）
     const valid = r >= 0 && r <= 255 && g >= 0 && g <= 255 && b >= 0 && b <= 255;
-
-    // 限制在有效范围 [0, 255]
-    const clamp = (val: number) => Math.max(0, Math.min(255, val));
 
     const original = new TinyColor({
         r: clamp(r),

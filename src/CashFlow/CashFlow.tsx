@@ -10,14 +10,18 @@ interface Params {
 
 const getIndex = ({ gap }: Params) => {
     switch (gap) {
-        case 'year':
+        case 'year': {
             return 1;
-        case 'month':
+        }
+        case 'month': {
             return 1 / 12;
-        case 'day':
+        }
+        case 'day': {
             return 1 / 365.24;
-        default:
+        }
+        default: {
             return 1 / 12;
+        }
     }
 };
 

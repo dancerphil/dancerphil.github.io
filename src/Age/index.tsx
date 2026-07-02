@@ -3,7 +3,6 @@ import { MantineProvider } from '@/components/MantineProvider';
 import '@mantine/dates/styles.css';
 import '@/styles';
 import '@/styles/simplePage';
-import '@/styles/dark';
 import { Age } from './Age';
 
 const root = createRoot(document.body);

@@ -16,6 +16,7 @@ export const Graph: FC<Props> = ({ nodes, links }) => {
     useLayoutEffect(
         () => {
             if (ref.current) {
+                // eslint-disable-next-line unicorn/no-top-level-assignment-in-function
                 chart = init(ref.current, {
                     color: [
                         '#5470c6',

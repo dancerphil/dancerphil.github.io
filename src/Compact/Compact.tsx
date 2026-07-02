@@ -28,10 +28,10 @@ export const Compact = () => {
                 error: '',
             };
         }
-        catch (err) {
+        catch (error) {
             return {
                 output: '',
-                error: err instanceof Error ? err.message : String(err),
+                error: error instanceof Error ? error.message : String(error),
             };
         }
     }, [input, keepClass, keepId, stripScripts]);

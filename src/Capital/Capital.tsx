@@ -87,7 +87,7 @@ export const Capital = () => {
 
     // 更新资产项金额
     const handleUpdateAmount = (id: string, amount: number | string) => {
-        const numAmount = typeof amount === 'number' ? amount : parseFloat(amount) || 0;
+        const numAmount = typeof amount === 'number' ? amount : Number(amount) || 0;
         setAssetItems(assetItems.map(item => item.id === id ? { ...item, amount: numAmount } : item));
     };
 

@@ -128,7 +128,7 @@ const RAW_SHOP_ITEMS: ShopItem[] = [
     { id: 'create_company', name: '创建公司', cost: 1_000_000 },
 ];
 
-export const SHOP_ITEMS: ShopItem[] = [...RAW_SHOP_ITEMS].sort((a, b) => a.cost - b.cost);
+export const SHOP_ITEMS: ShopItem[] = RAW_SHOP_ITEMS.toSorted((a, b) => a.cost - b.cost);
 
 export const INITIAL_MONEY = 1000;
 

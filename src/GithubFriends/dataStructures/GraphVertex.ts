@@ -94,6 +94,6 @@ export class GraphVertex {
      * @returns {string}
      */
     toString(callback: (value: string) => string) {
-        return callback ? callback(this.value) : `${this.value}`;
+        return callback ? callback(this.value) : this.value;
     }
 }

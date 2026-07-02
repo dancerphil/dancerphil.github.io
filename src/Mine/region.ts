@@ -23,7 +23,7 @@ export const getSurroundingBlocks = (block: Block) => {
     return compact(blockList);
 };
 
-const initBlock = () => {
+export const initBlock = () => {
     xyList.forEach(({ x, y }) => {
         const block = {
             x,
@@ -36,5 +36,3 @@ const initBlock = () => {
         setBlock({ x, y }, block);
     });
 };
-
-initBlock();

@@ -6,11 +6,18 @@ import { setDescription } from './description';
 import { pushException } from './exception';
 
 // 防止并发过多，增加一个队列
-let currentPromise = Promise.resolve();
+const taskQueue = { promise: Promise.resolve() };
 
 const addTask = (task: () => Promise<void>) => {
-    const onFulfilled = () => new Promise<void>(resolve => resolve(task()));
-    currentPromise = currentPromise.then(onFulfilled, onFulfilled);
+    taskQueue.promise = (async () => {
+        try {
+            await taskQueue.promise;
+        }
+        catch {
+            // 忽略上一个任务的失败，不影响后续任务执行
+        }
+        await task();
+    })();
 };
 
 const insertFollowings = (id: string, followings: string[]) => {

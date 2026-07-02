@@ -54,22 +54,22 @@ const values5101 = [
 ];
 
 const values5101_de = [
-    '(W W W W)(p, q) Tautologie      (Wenn p, so p; und wenn q, so q.) (p \u2283 p \u00b7 q \u2283 q)',
-    '(F W W W)(p, q) in Worten:      Nicht beides p und q. (\u223c(p \u00b7 q))',
-    '(W F W W)(p, q) \u00bb           Wenn q, so p. (q \u2283 p)',
-    '(W W F W)(p, q) \u00bb           Wenn p, so q. (p \u2283 q)',
-    '(W W W F)(p, q) \u00bb           p oder q. (p \u2228 q)',
-    '(F F W W)(p, q) \u00bb           Nicht q. (\u223cq)',
-    '(F W F W)(p, q) \u00bb           Nicht p. (\u223cp)',
-    '(F W W F)(p, q) \u00bb           p, oder q, aber nicht beide. (p \u00b7 \u223cq :\u2228: q \u00b7 \u223cp)',
-    '(W F F W)(p, q) \u00bb           Wenn p, so q; und wenn q, so p. (p \u2261 q)',
-    '(W F W F)(p, q) \u00bb           p',
-    '(W W F F)(p, q) \u00bb           q',
-    '(F F F W)(p, q) \u00bb           Weder p noch q. (\u223cp \u00b7 \u223cq) oder (p | q)',
-    '(F F W F)(p, q) \u00bb           p und nicht q. (p \u00b7 \u223cq)',
-    '(F W F F)(p, q) \u00bb           q und nicht p. (q \u00b7 \u223cp)',
-    '(W F F F)(p, q) \u00bb           q und p. (q \u00b7 p)',
-    '(F F F F)(p, q) Kontradiktion   (p und nicht p; und q und nicht q.) (p \u00b7 \u223cp \u00b7 q \u00b7 \u223cq)',
+    '(W W W W)(p, q) Tautologie      (Wenn p, so p; und wenn q, so q.) (p ⊃ p · q ⊃ q)',
+    '(F W W W)(p, q) in Worten:      Nicht beides p und q. (∼(p · q))',
+    '(W F W W)(p, q) »           Wenn q, so p. (q ⊃ p)',
+    '(W W F W)(p, q) »           Wenn p, so q. (p ⊃ q)',
+    '(W W W F)(p, q) »           p oder q. (p ∨ q)',
+    '(F F W W)(p, q) »           Nicht q. (∼q)',
+    '(F W F W)(p, q) »           Nicht p. (∼p)',
+    '(F W W F)(p, q) »           p, oder q, aber nicht beide. (p · ∼q :∨: q · ∼p)',
+    '(W F F W)(p, q) »           Wenn p, so q; und wenn q, so p. (p ≡ q)',
+    '(W F W F)(p, q) »           p',
+    '(W W F F)(p, q) »           q',
+    '(F F F W)(p, q) »           Weder p noch q. (∼p · ∼q) oder (p | q)',
+    '(F F W F)(p, q) »           p und nicht q. (p · ∼q)',
+    '(F W F F)(p, q) »           q und nicht p. (q · ∼p)',
+    '(W F F F)(p, q) »           q und p. (q · p)',
+    '(F F F F)(p, q) Kontradiktion   (p und nicht p; und q und nicht q.) (p · ∼p · q · ∼q)',
 ];
 
 const values5101_en = [
@@ -106,7 +106,7 @@ export const Custom = ({ dataKey, index, language }: Props) => {
         return <FlexContainer><TruthTable col={3} values={v} /></FlexContainer>;
     }
     if (dataKey === '5.101') {
-        const v = language === 'en' ? values5101_en : language === 'de' ? values5101_de : values5101;
+        const v = language === 'en' ? values5101_en : (language === 'de' ? values5101_de : values5101);
         return (
             <ListContainer>
                 {v.map((value, index) => (<div key={index}>{value}</div>))}

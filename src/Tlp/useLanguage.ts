@@ -25,7 +25,7 @@ export const useLanguages = () => {
                 else {
                     params.set(key, val);
                 }
-                const search = params.toString().replace(/%2C/g, ',');
+                const search = params.toString().replaceAll('%2C', ',');
                 const url = search ? `?${search}` : window.location.pathname;
                 window.history.replaceState(null, '', `${url}${window.location.hash}`);
 

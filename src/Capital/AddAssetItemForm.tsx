@@ -16,7 +16,7 @@ export const AddAssetItemForm = ({ categories, onAdd }: AddAssetItemFormProps) =
 
     const handleAdd = () => {
         if (!newItemName.trim() || !newItemCategory) return;
-        const amount = typeof newItemAmount === 'number' ? newItemAmount : parseFloat(newItemAmount) || 0;
+        const amount = typeof newItemAmount === 'number' ? newItemAmount : Number(newItemAmount) || 0;
         onAdd(newItemName.trim(), newItemCategory, amount);
         setNewItemName('');
         setNewItemAmount(0);

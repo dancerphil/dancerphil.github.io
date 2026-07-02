@@ -22,8 +22,12 @@ export const BFS = (rootId: string, option: Option): [Node[], Link[]] => {
         visited[id] = true;
         const category: Category = ((): Category => {
             switch (depth) {
-                case 0: return 'me';
-                case 1: return 'friend';
+                case 0: {
+                    return 'me';
+                }
+                case 1: {
+                    return 'friend';
+                }
                 case 2: {
                     if (getVertex(id).getFollowings().includes(root)) {
                         return 'friend-friend+follower';
@@ -40,7 +44,8 @@ export const BFS = (rootId: string, option: Option): [Node[], Link[]] => {
                     }
                     return 'friend-friend-friend';
                 }
-                default: return 'friend-friend-friend';
+                default: { return 'friend-friend-friend';
+                }
             }
         })();
 
@@ -92,7 +97,7 @@ export const BFS = (rootId: string, option: Option): [Node[], Link[]] => {
                 }
             }
         }
-        const next = queue.splice(0, 1)[0];
+        const next = queue.shift();
 
         if (next) {
             search(next.id, next.depth);

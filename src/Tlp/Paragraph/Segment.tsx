@@ -13,16 +13,21 @@ export const Segment = ({ dataKey, node }: SegmentProps) => {
             const { nodeName, textContent, childNodes } = node;
             switch (nodeName) {
                 case 'emph':
-                case 'i':
+                case 'i': {
                     return <I>{textContent}</I>;
-                case 'emphasis':
+                }
+                case 'emphasis': {
                     return <Emphasis>{textContent}</Emphasis>;
-                case 'footnote':
+                }
+                case 'footnote': {
                     return <Footnote>{textContent}</Footnote>;
-                case 'katex':
+                }
+                case 'katex': {
                     return <Katex>{textContent}</Katex>;
-                case 'kaiti':
+                }
+                case 'kaiti': {
                     return <KaiTi>{textContent}</KaiTi>;
+                }
                 case 'centered': {
                     const children = [...childNodes].map((child, index) => (
                         <Segment key={index} dataKey={dataKey} node={child as HTMLElement} />
@@ -32,11 +37,13 @@ export const Segment = ({ dataKey, node }: SegmentProps) => {
                 case 'custom': {
                     return <Custom dataKey={dataKey} index={node.getAttribute('index')} language={node.getAttribute('language')} />;
                 }
-                case '#text':
+                case '#text': {
                     return <>{textContent}</>;
-                default:
+                }
+                default: {
                     console.warn(`Unknown node type: ${nodeName}`);
                     return <>{textContent}</>;
+                }
             }
         },
         [dataKey, node],

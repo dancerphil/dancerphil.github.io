@@ -27,6 +27,7 @@ const withDelayAndRetry = <T>(asyncFunction: T): T => {
 };
 
 export const getMeInfo = async (token: string) => {
+    // eslint-disable-next-line unicorn/no-top-level-assignment-in-function
     octokit = new Octokit({ auth: token });
     const { data: me } = await octokit.rest.users.getAuthenticated();
     return me;

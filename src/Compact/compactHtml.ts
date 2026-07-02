@@ -23,7 +23,7 @@ const createParser = () => new DOMParser();
 
 const serialize = (fragment: DocumentFragment) => {
     const container = document.createElement('div');
-    container.appendChild(fragment);
+    container.append(fragment);
     return container.innerHTML.trim();
 };
 
@@ -45,7 +45,7 @@ const sanitizeNode = (node: Node, options: Required<CompactOptions>): Node | nul
 
     const clone = document.createElement(tagName);
 
-    Array.from(element.attributes).forEach((attr) => {
+    [...element.attributes].forEach((attr) => {
         const name = attr.name.toLowerCase();
 
         if (name === 'style' || name.startsWith('on')) {
@@ -70,10 +70,10 @@ const sanitizeNode = (node: Node, options: Required<CompactOptions>): Node | nul
         }
     });
 
-    Array.from(element.childNodes).forEach((child) => {
+    [...element.childNodes].forEach((child) => {
         const sanitizedChild = sanitizeNode(child, options);
         if (sanitizedChild) {
-            clone.appendChild(sanitizedChild);
+            clone.append(sanitizedChild);
         }
     });
 
@@ -103,10 +103,10 @@ export const compactHtml = (input: string, options: CompactOptions = {}): string
 
     const fragment = document.createDocumentFragment();
 
-    Array.from(documentParsed.body.childNodes).forEach((node) => {
+    [...documentParsed.body.childNodes].forEach((node) => {
         const sanitized = sanitizeNode(node, compactOptions);
         if (sanitized) {
-            fragment.appendChild(sanitized);
+            fragment.append(sanitized);
         }
     });
 

@@ -18,36 +18,39 @@ export const Stream = () => {
             const controller = new AbortController();
 
             const asyncEffect = async () => {
-                setContent('');
+                try {
+                    setContent('');
 
-                const nodes = getNodes();
-                const params: StreamParams = {};
+                    const nodes = getNodes();
+                    const params: StreamParams = {};
 
-                nodes?.forEach((node) => {
-                    if (node.dataset.key === activeNodeKey) {
-                        params['sentence'] = node.textContent || '';
+                    nodes?.forEach((node) => {
+                        if (node.dataset.key === activeNodeKey) {
+                            params['sentence'] = node.textContent || '';
+                        }
+                        if (node.dataset.key.startsWith(activeNodeKey) && node.dataset.key !== activeNodeKey) {
+                            params['children'] ||= [];
+                            params['children'].push(node.textContent || '');
+                        }
+                        if (node.dataset.key === activeNodeKey.slice(0, -1)) {
+                            params['parent'] = node.textContent || '';
+                        }
+                    });
+
+                    const { textStream } = streamSentence(params, controller.signal);
+
+                    for await (const textPart of textStream) {
+                        setContent(v => v + textPart);
                     }
-                    if (node.dataset.key.startsWith(activeNodeKey) && node.dataset.key !== activeNodeKey) {
-                        params['children'] = params['children'] || [];
-                        params['children'].push(node.textContent || '');
+                }
+                catch (error) {
+                    if (error?.name !== 'AbortError') {
+                        throw error;
                     }
-                    if (node.dataset.key === activeNodeKey.slice(0, -1)) {
-                        params['parent'] = node.textContent || '';
-                    }
-                });
-
-                const { textStream } = streamSentence(params, controller.signal);
-
-                for await (const textPart of textStream) {
-                    setContent(v => v + textPart);
                 }
             };
 
-            asyncEffect().catch((error) => {
-                if (error?.name !== 'AbortError') {
-                    throw error;
-                }
-            });
+            asyncEffect();
 
             return () => controller.abort();
         },
