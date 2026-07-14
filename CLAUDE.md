@@ -1,5 +1,4 @@
 - 组件文件用类型前缀（ButtonAdd 而非 AddButton）
-- 遵循 eslint-plugin-unicorn，规则 `unicorn/{rule-name}` 对应文档: https://github.com/sindresorhus/eslint-plugin-unicorn/raw/refs/heads/main/docs/rules/{rule-name}.md
 - 在需要查看文档时访问：
   - Mantine: https://mantine.dev/llms.txt
   - Region: https://raw.githubusercontent.com/regionjs/region/refs/heads/main/docs/Document-zh_CN.md

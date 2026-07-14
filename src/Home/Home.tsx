@@ -95,6 +95,11 @@ export const Home = () => {
                     description="适配手机端的扫雷游戏"
                 />
                 <ListItem
+                    href="./name-generator"
+                    title="名字生成器"
+                    description="用形容词和名词随机组合，批量生成一组名字"
+                />
+                <ListItem
                     href="./one-percent"
                     title="每天百分之一"
                     description="一个关于钱、时间和意义的增量游戏"
