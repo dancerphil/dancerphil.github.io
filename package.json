@@ -56,6 +56,7 @@
     "remark-gfm": "^4.0.1",
     "shader-doodle": "^0.0.5",
     "use-short-key": "^1.1.0",
+    "uuid": "^14.0.1",
     "zod": "^4.4.3",
     "zustand": "^5.0.13"
   },

@@ -52,41 +52,45 @@ export const SankeyChart = ({ assetItems, categories }: SankeyChartProps) => {
 
         const totalAmount = assetItems.reduce((sum, item) => sum + item.amount, 0);
 
-        // 计算每个类别的总金额
         const categoryAmounts = new Map<string, number>();
         assetItems.forEach((item) => {
             const current = categoryAmounts.get(item.category) || 0;
             categoryAmounts.set(item.category, current + item.amount);
         });
 
-        // 只包含有资产项的类别
         const categoriesWithItems = categories.filter(cat => categoryAmounts.get(cat.id) > 0);
+        const activeItems = assetItems.filter(item => item.amount > 0);
 
-        // 构建节点数据
+        const catNodeId = (id: string) => `c_${id}`;
+        const itemNodeId = (id: string) => `i_${id}`;
+
+        const displayNameMap = new Map<string, string>([['总资产', '总资产']]);
+        categoriesWithItems.forEach(cat => displayNameMap.set(catNodeId(cat.id), cat.name));
+        activeItems.forEach(item => displayNameMap.set(itemNodeId(item.id), item.name));
+
         const nodes = [
             { name: '总资产' },
-            ...categoriesWithItems.map(cat => ({ name: cat.name })),
-            ...assetItems.filter(item => item.amount > 0).map(item => ({ name: item.name })),
+            ...categoriesWithItems.map(cat => ({ name: catNodeId(cat.id) })),
+            ...activeItems.map(item => ({ name: itemNodeId(item.id) })),
         ];
 
-        // 构建连接数据
         const links = [
-            // 总资产 -> 类别
             ...categoriesWithItems.map(cat => ({
                 source: '总资产',
-                target: cat.name,
+                target: catNodeId(cat.id),
                 value: categoryAmounts.get(cat.id) || 0,
             })),
-            // 类别 -> 资产项
-            ...assetItems.filter(item => item.amount > 0).map((item) => {
+            ...activeItems.map((item) => {
                 const category = categories.find(c => c.id === item.category);
                 return {
-                    source: category?.name || '',
-                    target: item.name,
+                    source: category ? catNodeId(category.id) : '',
+                    target: itemNodeId(item.id),
                     value: item.amount,
                 };
             }),
         ].filter(link => link.value > 0 && link.source);
+
+        const getDisplayName = (id: string) => displayNameMap.get(id) || id;
 
         const option = {
             title: {
@@ -101,21 +105,22 @@ export const SankeyChart = ({ assetItems, categories }: SankeyChartProps) => {
                 formatter: (params: any) => {
                     if (params.dataType === 'edge') {
                         const percentage = ((params.data.value / totalAmount) * 100).toFixed(1);
-                        return `${params.data.source} → ${params.data.target}<br/>金额: ¥${params.data.value.toLocaleString()} (${percentage}%)`;
+                        const sourceName = getDisplayName(params.data.source);
+                        const targetName = getDisplayName(params.data.target);
+                        return `${sourceName} → ${targetName}<br/>金额: ¥${params.data.value.toLocaleString()} (${percentage}%)`;
                     }
-                    // 节点的 tooltip
-                    const nodeName = params.name;
-                    if (nodeName === '总资产') {
-                        return `${nodeName}<br/>金额: ¥${totalAmount.toLocaleString()}`;
+                    const nodeId = params.name;
+                    if (nodeId === '总资产') {
+                        return `总资产<br/>金额: ¥${totalAmount.toLocaleString()}`;
                     }
                     let nodeValue = 0;
                     links.forEach((link) => {
-                        if (link.target === nodeName) {
+                        if (link.target === nodeId) {
                             nodeValue += link.value;
                         }
                     });
                     const percentage = ((nodeValue / totalAmount) * 100).toFixed(1);
-                    return `${nodeName}<br/>金额: ¥${nodeValue.toLocaleString()} (${percentage}%)`;
+                    return `${getDisplayName(nodeId)}<br/>金额: ¥${nodeValue.toLocaleString()} (${percentage}%)`;
                 },
             },
             series: [
@@ -133,20 +138,18 @@ export const SankeyChart = ({ assetItems, categories }: SankeyChartProps) => {
                     label: {
                         fontSize: 14,
                         formatter: (params: any) => {
-                            // 计算该节点的总值（入边或出边的值）
-                            const nodeName = params.name;
-                            if (nodeName === '总资产') {
-                                return nodeName;
+                            const nodeId = params.name;
+                            if (nodeId === '总资产') {
+                                return '总资产';
                             }
-                            // 计算该节点的值
                             let nodeValue = 0;
                             links.forEach((link) => {
-                                if (link.target === nodeName) {
+                                if (link.target === nodeId) {
                                     nodeValue += link.value;
                                 }
                             });
                             const percentage = ((nodeValue / totalAmount) * 100).toFixed(1);
-                            return `${nodeName} ${percentage}%`;
+                            return `${getDisplayName(nodeId)} ${percentage}%`;
                         },
                     },
                     layoutIterations: 0,
@@ -154,7 +157,7 @@ export const SankeyChart = ({ assetItems, categories }: SankeyChartProps) => {
             ],
         };
 
-        chartInstance.current.setOption(option);
+        chartInstance.current.setOption(option, true);
     }, [categories, assetItems]);
 
     return <div ref={chartRef} className={s.chart} />;

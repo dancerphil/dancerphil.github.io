@@ -1,7 +1,9 @@
+/* eslint-disable max-lines */
 import { Button, Stack } from '@mantine/core';
 import { useLocalStorage } from '@mantine/hooks';
 import { KeyboardSensor, PointerSensor, useSensor, useSensors, DragEndEvent } from '@dnd-kit/core';
 import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable';
+import { v4 } from 'uuid';
 import { ResizeLayout } from '@/components/ResizeLayout';
 import { Category, AssetItem } from './types';
 import { STORAGE_KEY, defaultCategories, defaultAssetItems } from './constants';
@@ -52,8 +54,7 @@ export const Capital = () => {
 
     // 添加类别
     const handleAddCategory = (name: string) => {
-        const newId = Date.now().toString();
-        setCategories([...categories, { id: newId, name }]);
+        setCategories([...categories, { id: v4(), name }]);
     };
 
     // 删除类别
@@ -66,8 +67,7 @@ export const Capital = () => {
 
     // 添加资产项
     const handleAddItem = (name: string, category: string, amount: number) => {
-        const newId = Date.now().toString();
-        setAssetItems([...assetItems, { id: newId, name, category, amount }]);
+        setAssetItems([...assetItems, { id: v4(), name, category, amount }]);
     };
 
     // 删除资产项
@@ -171,7 +171,6 @@ export const Capital = () => {
         </div>
     );
 
-    // eslint-disable-next-line max-lines
     return (
         <div className={s.container}>
             <ResizeLayout
