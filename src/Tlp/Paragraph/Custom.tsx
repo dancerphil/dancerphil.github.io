@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { codeFamily } from '@/Tlp/styles';
-import { FlexContainer, CustomTruthTable } from '@/Tlp/Paragraph/CustomTruthTable';
+import { FlexContainer, CustomTruthTable } from './CustomTruthTable';
 import { CustomCube, CustomSight } from './CustomSvg';
 import { CustomDiagram1, CustomDiagram2, CustomDiagram3, CustomDiagram4, CustomDiagram5 } from './CustomDiagram';
 import { Centered } from './Components';

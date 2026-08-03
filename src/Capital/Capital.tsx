@@ -66,8 +66,8 @@ export const Capital = () => {
     };
 
     // 添加资产项
-    const handleAddItem = (name: string, category: string, amount: number) => {
-        setAssetItems([...assetItems, { id: v4(), name, category, amount }]);
+    const handleAddItem = (item: Omit<AssetItem, 'id'>) => {
+        setAssetItems([...assetItems, { id: v4(), ...item }]);
     };
 
     // 删除资产项
@@ -177,8 +177,8 @@ export const Capital = () => {
                 groupId="capital-layout"
                 left={leftPanel}
                 right={rightPanel}
-                leftProps={{ defaultSize: 30, minSize: 20 }}
-                rightProps={{ defaultSize: 70, minSize: 30 }}
+                leftProps={{ defaultSize: 30, min: 20 }}
+                rightProps={{ defaultSize: 70, min: 30 }}
             />
         </div>
     );

@@ -19,7 +19,13 @@ const setCurrentCoordinate = (coordinate: Coordinate) => {
 
 const resetCurrentCoordinate = currentCoordinateRegion.reset;
 
-const getCoordinate = (element: HTMLDivElement, clientX: number, clientY: number): Coordinate => {
+interface CoordinateParams {
+    element: HTMLDivElement;
+    clientX: number;
+    clientY: number;
+}
+
+const getCoordinate = ({ element, clientX, clientY }: CoordinateParams): Coordinate => {
     const rect = element.getBoundingClientRect();
     const mouseX = clientX - rect.left + element.scrollLeft;
     const mouseY = clientY - rect.top + element.scrollTop;
@@ -61,7 +67,7 @@ export const useEventListener = (ref: RefObject<HTMLDivElement>) => {
             }
 
             const handleStart = ({ clientX, clientY }: Params) => {
-                const coordinate = getCoordinate(element, clientX, clientY);
+                const coordinate = getCoordinate({ element, clientX, clientY });
                 setCurrentCoordinate(coordinate);
             };
 
@@ -69,7 +75,7 @@ export const useEventListener = (ref: RefObject<HTMLDivElement>) => {
             const handleMouseDown = withMouse(handleStart);
 
             const handleMove = ({ clientX, clientY }: Params) => {
-                const coordinate = getCoordinate(element, clientX, clientY);
+                const coordinate = getCoordinate({ element, clientX, clientY });
                 setCurrentCoordinate(coordinate);
                 handleBlockClickWithCatch(coordinate);
             };
@@ -78,7 +84,7 @@ export const useEventListener = (ref: RefObject<HTMLDivElement>) => {
             const handleMouseMove = withMouse(handleMove, true);
 
             const handleEnd = ({ clientX, clientY }: Params) => {
-                const coordinate = getCoordinate(element, clientX, clientY);
+                const coordinate = getCoordinate({ element, clientX, clientY });
                 handleBlockClickWithCatch(coordinate);
                 resetCurrentCoordinate();
             };

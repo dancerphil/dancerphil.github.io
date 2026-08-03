@@ -65,10 +65,11 @@ export const Tlp = () => {
                     </Box>
                 </Box>
             )}
+            leftProps={{ defaultSize: activeNodeKey ? '70%' : '100%' }}
             right={activeNodeKey && <Stream />}
             rightProps={{
                 defaultSize: '30%',
-                minSize: '25%',
+                min: '25%',
             }}
         />
     );

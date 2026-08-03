@@ -24,7 +24,7 @@ const createParser = () => new DOMParser();
 const serialize = (fragment: DocumentFragment) => {
     const container = document.createElement('div');
     container.append(fragment);
-    return container.innerHTML.trim();
+    return container.getHTML().trim();
 };
 
 const sanitizeNode = (node: Node, options: Required<CompactOptions>): Node | null => {

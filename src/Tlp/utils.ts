@@ -28,7 +28,7 @@ export const streamSentence = ({ sentence, parent, prev, next, children }: Strea
     }
     const result = streamText({
         model: deepseek,
-        system: `你是《逻辑哲学论》的专家，擅长分析维特根斯坦的哲学思想。而我正在阅读《逻辑哲学论》这本书，在阅读的过程中，我对其中的一些语句不太明白，我需要你为我解释这句话的意思。你只需要重点分析这句话本身，不需要进行整体总结。${context}`,
+        instructions: `你是《逻辑哲学论》的专家，擅长分析维特根斯坦的哲学思想。而我正在阅读《逻辑哲学论》这本书，在阅读的过程中，我对其中的一些语句不太明白，我需要你为我解释这句话的意思。你只需要重点分析这句话本身，不需要进行整体总结。${context}`,
         prompt: `请你分析这句话的意思：${sentence}`,
         abortSignal,
     });

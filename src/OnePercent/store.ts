@@ -72,16 +72,18 @@ function addLog(log: LogEntry[], entry: LogEntry): LogEntry[] {
     return [entry, ...log].slice(0, 100);
 }
 
-function applyResearchProgress(
-    activeResearch: string | null,
-    manpower: number,
-    completedResearch: Record<string, boolean>,
-    researchProgress: Record<string, number>,
-): {
+interface ResearchState {
     activeResearch: string | null;
     completedResearch: Record<string, boolean>;
     researchProgress: Record<string, number>;
-} {
+}
+
+function applyResearchProgress({
+    activeResearch,
+    manpower,
+    completedResearch,
+    researchProgress,
+}: ResearchState & { manpower: number }): ResearchState {
     if (activeResearch === null || manpower <= 0) {
         return { activeResearch, completedResearch, researchProgress };
     }
@@ -138,7 +140,12 @@ export const useGameStore = create<GameState>()(persist(
                         dailyCost += cost;
 
                         // 人力投入到当前研究
-                        const result = applyResearchProgress(activeResearch, manpower, completedResearch, researchProgress);
+                        const result = applyResearchProgress({
+                            activeResearch,
+                            manpower,
+                            completedResearch,
+                            researchProgress,
+                        });
                         activeResearch = result.activeResearch;
                         completedResearch = result.completedResearch;
                         researchProgress = result.researchProgress;

@@ -1,11 +1,11 @@
 import { useRef, useState } from 'react';
 import { Stack, Group, Title, TextInput, NumberInput, Button, Select } from '@mantine/core';
-import { Category } from './types';
+import { AssetItem, Category } from './types';
 import s from './styles.module.css';
 
 interface AddAssetItemFormProps {
     categories: Category[];
-    onAdd: (name: string, category: string, amount: number) => void;
+    onAdd: (item: Omit<AssetItem, 'id'>) => void;
 }
 
 export const AddAssetItemForm = ({ categories, onAdd }: AddAssetItemFormProps) => {
@@ -17,7 +17,7 @@ export const AddAssetItemForm = ({ categories, onAdd }: AddAssetItemFormProps) =
     const handleAdd = () => {
         if (!newItemName.trim() || !newItemCategory) return;
         const amount = typeof newItemAmount === 'number' ? newItemAmount : Number(newItemAmount) || 0;
-        onAdd(newItemName.trim(), newItemCategory, amount);
+        onAdd({ name: newItemName.trim(), category: newItemCategory, amount });
         setNewItemName('');
         setNewItemAmount(0);
         nameInputRef.current?.focus();

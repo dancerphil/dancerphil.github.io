@@ -1,15 +1,15 @@
 import { ReactNode } from 'react';
-import { Group, Panel, PanelProps, Separator, useDefaultLayout } from 'react-resizable-panels';
-import c from './ResizeLayout.module.css';
+import { Splitter } from '@mantine/core';
+import type { SplitterPaneProps } from '@mantine/core';
 
 interface Props {
     groupId?: string;
     left?: ReactNode;
     center?: ReactNode;
     right?: ReactNode;
-    leftProps?: PanelProps;
-    centerProps?: PanelProps;
-    rightProps?: PanelProps;
+    leftProps?: SplitterPaneProps;
+    centerProps?: SplitterPaneProps;
+    rightProps?: SplitterPaneProps;
 }
 
 export const ResizeLayout = ({
@@ -21,25 +21,37 @@ export const ResizeLayout = ({
     centerProps,
     rightProps,
 }: Props) => {
-    const { defaultLayout, onLayoutChanged } = useDefaultLayout({
-        groupId,
-        storage: localStorage,
-    });
+    const panes = [
+        { key: 'left', content: left, props: leftProps },
+        { key: 'center', content: center, props: centerProps },
+        { key: 'right', content: right, props: rightProps },
+    ].filter(pane => pane.content);
+    const storageKey = groupId && `resize-layout:${groupId}`;
+    const savedSizes = storageKey
+        ? JSON.parse(localStorage.getItem(storageKey) ?? 'null') as SplitterPaneProps['defaultSize'][] | null
+        : null;
+    const defaultSize = 100 / panes.length;
+
     return (
-        <Group defaultLayout={defaultLayout} onLayoutChanged={onLayoutChanged}>
-            {left && <Panel {...leftProps}>{left}</Panel>}
-            {left && center && (
-                <Separator className={c.handle}>
-                    <div className="devops-resize-handle-line" />
-                </Separator>
-            )}
-            {center && <Panel {...centerProps}>{center}</Panel>}
-            {(left || center) && right && (
-                <Separator className={c.handle}>
-                    <div className="devops-resize-handle-line" />
-                </Separator>
-            )}
-            {right && <Panel {...rightProps}>{right}</Panel>}
-        </Group>
+        <Splitter
+            key={panes.map(pane => pane.key).join('-')}
+            w="100%"
+            h="100%"
+            onResizeEnd={storageKey
+                ? (_, sizes) => localStorage.setItem(storageKey, JSON.stringify(sizes))
+                : undefined}
+        >
+            {panes.map((pane, index) => {
+                return (
+                    <Splitter.Pane
+                        key={pane.key}
+                        {...pane.props}
+                        defaultSize={savedSizes?.[index] ?? pane.props?.defaultSize ?? defaultSize}
+                    >
+                        {pane.content}
+                    </Splitter.Pane>
+                );
+            })}
+        </Splitter>
     );
 };
