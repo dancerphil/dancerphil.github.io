@@ -1,1 +1,0 @@
-import{n as e,t}from"./jsx-runtime-DFNQ3h-5.js";/* empty css               */var n=e(),r={maze:`_maze_id658_1`},i=t(),a=Array.from({length:1e4},()=>Math.random()<.5?`╱`:`╲`).join(``);(0,n.createRoot)(document.body).render((0,i.jsx)(()=>(0,i.jsx)(`p`,{className:r.maze,children:a}),{}));
