@@ -1,0 +1,35 @@
+.root {
+    & :where(ul, ol):not([data-type='taskList']) {
+        list-style: none;
+        padding-inline-start: 0;
+    }
+
+    & :where(li) {
+        padding-block: calc(var(--mantine-spacing-xs) / 2);
+    }
+
+    & :where(blockquote) {
+        font-size: var(--mantine-font-size-md);
+        border-inline-start: 3px solid var(--mantine-color-gray-filled);
+        border-start-start-radius: 0;
+        border-end-start-radius: 0;
+    }
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mantine-spacing-xs);
+    width: 100%;
+    margin-block: var(--mantine-spacing-md);
+
+    & img {
+        max-width: 100%;
+    }
+}
+
+.caption {
+    font-size: var(--mantine-font-size-sm);
+    color: var(--mantine-color-dimmed);
+}

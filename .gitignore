@@ -1,3 +1,4 @@
 dist
+dist-wechat
 node_modules
 .env.local
