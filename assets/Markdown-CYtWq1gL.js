@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-DXDvaycA.js";import{g as t,r as n,t as r}from"./lib-CoQ4VQ89.js";var i=e(),a={root:{root:`_root_xw3vm_1`}.root},o=[r],s=({children:e})=>(0,i.jsx)(t,{classNames:a,children:(0,i.jsx)(n,{remarkPlugins:o,children:e})});export{s as t};

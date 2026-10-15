@@ -1,4 +1,4 @@
-import{n as e,t}from"./jsx-runtime-DXDvaycA.js";import{t as n}from"./Markdown-e1yRtN8A.js";/* empty css               *//* empty css                   */var r=e(),i=`# async await 代码风格指南
+import{n as e,t}from"./jsx-runtime-DXDvaycA.js";import{t as n}from"./Markdown-CYtWq1gL.js";/* empty css               *//* empty css                   */var r=e(),i=`# async await 代码风格指南
 
 _如何用最合理的方式书写 async await 代码_
 
