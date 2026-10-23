@@ -18,6 +18,7 @@
     "lint": "eslint .",
     "lint-type": "tsc",
     "deploy": "npm run build && gh-pages -d dist",
+    "deploy:workbuddy": "node scripts/deploy-workbuddy.mjs",
     "prepare": "husky || true",
     "knip": "knip",
     "tikz": "node src/Category/scripts/tikz.ts",

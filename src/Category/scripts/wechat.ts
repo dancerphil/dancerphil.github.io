@@ -10,11 +10,12 @@ import ReactMarkdown from 'react-markdown';
 import type { Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
+import katex from 'katex';
 import { Resvg } from '@resvg/resvg-js';
 import { dvi2svg, load, tex } from 'node-tikzjax';
 
 const dirname = path.dirname(url.fileURLToPath(import.meta.url));
-const articlesDir = path.join(dirname, '../articles');
+const articlesDir = path.join(dirname, '../wechat-articles');
 const outDir = path.join(dirname, '../../../dist-wechat');
 const imagesDir = path.join(outDir, 'images');
 const require = createRequire(import.meta.url);
@@ -55,7 +56,6 @@ const rasterize = (svg: string): Image => {
 
 const renderFormula = async (latex: string, display: boolean) => {
     const math = display ? String.raw`\displaystyle ${latex}` : latex;
-    // 公众号粘贴时小于 \text{ob}\,\mathcal{D}（约 27px 宽）的图片会失败，行内公式补足到该宽度
     const node = display ? 'inner sep=0pt' : `inner sep=0pt, minimum width=${MIN_INLINE_WIDTH_PT}pt`;
     const dvi = await tex(String.raw`\usepackage{amsmath,amssymb,amstext,tikz}
 \begin{document}
@@ -71,12 +71,9 @@ const collectFormulas = (markdown: string) => [...markdown.matchAll(FORMULA_PATT
     latex: (match[1] ?? match[2]).trim(),
 }));
 
-// 单个符号的行内公式用斜体 Unicode 字符代替图片，避免小图在公众号中粘贴失败
-const TEXT_SYMBOLS: Record<string, string> = { '\\mathcal{C}': '𝒞', '\\mathcal{D}': '𝒟' };
 const mathText = (latex: string) => {
-    if (TEXT_SYMBOLS[latex]) return TEXT_SYMBOLS[latex];
-    const plain = latex.replaceAll(String.raw`\eta`, 'η').replaceAll(String.raw`\mu`, 'μ').replaceAll(String.raw`\mathrm{Id}`, 'Id').replaceAll(String.raw`\circ`, '∘');
-    return /^[A-Za-z\sημ∘,]+$/.test(plain) ? plain : undefined;
+    const text = katex.renderToString(latex, { output: 'mathml' }).replaceAll(/<annotation[\s\S]*?<\/annotation>/g, '').replaceAll(/<[^>]+>/g, '').replaceAll('&gt;', '>').replaceAll('&lt;', '<').trim();
+    return [...text].length === 1 || /^[A-Za-z0-9]+$/.test(text) ? text : undefined;
 };
 // 单字符为斜体变量，多字母单词（如 Id）保持正体
 const renderMathText = (text: string) => text.split(/((?<![A-Za-z])[A-Za-zημ](?![A-Za-z]))/).map((part, index) => (index % 2 ? createElement('i', { key: index }, part) : part));
