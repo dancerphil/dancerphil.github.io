@@ -45,6 +45,11 @@ export const Home = () => {
 
                 <div className={c.title}>随手写的玩具</div>
                 <ListItem
+                    href="./ad-analyzer"
+                    title="ad-analyzer"
+                    description="规划《反物质维度》C9 的购买顺序"
+                />
+                <ListItem
                     href="./age"
                     title="age"
                     description="可以计算自己的年龄的工具，精确到 0.0000001"
