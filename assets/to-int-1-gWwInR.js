@@ -1,0 +1,1 @@
+import{i as e,l as t}from"./jsx-runtime-DXDvaycA.js";var n=t(e(),1);function r(e){let t=(0,n.useRef)(e);return(0,n.useEffect)(()=>{t.current=e}),(0,n.useMemo)(()=>((...e)=>t.current?.(...e)),[])}function i(e){return e?parseInt(e,10):0}export{r as n,i as t};
