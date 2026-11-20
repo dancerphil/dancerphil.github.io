@@ -3,14 +3,14 @@ import { Group, NumberInput, Table, Text, Title } from '@mantine/core';
 import { ITEM_NAMES, planPurchases, TICKSPEED } from './planner';
 
 export const AdAnalyzer = () => {
-    const [maxLevel, setMaxLevel] = useState(60);
+    const [maxLevel, setMaxLevel] = useState(300);
     const steps = useMemo(() => planPurchases(maxLevel), [maxLevel]);
 
     return (
         <>
             <Title order={2}>ad-analyzer</Title>
             <Text c="dimmed" mb="md">
-                规划《反物质维度》普通挑战 9（C9）的购买顺序：每当买入计数频率或 10 个反物质维度时，同价格的其他项目会升级到下一个价格。假定反物质按 1e1、1e2、1e3……依次增长，每一步优先购买可买且不产生价格冲突的最高维度；开局前五步按固定顺序直接购买（不做冲突检查），之后才启用上述规则。
+                规划《反物质维度》普通挑战 9（C9）的购买顺序：每当买入 10 个反物质维度时，同价格的其他项目会升级到下一个价格。假定反物质按 1e1、1e2、1e3……依次增长，每一步优先购买可买且不产生价格冲突的最高维度；开局前五步按固定顺序直接购买（不做冲突检查），之后才启用上述规则。
             </Text>
 
             <Group mb="md">
@@ -27,9 +27,7 @@ export const AdAnalyzer = () => {
                 <Table.Thead>
                     <Table.Tr>
                         <Table.Th colSpan={5}>
-                            {steps
-                                .map(step => (step.item === TICKSPEED ? 'T' : `${step.item + 1}`))
-                                .join('-')}
+                            {steps.map(step => (step.item === TICKSPEED ? 'T' : `${step.item + 1}`)).join('-')}
                         </Table.Th>
                     </Table.Tr>
                     <Table.Tr>

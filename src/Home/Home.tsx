@@ -109,6 +109,11 @@ export const Home = () => {
                     title="每天百分之一"
                     description="一个关于钱、时间和意义的增量游戏"
                 />
+                <ListItem
+                    href="./read"
+                    title="read"
+                    description="上传 txt 小说阅读，自动保存阅读进度"
+                />
                 <Divider my="lg" />
 
                 <div className={c.title}>随手写的动画</div>

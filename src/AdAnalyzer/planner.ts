@@ -20,12 +20,14 @@ const PREREQUISITES: (number | undefined)[] = [undefined, 0, 1, 2, 3, 4, 5, 6, 1
 const PRIORITY = [7, 6, 5, 4, 3, 2, 1, 0, TICKSPEED];
 const OPENING = [0, 1, 2, 3, 4];
 
-export type PurchaseStep = {
+export interface PurchaseStep {
     level: number;
     item: number;
     price: number;
     forced: boolean;
-};
+}
+
+const isDistinct = (values: number[]) => new Set(values).size === values.length;
 
 export const planPurchases = (maxLevel: number): PurchaseStep[] => {
     let prices = [...DIMENSION_PRICES, TICKSPEED_PRICE];
@@ -41,9 +43,7 @@ export const planPurchases = (maxLevel: number): PurchaseStep[] => {
 
     const pricesAfter = (item: number) => prices.map((price, i) => (price === prices[item] ? price + steps[i] : price));
 
-    const isDistinct = (values: number[]) => new Set(values).size === values.length;
-
-    const buy = (item: number, level: number, forced: boolean) => {
+    const buy = ({ item, level, forced }: { item: number; level: number; forced: boolean }) => {
         result.push({ level, item, price: prices[item], forced });
         prices = pricesAfter(item);
         bought[item] = true;
@@ -54,14 +54,14 @@ export const planPurchases = (maxLevel: number): PurchaseStep[] => {
             const forcedItem = queue[0];
             if (forcedItem !== undefined && prices[forcedItem] <= level) {
                 queue.shift();
-                buy(forcedItem, level, true);
+                buy({ item: forcedItem, level, forced: true });
                 continue;
             }
             const item = PRIORITY.find(i => isUnlocked(i) && prices[i] <= level && isDistinct(pricesAfter(i)));
             if (item === undefined) {
                 break;
             }
-            buy(item, level, false);
+            buy({ item, level, forced: false });
         }
     }
 
